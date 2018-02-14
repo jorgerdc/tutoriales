@@ -6,8 +6,8 @@
 	* message-passing framework
 	* Ejecución asíncrona  de tareas basado en el concepto de event-driven tasks.
 * Beneficios
-	* Escalabilidad horizontal
-	* 
+	* Escalabilidad horizontal:  Manejo de grandes cantidades de eventos.
+	* Implementación de componentes con un bajo acoplamiento 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDg2NjczMzNdfQ==
+eyJoaXN0b3J5IjpbLTIwMjU5NTIyNDldfQ==
 -->
