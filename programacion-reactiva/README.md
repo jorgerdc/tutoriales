@@ -1,5 +1,5 @@
 # Tutorial - Programación Reactiva
- Revisar la carpeta docs 
+ La documentación de este tutorial se encuentra en la carpeta docs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzkwOTM2M119
+eyJoaXN0b3J5IjpbMTMyODA0MTMxNV19
 -->
