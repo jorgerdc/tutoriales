@@ -7,7 +7,7 @@
 	* Ejecución asíncrona  de tareas basado en el concepto de event-driven tasks.
 * Beneficios
 	* Escalabilidad horizontal:  Manejo de grandes cantidades de eventos.
-	* Implementación de componentes con un bajo acoplamiento 
+	* Implementación de componentes con un bajo acoplamiento, fallas pueden ser aisladas fácilmente. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjU5NTIyNDldfQ==
+eyJoaXN0b3J5IjpbLTQ4ODM4NDc5N119
 -->
