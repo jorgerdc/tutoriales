@@ -1,7 +1,7 @@
 # Tutoriales
-Repo con material tipo tutorial de diversos temas.
+Este repositorio contiene material tipo tutorial de diversos temas.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYzMTAxMTBdfQ==
+eyJoaXN0b3J5IjpbLTM1MTMwMTU3N119
 -->
