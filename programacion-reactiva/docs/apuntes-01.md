@@ -5,7 +5,9 @@
 * Algunas tecnologías de uso:
 	* message-passing framework
 	* Ejecución asíncrona  de tareas basado en el concepto de event-driven tasks.
+* Beneficios
+	* Escalabilidad horizontal
 	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA5NTc0NjBdfQ==
+eyJoaXN0b3J5IjpbLTEyMDg2NjczMzNdfQ==
 -->
