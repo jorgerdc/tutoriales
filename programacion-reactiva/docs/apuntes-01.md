@@ -39,10 +39,10 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Datos son recibidos por un *consumer* 
 ### Principales clases  
 * ``Observable`` No soporta protocolo back-presure
-* ``Flowable`` Soporta el protocolo back-presure 
+* ``Flowable`` Soporta el protocolo back-presure (reactive stream protocol). Adecuado para streams con gran cantidad de datos. 
 * ``Single``
 * ``Maybe``
 * ``Completable``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU1NTYzNV19
+eyJoaXN0b3J5IjpbLTEyMDEyNjU2NTRdfQ==
 -->
