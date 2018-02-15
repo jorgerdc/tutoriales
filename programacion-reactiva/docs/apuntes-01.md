@@ -20,10 +20,12 @@ La programación reactiva está basada en este patrón:
 * En términos de programación los  *observers*  están representados por funciones que se ejecutan cuando ocurre un evento.
 
 #### Características de una App Reactiva (Reactive Manifiesto)
-* Responsiva (tiempos de respuesta constantes y rápidos) . 
+* Responsiva . 
+	* La comunicación entre el cliente y la aplicación debe ser continua.
+	* El sistema siempre debe proporcionar una respuesta  al cliente, el cliente no debe esperar por ella, siempre estará ocupado con la aplicación: *Siempre dame algo en lugar de nada *.
 	* El sistema es capaz de mantener sus tiempos de respuesta a pesar de existir un incremento  considerable  en el  número de peticiones concurrentes.  
 	* Para implementar esta característica, la App debe ser escalable y tolerante a fallas.
-	* El sistema siempre debe proporcionar una respuesta  al cliente, el cliente no debe esperar por ella, siempre estará ocupado con la aplicación: *Siempre dame algo en lugar de nada *.
+	* 
 * Elastic (escalable)
 * Resilient (tolerante a fallas). 
 	* La aplicación es capaz de auto recuperarse cuando  ocurre una falla. 
@@ -49,5 +51,5 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * ``Maybe``
 * ``Completable``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2ODk4MDQ3XX0=
+eyJoaXN0b3J5IjpbLTE5OTY0NTg4NzFdfQ==
 -->
