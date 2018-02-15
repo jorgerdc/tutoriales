@@ -32,8 +32,8 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * La concurrencia en programación reactiva se logra a través de un modelo llamado *concurrencia basada en tareas*: El hilo de ejecución se libera cuando ya no puede avanzar más, por ejemplo, no espera por respuestas  de operaciones I/O. Una vez que se obtiene respuesta, se le notifica al productor.
 ## RxJava
 * Datos son generados por un *publisher*
-* Datos son 
+* Datos son recibidos por un *consumer* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTUxMTM1MTZdfQ==
+eyJoaXN0b3J5IjpbLTE0NDU5MDkwMjRdfQ==
 -->
