@@ -37,9 +37,9 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 	* Aplicaciones gráficas: JavaFx
 * Datos son generados por un *publisher*
 * Datos son recibidos por un *consumer* 
-* 
+### Principales clases  
 * 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMDI1MzI1OF19
+eyJoaXN0b3J5IjpbMTQ0MDk1NDA1MF19
 -->
