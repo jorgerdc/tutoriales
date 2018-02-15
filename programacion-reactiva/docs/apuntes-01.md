@@ -14,7 +14,8 @@
 #### Patrón de diseño Observer
 La programación reactiva está basada en este patrón:
 * Cuando el estado de un objeto cambia, dicho evento es notificado a otros objetos, y se realiza alguna acción. 
-* Generalmente una aplicación puede hacer *polling*, es decir, puede preguntar continuamente   
+* Una aplicación puede hacer *polling*, es decir, puede preguntar continuamente si ha ocurrido algún cambio (evento).
+* En programación reactiva, en lugar de hacer polling, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgzMDAzMDBdfQ==
+eyJoaXN0b3J5IjpbMTg5MzIzNTI2M119
 -->
