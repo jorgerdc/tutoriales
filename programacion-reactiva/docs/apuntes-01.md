@@ -21,7 +21,7 @@ La programación reactiva está basada en este patrón:
 ####Características de una App Reactiva (Reactive Manifiesto)
 * Responsiva (tiempos de respuesta consistentes y rápidos)
 * Elastic (escalable)
-* Resilient
+* Resilient (tolerante a fallas)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNTMyODQ3MV19
+eyJoaXN0b3J5IjpbNTA1Mzc0OTM4XX0=
 -->
