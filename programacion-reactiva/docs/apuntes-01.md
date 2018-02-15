@@ -33,8 +33,9 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 ## RxJava
 * Datos son generados por un *publisher*
 * Datos son recibidos por un *consumer* 
-* RxJava es el set de herramientas 
+* RxJava es el set de herramientas y librerías para escribir código reactivo en  Java.
+* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjgzNjQwN119
+eyJoaXN0b3J5IjpbLTEyMDYwOTIwODVdfQ==
 -->
