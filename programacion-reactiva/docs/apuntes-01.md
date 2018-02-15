@@ -15,7 +15,7 @@
 La programación reactiva está basada en este patrón:
 * Cuando el estado de un objeto cambia, dicho evento es notificado a otros objetos, y se realiza alguna acción. 
 * Una aplicación puede hacer *polling*, es decir, puede preguntar continuamente si ha ocurrido algún cambio (evento).
-* En programación reactiva, en lugar de hacer polling,  se hace *pushing*, es decir, cuando ocurre  un evento, se realiza una notificación asíncrona a todos los interesados (observers)  y cada observador realizará ciertas acciones.
+* En programación reactiva, en lugar de hacer polling,  se hace *pushing*, es decir, cuando ocurre  un evento, se realiza una notificación asíncrona a todos los interesados (observers)  y cada observador realizará ciertas acciones: *Software que reacciona a estí*
 * En términos de programación los  *observers*  están representados por funciones que se ejecutan cuando ocurre un evento.
 
 #### Características de una App Reactiva (Reactive Manifiesto)
@@ -24,5 +24,5 @@ La programación reactiva está basada en este patrón:
 * Resilient (tolerante a fallas), La app es capaz de auto recuperarse cuando  ocurre una falla
 * Message-driven.  Arquitectura que permite hacer a una aplicación escalable, tolerante a fallas, y reactiva.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTI3NzE3MDVdfQ==
+eyJoaXN0b3J5IjpbLTEyNjUwNTEzOTRdfQ==
 -->
