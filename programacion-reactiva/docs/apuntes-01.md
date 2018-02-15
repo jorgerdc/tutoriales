@@ -25,7 +25,7 @@ La programación reactiva está basada en este patrón:
 	* Para implementar esta característica, la App debe ser escalable y tolerante a fallas.
 	* El sistema siempre debe proporcionar una respuesta  al cliente, el cliente no debe esperar por ella, siempre estará ocupado con la aplicación: *Siempre dame algo en lugar de nada *.
 * Elastic (escalable)
-* Resilient (tolerante a fallas), La app es capaz de auto recuperarse cuando  ocurre una falla.
+* Resilient (tolerante a fallas), La app es capaz de auto recuperarse cuando  ocurre una falla. Por ejemplo, si un servicio de negocio falla, debería existir otro 
 * Message-driven.  Arquitectura que permite hacer a una aplicación escalable, tolerante a fallas, y reactiva, emplead para comunicar sistemas distribuidos.
 
 Las características anteriores representan una nueva forma de desarrollar aplicaciones distribuidas:  *Sistemas distribuidos bien hechos*.
@@ -47,5 +47,5 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * ``Maybe``
 * ``Completable``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTE3NjY4NjVdfQ==
+eyJoaXN0b3J5IjpbNzIzODU3MjM2XX0=
 -->
