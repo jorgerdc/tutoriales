@@ -27,7 +27,7 @@ La programación reactiva está basada en este patrón:
 
 Las características anteriores representan una nueva forma de desarrollar aplicaciones distribuidas:  *Sistemas distribuidos bien hechos.*
 
-Como se mencionó anteriormente,  una app reactiva maneja flujos de datos. Si la cantidad de datos a procesar es enorme, el *consumidor* le notifica al *productor* 
+Como se mencionó anteriormente,  una app reactiva maneja flujos de datos. Si la cantidad de datos a procesar es enorme, el *consumidor* le notifica al *productor (cliente)*  de esta condición,  el productor disminuirá la cantidad de datos o mensajes.  Es decir, existe un esquema de auto adaptaci´ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODU5ODgwMTFdfQ==
+eyJoaXN0b3J5IjpbNzUyNTMwMTE2XX0=
 -->
