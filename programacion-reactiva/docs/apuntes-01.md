@@ -31,11 +31,15 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Esta idea se documenta en el protocolo llamado *asynchronous and nonblocking back-pressure protocol* .
 * La concurrencia en programación reactiva se logra a través de un modelo llamado *concurrencia basada en tareas*: El hilo de ejecución se libera cuando ya no puede avanzar más, por ejemplo, no espera por respuestas  de operaciones I/O. Una vez que se obtiene respuesta, se le notifica al productor.
 ## RxJava
+* RxJava es el set de herramientas y librerías para escribir código reactivo en  Java.
+* Algunos usos:
+	* Procesamiento de flujo de datos provenientes de la red
+	* Aplicaciones gráficas: JavaFx
 * Datos son generados por un *publisher*
 * Datos son recibidos por un *consumer* 
-* RxJava es el set de herramientas y librerías para escribir código reactivo en  Java.
+* 
 * 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDYwOTIwODVdfQ==
+eyJoaXN0b3J5IjpbLTcwMDI1MzI1OF19
 -->
