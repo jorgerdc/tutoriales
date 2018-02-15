@@ -30,7 +30,7 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Como se mencionó anteriormente,  una app reactiva maneja flujos de datos. Si la cantidad de datos a procesar es enorme, el *consumidor* le notifica al *productor (cliente)*  de esta condición,  el productor disminuirá la cantidad de datos o mensajes.  Es decir, existe un esquema de auto adaptación.   
 * Esta idea se documenta en el protocolo llamado *asynchronous and nonblocking back-pressure protocol* .
 * La concurrencia en programación reactiva se logra a través de un modelo llamado *concurrencia basada en tareas*: El hilo de ejecución se libera cuando ya no puede avanzar más, por ejemplo, no espera por respuestas  de operaciones I/O. Una vez que se obtiene respuesta, se le notifica al productor.
-## RxJava
+## 2. RxJava
 * RxJava es el set de herramientas y librerías para escribir código reactivo en  Java.
 * Algunos usos:
 	* Procesamiento de flujo de datos provenientes de la red
@@ -39,10 +39,10 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Datos son recibidos por un *consumer* 
 ### Principales clases  
 * ``Observable`` No soporta protocolo back-presure
-* ``Flowable`` Soporta el protocolo back-presure (reactive stream protocol). Adecuado para streams con gran cantidad de datos. 
+* ``Flowable`` Soporta el protocolo back-presure (reactive stream protocol). Adecuado para streams con gran cantidad de datos, por ejemplo, conexiones TCP. 
 * ``Single``
 * ``Maybe``
 * ``Completable``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDEyNjU2NTRdfQ==
+eyJoaXN0b3J5IjpbLTMxMTc1MzU2NV19
 -->
