@@ -19,7 +19,9 @@ La programación reactiva está basada en este patrón:
 * En términos de programación los  *observers*  están representados por funciones que se ejecutan cuando ocurre un evento.
 
 ####Características de una App Reactiva (Reactive Manifiesto)
-* 
+* Responsiva
+* Elastic (escalable)
+* Resilient
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzI4MzYzMzJdfQ==
+eyJoaXN0b3J5IjpbMTUzMDg5MzAwM119
 -->
