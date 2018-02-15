@@ -23,7 +23,7 @@ La programación reactiva está basada en este patrón:
 * Responsiva . 
 	* La comunicación entre el cliente y la aplicación debe ser continua.
 	* El cliente siempre estará ocupado con la aplicación, no existen tiempos de espera. 
-	* Por ejemplo, en una búsqueda, el sistema envía los primeros 10 resultados, el usuario los revisa mientras que la aplicación continua la búsqueda de los siguientes 10
+	* Por ejemplo, en una búsqueda, el sistema envía los primeros 10 resultados, el usuario los revisa mientras que la aplicación continua la búsqueda de los siguientes 10.
 	* El sistema es capaz de mantener sus tiempos de respuesta a pesar de existir un incremento  considerable  en el  número de peticiones concurrentes.  
 	* Para implementar esta característica, la App debe ser escalable y tolerante a fallas.
 	* 
@@ -52,5 +52,5 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * ``Maybe``
 * ``Completable``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTgzMDM5MjZdfQ==
+eyJoaXN0b3J5IjpbLTEyMjg3NTU1ODRdfQ==
 -->
