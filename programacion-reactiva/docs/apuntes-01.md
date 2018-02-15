@@ -29,8 +29,8 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 
 * Como se mencionó anteriormente,  una app reactiva maneja flujos de datos. Si la cantidad de datos a procesar es enorme, el *consumidor* le notifica al *productor (cliente)*  de esta condición,  el productor disminuirá la cantidad de datos o mensajes.  Es decir, existe un esquema de auto adaptación.   
 * Esta idea se documenta en el protocolo llamado *asynchronous and nonblocking back-pressure protocol* .
-* La concurrencia en programación reactiva se logra a través de un modelo llamado *concurrencia basada en tareas*: El hilo de ejecución se libera cuando ya no puede avanzar más, por ejemplo, no espera por respuestas  de operaciones I/O.
+* La concurrencia en programación reactiva se logra a través de un modelo llamado *concurrencia basada en tareas*: El hilo de ejecución se libera cuando ya no puede avanzar más, por ejemplo, no espera por respuestas  de operaciones I/O. Una vez que se obtiene respuesta, se le notifica al 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTczNDU0MV19
+eyJoaXN0b3J5IjpbLTEzNDk3MDM1MzRdfQ==
 -->
