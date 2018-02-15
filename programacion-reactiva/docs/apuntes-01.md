@@ -22,6 +22,7 @@ La programación reactiva está basada en este patrón:
 * Responsiva (tiempos de respuesta consistentes y rápidos)
 * Elastic (escalable)
 * Resilient (tolerante a fallas)
+* Message-driven
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA1Mzc0OTM4XX0=
+eyJoaXN0b3J5IjpbLTk5MDc0NzM4NF19
 -->
