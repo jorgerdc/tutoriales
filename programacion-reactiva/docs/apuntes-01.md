@@ -41,7 +41,7 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * ``Observable``
 * ``Flowable``
 * ``Single``
-* ``Maybe```
+* ``Maybe``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTM3MTQ3M119
+eyJoaXN0b3J5IjpbLTE1MDk0MDczNTddfQ==
 -->
