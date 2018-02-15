@@ -15,7 +15,7 @@
 La programación reactiva está basada en este patrón:
 * Cuando el estado de un objeto cambia, dicho evento es notificado a otros objetos, y se realiza alguna acción. 
 * Una aplicación puede hacer *polling*, es decir, puede preguntar continuamente si ha ocurrido algún cambio (evento).
-* En programación reactiva, en lugar de hacer polling, 
+* En programación reactiva, en lugar de hacer polling,  se hace *pushing*, es decir, cuando ocurre  un evento, se realiza una notificaciò 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzIzNTI2M119
+eyJoaXN0b3J5IjpbLTE1MDk4NTY5MjZdfQ==
 -->
