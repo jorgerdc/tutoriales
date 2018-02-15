@@ -12,8 +12,8 @@
 	* Implementación de componentes con un bajo acoplamiento, fallas pueden ser aisladas fácilmente. 
 
 #### Patrón de diseño Observer
-* La programación reactiva está basada en este patrón:
-	* 
+La programación reactiva está basada en este patrón:
+* Cuando el estado de un objeto cambia, dicho evento es notificado a otros objetos, y se realiza alguna acción.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTgzNTMwNF19
+eyJoaXN0b3J5IjpbLTE4NTg2NTE5NTVdfQ==
 -->
