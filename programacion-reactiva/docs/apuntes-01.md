@@ -33,7 +33,8 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 ## RxJava
 * Datos son generados por un *publisher*
 * Datos son recibidos por un *consumer* 
+* RxJava es el set de herramientas 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDU5MDkwMjRdfQ==
+eyJoaXN0b3J5IjpbMTEwMjgzNjQwN119
 -->
