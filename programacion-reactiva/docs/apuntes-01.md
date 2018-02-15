@@ -38,11 +38,11 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Datos son generados por un *publisher*
 * Datos son recibidos por un *consumer* 
 ### Principales clases  
-* ``Observable``
-* ``Flowable``
+* ``Observable`` No soporta protocolo back-presure
+* ``Flowable`` Soporta el protocolo back-presure 
 * ``Single``
 * ``Maybe``
-* 
+* ``Completable``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0MTMwNDkxXX0=
+eyJoaXN0b3J5IjpbNjU1NTYzNV19
 -->
