@@ -26,6 +26,8 @@ La programación reactiva está basada en este patrón:
 * Message-driven.  Arquitectura que permite hacer a una aplicación escalable, tolerante a fallas, y reactiva, emplead para comunicar sistemas distribuidos.
 
 Las características anteriores representan una nueva forma de desarrollar aplicaciones distribuidas:  *Sistemas distribuidos bien hechos.*
+
+Como se mencionó anteriormente,  una app reactiva 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjY4NzY5XX0=
+eyJoaXN0b3J5IjpbLTY1Nzk2MTQ4Nl19
 -->
