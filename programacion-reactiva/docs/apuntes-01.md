@@ -10,6 +10,10 @@
 * Beneficios
 	* Escalabilidad horizontal:  Manejo de grandes cantidades de eventos.
 	* Implementación de componentes con un bajo acoplamiento, fallas pueden ser aisladas fácilmente. 
+
+#### Patrón de diseño Observer
+* La programación reactiva está basada en este patrón:
+	* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwOTcyMzYxOV19
+eyJoaXN0b3J5IjpbLTMwNTgzNTMwNF19
 -->
