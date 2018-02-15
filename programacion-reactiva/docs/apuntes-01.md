@@ -38,9 +38,10 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Datos son generados por un *publisher*
 * Datos son recibidos por un *consumer* 
 ### Principales clases  
-* `` Observable ``
-* `` Flowable ``
-
+* ``Observable``
+* ``Flowable``
+* ``Single``
+* ``Maybe```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjEzOTQ3XX0=
+eyJoaXN0b3J5IjpbMTI5NTM3MTQ3M119
 -->
