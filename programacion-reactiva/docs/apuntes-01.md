@@ -4,7 +4,7 @@
 * Modelo de computación que puede ser alterado por cierto tipo de eventos los cuales pueden ser procesados o ignorados.
 * Es una técnica de programación  en la que las tareas a realizar se ejecutan de manera asíncrona. Esta ejecución está regida o dirigida con respecto a la ocurrencia de eventos  (event-driven).  
 * Este esquema de procesamiento asíncrono se emplea principalmente para manejar grandes cantidades de flujos de información de forma continua. *"Sistemas reactivos reaccionan a los datos a través de la ejecución de código asociado a diversos eventos"*
-	* Los flujos de dato son monitoreados 
+	* En programación reactiva se hace uso de flujo de datos, se monitorean y el programa reacciona o hace algo cuando llega un dato.
 * Algunas tecnologías de uso:
 	* message-passing framework
 	* Ejecución asíncrona  de tareas basado en el concepto de event-driven tasks.
@@ -25,5 +25,5 @@ La programación reactiva está basada en este patrón:
 * Resilient (tolerante a fallas), La app es capaz de auto recuperarse cuando  ocurre una falla.
 * Message-driven.  Arquitectura que permite hacer a una aplicación escalable, tolerante a fallas, y reactiva, emplead para comunicar sistemas distribuidos.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDY2OTcwNV19
+eyJoaXN0b3J5IjpbLTczMjc2MjQ4MV19
 -->
