@@ -131,8 +131,9 @@ La interfaz `Observer` define 3 métodos (callbacks) que permiten hacer una acci
 * `onError`
 * `onComplete`
 
+En 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ1NjEzMzddfQ==
+eyJoaXN0b3J5IjpbLTE3MDQ1ODg3NjhdfQ==
 -->
