@@ -142,8 +142,18 @@ public class LibroClient {
     }
 }
 ```
-
+La salida del programa es:
+```
+Libro [nombre=La Biblia, clave=001]
+Libro [nombre=Citas del Presidente Mao Tse-Tung, clave=002]
+Libro [nombre=Harry Potter, clave=003]
+Libro [nombre=El Señor de los Anillos, clave=004]
+Libro [nombre=El Alquimista, clave=005]
+Libro [nombre=El Código da Vinci, clave=006]
+Libro [nombre=Crepúsculo, clave=007]
+Libro [nombre=Lo que el viento se llevó , clave=008]
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTQ3MTk0XX0=
+eyJoaXN0b3J5IjpbMzc2MjgyNzJdfQ==
 -->
