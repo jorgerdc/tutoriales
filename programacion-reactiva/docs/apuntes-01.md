@@ -132,10 +132,22 @@ La interfaz `Observer` define 3 métodos (callbacks) que permiten hacer una acci
 * `onComplete`
 
 ```java
+public class LibroClient {
 
+    private LibroService libroService = new LibroService();
+
+    private void buscaLibros() {
+        libroService.getAll().subscribe(System.out::println);
+    }
+
+    public static void main(String[] args) {
+
+        new LibroClient().buscaLibros();
+    }
+}
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTMxNTE1NTddfQ==
+eyJoaXN0b3J5IjpbLTE3ODMxODg1NjZdfQ==
 -->
