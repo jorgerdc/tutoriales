@@ -57,6 +57,18 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Consumidores son notificados varias veces conforme los datos llegan.
 ##### Ejemplo:
 * Clase `Libro` (POJO) 
+```Java
+public class Libro {
+    private String nombre;
+    private String clave;
+    public Libro(String nombre, String clave) {
+        super();
+        this.nombre = nombre;
+        this.clave = clave;
+    }
+}
+```
+
 * Clase `LibroDAO` (Mock Object) simula la fuente de datos.
 * Clase `LibroService` Obtiene objetos `Observable<Libro>`
 
@@ -70,5 +82,5 @@ public class LibroService {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTgzMzczMF19
+eyJoaXN0b3J5IjpbNTY5OTk1NjY0XX0=
 -->
