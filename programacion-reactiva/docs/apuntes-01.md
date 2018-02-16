@@ -56,9 +56,9 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Al obtener los datos, notifica de inmediato a los consumidores interesados.
 * Consumidores son notificados varias veces conforme los datos llegan.
 ##### Ejemplo:
-* Suponer la existencia de una clase `Libro` (POJO) 
-* Suponer la exis
-
+* Clase `Libro` (POJO) 
+* Clase `LibroDAO` (Mock Object) simula la fuente de datos.
+* Clase `LibroService` Obtiene objetos `Observable<Libro>`
 
 ```Java
 public class LibroService {
@@ -70,5 +70,5 @@ public class LibroService {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDIzMDI1MF19
+eyJoaXN0b3J5IjpbMTY2MTgzMzczMF19
 -->
