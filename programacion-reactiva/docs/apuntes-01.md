@@ -53,8 +53,8 @@ Las características anteriores representan una nueva forma de desarrollar aplic
    #### Observable
 * Observable es un objeto que obtiene  datos de manera constante de una fuente determinada.
 * Desacopla a la fuente de datos con el consumidor.
-* Al obtener los datos, notifica de inmediato a los consumidores interes
+* Al obtener los datos, notifica de inmediato a los consumidores interesados.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTEyMjcyMzVdfQ==
+eyJoaXN0b3J5IjpbMTMxNjI4OTQ4NF19
 -->
