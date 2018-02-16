@@ -52,8 +52,8 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * ``Completable``
 
    #### Observable
-* Observable es un objeto que obtiene  datos  
+* Observable es un objeto que obtiene  datos
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIzOTM5NzQxXX0=
+eyJoaXN0b3J5IjpbNTQ3MzA2MjA1XX0=
 -->
