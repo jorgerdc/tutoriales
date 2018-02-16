@@ -97,8 +97,9 @@ public class LibroService {
     }
 }
 ```
-####Observer
-
+#### Observer
+* Objeto que desea ser notificado cuando el estado de los objetos en los que está interesado ha cambiado.
+* En el ejemplo anterior, este objeto desea ser notificado cuando lleguen datos como resultado del proceso de búsqueda de libros.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkyNDcxODg2XX0=
+eyJoaXN0b3J5IjpbMjEyNjIzNzkxNl19
 -->
