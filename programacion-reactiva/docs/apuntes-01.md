@@ -133,9 +133,7 @@ La interfaz `Observer` define 3 métodos (callbacks) que permiten hacer una acci
 
 ```java
 public class LibroClient {
-
     private LibroService libroService = new LibroService();
-
     private void buscaLibros() {
         libroService.getAll().subscribe(System.out::println);
     }
@@ -149,5 +147,5 @@ public class LibroClient {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODMxODg1NjZdfQ==
+eyJoaXN0b3J5IjpbLTEzNTIyNzM2MjJdfQ==
 -->
