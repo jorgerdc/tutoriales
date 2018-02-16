@@ -137,8 +137,7 @@ public class LibroClient {
     private void buscaLibros() {
         libroService.getAll().subscribe(System.out::println);
     }
-
-    public static void main(String[] args) {
+    ublic static void main(String[] args) {
 
         new LibroClient().buscaLibros();
     }
@@ -147,5 +146,5 @@ public class LibroClient {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTIyNzM2MjJdfQ==
+eyJoaXN0b3J5IjpbMTAzNjcyOTMzNF19
 -->
