@@ -50,10 +50,11 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * ``Single``
 * ``Maybe``
 * ``Completable``
-
    #### Observable
-* Observable es un objeto que obtiene  datos
+* Observable es un objeto que obtiene  datos de manera constante de una fuente determinada.
+* Desacopla a la fuente de datos con el consumidor.
+* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3MzA2MjA1XX0=
+eyJoaXN0b3J5IjpbLTExNjIyOTI5MjBdfQ==
 -->
