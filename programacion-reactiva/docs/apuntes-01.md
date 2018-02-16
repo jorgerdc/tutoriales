@@ -56,6 +56,7 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Al obtener los datos, notifica de inmediato a los consumidores interesados.
 * Consumidores son notificados varias veces conforme los datos llegan.
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzQ5NDkyMjNdfQ==
+eyJoaXN0b3J5IjpbLTk1MjM2MzM4NV19
 -->
