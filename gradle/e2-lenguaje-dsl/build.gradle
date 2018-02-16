@@ -1,0 +1,19 @@
+task iniciaCanto <<{
+	canta()
+}
+
+def canta(){
+	ant.echo(message:'Vamos a cantar') //uso de ant
+}
+
+3.times{   //creación de tareas dinámicas, su nombre se resuelve en runtime
+	task "canto$it" <<{
+		println 'Gradle rocks!!!'
+	}
+}
+
+canto0.dependsOn iniciaCanto
+canto2.dependsOn canto1,canto0
+task otraTarea(dependsOn: canto2){
+	println 'Otra tarea'
+}

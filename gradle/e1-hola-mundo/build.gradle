@@ -1,0 +1,9 @@
+task helloWorld{
+	doLast{
+		println 'Hola mundo!'
+	}
+}
+
+task helloWorldShort << {
+   println 'Hola mundo!'
+}
