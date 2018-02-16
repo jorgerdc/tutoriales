@@ -87,8 +87,6 @@ public class LibroDAO {
     }
 }
 ```
-
-
 * Clase `LibroService` Obtiene objetos `Observable<Libro>`
 
 ```Java
@@ -99,8 +97,8 @@ public class LibroService {
     }
 }
 ```
-
+####Observer
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQyNjMzOTJdfQ==
+eyJoaXN0b3J5IjpbNzkyNDcxODg2XX0=
 -->
