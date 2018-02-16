@@ -101,7 +101,7 @@ public class LibroService {
 * Objeto que desea ser notificado cuando el estado de los objetos en los que está interesado ha cambiado.
 * En el ejemplo anterior, este objeto desea ser notificado cuando lleguen datos como resultado del proceso de búsqueda de libros.
 * Para que el *Observer* sea notificado, este se debe ***suscribir*** con el con el objeto **Observable**.
-* La interfaz 
+* La interfaz `Observer` define 3 métodos (callbacks) que permiten hacer una acción cuando este es nofica
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTQwNDAzNzJdfQ==
+eyJoaXN0b3J5IjpbLTQ4MDQwNTIxMF19
 -->
