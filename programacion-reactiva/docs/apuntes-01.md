@@ -55,8 +55,14 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Desacopla a la fuente de datos con el consumidor.
 * Al obtener los datos, notifica de inmediato a los consumidores interesados.
 * Consumidores son notificados varias veces conforme los datos llegan.
-
-
+```Java
+public class LibroService {
+    private LibroDAO libroDAO = new LibroDAO();
+    public Observable<Libro> getAll() {
+        return Observable.fromArray(libroDAO.getAll());
+    }
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjM2MzM4NV19
+eyJoaXN0b3J5IjpbNzQ2NzU5NTYxXX0=
 -->
