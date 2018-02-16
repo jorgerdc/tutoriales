@@ -66,10 +66,26 @@ public class Libro {
         this.nombre = nombre;
         this.clave = clave;
     }
+    // getters and setters
+}
+```
+* Clase `LibroDAO` (Mock Object) simula la fuente de datos.
+```java
+public class LibroDAO {
+
+    private static final Libro[] libros = new Libro[] { new Libro("La Biblia", "001"),
+            new Libro("Citas del Presidente Mao Tse-Tung", "002"), new Libro("Harry Potter", "003"),
+            new Libro("El Señor de los Anillos", "004"), new Libro("El Alquimista", "005"),
+            new Libro("El Código da Vinci", "006"), new Libro("Crepúsculo", "007"),
+            new Libro("Lo que el viento se llevó ", "008") };
+
+    public Libro[] getAll() {
+        return libros;
+    }
 }
 ```
 
-* Clase `LibroDAO` (Mock Object) simula la fuente de datos.
+
 * Clase `LibroService` Obtiene objetos `Observable<Libro>`
 
 ```Java
@@ -82,5 +98,5 @@ public class LibroService {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5OTk1NjY0XX0=
+eyJoaXN0b3J5IjpbMjcyODM0MDY0XX0=
 -->
