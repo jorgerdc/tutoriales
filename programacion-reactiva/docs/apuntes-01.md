@@ -59,24 +59,25 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Configuración gradle:
 ```groovy 
 apply plugin: 'java'
-    repositories {
-        mavenCentral()
-        jcenter()
-    }  
-    sourceCompatibility = 1.8
-    targetCompatibility = 1.8 
-    
-	tasks.withType(JavaCompile) {
-    	options.encoding = 'ISO-8859-1'
-    }
+
+repositories {
+    mavenCentral()
+    jcenter()
+}  
+sourceCompatibility = 1.8
+targetCompatibility = 1.8 
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'ISO-8859-1'
+}
 
 dependencies {
-	    testCompile 'junit:junit:4.12'	 	    
-	    compile 'org.slf4j:slf4j-api:1.7.25'
-	    runtime 'org.slf4j:slf4j-log4j12:1.7.25'
-		compile 'io.reactivex.rxjava2:rxjava:2.1.9'
-	    
+	testCompile 'junit:junit:4.12'	 	    
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    runtime 'org.slf4j:slf4j-log4j12:1.7.25'
+	compile 'io.reactivex.rxjava2:rxjava:2.1.9'	    
 }
+
 ```
 
 * Clase `Libro` (POJO) 
@@ -133,5 +134,5 @@ La interfaz `Observer` define 3 métodos (callbacks) que permiten hacer una acci
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTEzMzMwNV19
+eyJoaXN0b3J5IjpbLTE1NzQ1NjEzMzddfQ==
 -->
