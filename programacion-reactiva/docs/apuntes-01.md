@@ -133,9 +133,9 @@ La interfaz `Observer` define 3 métodos (callbacks) que permiten hacer una acci
 
 ```java
 
-.
+´
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTM3ODE1MjNdfQ==
+eyJoaXN0b3J5IjpbLTEyMzIwOTQ2ODFdfQ==
 -->
