@@ -133,6 +133,7 @@ La interfaz `Observer` define 3 métodos (callbacks) que permiten hacer una acci
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ1NjEzMzddfQ==
+eyJoaXN0b3J5IjpbNzA4NjI5MDQ1XX0=
 -->
