@@ -50,6 +50,12 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * ``Single``
 * ``Maybe``
 * ``Completable``
+
+    public void m1() {
+   }
+
+   
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTU3MjIyMzFdfQ==
+eyJoaXN0b3J5IjpbLTEwNDY2NDgzNzldfQ==
 -->
