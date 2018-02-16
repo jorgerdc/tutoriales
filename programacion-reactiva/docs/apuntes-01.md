@@ -55,7 +55,9 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Desacopla a la fuente de datos con el consumidor.
 * Al obtener los datos, notifica de inmediato a los consumidores interesados.
 * Consumidores son notificados varias veces conforme los datos llegan.
-
+##### Ejemplo:
+* Suponer la existencia de una clase `Libro` (POJO) 
+* Suponer la exis
 
 
 ```Java
@@ -68,5 +70,5 @@ public class LibroService {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQwMTA5NDNdfQ==
+eyJoaXN0b3J5IjpbLTYxNDIzMDI1MF19
 -->
