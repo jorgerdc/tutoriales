@@ -159,13 +159,22 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 * Observer se subscribe (escucha) al Observable.
 * Observer actua ante la ocurrencia de un evento: secuencia de datos emitida por el Observable.
 * Varios Observers pueden subscribirse al mismo Observable.
+### Arquitectura Observable
 
 
-The Observable is the source of a data stream (sender).
-The Observer is the listener for emitted values (receiver).
-The Observer subscribes (listens) to the Observable.
-Observers react to whatever item or sequence of items the Observable emits.
-Many observers can subscribe to the same observable.
+
+
+Define an Observer that specifics what to do with each emitted value
+Call a method that returns an Observable
+Subscribe the Observer to the Observable
+Tell the Observable that it has a subscriber waiting to receive values when they're available
+The subscribe method connects an Observer to an Observable, the subscriber does not need to block the thread, and the values will come to your Observer when they are ready.
+
+What should we think about when we use RxJava:
+
+Treat all data as immutable
+Since we treat data as a stream, we can return one or more results for each subscription
+We can transform and combine data on any thread and subscribe to update for related values or collections
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5MjQ0NDQ2XX0=
+eyJoaXN0b3J5IjpbLTc3MTQ5MzQ1OV19
 -->
