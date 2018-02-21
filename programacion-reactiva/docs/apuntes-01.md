@@ -161,11 +161,10 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 ```java
 private void buscaLibros() {
 	// libroService.getAll().subscribe(System.out::println);
-	libroService.getAll().map(libro -> libro.getNombre()).subscribe(System.out::println);
+	libroService.getAll().map(
+		libro -> libro.getNombre()).subscribe(System.out::println);
     }
 ```
-
-
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
 * Observer escucha  por datos emitidos (Receiver)
@@ -181,5 +180,5 @@ private void buscaLibros() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwNzc5MDgzXX0=
+eyJoaXN0b3J5IjpbLTEzMDA1MDg1NzFdfQ==
 -->
