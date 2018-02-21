@@ -176,8 +176,19 @@ El Código da Vinci
 Crepúsculo
 Lo que el viento se llevó 
 ```
-* Para comparar las difeencias con la programación síncrona, el siguiente código muestra una nueva versión del ejemplo anterior, pero sin el uso de JavaRx:
+* Para comparar las diferencias con la programación síncrona, el siguiente código muestra una nueva versión del ejemplo anterior, pero sin el uso de JavaRx:
 
+```java
+private void buscaLibros() {
+    // libroService.getAll().subscribe(System.out::println);
+    // libroService.getAll().map(libro -> libro.getNombre()).subscribe(System.out::println);
+    
+    // version sincrona
+    libroService.getAllSync().stream().map(
+	    libro -> libro.getNombre())
+            .forEach(System.out::println);
+}
+```
 
 * Como se puede observar, es posible aplicar operaciones que comúnmente se aplican a  un Stream de datos (Java Stream), en este caso, el método ```map```. Otros métodos son:
 * ```filtering```
@@ -209,5 +220,5 @@ Lo que el viento se llevó
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTk0NDQ2NDJdfQ==
+eyJoaXN0b3J5IjpbMTIzNTI3ODgzM119
 -->
