@@ -153,6 +153,9 @@ Libro [nombre=El Código da Vinci, clave=006]
 Libro [nombre=Crepúsculo, clave=007]
 Libro [nombre=Lo que el viento se llevó , clave=008]
 ```
+##### Ejemplo 2.
+* En programación reactiva los datos que llegan al Observer pudieran no estar en el formato deseado. 
+
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
 * Observer escucha  por datos emitidos (Receiver)
@@ -168,5 +171,5 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODIwMDA4XX0=
+eyJoaXN0b3J5IjpbLTE5MDk4Nzc3NzhdfQ==
 -->
