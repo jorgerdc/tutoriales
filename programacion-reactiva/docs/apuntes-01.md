@@ -193,7 +193,7 @@ Lo que el viento se llevó
 |---------------|-----------------------|-------------------|
 |Obtener datos  |```T next()```         |```onNext(T)```    |
 |Ocurre error   |```throws Exception``` |```onError(T)```   |
-|Fin del flujo  |```!hasNext()```       |```onComplete```
+|Fin del flujo  |```!hasNext()```       |```onCompleted()```
 
 
 
@@ -220,5 +220,5 @@ complete	!hasNext()	onCompleted()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDU3ODg0XX0=
+eyJoaXN0b3J5IjpbLTc5MjQ4NDgzOV19
 -->
