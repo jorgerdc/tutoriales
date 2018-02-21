@@ -184,7 +184,8 @@ Lo que el viento se llevó
 * La programación reactiva suporta tanto valores aislados (escalares) como flujos de datos tanto finitos como infinitos. 
 * Para todos estos casos se emplea ```Observable``` como abstracción.
 * ```Observable``` es la versión asíncrona para manejar un flujo de datos:
-| Evento | Iterable (pull) | Observable (push)|--|--|
+| Evento | Iterable (pull) | Observable (push)
+|--|--|
 |  |  |
 
 
@@ -213,5 +214,5 @@ complete	!hasNext()	onCompleted()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMjk0MDI0MV19
+eyJoaXN0b3J5IjpbLTExOTY4MjM4NzFdfQ==
 -->
