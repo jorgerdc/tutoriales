@@ -163,7 +163,7 @@ private void buscaLibros() {
 	// libroService.getAll().subscribe(System.out::println);
 	libroService.getAll().map(
 		libro -> libro.getNombre()).subscribe(System.out::println);
-    }
+}
 ```
 * La salida ahora es:
 ```
@@ -191,5 +191,5 @@ Lo que el viento se llevó
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDExMzYyNF19
+eyJoaXN0b3J5IjpbLTM5MDAzMTE0NF19
 -->
