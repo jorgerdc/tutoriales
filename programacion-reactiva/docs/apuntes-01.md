@@ -111,7 +111,7 @@ public class LibroDAO {
     }
 }
 ```
-* Clase `LibroService` Obtiene objetos `Observable<Libro>`.  En una arquitectura síncrona, este método regresaría ```List<Libro>`
+* Clase `LibroService` Obtiene objetos `Observable<Libro>`.  En una arquitectura síncrona, este método regresaría ```List<Libro> ```
 
 ```Java
 public class LibroService {
@@ -191,5 +191,5 @@ Lo que el viento se llevó
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDYxNzQzMl19
+eyJoaXN0b3J5IjpbMTYyMzI1NjI4MF19
 -->
