@@ -185,7 +185,7 @@ Lo que el viento se llevó
 * Para todos estos casos se emplea ```Observable``` como abstracción.
 * ```Observable``` es la versión asíncrona para manejar un flujo de datos:
 |Evento  | Iterable (pull) | Observable (push)
-|--------- |----------------|
+|--------- |-----------------|
 |  |  |
 
 
@@ -214,5 +214,5 @@ complete	!hasNext()	onCompleted()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDg2NDUwNTJdfQ==
+eyJoaXN0b3J5IjpbLTg5MjU4NTc1N119
 -->
