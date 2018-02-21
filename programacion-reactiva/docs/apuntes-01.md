@@ -155,7 +155,8 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 ```
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
-* Observer escucha 
+* Observer escucha  por datos emitidos (Receiver)
+* Observer se subscribe (escucha) al Observable.
 
 
 The Observable is the source of a data stream (sender).
@@ -164,5 +165,5 @@ The Observer subscribes (listens) to the Observable.
 Observers react to whatever item or sequence of items the Observable emits.
 Many observers can subscribe to the same observable.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTI4MTIwNV19
+eyJoaXN0b3J5IjpbMjY0OTgwNDc2XX0=
 -->
