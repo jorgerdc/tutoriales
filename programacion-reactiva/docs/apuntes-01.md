@@ -164,21 +164,9 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 2. Llamar un método que regrese un objeto ```Observable```
 3. Suscribir al ```Observer``` empleando el objeto anterior tipo ```Observable```.
 4. Indicarle al ```Observable``` que tiene un nuevo subscriptor esperando valores  una vez que estén disponibles.
-5. El método ```subscribe```  conecta o asocia  aun ```Observer``` con un ```Observable```. El subscriptor no requiere bloquear el hilo de ejecución, los valores llegarán al Observer (llegarán al código especificado) cuando estén listos.
+5. El método ```subscribe```  conecta o asocia  aun ```Observer``` con un ```Observable```. El subscriptor no requiere bloquear el hilo de ejecución, los valores llegarán al ```Observer``` (llegarán al código especificado) cuando estén listos.
 
 
-
-Define an Observer that specifics what to do with each emitted value
-Call a method that returns an Observable
-Subscribe the Observer to the Observable
-Tell the Observable that it has a subscriber waiting to receive values when they're available
-The subscribe method connects an Observer to an Observable, the subscriber does not need to block the thread, and the values will come to your Observer when they are ready.
-
-What should we think about when we use RxJava:
-
-Treat all data as immutable
-Since we treat data as a stream, we can return one or more results for each subscription
-We can transform and combine data on any thread and subscribe to update for related values or collections
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTYxMDk3NV19
+eyJoaXN0b3J5IjpbLTE0OTE1NDQzNzddfQ==
 -->
