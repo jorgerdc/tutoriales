@@ -155,6 +155,8 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 ```
 ##### Ejemplo 2.
 * En programación reactiva los datos que llegan al Observer pudieran no estar en el formato deseado. 
+* Por ejemplo, se desea mostrar únicamente los nombres de los libros en lugar de la salida del método ```toString```.
+* 
 
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
@@ -171,5 +173,5 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk4Nzc3NzhdfQ==
+eyJoaXN0b3J5IjpbLTczMDIzMjM0NF19
 -->
