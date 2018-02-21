@@ -157,6 +157,10 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 * En programación reactiva los datos que llegan al Observer pudieran no estar en el formato deseado. 
 * Por ejemplo, se desea mostrar únicamente los nombres de los libros en lugar de la salida del método ```toString```.
 * Se puede aplicar una transformación *al vuelo* empleando el método ```map```	
+* La nueva versión del método ```buscaLibro``` es:
+```java
+```
+
 
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
@@ -173,5 +177,5 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTgyNTgwOV19
+eyJoaXN0b3J5IjpbMTgxNDk5Mjg0NF19
 -->
