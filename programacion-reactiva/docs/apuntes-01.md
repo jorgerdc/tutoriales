@@ -180,6 +180,9 @@ Lo que el viento se llevó
 * ```filtering```
 *  ```groupBy```
 
+### Comparación Eventos síncronos vs eventos asíncronos
+* 
+
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
 * Observer escucha  por datos emitidos (Receiver)
@@ -195,5 +198,5 @@ Lo que el viento se llevó
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTc4NjQ2NF19
+eyJoaXN0b3J5IjpbLTYwMDQ2NzIzOV19
 -->
