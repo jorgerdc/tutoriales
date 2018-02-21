@@ -189,10 +189,10 @@ Lo que el viento se llevó
 | obt       |              x         |                     y            |
 
 
-|Evento         |Iterable (pull)  |Observable (push)  |
-|---------------|-----------------|-------------------|
-|Obtener datos  |```T next()```         |onNext(T)          |
-|Ocurre error   |throws Exception |onError(T)
+|Evento         |Iterable (pull)        |Observable (push)  |
+|---------------|-----------------------|-------------------|
+|Obtener datos  |```T next()```         |```onNext(T)```    |
+|Ocurre error   |```throws Exception``` |onError(T)
 
 
 
@@ -219,5 +219,5 @@ complete	!hasNext()	onCompleted()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTIxNzMzOTddfQ==
+eyJoaXN0b3J5IjpbMTA0ODc3MDU4OV19
 -->
