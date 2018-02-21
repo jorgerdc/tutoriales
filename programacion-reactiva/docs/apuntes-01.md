@@ -176,6 +176,8 @@ El Código da Vinci
 Crepúsculo
 Lo que el viento se llevó 
 ```
+* Como se puede observar, es posible aplicar operaciones que comunmente se ap
+
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
 * Observer escucha  por datos emitidos (Receiver)
@@ -191,5 +193,5 @@ Lo que el viento se llevó
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MDAzMTE0NF19
+eyJoaXN0b3J5IjpbLTk4MDIxMjY1OF19
 -->
