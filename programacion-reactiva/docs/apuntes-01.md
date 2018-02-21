@@ -184,26 +184,12 @@ Lo que el viento se llevó
 * La programación reactiva suporta tanto valores aislados (escalares) como flujos de datos tanto finitos como infinitos. 
 * Para todos estos casos se emplea ```Observable``` como abstracción.
 * ```Observable``` es la versión asíncrona para manejar un flujo de datos:
-|Evento  |Iterable (pull) |Observable (push)
-|--------- |----------------|------------------------|
-| obt       |              x         |                     y            |
-
 
 |Evento         |Iterable (pull)        |Observable (push)  |
 |---------------|-----------------------|-------------------|
 |Obtener datos  |```T next()```         |```onNext(T)```    |
 |Ocurre error   |```throws Exception``` |```onError(T)```   |
 |Fin del flujo  |```!hasNext()```       |```onCompleted()```
-
-
-
-An Observable is the asynchronous/push “dual” to the synchronous/pull Iterable
-event	Iterable (pull)	Observable (push)
-retrieve data	T next()	onNext(T)
-discover error	throws Exception	onError(Exception)
-complete	!hasNext()	onCompleted()
-
-
 
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
@@ -220,5 +206,5 @@ complete	!hasNext()	onCompleted()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjQ4NDgzOV19
+eyJoaXN0b3J5IjpbMzgzNzk0ODAxXX0=
 -->
