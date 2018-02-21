@@ -55,7 +55,7 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Desacopla a la fuente de datos con el consumidor.
 * Al obtener los datos, notifica de inmediato a los consumidores interesados.
 * Consumidores son notificados varias veces conforme los datos llegan.
-##### Ejemplo:
+##### Ejemplo 1:
 * Configuración gradle:
 ```groovy 
 apply plugin: 'java'
@@ -168,5 +168,5 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE1NDQzNzddfQ==
+eyJoaXN0b3J5IjpbLTUzODIwMDA4XX0=
 -->
