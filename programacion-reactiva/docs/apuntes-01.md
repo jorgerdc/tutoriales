@@ -162,7 +162,7 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 ### Arquitectura Observable
 1. Definir un Observer con el código a ejecutar para cada item emitido por el Observable.
 2. Llamar un método que regrese un objeto Observable
-3. Suscribirse a
+3. Suscribir al Observer empleando el objeto anterior
 
 
 
@@ -178,5 +178,5 @@ Treat all data as immutable
 Since we treat data as a stream, we can return one or more results for each subscription
 We can transform and combine data on any thread and subscribe to update for related values or collections
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NzY1NTEzN119
+eyJoaXN0b3J5IjpbLTI4NTc0NTAwXX0=
 -->
