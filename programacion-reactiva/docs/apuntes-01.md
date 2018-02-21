@@ -165,6 +165,17 @@ private void buscaLibros() {
 		libro -> libro.getNombre()).subscribe(System.out::println);
     }
 ```
+* La salida ahora es:
+```
+La Biblia
+Citas del Presidente Mao Tse-Tung
+Harry Potter
+El Señor de los Anillos
+El Alquimista
+El Código da Vinci
+Crepúsculo
+Lo que el viento se llevó 
+```
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
 * Observer escucha  por datos emitidos (Receiver)
@@ -180,5 +191,5 @@ private void buscaLibros() {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDA1MDg1NzFdfQ==
+eyJoaXN0b3J5IjpbMjE0MTkzNDk2MF19
 -->
