@@ -164,6 +164,7 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 2. Llamar un método que regrese un objeto Observable
 3. Suscribir al Observer empleando el objeto anterior tipo Observable.
 4. Indicarle al Observable que tiene un nuevo subscriptor esperando valores  una vez que estén disponibles.
+5. El método subscribe  conecta o asocia  aun Observer con un Observable. El subscriptor no requiere bloquear el hilo de ejecución 
 
 
 
@@ -179,5 +180,5 @@ Treat all data as immutable
 Since we treat data as a stream, we can return one or more results for each subscription
 We can transform and combine data on any thread and subscribe to update for related values or collections
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc4MjM0MDVdfQ==
+eyJoaXN0b3J5IjpbMTczNDYzNTA5XX0=
 -->
