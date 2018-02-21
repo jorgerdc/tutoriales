@@ -160,7 +160,7 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 * Observer actua ante la ocurrencia de un evento: secuencia de datos emitida por el Observable.
 * Varios Observers pueden subscribirse al mismo Observable.
 ### Arquitectura Observable
-1. Definir un Observer con el código a ejecutar para cada item
+1. Definir un Observer con el código a ejecutar para cada item emitido por 
 
 
 
@@ -176,5 +176,5 @@ Treat all data as immutable
 Since we treat data as a stream, we can return one or more results for each subscription
 We can transform and combine data on any thread and subscribe to update for related values or collections
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzQ0NjE2XX0=
+eyJoaXN0b3J5IjpbODUxNjM3NzcyXX0=
 -->
