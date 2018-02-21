@@ -181,7 +181,18 @@ Lo que el viento se llevó
 *  ```groupBy```
 
 ### Comparación Eventos síncronos vs eventos asíncronos
-* 
+* La programación reactiva suporta tanto valores aislados (escalares) como flujos de datos tanto finitos como infinitos.
+
+
+ReactiveX Observables support not just the emission of single scalar values (as Futures do), but also of sequences of values or even infinite streams. Observable is a single abstraction that can be used for any of these use cases. An Observable has all of the flexibility and elegance associated with its mirror-image cousin the Iterable.
+
+An Observable is the asynchronous/push “dual” to the synchronous/pull Iterable
+event	Iterable (pull)	Observable (push)
+retrieve data	T next()	onNext(T)
+discover error	throws Exception	onError(Exception)
+complete	!hasNext()	onCompleted()
+
+
 
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
@@ -198,5 +209,5 @@ Lo que el viento se llevó
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDQ2NzIzOV19
+eyJoaXN0b3J5IjpbLTYxNTI1MjM2N119
 -->
