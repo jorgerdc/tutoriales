@@ -153,7 +153,7 @@ Libro [nombre=El Código da Vinci, clave=006]
 Libro [nombre=Crepúsculo, clave=007]
 Libro [nombre=Lo que el viento se llevó , clave=008]
 ```
-### Observer y Observable
+### ComparObserver y Observable
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODE5NDg3ODddfQ==
+eyJoaXN0b3J5IjpbLTE3ODk1MjI5NjNdfQ==
 -->
