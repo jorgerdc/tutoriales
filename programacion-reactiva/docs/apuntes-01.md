@@ -176,7 +176,8 @@ El Código da Vinci
 Crepúsculo
 Lo que el viento se llevó 
 ```
-* Como se puede observar, es posible aplicar operaciones que comunmente se ap
+* Como se puede observar, es posible aplicar operaciones que comúnmente se aplican a  un Stream de datos (Java Stream), en este caso, el método ```map```. Otros métodos son:
+* 
 
 ### Comparación Observer y Observable
 * Observable representa la fuente del stream de datos (Sender)
@@ -193,5 +194,5 @@ Lo que el viento se llevó
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDIxMjY1OF19
+eyJoaXN0b3J5IjpbLTEwOTY0OTE3NF19
 -->
