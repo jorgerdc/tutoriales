@@ -163,7 +163,7 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 1. Definir un Observer con el código a ejecutar para cada valor emitido por el Observable.
 2. Llamar un método que regrese un objeto Observable
 3. Suscribir al Observer empleando el objeto anterior tipo Observable.
-4. Indicarle al Observable que tiene un nuevo subscriptor esperando valores  una vez que estén disponi
+4. Indicarle al Observable que tiene un nuevo subscriptor esperando valores  una vez que estén disponibles.
 
 
 
@@ -179,5 +179,5 @@ Treat all data as immutable
 Since we treat data as a stream, we can return one or more results for each subscription
 We can transform and combine data on any thread and subscribe to update for related values or collections
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ4MDQ3NzNdfQ==
+eyJoaXN0b3J5IjpbLTEwMjc4MjM0MDVdfQ==
 -->
