@@ -159,6 +159,10 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 * Se puede aplicar una transformación *al vuelo* empleando el método ```map```	
 * La nueva versión del método ```buscaLibro``` es:
 ```java
+private void buscaLibros() {
+	// libroService.getAll().subscribe(System.out::println);
+	libroService.getAll().map(libro -> libro.getNombre()).subscribe(System.out::println);
+    }
 ```
 
 
@@ -177,5 +181,5 @@ Libro [nombre=Lo que el viento se llevó , clave=008]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNDk5Mjg0NF19
+eyJoaXN0b3J5IjpbODcwNzc5MDgzXX0=
 -->
