@@ -189,9 +189,9 @@ Lo que el viento se llevó
 | obt       |              x         |                     y            |
 
 
-|  |  |
-|--|--|
-|  |  |
+|Evento  |Iterable (pull)  |Observable (push)  |
+|--|--|--|
+|  |  |  |
 
 ReactiveX Observables support not just the emission of single scalar values (as Futures do), but also of sequences of values or even infinite streams. Observable is a single abstraction that can be used for any of these use cases. An Observable has all of the flexibility and elegance associated with its mirror-image cousin the Iterable.
 
@@ -218,5 +218,5 @@ complete	!hasNext()	onCompleted()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY5OTc3MDAwXX0=
+eyJoaXN0b3J5IjpbLTIwNDI5MDE0MzNdfQ==
 -->
