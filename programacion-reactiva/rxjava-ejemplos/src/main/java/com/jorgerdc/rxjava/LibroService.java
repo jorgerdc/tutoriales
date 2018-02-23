@@ -3,6 +3,9 @@
  */
 package com.jorgerdc.rxjava;
 
+import java.util.Arrays;
+import java.util.List;
+
 import io.reactivex.Observable;
 
 /**
@@ -16,6 +19,13 @@ public class LibroService {
 
     public Observable<Libro> getAll() {
         return Observable.fromArray(libroDAO.getAll());
+    }
+
+    /**
+     * Versión sincrona
+     */
+    public List<Libro> getAllSync() {
+        return Arrays.asList(libroDAO.getAll());
     }
 
 }
