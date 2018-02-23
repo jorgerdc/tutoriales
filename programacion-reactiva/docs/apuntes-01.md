@@ -55,7 +55,7 @@ Las características anteriores representan una nueva forma de desarrollar aplic
 * Desacopla a la fuente de datos con el consumidor.
 * Al obtener los datos, notifica de inmediato a los consumidores interesados.
 * Consumidores son notificados varias veces conforme los datos llegan.
-##### Ejemplo:
+##### Ejemplo 1:
 * Configuración gradle:
 ```groovy 
 apply plugin: 'java'
@@ -111,7 +111,7 @@ public class LibroDAO {
     }
 }
 ```
-* Clase `LibroService` Obtiene objetos `Observable<Libro>`
+* Clase `LibroService` Obtiene objetos `Observable<Libro>`.  En una arquitectura síncrona, este método regresaría ```List<Libro>```
 
 ```Java
 public class LibroService {
@@ -153,7 +153,71 @@ Libro [nombre=El Código da Vinci, clave=006]
 Libro [nombre=Crepúsculo, clave=007]
 Libro [nombre=Lo que el viento se llevó , clave=008]
 ```
+##### Ejemplo 2.
+* En programación reactiva los datos que llegan al Observer pudieran no estar en el formato deseado. 
+* Por ejemplo, se desea mostrar únicamente los nombres de los libros en lugar de la salida del método ```toString```.
+* Se puede aplicar una transformación *al vuelo* empleando el método ```map```	
+* La nueva versión del método ```buscaLibro``` es:
+```java
+private void buscaLibros() {
+	// libroService.getAll().subscribe(System.out::println);
+	libroService.getAll().map(
+		libro -> libro.getNombre()).subscribe(System.out::println);
+}
+```
+* La salida ahora es:
+```
+La Biblia
+Citas del Presidente Mao Tse-Tung
+Harry Potter
+El Señor de los Anillos
+El Alquimista
+El Código da Vinci
+Crepúsculo
+Lo que el viento se llevó 
+```
+* Para comparar las diferencias con la programación síncrona, el siguiente código muestra una nueva versión del ejemplo anterior, pero sin el uso de JavaRx:
+
+```java
+private void buscaLibros() {
+    // libroService.getAll().subscribe(System.out::println);
+    // libroService.getAll().map(
+    //   libro -> libro.getNombre()).subscribe(System.out::println);
+    
+    // version sincrona
+    libroService.getAll().stream().map(
+	    libro -> libro.getNombre()).forEach(System.out::println);
+}
+```
+* Como se puede observar, es posible aplicar operaciones que comúnmente se aplican a  un Stream de datos (Java Stream), en este caso, el método ```map```. Otros métodos son:
+* ```filtering```
+*  ```groupBy```
+
+### Comparación Eventos síncronos vs eventos asíncronos
+* La programación reactiva suporta tanto valores aislados (escalares) como flujos de datos tanto finitos como infinitos. 
+* Para todos estos casos se emplea ```Observable``` como abstracción.
+* ```Observable``` es la versión asíncrona para manejar un flujo de datos:
+
+|Evento         |Iterable (pull)        |Observable (push)  |
+|---------------|-----------------------|-------------------|
+|Obtener datos  |```T next()```         |```onNext(T)```    |
+|Ocurre error   |```throws Exception``` |```onError(T)```   |
+|Fin del flujo  |```!hasNext()```       |```onCompleted()```
+
+### Comparación Observer y Observable
+* Observable representa la fuente del stream de datos (Sender)
+* Observer escucha  por datos emitidos (Receiver)
+* Observer se subscribe (escucha) al Observable.
+* Observer actua ante la ocurrencia de un evento: secuencia de datos emitida por el Observable.
+* Varios Observers pueden subscribirse al mismo Observable.
+### Arquitectura Observable
+1. Definir un Observer con el código a ejecutar para cada valor emitido por el Observable.
+2. Llamar un método que regrese un objeto ```Observable```
+3. Suscribir al ```Observer``` empleando el objeto anterior tipo ```Observable```.
+4. Indicarle al ```Observable``` que tiene un nuevo subscriptor esperando valores  una vez que estén disponibles.
+5. El método ```subscribe```  conecta o asocia  aun ```Observer``` con un ```Observable```. El subscriptor no requiere bloquear el hilo de ejecución, los valores llegarán al ```Observer``` (llegarán al código especificado) cuando estén listos.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc2MjgyNzJdfQ==
+eyJoaXN0b3J5IjpbLTE1NDgzNTQ5Ml19
 -->
