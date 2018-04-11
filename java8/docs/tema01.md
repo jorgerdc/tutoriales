@@ -4,10 +4,24 @@
 * Lambdas
 *  Streams
 * Programación funcional
-* Nuevas funcionalidades
+* Pasar código como parámetro a un método.
+ *E*Ejemplo:
+    
+
+-   Suponer 2 métodos con código similar. Solo algunas líneas son diferentes.
+    
+-   En Java 8 es posible pasar como argumento el código que es diferente y dejar uno solo con el código común: Parametrización de comportamiento.
+    
+-   Antes de Java 8 esto se realizaba con Clases anónimas.
+    
+
+-   Esta capacidad de pasar código permite establecer un nuevo estilo de programación: Programación funcional.
+    
+
+Al código que se pasa como argumento se le llama función.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjAzNTMwNDIsMTg1MzAzNjc0MSwtNj
+eyJoaXN0b3J5IjpbLTE5NTAxMDI0NjcsMTg1MzAzNjc0MSwtNj
 c3MTIzMjY0XX0=
 -->
