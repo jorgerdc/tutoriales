@@ -26,45 +26,45 @@ import java.util.List;
  */
 public class Ejemplo01ArchivosOcultos {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		muestraArchivosOcultosJava7();
-		muestraArchivosOcultosJava8();
-	}
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        muestraArchivosOcultosJava7();
+        muestraArchivosOcultosJava8();
+    }
 
-	/**
-	 * Imprime los archivos ocultos del directorio temporal del sistema empleabdo programación
-	 * imperativa.
-	 */
+    /**
+     * Imprime los archivos ocultos del directorio temporal del sistema empleabdo programación
+     * imperativa.
+     */
 
-	private static void muestraArchivosOcultosJava7() {
-		File[] archivosOcultos = new File(System.getProperty("java.io.tmpdir"))
-			.listFiles(new FileFilter() {
-				@Override
-				public boolean accept(File f) {
-					return f.isHidden();
-				}
-			});
-		System.out.println("Archivos ocultos con java < 8 :");
-		for (File file : archivosOcultos) {
-			System.out.println(file.getAbsolutePath());
-		}
+    private static void muestraArchivosOcultosJava7() {
+        File[] archivosOcultos = new File(System.getProperty("java.io.tmpdir"))
+            .listFiles(new FileFilter() {
+                @Override
+                public boolean accept(File f) {
+                    return f.isHidden();
+                }
+            });
+        System.out.println("Archivos ocultos con java < 8 :");
+        for (File file : archivosOcultos) {
+            System.out.println(file.getAbsolutePath());
+        }
 
-	}
+    }
 
-	/**
-	 * Imprime los archivos ocultos del directorio temporal del sistema empleando expresiones
-	 * lambda y Referencias a métodos.
-	 */
-	private static void muestraArchivosOcultosJava8() {
-		List<File> files;
+    /**
+     * Imprime los archivos ocultos del directorio temporal del sistema empleando expresiones
+     * lambda y Referencias a métodos.
+     */
+    private static void muestraArchivosOcultosJava8() {
+        List<File> files;
 
-		System.out.println("Archivos ocultos con java  8 :");
-		files = Arrays
-			.asList(new File(System.getProperty("java.io.tmpdir")).listFiles(File::isHidden));
-		files.forEach(System.out::println);
+        System.out.println("Archivos ocultos con java  8 :");
+        files = Arrays
+            .asList(new File(System.getProperty("java.io.tmpdir")).listFiles(File::isHidden));
+        files.forEach(System.out::println);
 
-	}
+    }
 }
