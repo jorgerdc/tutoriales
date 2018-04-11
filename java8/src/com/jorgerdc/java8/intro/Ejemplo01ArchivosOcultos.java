@@ -38,14 +38,15 @@ public class Ejemplo01ArchivosOcultos {
 	 * Imprime los archivos ocultos del directorio temporal del sistema empleabdo programación
 	 * imperativa.
 	 */
+
 	private static void muestraArchivosOcultosJava7() {
 		File[] archivosOcultos = new File(System.getProperty("java.io.tmpdir"))
-				.listFiles(new FileFilter() {
-					@Override
-					public boolean accept(File f) {
-						return f.isHidden();
-					}
-				});
+			.listFiles(new FileFilter() {
+				@Override
+				public boolean accept(File f) {
+					return f.isHidden();
+				}
+			});
 		System.out.println("Archivos ocultos con java < 8 :");
 		for (File file : archivosOcultos) {
 			System.out.println(file.getAbsolutePath());
@@ -61,8 +62,8 @@ public class Ejemplo01ArchivosOcultos {
 		List<File> files;
 
 		System.out.println("Archivos ocultos con java  8 :");
-		files = Arrays.asList(
-				new File(System.getProperty("java.io.tmpdir")).listFiles(File::isHidden));
+		files = Arrays
+			.asList(new File(System.getProperty("java.io.tmpdir")).listFiles(File::isHidden));
 		files.forEach(System.out::println);
 
 	}
