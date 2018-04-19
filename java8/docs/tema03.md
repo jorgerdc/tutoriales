@@ -47,9 +47,10 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 //4. Mismo caso, pero la expresion lambda está formada por statements (requiere {} y el uso de return).
 () -> { return 42; }
 
-//5. No acepta parámetros no regresa valor (void) y el cup
+//5. No acepta parámetros no regresa valor (void), cuerpo vacío
+() -> {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njg0MjE3NTYsOTkyNzYxMTE1LC0xND
+eyJoaXN0b3J5IjpbLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xND
 E3MTU0MzM5XX0=
 -->
