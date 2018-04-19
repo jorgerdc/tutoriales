@@ -247,16 +247,18 @@ x=10;
 
 #### Tipos de referencias a métodos.
 * Referencia a métodos de clase (estáticos)
-	* Sintaxis: ```
-* 
+	* Ejemplo: ```Integer::parseInt```
+* Referencias a métodos de instancia
+	* Ejemplo: ```String::substring```
+* Referencias 
 
 
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY2NjkwOTc2LC02ODQ1NDU0ODYsOTgzMD
-M5NjIxLDE2NjA4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5
-MiwxNDA5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MT
-IxNDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1
-LC0xMzA4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLD
-k5Mjc2MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMjAxNzcwMjA0OCwtNjg0NTQ1NDg2LDk4Mz
+AzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3
+OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxND
+EyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4
+NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MC
+w5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
 -->
