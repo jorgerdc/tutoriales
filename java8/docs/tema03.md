@@ -138,31 +138,19 @@ public interface ReaderProcessor {
 * Procesa un {@link BufferedReader}. La lógica que se emplea para procesar al
 * archivo se pasa en el parámetro processor a través de una expresión lambda.
 * @param file
-
 * @param processor
-
 * @return
-
 */
-
 public static String processFile(String file, ReaderProcessor processor) {
-
-  
-
-try (BufferedReader reader = new BufferedReader(new FileReader(new File(file)))) {
-
-return processor.procesa(reader);
-
-} catch (IOException e) {
-
-throw new RuntimeException(e);
-
-}
-
+	try (BufferedReader reader = new BufferedReader(new FileReader(new File(file)))) {
+		return processor.procesa(reader);
+	} catch (IOException e) {
+		throw new RuntimeException(e);
+	}
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk2MzY4OTAsMzE0MTIxNDYxLC03OD
+eyJoaXN0b3J5IjpbLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03OD
 M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
 NTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNS
 wtMTQxNzE1NDMzOV19
