@@ -250,6 +250,7 @@ x=10;
 	* Ejemplo: ```Integer::parseInt```
 * Referencias a métodos de instancia
 	* Ejemplo: ```String::substring```
+	* Ejemol
 * Referencias  a un método a partir de un objeto
 	* Ejemplo: Suponer la existencia de la variable ``curso`` , la referencia será ```curso::getNombre```
 * 
@@ -257,10 +258,10 @@ x=10;
 
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NzkyNTUzMSwtNjg0NTQ1NDg2LDk4Mz
-AzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3
-OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxND
-EyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4
-NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MC
-w5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbMTIyMzUyMDUsLTY4NDU0NTQ4Niw5ODMwMz
+k2MjEsMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzky
+LDE0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMj
+E0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUs
+LTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOT
+kyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
