@@ -97,10 +97,11 @@ boolean accept( File dir,String name);
 * La importancia de las interfaces funcionales es que  estas pueden ser implementadas por una expresión lambda!.
 ##### Ejemplo:
 ```Java
-Runnable r = () -> System.out.println("Hola Mundo Lamb
+Runnable r = () -> System.out.println("Hola Mundo Lambda");
 ```
+* La firma del método de la interface funcional 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5Nzg5MTA5LDE1NjIxMTU5MTksMTg3MD
-cwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5
-NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTMxOTExODc1NSwxNTYyMTE1OTE5LDE4Nz
+A3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQz
+OTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
