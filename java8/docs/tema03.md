@@ -106,10 +106,12 @@ void run();
 ```
 #### @FunctionalInterface
 * Esta anotación se emplea en interfaces para indicar que  se trata de una interface funcional. 
-* No es obligatoria, pero si recomendada si  la interface fue diseñada para tal pro`p
+* No es obligatoria, pero si recomendada si  la interface fue diseñada para tal propósito.
+* El compilador verificará las condiciones antes descritas y generará error en caso de que la interface contenga más de un método abstracto ya sea de forma directa o por herencia.
+* La interf
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTI3ODgwMTMsLTc4Mzg1MDI4OCwxNT
-YyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3
-NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0Mz
-M5XX0=
+eyJoaXN0b3J5IjpbMTk5NjM5ODU2NiwtNzgzODUwMjg4LDE1Nj
+IxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0
+NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMz
+ldfQ==
 -->
