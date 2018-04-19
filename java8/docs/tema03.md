@@ -240,12 +240,12 @@ x=10;
 * Se emplea el operador ::  para hacer referencia a un método.
 #####Ejemplos:
 
-|Expresión lambda               | descriptor funcional |
+|Expresión lambda        | Equivalente como referencia a método |
 |------------------------|-----------------------|
-|```Predicate<T>```      |```T -> boolean```     |
+|```(str,i) -> str.substring```      |```T -> boolean```     |
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMDcyMjY3NywtNjg0NTQ1NDg2LDk4Mz
+eyJoaXN0b3J5IjpbLTk4ODY1Mzk0NiwtNjg0NTQ1NDg2LDk4Mz
 AzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3
 OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxND
 EyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4
