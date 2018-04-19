@@ -84,9 +84,10 @@ boolean accept( File dir,String name);
 * Observar que la estructura de la expresión coincide con la firma del método `accept`:  Recibe 2 parámetros  `(File,String)` y regresa un `boolean` 
 * Al existir dicha coincidencia, la expresión lambda puede  *implementar* al método  `accept`y al ser el  único método de la interfaz, la expresión lambda *implementa  funcionalmente a* `FilenameFilter`.
 * De lo anterior, si una Interface declara  un solo método, se le puede llamar *Interface funcional*.
-* Finalmente, observar que en este ejemplo, el tipo de dato de los parámetros no es necesario ya que estos se infieren al  ser empleada c
+* Finalmente, observar que en este ejemplo, el tipo de dato de los parámetros no es necesario ya que estos se infieren al  ser empleada como parámetro del método `list`.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MjM0NTI5MiwtMTMwODM2MTU0MiwtMj
+eyJoaXN0b3J5IjpbLTI3ODI4MTA0NSwtMTMwODM2MTU0MiwtMj
 E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
 NTQzMzldfQ==
 -->
