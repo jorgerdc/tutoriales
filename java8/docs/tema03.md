@@ -69,8 +69,7 @@ File myFiles;
 String[] filteredFiles;
 myFiles = new File("/tmp");
 filteredFiles = myFiles
-	.list((file, fileName) -> file.canWrite() && 
-		fileName.endsWith(".txt"));
+	.list((file, fileName) -> file.canWrite() && fileName.endsWith(".txt"));
 }
 ```
 * En este ejemplo,  se realiza un filtrado de archivos. 
@@ -87,7 +86,7 @@ boolean accept( File dir,String name);
 * Finalmente, observar que en este ejemplo, el tipo de dato de los parámetros no es necesario ya que estos se infieren al  ser empleada como parámetro del método `list`.
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3ODI4MTA0NSwtMTMwODM2MTU0MiwtMj
+eyJoaXN0b3J5IjpbMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMj
 E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
 NTQzMzldfQ==
 -->
