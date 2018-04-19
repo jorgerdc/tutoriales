@@ -40,13 +40,16 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 (int x,int y) -> {
 	System.out.print(x+y);
 }
-//3. No acepta parámetros. Regresa el valor 42 (expresión)
+
+//3.  No acepta parámetros. Regresa el valor 42 (expresión)
 () -> 42
-// Mismo caso, pero la expresion lambda está formada por statements (requiere {} y el uso de return).
+
+//4. Mismo caso, pero la expresion lambda está formada por statements (requiere {} y el uso de return).
 () -> { return 42; }
 
+//5. No acepta parámetros no regresa valor (void) y el cup
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkzMDcyNDY3LDk5Mjc2MTExNSwtMTQxNz
-E1NDMzOV19
+eyJoaXN0b3J5IjpbLTE2Njg0MjE3NTYsOTkyNzYxMTE1LC0xND
+E3MTU0MzM5XX0=
 -->
