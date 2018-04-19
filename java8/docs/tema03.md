@@ -25,7 +25,10 @@ comparatorOld = new Comparator<Curso>() {
 // java 8
 comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre());
 ```
+### Elementos de una Expresión Lambda
 
+* Lista de parámetros
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2ODEzMjk3MywtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMTk4MTI3NDY1OSwtMTQxNzE1NDMzOV19
 -->
