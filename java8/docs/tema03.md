@@ -1,4 +1,3 @@
-test# Java 8
 ## 3. Expresiones Lambda
 
 ### Definición de expresión Lambda
@@ -63,6 +62,6 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTM5NzkxLC0xMTM0Mzk0OTYwLDk5Mj
-c2MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOT
+kyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
