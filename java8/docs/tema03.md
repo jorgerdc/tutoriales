@@ -109,10 +109,13 @@ void run();
 * No es obligatoria, pero si recomendada si  la interface fue diseñada para tal propósito.
 * El compilador verificará las condiciones antes descritas y generará error en caso de que la interface contenga más de un método abstracto ya sea de forma directa o por herencia.
 * La interface puede ser funcional aunque contenga  definiciones de métodos (default methods).
-* 
+
+##### Ejemplo:
+* Crear un programa que procese  un Archivo a través de un `BufferedReader`.
+* Implementar en concepto de *Parametrización del comportamento* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2Mj
-ExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3
-NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV
-19
+eyJoaXN0b3J5IjpbMTc2MDQzMDU4NSwzMTQxMjE0NjEsLTc4Mz
+g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
+NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
+0xNDE3MTU0MzM5XX0=
 -->
