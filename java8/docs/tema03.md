@@ -187,11 +187,12 @@ public static void main(String[] args) throws IOException {
 
 |Interface               | descriptor funcional |
 |------------------------|-----------------------|
-|```Predicate<T>```  |```T next()```         |   
+|```Predicate<T>```      |```T -> boolean```     |
+|```Consumer<T>```      |```T -> void```          |   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAyNjg3NjM4LDE0MDk5NDYyMDUsLTM3OD
-k0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwx
-NTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxND
-E3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0
-MzM5XX0=
+eyJoaXN0b3J5IjpbLTgxNjU1MDUxNiwxNDA5OTQ2MjA1LC0zNz
+g5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgs
+MTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMT
+QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
+NDMzOV19
 -->
