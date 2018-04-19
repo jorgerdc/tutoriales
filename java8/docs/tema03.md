@@ -118,9 +118,12 @@ void run();
 	* Caso 2:  Leer 2 líneas del archivo
 	* Caso 3: Leer todo el archivo y pasarlo a minúsculas.
 * Implementar en concepto de *Parametrización del comportamento*.  
-* Código repetitivo:  Instanciar la clase 
+* Código repetitivo:  
+	* Instanciar la clase `BufferedReader`
+	* Transformar  `IOException`a `RuntimeException`
+	* Liberar o cerrar el reader.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MjM1NDQwNywzMTQxMjE0NjEsLTc4Mz
+eyJoaXN0b3J5IjpbMTQwMTE0NDQ0NCwzMTQxMjE0NjEsLTc4Mz
 g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
 NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
 0xNDE3MTU0MzM5XX0=
