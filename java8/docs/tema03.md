@@ -221,9 +221,15 @@ Runnable r = () -> System.out.print(x);
 * Existe una restricción a lo anterior.  Las variables deben ser:
 	* Declaradas como final
 	* Ser efectivamente finales.
-* P
+* El siguiente código no compilaría al agregar la tercer línea:
+```Java
+int x =0;
+Runnable r = () -> System.out.print(x);
+x=10;
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MzIzMjU4MywtMTMzMTE5MTc5MiwxND
+eyJoaXN0b3J5IjpbLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxND
 A5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYx
 LC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMz
 A4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2
