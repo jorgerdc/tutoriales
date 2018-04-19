@@ -42,8 +42,9 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 }
 // No acepta parámetros. Regresa el valor 42
 () -> 42
+// () -> { return 42; }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI1MzA4ODMsOTkyNzYxMTE1LC0xND
-E3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTA1ODMyNDg4LDk5Mjc2MTExNSwtMTQxNz
+E1NDMzOV19
 -->
