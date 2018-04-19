@@ -193,9 +193,11 @@ public static void main(String[] args) throws IOException {
 |```Supplier<T>```      |``` () -> T```      |
 |```UnaryOperator<T>``` |``` T -> T```      |
 |```BinaryOperator<T,T>``` |``` (T,T) -> T```      |
+|```BiPredicate<L,R>```      |```(L,R) -> boolean```     |
+|```BiConsumer<T>```       |```T -> void```        |
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMzMzcxMTk2LDE0MDk5NDYyMDUsLTM3OD
+eyJoaXN0b3J5IjpbLTMwNTA4NzAwLDE0MDk5NDYyMDUsLTM3OD
 k0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwx
 NTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxND
 E3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0
