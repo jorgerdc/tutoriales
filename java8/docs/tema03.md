@@ -234,13 +234,15 @@ x=10;
 	* Para resolver esto, se hace una copia de la variable para emplearse dentro de la expresión.
 	* Para evitar inconsistencias con el valor original,  se restringe que la variable sea modificada (final  o effectively final).
 	### Referencias a métodos.
-	* Este mecanismo permite hacer uso de definiciones de métodos existentes como expresiones lambda.
+* Este mecanismo permite hacer uso de definiciones de métodos existentes como expresiones lambda.
+* En algunas ocasiones su uso permite obtener un código más entendible que con el uso de una expresión lambda.
+* 
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDY0NzIwMzEsOTgzMDM5NjIxLDE2Nj
-A4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2
-MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03OD
-M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
-NTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNS
-wtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMTY2MD
+g5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5NDYy
+MDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mz
+g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
+NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
+0xNDE3MTU0MzM5XX0=
 -->
