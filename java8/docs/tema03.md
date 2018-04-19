@@ -81,9 +81,9 @@ filteredFiles = myFiles
 boolean accept( File dir,String name);
 ```
 * Esta interface es implementada y representada por la expresión lambda del ejemplo. 
-* Observar qe 
+* Observar que la estructura de la expresión coincide con la firma del método `accept`:  Recibe 2 parámetros 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTY1MjAzMCwtMTMwODM2MTU0MiwtMj
-E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
-NTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTg5NDc5OTk0LC0xMzA4MzYxNTQyLC0yMT
+QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
+NDMzOV19
 -->
