@@ -94,9 +94,9 @@ boolean accept( File dir,String name);
 	* `FilenameFilter`
 	* `ActionListener`, etc.
 * En Java 8 se han agregado nuevas interfaces funcionales.
-* La importancia de las interfaces funcionales es que  estas pueden ser implementadas por una expresi´n lambda!.
+* La importancia de las interfaces funcionales es que  estas pueden ser implementadas por una expresión lambda!.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTU3MzgwOTIsMTU2MjExNTkxOSwxOD
-cwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0
-Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMTExNjczODgwNSwxNTYyMTE1OTE5LDE4Nz
+A3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQz
+OTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
