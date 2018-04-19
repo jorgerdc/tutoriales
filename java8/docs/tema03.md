@@ -69,13 +69,13 @@ File myFiles;
 String[] filteredFiles;
 myFiles = new File("/tmp");
 filteredFiles = myFiles
-	.list((file, fileName) -> file.canWrite() && fileName.endsWith(".txt"));
-    }
-
+	.list((file, fileName) -> file.canWrite() && 
+		fileName.endsWith(".txt"));
+}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2MzgwNTc0LC0xMzA4MzYxNTQyLC0yMT
-QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
-NDMzOV19
+eyJoaXN0b3J5IjpbLTE3Mjk2MzEwOTAsLTEzMDgzNjE1NDIsLT
+IxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3
+MTU0MzM5XX0=
 -->
