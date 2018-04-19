@@ -202,11 +202,12 @@ public static void main(String[] args) throws IOException {
 * Ninguno de los descriptores funcionales (métodos) de las interfaces funcionales del API de java contienen la cláusula ```throws``
 * Lo anterior significa que si el código de la expresión lambda lanza una *checked exception* , se tienen 2 mecanismos para manejarla:
 	* Emplear un  bloque ```try - catch ```
-	* Crear interfaces funcionales  personalizadas y agregar la cláusula ```throws```  
+	* Crear interfaces funcionales  personalizadas y agregar la cláusula ```throws```
+* El el ejemplo anterior,  la interface funcional  ```ReaderProcessor```  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyOTEyNzI0NCwxNDA5OTQ2MjA1LC0zNz
-g5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgs
-MTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMT
-QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
-NDMzOV19
+eyJoaXN0b3J5IjpbLTEwMTAzMjYzMTgsMTQwOTk0NjIwNSwtMz
+c4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4
+LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMj
+E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
+NTQzMzldfQ==
 -->
