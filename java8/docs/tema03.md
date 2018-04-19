@@ -122,10 +122,11 @@ void run();
 	* Instanciar la clase `BufferedReader`
 	* Transformar  `IOException`a `RuntimeException`
 	* Liberar o cerrar el reader.
-* El código repetititivo se deberá
+* El código repetitivo se deberá programar una sola vez, y  la lógica funcional se va a parametrizar (caso1, caso2 y caso3) empleando expresiones lambda.
+* Para emplear una expresión  lambda se r
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4MTYzMTA5LDMxNDEyMTQ2MSwtNzgzOD
-UwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0
-MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLT
-E0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbNjM4NjkwMTAsMzE0MTIxNDYxLC03ODM4NT
+AyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQy
+LC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMT
+QxNzE1NDMzOV19
 -->
