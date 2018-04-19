@@ -10,6 +10,11 @@ test# Java 8
 * Es concisa por su sintaxis simple. Permiten pasar código de forma simple.
 * Permiten implementar el patrón: *Parametrización del comportamiento* 
 * Resultado: código  más claro, flexible
+
+##### Ejemplo:
+
+    enter code here
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbOTQyMzE4MTE1LC0xNDE3MTU0MzM5XX0=
 -->
