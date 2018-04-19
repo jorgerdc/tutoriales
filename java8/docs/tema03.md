@@ -14,6 +14,7 @@ test# Java 8
 ##### Ejemplo:
 
 ```Java
+Comparator<Curso>  comparatorOld,  comparatorLambda;
 // antes de Java 8 (uso de clases anónimas)
 comparatorOld = new Comparator<Curso>() {
    @Override
@@ -26,5 +27,5 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTYyMzg2NiwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMTY2ODEzMjk3MywtMTQxNzE1NDMzOV19
 -->
