@@ -181,10 +181,10 @@ public static void main(String[] args) throws IOException {
 	System.out.println(result);
 }
 ```
-
+* Observar que en cada caso, solo se envía la ruta del archivo y una expresión lambda que contie
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTUxNjg4MjYsLTM3ODk0OSwtMTc0MD
-U5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5
-LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLT
-ExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbNjM5MDUwMTQ3LC0zNzg5NDksLTE3NDA1OT
+A0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwx
+ODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMT
+M0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV19
 -->
