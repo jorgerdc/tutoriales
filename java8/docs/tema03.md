@@ -108,10 +108,11 @@ void run();
 * Esta anotación se emplea en interfaces para indicar que  se trata de una interface funcional. 
 * No es obligatoria, pero si recomendada si  la interface fue diseñada para tal propósito.
 * El compilador verificará las condiciones antes descritas y generará error en caso de que la interface contenga más de un método abstracto ya sea de forma directa o por herencia.
-* La interf
+* La interface puede ser funcional aunque contenga  definiciones de métodos (default methods).
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjM5ODU2NiwtNzgzODUwMjg4LDE1Nj
-IxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0
-NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMz
-ldfQ==
+eyJoaXN0b3J5IjpbMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2Mj
+ExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3
+NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV
+19
 -->
