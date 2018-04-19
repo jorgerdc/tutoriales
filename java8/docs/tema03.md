@@ -198,9 +198,10 @@ public static void main(String[] args) throws IOException {
  |```BiFunction<T,U,R>```     |```(T,U) -> R```      |
 * Adicional a estas interfaces,  existen sus correspondientes especializaciones que hacen uso de primitivos para evitar autoboxing (mejorar desempeño).  Por ejemplo: ```IntPredicate, LongPredicate, IntConsumer```, etc.
 
-  
+### Manejo de excepciones 
+* Ninguno de los descriptores funcionales (métodos) de las interfaces funcionales del API de java contienen la cla  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDc3OTIyNCwxNDA5OTQ2MjA1LC0zNz
+eyJoaXN0b3J5IjpbMTg1MzIxMzU1OSwxNDA5OTQ2MjA1LC0zNz
 g5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgs
 MTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMT
 QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
