@@ -84,9 +84,13 @@ boolean accept( File dir,String name);
 * Al existir dicha coincidencia, la expresión lambda puede  *implementar* al método  `accept`y al ser el  único método de la interfaz, la expresión lambda *implementa  funcionalmente a* `FilenameFilter`.
 * De lo anterior, si una Interface declara  un solo método, se le puede llamar *Interface funcional*.
 * Observar que en este ejemplo, el tipo de dato de los parámetros no es necesario ya que estos se infieren al  ser empleada como parámetro del método `list`.
-* Notar que una misma expresión lambda pudiera implementar a varias interfaces funcionales  siempre y cuando su estructura sea c
+* Notar que una misma expresión lambda pudiera implementar a varias interfaces funcionales  siempre y cuando su estructura sea *compatible* con la firma del método de la interface. 
+
+### Interfaces funcionales.
+
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjA3Mzc0NiwxODcwNzAwNTg1LC0xMz
+eyJoaXN0b3J5IjpbLTcyNTUzMjUzMSwxODcwNzAwNTg1LC0xMz
 A4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2
 MTExNSwtMTQxNzE1NDMzOV19
 -->
