@@ -73,9 +73,10 @@ filteredFiles = myFiles
 		fileName.endsWith(".txt"));
 }
 ```
-
+* En este ejemplo,  se realiza un filtrado de archivos. 
+* Se obtienen todos aquellos archivos 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk2MzEwOTAsLTEzMDgzNjE1NDIsLT
-IxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3
-MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTQ3MTIwNDAxNiwtMTMwODM2MTU0MiwtMj
+E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
+NTQzMzldfQ==
 -->
