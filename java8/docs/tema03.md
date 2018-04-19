@@ -272,13 +272,13 @@ supplier = String::new;
 System.out.println("s2: " + supplier.get());
 ```
 * En este ejemplo se hace una referencia al constructor de la clase  ```String``` el cual es compatible con la expresión lambda que define a  la interface  ```Supplier```,  es decir: ```() -> T```
-* 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzEyMTcyMywtMzQwOTYxNTUzLC0xOD
-QyOTU5NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLDE2NjA4OTk0
-NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC
-0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAy
-ODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC
-0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQx
-NzE1NDMzOV19
+eyJoaXN0b3J5IjpbMjAyNjM5NzI5NywxNzI3MTIxNzIzLC0zND
+A5NjE1NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2
+MjEsMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLD
+E0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0
+NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLT
+EzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTky
+NzYxMTE1XX0=
 -->
