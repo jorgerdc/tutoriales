@@ -80,9 +80,10 @@ filteredFiles = myFiles
 ```Java
 boolean accept( File dir,String name);
 ```
-
+* Esta interface es implementada y representada por la expresión lambda del ejemplo. 
+* Observar qe 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE5MTkwNDUsLTEzMDgzNjE1NDIsLT
-IxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3
-MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTEwOTY1MjAzMCwtMTMwODM2MTU0MiwtMj
+E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
+NTQzMzldfQ==
 -->
