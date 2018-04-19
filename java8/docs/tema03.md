@@ -230,12 +230,13 @@ x=10;
 * Esta restricción se debe a lo siguiente:
 	* Las variables locales se guardan en el stack. 
 	* Suponer que la expresión lambda se ejecuta en otro thread (T2) diferente al thread que creó la variable (T1).
-	* Si T1  muere debido a que terminó la ejecución del método, la variable ya no estar  
+	* Si T1  muere debido a que terminó la ejecución del método, la variable ya no estaría disponible dentro de la expresión lambda y por lo tanto no se podría emplear.
+	* Para resolver esto, se 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1OTgxNTE3LDE2NjA4OTk0NDAsLTk2OT
-UyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC0zNzg5NDks
-LTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2Mj
-ExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3
-NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV
-19
+eyJoaXN0b3J5IjpbMTUyMjIxNTM5NCwxNjYwODk5NDQwLC05Nj
+k1MjQ5NzEsLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4OTQ5
+LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1Nj
+IxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0
+NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMz
+ldfQ==
 -->
