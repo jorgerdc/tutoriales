@@ -182,11 +182,13 @@ public static void main(String[] args) throws IOException {
 }
 ```
 * Observar que en cada caso, solo se envía la ruta del archivo y una expresión lambda que contiene la lógica a ejecutar. La  expresión lambda  implementa funcionalmente a la interface `ReaderProcessor`.
-### Princ
+### Principales Interfaces Funcionales 
+* Se encuentran en el paquete ```java.util.function```
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTYyOTU5MTIsMTQwOTk0NjIwNSwtMz
-c4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4
-LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMj
-E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
-NTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTIzMzc2MjQ0NSwxNDA5OTQ2MjA1LC0zNz
+g5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgs
+MTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMT
+QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
+NDMzOV19
 -->
