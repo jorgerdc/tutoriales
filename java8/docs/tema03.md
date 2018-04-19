@@ -203,9 +203,16 @@ public static void main(String[] args) throws IOException {
 * Lo anterior significa que si el código de la expresión lambda lanza una *checked exception* , se tienen 2 mecanismos para manejarla:
 	* Emplear un  bloque ```try - catch ```
 	* Crear interfaces funcionales  personalizadas y agregar la cláusula ```throws```
-* El el ejemplo anterior,  la interface funcional  ```ReaderProcessor```  
+* El el ejemplo anterior,  la interface funcional  ```ReaderProcessor```   se incluye esta cláusula, y por lo tanto el código de la  expresión lambda no requiere un manejo explícito de ```IOException```.
+```Java
+@FunctionalInterface
+public interface ReaderProcessor {
+	String procesa(BufferedReader reader) throws IOException;
+}
+``` 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTAzMjYzMTgsMTQwOTk0NjIwNSwtMz
+eyJoaXN0b3J5IjpbLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMz
 c4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4
 LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMj
 E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
