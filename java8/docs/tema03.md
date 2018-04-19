@@ -13,8 +13,21 @@ test# Java 8
 
 ##### Ejemplo:
 
-    enter code here
+```Java
+// antes de Java 8 (uso de clases anónimas)
+        comparatorOld = new Comparator<Curso>() {
+            @Override
+            public int compare(Curso o1, Curso o2) {
+                return o1.getNombre().compareTo(o2.getNombre());
+            }
+        };
+        // java 8
+        comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre());
+// java 8
 
+comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre());
+```
+s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyMzE4MTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTA1NDgwMTUyOSwtMTQxNzE1NDMzOV19
 -->
