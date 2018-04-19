@@ -123,10 +123,11 @@ void run();
 	* Transformar  `IOException`a `RuntimeException`
 	* Liberar o cerrar el reader.
 * El código repetitivo se deberá programar una sola vez, y  la lógica funcional se va a parametrizar (caso1, caso2 y caso3) empleando expresiones lambda.
+##### Solución
 * Para emplear una expresión  lambda se r
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4NjkwMTAsMzE0MTIxNDYxLC03ODM4NT
-AyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQy
-LC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMT
-QxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMTczNDE0MTg5NSwzMTQxMjE0NjEsLTc4Mz
+g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
+NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
+0xNDE3MTU0MzM5XX0=
 -->
