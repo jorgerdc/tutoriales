@@ -149,9 +149,10 @@ public static String processFile(String file, ReaderProcessor processor) {
 	}
 }
 ```
+* Este método crea una instancia de `BufferedReader` e  invoca la ejecución 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03OD
-M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
-NTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNS
-wtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbLTE4MjcwOTI2MDgsLTE3NDA1OTA0NDIsMz
+E0MTIxNDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAw
+NTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OT
+YwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV19
 -->
