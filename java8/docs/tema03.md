@@ -287,13 +287,14 @@ System.out.println(myFile.getAbsolutePath());
 ```
 * En este ejemplo, se  usa la interface ```Function```que recibe un  ```String``` y regresa un objeto ```java.io.File```
 * La expresión lambda crea un objeto ```File```empleando el constructor que acepta un ```String```.  La expresión es ejecutada al invocar al método ```apply```.
-* Empleando referencias a métodos , se obtiene el mismo resultado 
+* En la segunda parte , se obtiene el mismo resultado haciendo referencia al constructor de la clase ```File```que recibe un ```String```como parámetro.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM3ODc2MzIyLDE3MjcxMjE3MjMsLTM0MD
-k2MTU1MywtMTg0Mjk1OTQ0OSwtNjg0NTQ1NDg2LDk4MzAzOTYy
-MSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3OTIsMT
-QwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2
-MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMT
-MwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3
-NjExMTVdfQ==
+eyJoaXN0b3J5IjpbLTY2MTk2MDkyNywxNzI3MTIxNzIzLC0zND
+A5NjE1NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2
+MjEsMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLD
+E0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0
+NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLT
+EzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTky
+NzYxMTE1XX0=
 -->
