@@ -112,19 +112,20 @@ void run();
 
 ##### Ejemplo:
 * Crear un programa que procese  un archivo a través de un `BufferedReader`. 
-* Este archivo se puede procesar varias veces con diferente lógica (lógica funcional)
-* Suponer los siguientes casos:
+* Este archivo se puede procesar varias veces con diferente lógica (lógica funcional).
+* Suponer los siguientes casos funcionales (ficticios).
 	* Caso 1: Leer la primer línea del archivo
 	* Caso 2:  Leer 2 líneas del archivo
 	* Caso 3: Leer todo el archivo y pasarlo a minúsculas.
-* Implementar en concepto de *Parametrización del comportamento*.  
+* Implementar el concepto de *Parametrización del comportamiento*.  
 * Código repetitivo:  
 	* Instanciar la clase `BufferedReader`
 	* Transformar  `IOException`a `RuntimeException`
 	* Liberar o cerrar el reader.
+* El código repetititivo se deberá
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTE0NDQ0NCwzMTQxMjE0NjEsLTc4Mz
-g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
-NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
-0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbNDI4MTYzMTA5LDMxNDEyMTQ2MSwtNzgzOD
+UwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0
+MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLT
+E0MTcxNTQzMzldfQ==
 -->
