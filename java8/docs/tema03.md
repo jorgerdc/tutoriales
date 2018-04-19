@@ -40,11 +40,12 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 (int x,int y) -> {
 	System.out.print(x+y);
 }
-// No acepta parámetros. Regresa el valor 42
+// No acepta parámetros. Regresa el valor 42 (expresión)
 () -> 42
-// () -> { return 42; }
+// Mismo caso, pero la expresion lambda está formada por st
+() -> { return 42; }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODMyNDg4LDk5Mjc2MTExNSwtMTQxNz
-E1NDMzOV19
+eyJoaXN0b3J5IjpbLTE4NjY3MTEzMDUsOTkyNzYxMTE1LC0xND
+E3MTU0MzM5XX0=
 -->
