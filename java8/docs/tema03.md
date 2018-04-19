@@ -233,13 +233,14 @@ x=10;
 	* Si T1  muere debido a que terminó la ejecución del método, la variable ya no estaría disponible dentro de la expresión lambda y por lo tanto no se podría emplear.
 	* Para resolver esto, se hace una copia de la variable para emplearse dentro de la expresión.
 	* Para evitar inconsistencias con el valor original,  se restringe que la variable sea modificada (final  o effectively final).
-	
+	### Referencias a métodos.
+	* Este mecanismo permite hacer uso de definiciones de métodos existentes como expresiones lambda.
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzMDM5NjIxLDE2NjA4OTk0NDAsLTk2OT
-UyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC0zNzg5NDks
-LTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2Mj
-ExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3
-NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV
-19
+eyJoaXN0b3J5IjpbLTIwMDY0NzIwMzEsOTgzMDM5NjIxLDE2Nj
+A4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2
+MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03OD
+M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
+NTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNS
+wtMTQxNzE1NDMzOV19
 -->
