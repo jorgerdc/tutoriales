@@ -132,9 +132,12 @@ public interface ReaderProcessor {
 }
 ``` 
 * El método recibe un `BuffferedReader` para realizar el procesamiento de su contenido.
-* 
+* Se tiene un método de utilería que implementa el código repetitivo:
+```Java
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0NTA2ODY2LDMxNDEyMTQ2MSwtNzgzOD
+eyJoaXN0b3J5IjpbMjUxNDEwMDcyLDMxNDEyMTQ2MSwtNzgzOD
 UwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0
 MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLT
 E0MTcxNTQzMzldfQ==
