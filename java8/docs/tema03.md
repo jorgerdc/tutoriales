@@ -215,13 +215,15 @@ public interface ReaderProcessor {
 * Aplican las mismas reglas que una clase anónima.
 * El cuerpo de una expresión lambda puede hacer referencia a una variable que está definida fuera de ella:
 ```Java
-
-
+int x =0;
+Runnable r = () -> System.out.print(x);
+X = 10;
+```
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NzkxMTE1OSwtMTMzMTE5MTc5MiwxND
-A5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYx
-LC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMz
-A4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2
-MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMjA0MzkwMTM3LC0xMzMxMTkxNzkyLDE0MD
+k5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEs
+LTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMD
+gzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYx
+MTE1LC0xNDE3MTU0MzM5XX0=
 -->
