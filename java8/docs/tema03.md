@@ -228,11 +228,13 @@ Runnable r = () -> System.out.print(x);
 x=10;
 ```
 * Esta restricción se debe a lo siguiente:
-	* Las variables locales se guardan en el stack 
+	* Las variables locales se guardan en el stack. 
+	* Si la expresión lambda se ejecutara en otro thread  diferente al thread que creó la variable (T2)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMz
-MxMTkxNzkyLDE0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0
-MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4Nz
-A3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQz
-OTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTEwNTg2NzI4MywxNjYwODk5NDQwLC05Nj
+k1MjQ5NzEsLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4OTQ5
+LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1Nj
+IxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0
+NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMz
+ldfQ==
 -->
