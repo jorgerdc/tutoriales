@@ -92,9 +92,10 @@ boolean accept( File dir,String name);
 	* `Comparable`
 	* `Runnable`
 	* `FilenameFilter`
-	* `ActionListener`
+	* `ActionListener`, etc.
+* En Java 8 se han agregado nuevas interfaces funcionales.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTEzNzM0NiwxODcwNzAwNTg1LC0xMz
+eyJoaXN0b3J5IjpbMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMz
 A4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2
 MTExNSwtMTQxNzE1NDMzOV19
 -->
