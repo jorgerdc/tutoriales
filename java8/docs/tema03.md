@@ -33,7 +33,10 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 
 ### Estructura de una expresión Lambda.
 * Existen 2 estilos de sintaxis:
-
+```Java
+// 1.  Una sola expresión
+(parametros) -> expresión
+```
 
 
 ##### Ejemplos: 
@@ -56,6 +59,6 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 () -> {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NjYzODIwMSwtMTEzNDM5NDk2MCw5OT
-I3NjExMTUsLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTE5NTA4Nzk0ODcsLTExMzQzOTQ5NjAsOT
+kyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
