@@ -253,15 +253,21 @@ x=10;
 	* Ejemplo: ```String::new``` Referencia al constructor.
 * Referencias  a un método a partir de un objeto
 	* Ejemplo: Suponer la existencia de la variable ``curso`` , la referencia será ```curso::getNombre```
-* 
-
-
+##### Ejemplo:
+```Java
+List<String> lista;
+lista = Arrays.asList("M", "j", "x", "0", "a");
+lista.sort(String::compareToIgnoreCase);
+System.out.println(lista);
+```
+* Observar la referencia al método ```compareToIgnoreCase
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5OD
-MwMzk2MjEsMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkx
-NzkyLDE0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMT
-QxMjE0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1
-ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5Nj
-AsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTc4NTMwNjg2MCwtMTg0Mjk1OTQ0OSwtNj
+g0NTQ1NDg2LDk4MzAzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5
+NzEsLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNz
+QwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5
+MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0Ni
+wtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
+
 -->
