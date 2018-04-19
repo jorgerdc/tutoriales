@@ -286,13 +286,14 @@ myFile = fx1.apply("/tmp/noexiste.txt");
 System.out.println(myFile.getAbsolutePath());
 ```
 * En este ejemplo, se  usa la interface ```Function```que recibe un  ```String``` y regresa un objeto ```java.io.File```
-* La expresión lambda crea un objeto ```File```empleando el constructor que acepta un ```String```.  La expresión es ejecutada al invocar al método ``app
+* La expresión lambda crea un objeto ```File```empleando el constructor que acepta un ```String```.  La expresión es ejecutada al invocar al método ```apply```.
+* Empleando referencias a métodos , se obtiene el mismo resultado 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTg2NzIxNzgsMTcyNzEyMTcyMywtMz
-QwOTYxNTUzLC0xODQyOTU5NDQ5LC02ODQ1NDU0ODYsOTgzMDM5
-NjIxLDE2NjA4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5Mi
-wxNDA5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIx
-NDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC
-0xMzA4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5
-Mjc2MTExNV19
+eyJoaXN0b3J5IjpbODM3ODc2MzIyLDE3MjcxMjE3MjMsLTM0MD
+k2MTU1MywtMTg0Mjk1OTQ0OSwtNjg0NTQ1NDg2LDk4MzAzOTYy
+MSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3OTIsMT
+QwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2
+MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMT
+MwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3
+NjExMTVdfQ==
 -->
