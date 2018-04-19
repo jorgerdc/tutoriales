@@ -36,12 +36,13 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 //Regresa un valor entero. La instrucción return no es requerida
 (String s) -> s.length()
 
-//(int x,int y) -> {
-	System.out.print(x);
-	System.out.print(y)
+//Acepta 2 parámetros tipo int, no regresa valor (void)
+(int x,int y) -> {
+	System.out.print(x+y);
 }
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDc4MzI0OCw5OTI3NjExMTUsLTE0MT
+eyJoaXN0b3J5IjpbLTE2NTcyMzE5Miw5OTI3NjExMTUsLTE0MT
 cxNTQzMzldfQ==
 -->
