@@ -75,13 +75,14 @@ filteredFiles = myFiles
 ```
 * En este ejemplo,  se realiza un filtrado de archivos. 
 * Se obtienen todos aquellos archivos ubicados en  `/tmp` que tengan permisos de escritura y sean archivos de texto.
-* El método `list` acepta un objeto `FilenameFilter`.  Es una interface que define un solo método:
+* El método `list` acepta un objeto `FilenameFilter`.  
+* `FilenameFilter` es una interface que define un solo método:
 ```Java
 boolean accept( File dir,String name);
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE1MTA4MTAwLC0xMzA4MzYxNTQyLC0yMT
-QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
-NDMzOV19
+eyJoaXN0b3J5IjpbLTE3MDE5MTkwNDUsLTEzMDgzNjE1NDIsLT
+IxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3
+MTU0MzM5XX0=
 -->
