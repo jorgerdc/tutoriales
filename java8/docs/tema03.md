@@ -60,8 +60,9 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 //5. No acepta parámetros no regresa valor (void), cuerpo vacío
 () -> {}
 ```
-
+### ¿Dónde emplear expresiones Lambda?
+* En general se emplean dentro del contexto de una *Interface funcional* .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOT
-kyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbLTEyMTA0NTgyMDQsLTIxNDE3NDc0NDYsLT
+ExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
