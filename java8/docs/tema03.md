@@ -182,10 +182,11 @@ public static void main(String[] args) throws IOException {
 }
 ```
 * Observar que en cada caso, solo se envía la ruta del archivo y una expresión lambda que contiene la lógica a ejecutar. La  expresión lambda  implementa funcionalmente a la interface `ReaderProcessor`.
-
+### Princ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNT
-kwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTks
-MTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMT
-EzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTEwNTYyOTU5MTIsMTQwOTk0NjIwNSwtMz
+c4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4
+LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMj
+E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
+NTQzMzldfQ==
 -->
