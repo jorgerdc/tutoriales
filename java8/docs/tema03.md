@@ -9,7 +9,7 @@ test# Java 8
 	* Un *método* siempre está asociado a una clase.
 * Es concisa por su sintaxis simple. Permiten pasar código de forma simple.
 * Permiten implementar el patrón: *Parametrización del comportamiento* 
-* 
+* Resultado: código  más claro, flexible
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTUxNTAwNl19
+eyJoaXN0b3J5IjpbLTE0MTcxNTQzMzldfQ==
 -->
