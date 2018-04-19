@@ -128,11 +128,13 @@ void run();
 ```Java
 @FunctionalInterface
 public interface ReaderProcessor {
-String procesa(BufferedReader reader) throws IOException;
+	String procesa(BufferedReader reader) throws IOException;
 }
 ``` 
+* El método recibe un `BuffferedReader` para realizar el procesamiento de su contenido.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyNDE1MzgwLDMxNDEyMTQ2MSwtNzgzOD
+eyJoaXN0b3J5IjpbNTc0NTA2ODY2LDMxNDEyMTQ2MSwtNzgzOD
 UwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0
 MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLT
 E0MTcxNTQzMzldfQ==
