@@ -213,17 +213,17 @@ public interface ReaderProcessor {
 ``` 
 ### Uso de variables locales en expresiones lambda.
 * Aplican las mismas reglas que una clase anónima.
-* El cuerpo de una expresión lambda puede hacer referencia a una variable que está definida fuera de ella:
+* El cuerpo de una expresión lambda puede hacer referencia a una variable que está definida fuera de ella. A este tipo de expresiones lambda se les llama  *capturing lambdas* 
 ```Java
 int x =0;
 Runnable r = () -> System.out.print(x);
 X = 10;
 ```
-* 
+* Existe una restriccio
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MzkwMTM3LC0xMzMxMTkxNzkyLDE0MD
-k5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEs
-LTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMD
-gzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYx
-MTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbLTE2ODIyMjIwMjUsLTEzMzExOTE3OTIsMT
+QwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2
+MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMT
+MwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3
+NjExMTUsLTE0MTcxNTQzMzldfQ==
 -->
