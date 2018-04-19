@@ -182,7 +182,7 @@ public static void main(String[] args) throws IOException {
 }
 ```
 * Observar que en cada caso, solo se envía la ruta del archivo y una expresión lambda que contiene la lógica a ejecutar. La  expresión lambda  implementa funcionalmente a la interface `ReaderProcessor`.
-* Notar que en las expresiones no se especifica el tipo de dato del parámetro ```reader`` . El compilador infie
+* Notar que en las expresiones no se especifica el tipo de dato del parámetro ```reader`` . El compilador infiere su tipo de dato com base al contexto de la expresión.  En este caso, el segundo parámetro del método ``processFile`` recibe un objeto ```
 ### Principales Interfaces Funcionales 
 * Se encuentran en el paquete ```java.util.function```
 
@@ -213,9 +213,9 @@ public interface ReaderProcessor {
 ``` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NjI0NDM4NywtMTMzMTE5MTc5MiwxND
-A5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYx
-LC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMz
-A4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2
-MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMzQ1MzYzNjAsLTEzMzExOTE3OTIsMTQwOT
+k0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwt
+NzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwOD
+M2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjEx
+MTUsLTE0MTcxNTQzMzldfQ==
 -->
