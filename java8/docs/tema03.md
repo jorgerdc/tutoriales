@@ -252,11 +252,12 @@ x=10;
 	* Ejemplo: ```String::substring```
 * Referencias  a un método a partir de un objeto
 	* Ejemplo: Suponer la existencia de la variable ``curso`` , la referencia será ```curso::getNombre```
+* 
 
 
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjI0MjE0NywtNjg0NTQ1NDg2LDk4Mz
+eyJoaXN0b3J5IjpbMTA2NzkyNTUzMSwtNjg0NTQ1NDg2LDk4Mz
 AzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3
 OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxND
 EyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4
