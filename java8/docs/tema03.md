@@ -151,7 +151,10 @@ public static String processFile(String file, ReaderProcessor processor) {
 ```
 * Este método crea una instancia de `BufferedReader` e  invoca al método `procesa` del objeto que recibe como segundo parámetro el cual contiene la lógica funcional a ejecutar.   Las instancias de `ReaderProcessor`pueden ser enviadas a este método como expresiones lambda:
 ```Java
-
+/**
+* @param args
+* @throws IOException
+*/
 public static void main(String[] args) throws IOException {
 	String result;
 
@@ -164,8 +167,7 @@ public static void main(String[] args) throws IOException {
 		(reader) -> reader.readLine() + "\n" + reader.readLine());
 	System.out.println(result);
 
-	System.out
-		.println("3. Crea un processor para leer todas las lineas en mayusculas");
+	System.out.println("3. Lee todas las lineas en mayusculas");
 	result = processFile("resources/datos.txt", (reader) -> {
 		StringBuilder sb;
 		String line;
@@ -181,8 +183,8 @@ public static void main(String[] args) throws IOException {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTg1Nzk5OCwtMzc4OTQ5LC0xNzQwNT
-kwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTks
-MTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMT
-EzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTExMTUxNjg4MjYsLTM3ODk0OSwtMTc0MD
+U5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5
+LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLT
+ExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
