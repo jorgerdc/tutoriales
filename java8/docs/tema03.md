@@ -31,9 +31,12 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 * Flecha:  Separa a la lista de parámetros  del cuerpo de la expresión lambda.
 * Cuerpo de la expresión Lambda.
 
-#### Estructura de una expresión Lambda.
+### Estructura de una expresión Lambda.
+* Existen 2 estilos de sintaxis:
 
 
+
+##### Ejemplos: 
 ```Java  
 //1. Regresa un valor entero. La instrucción return no es requerida
 (String s) -> s.length()
@@ -53,6 +56,6 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 () -> {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzgyMzg2OTksLTExMzQzOTQ5NjAsOT
-kyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTU4NjYzODIwMSwtMTEzNDM5NDk2MCw5OT
+I3NjExMTUsLTE0MTcxNTQzMzldfQ==
 -->
