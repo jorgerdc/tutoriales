@@ -124,10 +124,31 @@ void run();
 	* Liberar o cerrar el reader.
 * El código repetitivo se deberá programar una sola vez, y  la lógica funcional se va a parametrizar (caso1, caso2 y caso3) empleando expresiones lambda.
 ##### Solución
-* Para emplear una expresión  lambda se r
+* Para emplear una expresión  lambda se define la siguiente interface funcional:
+```Java
+@FunctionalInterface
+public interface ReaderProcessor {
+/**
+* Este método contiene el código funcional para procesar un {@link BufferedReader}
+
+* Esta idea permite separar la parte funcional del código de la parte de manejo de
+
+* recursos, en este caso instanciar el {@link BufferedReader} y su liberación de recursos.
+
+* @param reader
+
+* @return Una cadena que resulta del procesamiento del archivo.
+
+* @throws IOException
+
+*/
+
+String procesa(BufferedReader reader) throws IOException;
+
+}```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDE0MTg5NSwzMTQxMjE0NjEsLTc4Mz
-g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
-NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
-0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbLTIwODk0NTYwMTAsMzE0MTIxNDYxLC03OD
+M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
+NTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNS
+wtMTQxNzE1NDMzOV19
 -->
