@@ -75,9 +75,9 @@ filteredFiles = myFiles
 ```
 * En este ejemplo,  se realiza un filtrado de archivos. 
 * Se obtienen todos aquellos archivos ubicados en  `/tmp` que tengan permisos de escritura y sean archivos de texto.
-* El método `list` acepta un
+* El método `list` acepta un objeto `FilenameFilter`.  Es una interface que define un solo m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNjM1MTI4NCwtMTMwODM2MTU0MiwtMj
+eyJoaXN0b3J5IjpbLTgwMzEzODA2OCwtMTMwODM2MTU0MiwtMj
 E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
 NTQzMzldfQ==
 -->
