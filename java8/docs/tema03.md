@@ -64,9 +64,14 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 * En general se emplean dentro del contexto de una *Interface funcional* .
 * Lo anterior significa que una expresión lambda, además de ser asignada a una variable, puede ser pasada como parámetro de un  método  cuyo tipo de dato corresponde al de una Interface, en este caso a una *Interface funcional*.
 ##### Ejemplo:
+``` Java
 
+
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLT
-ExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbLTE1NTQ4NzUwNDAsLTEzMDgzNjE1NDIsLT
+IxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3
+MTU0MzM5XX0=
 -->
