@@ -267,18 +267,31 @@ System.out.println(lista);
 // sin referencia a métodos
 Supplier<String> supplier = () -> "hola";
 System.out.println("s1: " + supplier.get());
+
 // con referencia a métodos
 supplier = String::new;
 System.out.println("s2: " + supplier.get());
 ```
 * En este ejemplo se hace una referencia al constructor de la clase  ```String``` el cual es compatible con la expresión lambda que define a  la interface  ```Supplier```,  es decir: ```() -> T```
+##### Ejemplo.
+```Java 
+// sin referencia a metodos
+Function<String, File> fx1 = (path) -> new File(path);
+File myFile = fx1.apply("/tmp/noexiste.txt");
+System.out.println(myFile.getAbsolutePath());
 
+// con referencia a metodos
+fx1 = File::new;
+myFile = fx1.apply("/tmp/noexiste.txt");
+System.out.println(myFile.getAbsolutePath());
+```
+* En este ejemplo, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjM5NzI5NywxNzI3MTIxNzIzLC0zND
-A5NjE1NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2
-MjEsMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLD
-E0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0
-NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLT
-EzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTky
-NzYxMTE1XX0=
+eyJoaXN0b3J5IjpbNjQ0NDU1NTg4LDE3MjcxMjE3MjMsLTM0MD
+k2MTU1MywtMTg0Mjk1OTQ0OSwtNjg0NTQ1NDg2LDk4MzAzOTYy
+MSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3OTIsMT
+QwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2
+MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMT
+MwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3
+NjExMTVdfQ==
 -->
