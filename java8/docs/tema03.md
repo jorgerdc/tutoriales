@@ -33,19 +33,20 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 
 #### Ejemplos de expresiones Lambda válidos
 ```Java  
-//Regresa un valor entero. La instrucción return no es requerida
+//1. Regresa un valor entero. La instrucción return no es requerida
 (String s) -> s.length()
 
-//Acepta 2 parámetros tipo int, no regresa valor (void)
+//2. Acepta 2 parámetros tipo int, no regresa valor (void)
 (int x,int y) -> {
 	System.out.print(x+y);
 }
-// No acepta parámetros. Regresa el valor 42 (expresión)
+//3. No acepta parámetros. Regresa el valor 42 (expresión)
 () -> 42
-// Mismo caso, pero la expresion lambda está formada por st
+// Mismo caso, pero la expresion lambda está formada por statements (requiere {} y el uso de return).
 () -> { return 42; }
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjY3MTEzMDUsOTkyNzYxMTE1LC0xND
-E3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbNjkzMDcyNDY3LDk5Mjc2MTExNSwtMTQxNz
+E1NDMzOV19
 -->
