@@ -40,9 +40,10 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 (int x,int y) -> {
 	System.out.print(x+y);
 }
-
+// No acepta parámetros. Regresa el valor 42
+() -> 42
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTcyMzE5Miw5OTI3NjExMTUsLTE0MT
-cxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTIxMzI1MzA4ODMsOTkyNzYxMTE1LC0xND
+E3MTU0MzM5XX0=
 -->
