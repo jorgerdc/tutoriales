@@ -181,10 +181,11 @@ public static void main(String[] args) throws IOException {
 	System.out.println(result);
 }
 ```
-* Observar que en cada caso, solo se envía la ruta del archivo y una expresión lambda que contie
+* Observar que en cada caso, solo se envía la ruta del archivo y una expresión lambda que contiene la lógica a ejecutar. La  expresión lambda  implementa funcionalmente a la interface `ReaderProcessor`.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM5MDUwMTQ3LC0zNzg5NDksLTE3NDA1OT
-A0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwx
-ODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMT
-M0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNT
+kwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTks
+MTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMT
+EzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
 -->
