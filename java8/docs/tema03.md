@@ -232,12 +232,14 @@ x=10;
 	* Suponer que la expresión lambda se ejecuta en otro thread (T2) diferente al thread que creó la variable (T1).
 	* Si T1  muere debido a que terminó la ejecución del método, la variable ya no estaría disponible dentro de la expresión lambda y por lo tanto no se podría emplear.
 	* Para resolver esto, se hace una copia de la variable para emplearse dentro de la expresión.
-	* Para evitar inconsistencias con el valor original,  se restringe que la variable sea modificada en 
+	* Para evitar inconsistencias con el valor original,  se restringe que la variable sea modificada (final  o effectively final).
+	
+	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODcwOTE2OTQsMTY2MDg5OTQ0MCwtOT
-Y5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5NDYyMDUsLTM3ODk0
-OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwxNT
-YyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3
-NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0Mz
-M5XX0=
+eyJoaXN0b3J5IjpbOTgzMDM5NjIxLDE2NjA4OTk0NDAsLTk2OT
+UyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC0zNzg5NDks
+LTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2Mj
+ExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3
+NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV
+19
 -->
