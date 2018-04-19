@@ -42,8 +42,6 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 (parametros) -> {sentencias;}
 
 ```
-
-
 ##### Ejemplos: 
 ```Java  
 //1. Regresa un valor entero. La instrucción return no es requerida
@@ -63,7 +61,8 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 //5. No acepta parámetros no regresa valor (void), cuerpo vacío
 () -> {}
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MzA5NDk3MSwtMTEzNDM5NDk2MCw5OT
-I3NjExMTUsLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbMTQyOTM5NzkxLC0xMTM0Mzk0OTYwLDk5Mj
+c2MTExNSwtMTQxNzE1NDMzOV19
 -->
