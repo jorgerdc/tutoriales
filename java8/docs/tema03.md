@@ -8,7 +8,8 @@ test# Java 8
 * Se emplea la palabra *función* ya  que esta no está asociada a ninguna clase en particular.   
 	* Un *método* siempre está asociado a una clase.
 * Es concisa por su sintaxis simple. Permiten pasar código de forma simple.
+* Permiten implementar el patrón: *Parametrización del comportamiento* 
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNjgxMDk1NF19
+eyJoaXN0b3J5IjpbMTMzNTUxNTAwNl19
 -->
