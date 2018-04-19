@@ -111,11 +111,13 @@ void run();
 * La interface puede ser funcional aunque contenga  definiciones de métodos (default methods).
 
 ##### Ejemplo:
-* Crear un programa que procese  un Archivo a través de un `BufferedReader`.
-* Implementar en concepto de *Parametrización del comportamento* 
+* Crear un programa que procese  un archivo a través de un `BufferedReader`. 
+* Exis
+* Implementar en concepto de *Parametrización del comportamento*.  
+* Código repetitivo:  Instanciar 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MDQzMDU4NSwzMTQxMjE0NjEsLTc4Mz
-g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
-NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
-0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbOTE2NDk4MTgsMzE0MTIxNDYxLC03ODM4NT
+AyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQy
+LC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMT
+QxNzE1NDMzOV19
 -->
