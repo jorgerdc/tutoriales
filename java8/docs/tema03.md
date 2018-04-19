@@ -134,11 +134,36 @@ public interface ReaderProcessor {
 * El método recibe un `BuffferedReader` para realizar el procesamiento de su contenido.
 * Se tiene un método de utilería que implementa el código repetitivo:
 ```Java
+/**
+* Procesa un {@link BufferedReader}. La lógica que se emplea para procesar al
+* archivo se pasa en el parámetro processor a través de una expresión lambda.
+* @param file
 
+* @param processor
+
+* @return
+
+*/
+
+public static String processFile(String file, ReaderProcessor processor) {
+
+  
+
+try (BufferedReader reader = new BufferedReader(new FileReader(new File(file)))) {
+
+return processor.procesa(reader);
+
+} catch (IOException e) {
+
+throw new RuntimeException(e);
+
+}
+
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUxNDEwMDcyLDMxNDEyMTQ2MSwtNzgzOD
-UwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0
-MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLT
-E0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTE4OTk2MzY4OTAsMzE0MTIxNDYxLC03OD
+M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
+NTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNS
+wtMTQxNzE1NDMzOV19
 -->
