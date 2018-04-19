@@ -129,8 +129,7 @@ void run();
 @FunctionalInterface
 public interface ReaderProcessor {
 /**
-* Este método contiene el código funcional para procesar un {@link BufferedReader}
-
+ * Este método contiene el código funcional para procesar un {@link BufferedReader}
 * Esta idea permite separar la parte funcional del código de la parte de manejo de
 
 * recursos, en este caso instanciar el {@link BufferedReader} y su liberación de recursos.
@@ -147,8 +146,8 @@ String procesa(BufferedReader reader) throws IOException;
 
 }```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODk0NTYwMTAsMzE0MTIxNDYxLC03OD
-M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
-NTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNS
-wtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbLTIyOTEyMDMxMCwzMTQxMjE0NjEsLTc4Mz
+g1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1
+NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC
+0xNDE3MTU0MzM5XX0=
 -->
