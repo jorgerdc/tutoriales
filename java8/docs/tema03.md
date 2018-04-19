@@ -7,7 +7,8 @@ test# Java 8
 * Define lista de parámetros, cuerpo de la función, valor de retorno y posibles excepciones que puede lanzar.
 * Se emplea la palabra *función* ya  que esta no está asociada a ninguna clase en particular.   
 	* Un *método* siempre está asociado a una clase.
-* Es concisa por su sintaxis simple.
+* Es concisa por su sintaxis simple. Permiten pasar código de forma simple.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2ODY5MTEzNF19
+eyJoaXN0b3J5IjpbLTgzNjgxMDk1NF19
 -->
