@@ -33,9 +33,10 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 
 #### Ejemplos de expresiones Lambda válidos
 ```Java  
-//
+//Regresa un valor entero. L
 (String s) -> s.length()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbLTE3MjY2ODk4ODIsOTkyNzYxMTE1LC0xND
+E3MTU0MzM5XX0=
 -->
