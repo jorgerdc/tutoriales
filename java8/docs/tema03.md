@@ -261,14 +261,23 @@ lista.sort(String::compareToIgnoreCase);
 System.out.println(lista);
 ```
 * Observar la referencia al método ```compareToIgnoreCase```su firma coincide con la firma de la interface funcional  ```Comparable```, por lo tanto puede emplearse como expresión lambda  y ser enviada como parámetro del método ```sort```.
-* 
-	
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MDk2MTU1MywtMTg0Mjk1OTQ0OSwtNj
-g0NTQ1NDg2LDk4MzAzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5
-NzEsLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNz
-QwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5
-MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0Ni
-wtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
 
+##### Ejemplo:
+```Java
+// sin referencia a métodos
+Supplier<String> supplier = () -> "hola";
+System.out.println("s1: " + supplier.get());
+// con referencia a métodos
+supplier = String::new;
+System.out.println("s2: " + supplier.get());
+```
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM2MDM5MDE5LC0zNDA5NjE1NTMsLTE4ND
+I5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMTY2MDg5OTQ0
+MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5NDYyMDUsLT
+M3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4
+OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLT
+IxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3
+MTU0MzM5XX0=
 -->
