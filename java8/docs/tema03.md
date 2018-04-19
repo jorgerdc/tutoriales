@@ -28,7 +28,9 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 ### Elementos de una Expresión Lambda
 
 * Lista de parámetros
+* Flecha:  Separa a la lista de parámetros  del cuerpo de la expresión lambda.
+* Cuerpo de la expresión Lambda.
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTI3NDY1OSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbLTMzMjg2NjUxOSwtMTQxNzE1NDMzOV19
 -->
