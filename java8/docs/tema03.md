@@ -188,9 +188,12 @@ public static void main(String[] args) throws IOException {
 |Interface               | descriptor funcional |
 |------------------------|-----------------------|
 |```Predicate<T>```      |```T -> boolean```     |
-|```Consumer<T>```      |```T -> void```          |   
+|```Consumer<T>```       |```T -> void```        |
+|```Function<T,R>```     |```T -> R```      |
+|```Supplier<T>```      |``` () -> T```      |
+|```Predicate<T>```      |```T ->boolean```      |   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjU1MDUxNiwxNDA5OTQ2MjA1LC0zNz
+eyJoaXN0b3J5IjpbMTI1OTA2MDE4MywxNDA5OTQ2MjA1LC0zNz
 g5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgs
 MTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMT
 QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
