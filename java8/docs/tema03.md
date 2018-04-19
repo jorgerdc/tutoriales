@@ -149,10 +149,10 @@ public static String processFile(String file, ReaderProcessor processor) {
 	}
 }
 ```
-* Este método crea una instancia de `BufferedReader` e  invoca la ejecución 
+* Este método crea una instancia de `BufferedReader` e  invoca al método `procesa` del objeto que recibe como segundo parámetro el cual contiene la lógica funcional a ejecutar.   Las instancias de `ReaderProcessor`pueden ser enviadas a este m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjcwOTI2MDgsLTE3NDA1OTA0NDIsMz
-E0MTIxNDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAw
-NTg1LC0xMzA4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OT
-YwLDk5Mjc2MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbLTUyMTA0NDM0MywtMTc0MDU5MDQ0MiwzMT
+QxMjE0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1
+ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5Nj
+AsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
