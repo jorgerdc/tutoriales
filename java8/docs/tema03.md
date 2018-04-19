@@ -211,11 +211,11 @@ public interface ReaderProcessor {
 	String procesa(BufferedReader reader) throws IOException;
 }
 ``` 
-
+### Uso de variables locales en expresiones lambda
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MDkyMjI0MiwtMTMzMTE5MTc5MiwxND
-A5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYx
-LC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMz
-A4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2
-MTExNSwtMTQxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbLTExNTU2OTExNzQsLTEzMzExOTE3OTIsMT
+QwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2
+MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMT
+MwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3
+NjExMTUsLTE0MTcxNTQzMzldfQ==
 -->
