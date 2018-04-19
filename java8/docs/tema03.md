@@ -31,7 +31,9 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 * Flecha:  Separa a la lista de parámetros  del cuerpo de la expresión lambda.
 * Cuerpo de la expresión Lambda.
 
-#### Ejemplos de expresiones Lambda válidos
+#### Estructura de una expresión Lambda.
+
+
 ```Java  
 //1. Regresa un valor entero. La instrucción return no es requerida
 (String s) -> s.length()
@@ -51,6 +53,6 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 () -> {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xND
-E3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbLTEwNzgyMzg2OTksLTExMzQzOTQ5NjAsOT
+kyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
