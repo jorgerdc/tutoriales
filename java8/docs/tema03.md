@@ -185,13 +185,13 @@ public static void main(String[] args) throws IOException {
 ### Principales Interfaces Funcionales 
 * Se encuentran en el paquete ```java.util.function```
 
-|Interface         | descriptor funcional       |
-|---------------|-----------------------|-------------------|
-|Obtener datos  |```T next()```         |```onNext(T)```    
+|Interface               | descriptor funcional |
+|------------------------|-----------------------|
+|```Predicate<T>```  |```T next()```         |   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzU3NzI3NDAsMTQwOTk0NjIwNSwtMz
-c4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4
-LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMj
-E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
-NTQzMzldfQ==
+eyJoaXN0b3J5IjpbNzAyNjg3NjM4LDE0MDk5NDYyMDUsLTM3OD
+k0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwx
+NTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxND
+E3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0
+MzM5XX0=
 -->
