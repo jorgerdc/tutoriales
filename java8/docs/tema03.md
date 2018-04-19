@@ -260,10 +260,10 @@ lista = Arrays.asList("M", "j", "x", "0", "a");
 lista.sort(String::compareToIgnoreCase);
 System.out.println(lista);
 ```
-* Observar la referencia al método ```compareToIgnoreCase
+* Observar la referencia al método ```compareToIgnoreCase```su firma coincide con la firma de la interface funcional  ```Comparable```, por lo tanto puede emplearse como expresión lambda  y ser enviada como parámetro del método so
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NTMwNjg2MCwtMTg0Mjk1OTQ0OSwtNj
+eyJoaXN0b3J5IjpbLTU4OTc1Mzk4MywtMTg0Mjk1OTQ0OSwtNj
 g0NTQ1NDg2LDk4MzAzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5
 NzEsLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNz
 QwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5
