@@ -112,12 +112,14 @@ void run();
 
 ##### Ejemplo:
 * Crear un programa que procese  un archivo a través de un `BufferedReader`. 
-* Exis
+* Este archivo se puede procesar varias veces con diferente lógica:  lógica funcional:
+	* Caso 1: Leer la primer línea del archivo
+	* Caso
 * Implementar en concepto de *Parametrización del comportamento*.  
 * Código repetitivo:  Instanciar 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2NDk4MTgsMzE0MTIxNDYxLC03ODM4NT
-AyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQy
-LC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMT
-QxNzE1NDMzOV19
+eyJoaXN0b3J5IjpbMTcwNjMyMjY2LDMxNDEyMTQ2MSwtNzgzOD
+UwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0
+MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLT
+E0MTcxNTQzMzldfQ==
 -->
