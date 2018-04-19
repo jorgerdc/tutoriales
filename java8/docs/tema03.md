@@ -155,35 +155,34 @@ public static String processFile(String file, ReaderProcessor processor) {
 public static void main(String[] args) throws IOException {
 	String result;
 
-        System.out.println("1. Crea un processor que lee la primer linea del archivo");
-        result = processFile("resources/datos.txt", (reader) -> reader.readLine());
-        System.out.println(result);
+	System.out.println("1. Crea un processor que lee la primer linea del archivo");
+	result = processFile("resources/datos.txt", (reader) -> reader.readLine());
+	System.out.println(result);
 
-        System.out.println("2. Crea un processor que lee las primeras 2 lineas");
-        result = processFile("resources/datos.txt",
-            (reader) -> reader.readLine() + "\n" + reader.readLine());
-        System.out.println(result);
+	System.out.println("2. Crea un processor que lee las primeras 2 lineas");
+	result = processFile("resources/datos.txt",
+		(reader) -> reader.readLine() + "\n" + reader.readLine());
+	System.out.println(result);
 
-        System.out
-            .println("3. Crea un processor que lee todas las lineas y las pasa a mayusculas");
-        result = processFile("resources/datos.txt", (reader) -> {
-            StringBuilder sb;
-            String line;
-            sb = new StringBuilder();
-            while ((line = reader.readLine()) != null) {
-                sb.append(line.toUpperCase());
-                sb.append("\n");
-            }
-            return sb.toString();
-        });
-        System.out.println(result);
-    }
-
+	System.out
+		.println("3. Crea un processor que lee todas las lineas y las pasa a mayusculas");
+	result = processFile("resources/datos.txt", (reader) -> {
+		StringBuilder sb;
+		String line;
+		sb = new StringBuilder();
+		while ((line = reader.readLine()) != null) {
+			sb.append(line.toUpperCase());
+			sb.append("\n");
+		}
+		return sb.toString();
+	});
+	System.out.println(result);
+}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMj
-E0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUs
-LTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOT
-kyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
+eyJoaXN0b3J5IjpbMTc2OTEwMTc4NSwtMzc4OTQ5LC0xNzQwNT
+kwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTks
+MTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMT
+EzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
 -->
