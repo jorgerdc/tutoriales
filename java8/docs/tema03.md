@@ -104,10 +104,12 @@ Runnable r = () -> System.out.println("Hola Mundo Lambda");
 ```Java
 void run();
 ```
-#### @
+#### @FunctionalInterface
+* Esta anotación se emplea en interfaces para indicar que  se trata de una interface funcional. 
+* No es obligatoria, pero si recomendada si  la interface fue diseñada para tal pro`p
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5Mzk3NzQ1NiwtNzgzODUwMjg4LDE1Nj
-IxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0
-NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMz
-ldfQ==
+eyJoaXN0b3J5IjpbLTE4NTI3ODgwMTMsLTc4Mzg1MDI4OCwxNT
+YyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3
+NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0Mz
+M5XX0=
 -->
