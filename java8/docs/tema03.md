@@ -165,7 +165,7 @@ public static void main(String[] args) throws IOException {
 	System.out.println(result);
 
 	System.out
-		.println("3. Crea un processor que lee todas las lineas y las pasa a mayusculas");
+		.println("3. Crea un processor para leer todas las lineas en mayusculas");
 	result = processFile("resources/datos.txt", (reader) -> {
 		StringBuilder sb;
 		String line;
@@ -181,7 +181,7 @@ public static void main(String[] args) throws IOException {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTEwMTc4NSwtMzc4OTQ5LC0xNzQwNT
+eyJoaXN0b3J5IjpbLTIzOTg1Nzk5OCwtMzc4OTQ5LC0xNzQwNT
 kwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTks
 MTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMT
 EzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
