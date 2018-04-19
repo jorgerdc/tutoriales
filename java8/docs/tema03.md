@@ -285,9 +285,9 @@ fx1 = File::new;
 myFile = fx1.apply("/tmp/noexiste.txt");
 System.out.println(myFile.getAbsolutePath());
 ```
-* En este ejemplo, 
+* En este ejemplo, se  usa la interface ```Function```que recibe un  ```String``` y regresa un objeto ```java.io.File```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ0NDU1NTg4LDE3MjcxMjE3MjMsLTM0MD
+eyJoaXN0b3J5IjpbLTk4MDgxODE2LDE3MjcxMjE3MjMsLTM0MD
 k2MTU1MywtMTg0Mjk1OTQ0OSwtNjg0NTQ1NDg2LDk4MzAzOTYy
 MSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLTEzMzExOTE3OTIsMT
 QwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2
