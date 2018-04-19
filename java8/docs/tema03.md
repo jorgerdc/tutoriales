@@ -217,11 +217,10 @@ public interface ReaderProcessor {
 ```Java
 int x =0;
 Runnable r = () -> System.out.print(x);
-X = 10;
 ```
 * Existe una restriccio
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODIyMjIwMjUsLTEzMzExOTE3OTIsMT
+eyJoaXN0b3J5IjpbLTE2OTE2ODMzNzIsLTEzMzExOTE3OTIsMT
 QwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2
 MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMT
 MwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3
