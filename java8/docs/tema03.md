@@ -82,9 +82,9 @@ boolean accept( File dir,String name);
 ```
 * Esta interface es implementada y representada por la expresión lambda del ejemplo. 
 * Observar que la estructura de la expresión coincide con la firma del método `accept`:  Recibe 2 parámetros  `(File,String)` y regresa un `boolean` 
-* Al existir dicha coincidencia, la expresión lambda puede  *implementar* al método  `accept`y al ser el  único método, 
+* Al existir dicha coincidencia, la expresión lambda puede  *implementar* al método  `accept`y al ser el  único método de la interfaz la expresión lambda *implementa  funcionalmente a+ `FilenameFilter`*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTc4NjI2NywtMTMwODM2MTU0MiwtMj
-E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
-NTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTEwNjg5MDkyMDYsLTEzMDgzNjE1NDIsLT
+IxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3
+MTU0MzM5XX0=
 -->
