@@ -102,10 +102,11 @@ Runnable r = () -> System.out.println("Hola Mundo Lambda");
 * La firma del método de la interface funcional corresponde o describe a la firma  o estructura de la expresión lambda.  En este contexto al método abstracto de la interface funcional se le llama  *descriptor funcional*.
 * En el ejemplo anterior,   la expresión lambda corresponde con el *descriptor funcional* de la interface ```Runnable```
 ```Java
-
+void run();
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE0NjMzMjAxLDE1NjIxMTU5MTksMTg3MD
-cwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEzNDM5
-NDk2MCw5OTI3NjExMTUsLTE0MTcxNTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4Nz
+A3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQz
+OTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
