@@ -197,9 +197,10 @@ public static void main(String[] args) throws IOException {
 |```BiConsumer<T,U>```       |```(T,U) -> void```        |
  |```BiFunction<T,U,R>```     |```(T,U) -> R```      |
 * Adicional a estas interfaces,  existen sus correspondientes especializaciones que hacen uso de primitivos para evitar autoboxing (mejorar desempeño).  Por ejemplo: ```IntPredicate, LongPredicate, IntConsumer```, etc.
-*   
+
+  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NzM3NjU4OCwxNDA5OTQ2MjA1LC0zNz
+eyJoaXN0b3J5IjpbMjA5NDc3OTIyNCwxNDA5OTQ2MjA1LC0zNz
 g5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgs
 MTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMT
 QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
