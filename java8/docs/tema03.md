@@ -271,9 +271,10 @@ System.out.println("s1: " + supplier.get());
 supplier = String::new;
 System.out.println("s2: " + supplier.get());
 ```
-* En este ejemplo se hace una referencia al constructor de la clase  ```String``` el cual es compatible con la expresión lambda que define a  la
+* En este ejemplo se hace una referencia al constructor de la clase  ```String``` el cual es compatible con la expresión lambda que define a  la interface  ```Supplier```,  es decir: ```() -> T```
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5ODk2MDM1MSwtMzQwOTYxNTUzLC0xOD
+eyJoaXN0b3J5IjpbMTcyNzEyMTcyMywtMzQwOTYxNTUzLC0xOD
 QyOTU5NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLDE2NjA4OTk0
 NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC
 0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAy
