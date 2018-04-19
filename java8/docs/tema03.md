@@ -87,10 +87,12 @@ boolean accept( File dir,String name);
 * Notar que una misma expresión lambda pudiera implementar a varias interfaces funcionales  siempre y cuando su estructura sea *compatible* con la firma del método de la interface. 
 
 ### Interfaces funcionales.
-
-* 
+* Como se mencionó anteriormente, una interface funcional define un solo método abstracto.
+* En el API de Java existen varias interfaces que pueden ser re-bautizadas como Interfaces funcionales:
+	* `Comparable`
+	* `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTUzMjUzMSwxODcwNzAwNTg1LC0xMz
+eyJoaXN0b3J5IjpbLTM1NjA4NDcwOCwxODcwNzAwNTg1LC0xMz
 A4MzYxNTQyLC0yMTQxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2
 MTExNSwtMTQxNzE1NDMzOV19
 -->
