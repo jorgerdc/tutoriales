@@ -196,11 +196,12 @@ public static void main(String[] args) throws IOException {
 |```BiPredicate<L,R>```      |```(L,R) -> boolean```     |
 |```BiConsumer<T,U>```       |```(T,U) -> void```        |
  |```BiFunction<T,U,R>```     |```(T,U) -> R```      |
-* Adicional a estas interfaces,  existen sus correspondientes especializaciones que hacen uso de primitivos para evitar autoboxing (mejorar desempeño).  Por ejemplo: ```IntPredicate, LongPredicate, IntConsumer```, etc.  
+* Adicional a estas interfaces,  existen sus correspondientes especializaciones que hacen uso de primitivos para evitar autoboxing (mejorar desempeño).  Por ejemplo: ```IntPredicate, LongPredicate, IntConsumer```, etc.
+*   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjI3MDA5MzIsMTQwOTk0NjIwNSwtMz
-c4OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4
-LDE1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMj
-E0MTc0NzQ0NiwtMTEzNDM5NDk2MCw5OTI3NjExMTUsLTE0MTcx
-NTQzMzldfQ==
+eyJoaXN0b3J5IjpbLTQ4NzM3NjU4OCwxNDA5OTQ2MjA1LC0zNz
+g5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgs
+MTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMT
+QxNzQ3NDQ2LC0xMTM0Mzk0OTYwLDk5Mjc2MTExNSwtMTQxNzE1
+NDMzOV19
 -->
