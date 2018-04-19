@@ -99,9 +99,10 @@ boolean accept( File dir,String name);
 ```Java
 Runnable r = () -> System.out.println("Hola Mundo Lambda");
 ```
-* La firma del método de la interface funcional 
+* La firma del método de la interface funcional corresponde o describe a la firma  o estructura de la expresión lambda.  En este contexto al método abstracto de la interface funcional se le llama  *descriptor funcional*.
+* En
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxOTExODc1NSwxNTYyMTE1OTE5LDE4Nz
+eyJoaXN0b3J5IjpbLTQ4NDY3MTMxNCwxNTYyMTE1OTE5LDE4Nz
 A3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQz
 OTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
