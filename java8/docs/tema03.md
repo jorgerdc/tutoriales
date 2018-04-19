@@ -62,7 +62,8 @@ comparatorLambda = (Curso o1, Curso o2) -> o1.getNombre().compareTo(o2.getNombre
 ```
 ### ¿Dónde emplear expresiones Lambda?
 * En general se emplean dentro del contexto de una *Interface funcional* .
+* Lo anterior significa que una expresión lambda, además de ser asignada a una variable, puede ser pasada como parámetro de un  método  cuyo tipo de dato hace refe
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA0NTgyMDQsLTIxNDE3NDc0NDYsLT
+eyJoaXN0b3J5IjpbLTE2OTAwNjc4MDAsLTIxNDE3NDc0NDYsLT
 ExMzQzOTQ5NjAsOTkyNzYxMTE1LC0xNDE3MTU0MzM5XX0=
 -->
