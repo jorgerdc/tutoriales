@@ -200,7 +200,7 @@ public static void main(String[] args) throws IOException {
 * Adicional a estas interfaces,  existen sus correspondientes especializaciones que hacen uso de primitivos para evitar autoboxing (mejorar desempeño).  Por ejemplo: ```IntPredicate, LongPredicate, IntConsumer```, etc.
 
 ### Manejo de excepciones 
-* Ninguno de los descriptores funcionales (métodos) de las interfaces funcionales del API de java contienen la cláusula ```throws``
+* Ninguno de los descriptores funcionales (métodos) de las interfaces funcionales del API de java contienen la cláusula ```throws```
 * Lo anterior significa que si el código de la expresión lambda lanza una *checked exception* , se tienen 2 mecanismos para manejarla:
 	* Emplear un  bloque ```try - catch ```
 	* Crear interfaces funcionales  personalizadas y agregar la cláusula ```throws```
@@ -290,11 +290,11 @@ System.out.println(myFile.getAbsolutePath());
 * En la segunda parte , se obtiene el mismo resultado haciendo referencia al constructor de la clase ```File```que recibe un ```String```como parámetro.
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MTk2MDkyNywxNzI3MTIxNzIzLC0zND
-A5NjE1NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2
-MjEsMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLD
-E0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0
-NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLT
-EzMDgzNjE1NDIsLTIxNDE3NDc0NDYsLTExMzQzOTQ5NjAsOTky
-NzYxMTE1XX0=
+eyJoaXN0b3J5IjpbMjEzOTgzMDg3MywtNjYxOTYwOTI3LDE3Mj
+cxMjE3MjMsLTM0MDk2MTU1MywtMTg0Mjk1OTQ0OSwtNjg0NTQ1
+NDg2LDk4MzAzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLT
+EzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkw
+NDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMT
+g3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEz
+NDM5NDk2MF19
 -->
