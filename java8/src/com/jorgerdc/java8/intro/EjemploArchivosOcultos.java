@@ -24,7 +24,7 @@ import java.util.List;
  * Jorge Rodriguez	jorgerdc@gmail.com	11/04/2018	Creación
  * </pre>
  */
-public class Ejemplo01ArchivosOcultos {
+public class EjemploArchivosOcultos {
 
     /**
      * @param args
@@ -38,9 +38,10 @@ public class Ejemplo01ArchivosOcultos {
      * Imprime los archivos ocultos del directorio temporal del sistema empleabdo programación
      * imperativa.
      */
-
     private static void muestraArchivosOcultosJava7() {
-        File[] archivosOcultos = new File(System.getProperty("java.io.tmpdir"))
+        File[] archivosOcultos;
+
+        archivosOcultos = new File(System.getProperty("java.io.tmpdir"))
             .listFiles(new FileFilter() {
                 @Override
                 public boolean accept(File f) {
