@@ -1,5 +1,4 @@
 ## 3. Expresiones Lambda
-
 ### Definición de expresión Lambda
 * Representación concisa de una función anónima que puede ser  empleada como parámetro de otras funciones o ser referenciada por una variable.
 * No define un nombre.
@@ -321,11 +320,11 @@ System.out.println(courseList);
 * En este ejemplo, se hace un ordenamiento por nombre, después por el costo, y después en orden inverso.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE3OTY1NTM4LC0yOTU1MTQ5NDQsMTE4NT
-c3NDQzNywyMTM5ODMwODczLC02NjE5NjA5MjcsMTcyNzEyMTcy
-MywtMzQwOTYxNTUzLC0xODQyOTU5NDQ5LC02ODQ1NDU0ODYsOT
-gzMDM5NjIxLDE2NjA4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5
-MTc5MiwxNDA5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMz
-E0MTIxNDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAw
-NTg1XX0=
+eyJoaXN0b3J5IjpbLTE1MjA1MTAyODQsMzE3OTY1NTM4LC0yOT
+U1MTQ5NDQsMTE4NTc3NDQzNywyMTM5ODMwODczLC02NjE5NjA5
+MjcsMTcyNzEyMTcyMywtMzQwOTYxNTUzLC0xODQyOTU5NDQ5LC
+02ODQ1NDU0ODYsOTgzMDM5NjIxLDE2NjA4OTk0NDAsLTk2OTUy
+NDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC0zNzg5NDksLT
+E3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMTU2MjEx
+NTkxOV19
 -->
