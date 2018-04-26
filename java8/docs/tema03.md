@@ -309,15 +309,15 @@ System.out.println("sorting courses using it's name:");
 courseList.sort(comparing(c -> c.getNombre()));
 System.out.println(courseList);
 ```
-* En el ejemplo anterior, el método ```comparing``` construye un objeto ```Comparable<Curso>```
+* En el ejemplo anterior, el método ```comparing``` construye un objeto ```Comparable<Curso>``` Se ha importado de forma estática: ```import static java.util.Comparator.comparing;```
 * Dicho método acepta una expresión lambda ```Function<Curso,String>```
 * La función regresa un ```String```, en este caso, el nombre del curso que será empleado como criterio de ordenamiento (sort key).  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDIwNTcyMzIsMTE4NTc3NDQzNywyMT
-M5ODMwODczLC02NjE5NjA5MjcsMTcyNzEyMTcyMywtMzQwOTYx
-NTUzLC0xODQyOTU5NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLD
-E2NjA4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5
-OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC
-03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4
-MzYxNTQyXX0=
+eyJoaXN0b3J5IjpbLTI5NTUxNDk0NCwxMTg1Nzc0NDM3LDIxMz
+k4MzA4NzMsLTY2MTk2MDkyNywxNzI3MTIxNzIzLC0zNDA5NjE1
+NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMT
+Y2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5
+NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLT
+c4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgz
+NjE1NDJdfQ==
 -->
