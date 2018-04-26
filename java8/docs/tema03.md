@@ -297,9 +297,9 @@ System.out.println(myFile.getAbsolutePath());
 ```Java
 static <T,U extends Comparable<? super U>> Comparator<T> comparing(Function<? super T,? extends U> keyExtractor)
 ```
-* Acepta una función y regresa un objeto ```Comparable```. Dicho objeto se crea  ex
+* Acepta una función y regresa un objeto ```Comparable```. Dicho objeto se crea  extrayendo el 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTk0MzczNzMsMjEzOTgzMDg3MywtNj
+eyJoaXN0b3J5IjpbLTE0NzE4NTk3NzYsMjEzOTgzMDg3MywtNj
 YxOTYwOTI3LDE3MjcxMjE3MjMsLTM0MDk2MTU1MywtMTg0Mjk1
 OTQ0OSwtNjg0NTQ1NDg2LDk4MzAzOTYyMSwxNjYwODk5NDQwLC
 05Njk1MjQ5NzEsLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4
