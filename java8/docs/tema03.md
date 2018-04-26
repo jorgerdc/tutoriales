@@ -310,13 +310,14 @@ courseList.sort(comparing(c -> c.getNombre()));
 System.out.println(courseList);
 ```
 * En el ejemplo anterior, el método ```comparing``` construye un objeto ```Comparable<Curso>```
-* Dicho método acepta una expresión lambda ```Function<Curso> 
+* Dicho método acepta una expresión lambda ```Function<Curso,String>```
+* La función regresa un   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMDY1NzgsMTE4NTc3NDQzNywyMTM5OD
-MwODczLC02NjE5NjA5MjcsMTcyNzEyMTcyMywtMzQwOTYxNTUz
-LC0xODQyOTU5NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLDE2Nj
-A4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2
-MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03OD
-M4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYx
-NTQyXX0=
+eyJoaXN0b3J5IjpbLTE1MjgwNzE1NiwxMTg1Nzc0NDM3LDIxMz
+k4MzA4NzMsLTY2MTk2MDkyNywxNzI3MTIxNzIzLC0zNDA5NjE1
+NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMT
+Y2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5
+NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLT
+c4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgz
+NjE1NDJdfQ==
 -->
