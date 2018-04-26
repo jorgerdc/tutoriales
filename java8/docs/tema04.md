@@ -7,7 +7,9 @@
 	* Flexible
 	* Paralelizable.
 ### Método stream
-* Todas las colecciones a partir de Java 8 incorporan un nuevo método llamado ```stream``` que regresa una referencia a la interface ```java.util.stream.Stream``` representa el punto de partida para comenzar a trabajar con Stream.
+* Todas las colecciones a partir de Java 8 incorporan un nuevo método llamado ```stream``` que regresa una referencia a la interface ```java.util.stream.Stream``` 
+* Este objeto representa el punto de partida para comenzar a trabajar con Streams.
+* Existen otros objetos a partir de los cuales se puede generar un Stream, no solo a través de colecciones.  Por ejemplo, se puede obtener 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODA4MDg4NiwyMTczMDQzMDNdfQ==
+eyJoaXN0b3J5IjpbLTE0MzM2NTcyMTYsMjE3MzA0MzAzXX0=
 -->
