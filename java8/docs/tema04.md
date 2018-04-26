@@ -12,7 +12,9 @@
 * Existen otros objetos a partir de los cuales se puede generar un Stream, no solo a través de colecciones.  Por ejemplo, se puede obtener una secuencia de valores a partir de la definición de un rango ``` [Xmin,Xmax]
 ### Conceptos básicos
 #### Secuencia de elementos
-* Tanto una colección como un Stream está fuertemente relacionados con  
+* Tanto una colección como un Stream está fuertemente relacionados con una secuencia o conjuntos de elementos pero con distintos enfoques:
+	* En una colección el enfoque es su almacenamiento empleando diversas estructuras de datos: listas, pilas, colas, etc.
+	* En un Stream, el enfoque  son las operaciones que se pued 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzY0MzU0MCwyMTczMDQzMDNdfQ==
+eyJoaXN0b3J5IjpbLTM2NDA5NTQ2MywyMTczMDQzMDNdfQ==
 -->
