@@ -6,7 +6,8 @@
 	* Declarativo
 	* Flexible
 	* Paralelizable.
-* 
+### Método stream
+* Todas las colecciones a par
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2NzM3NzgyLDIxNzMwNDMwM119
+eyJoaXN0b3J5IjpbMTUxMTYxMjI2NSwyMTczMDQzMDNdfQ==
 -->
