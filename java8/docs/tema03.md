@@ -318,13 +318,14 @@ System.out.println("sorting by name, then by price");
 courseList.sort(comparing(Curso::getNombre).thenComparing(Curso::getCosto).reversed());
 System.out.println(courseList);
 ```
-* En este ejemplo, se hace un ordenamiento por n
+* En este ejemplo, se hace un ordenamiento por nombre, después por el costo, y después en orden inverso.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjY3NDgwMDUsLTI5NTUxNDk0NCwxMT
-g1Nzc0NDM3LDIxMzk4MzA4NzMsLTY2MTk2MDkyNywxNzI3MTIx
-NzIzLC0zNDA5NjE1NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Ni
-w5ODMwMzk2MjEsMTY2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMx
-MTkxNzkyLDE0MDk5NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0Mi
-wzMTQxMjE0NjEsLTc4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3
-MDA1ODVdfQ==
+eyJoaXN0b3J5IjpbMzE3OTY1NTM4LC0yOTU1MTQ5NDQsMTE4NT
+c3NDQzNywyMTM5ODMwODczLC02NjE5NjA5MjcsMTcyNzEyMTcy
+MywtMzQwOTYxNTUzLC0xODQyOTU5NDQ5LC02ODQ1NDU0ODYsOT
+gzMDM5NjIxLDE2NjA4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5
+MTc5MiwxNDA5OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMz
+E0MTIxNDYxLC03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAw
+NTg1XX0=
 -->
