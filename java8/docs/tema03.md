@@ -295,11 +295,10 @@ System.out.println(myFile.getAbsolutePath());
 #### Creando comparadores
 * Método ```Comparator.comparing```
 ```Java
-static <T,U extends Comparable<? super U>>
-Comparator<T>
+static <T,U extends Comparable<? super U>> Comparator<T> comparing(Function<? super T,? extends U> keyExtractor)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAzNjA5NjA2LDIxMzk4MzA4NzMsLTY2MT
+eyJoaXN0b3J5IjpbMzcyOTI5NDU3LDIxMzk4MzA4NzMsLTY2MT
 k2MDkyNywxNzI3MTIxNzIzLC0zNDA5NjE1NTMsLTE4NDI5NTk0
 NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMTY2MDg5OTQ0MCwtOT
 Y5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5NDYyMDUsLTM3ODk0
