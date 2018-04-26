@@ -303,18 +303,19 @@ static <T,U extends Comparable<? super U>> Comparator<T> comparing(Function<? su
 List<Curso> courseList;
 courseList = Arrays.asList(
 	new Curso("Spring Framework", 230),
-	 new Curso("Java 8", 130),new Curso("Angular", 50), 
-	 new Curso("Zeppelin apache", 230));
+	new Curso("Java 8", 130),new Curso("Angular", 50), 
+	new Curso("Zeppelin apache", 230));
 System.out.println("sorting courses using it's name:");
 courseList.sort(comparing(c -> c.getNombre()));
 System.out.println(courseList);
 ```
+* En el ejemplo anterior, el método ```comparing``` construye un objeto ``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxOTYxMjI1OCwxMTg1Nzc0NDM3LDIxMz
-k4MzA4NzMsLTY2MTk2MDkyNywxNzI3MTIxNzIzLC0zNDA5NjE1
-NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMT
-Y2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5
-NDYyMDUsLTM3ODk0OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLT
-c4Mzg1MDI4OCwxNTYyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgz
-NjE1NDJdfQ==
+eyJoaXN0b3J5IjpbLTIwODIwODI1NTMsMTE4NTc3NDQzNywyMT
+M5ODMwODczLC02NjE5NjA5MjcsMTcyNzEyMTcyMywtMzQwOTYx
+NTUzLC0xODQyOTU5NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLD
+E2NjA4OTk0NDAsLTk2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5
+OTQ2MjA1LC0zNzg5NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC
+03ODM4NTAyODgsMTU2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4
+MzYxNTQyXX0=
 -->
