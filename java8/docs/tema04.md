@@ -9,7 +9,8 @@
 ### Método stream
 * Todas las colecciones a partir de Java 8 incorporan un nuevo método llamado ```stream``` que regresa una referencia a la interface ```java.util.stream.Stream``` 
 * Este objeto representa el punto de partida para comenzar a trabajar con Streams.
-* Existen otros objetos a partir de los cuales se puede generar un Stream, no solo a través de colecciones.  Por ejemplo, se puede obtener una secuencia de valores a partir de la definición de un rango ``` [Xmin,Xmax] 
+* Existen otros objetos a partir de los cuales se puede generar un Stream, no solo a través de colecciones.  Por ejemplo, se puede obtener una secuencia de valores a partir de la definición de un rango ``` [Xmin,Xmax]
+*  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUyNjE4MjM1LDIxNzMwNDMwM119
+eyJoaXN0b3J5IjpbLTEzNzY5NTA4NDUsMjE3MzA0MzAzXX0=
 -->
