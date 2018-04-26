@@ -301,16 +301,16 @@ static <T,U extends Comparable<? super U>> Comparator<T> comparing(Function<? su
 ##### Ejemplo:
 ```Java
 List<Curso> courseList;
-courseList =
-Arrays.asList(new Curso("Spring Framework", 230), new Curso("Java 8", 130),
-	new Curso("Angular", 50), new Curso("Zeppelin apache", 230));
-
+courseList = Arrays.asList(
+	new Curso("Spring Framework", 230),
+	 new Curso("Java 8", 130),new Curso("Angular", 50), 
+	 new Curso("Zeppelin apache", 230));
 System.out.println("sorting courses using it's name:");
 courseList.sort(comparing(c -> c.getNombre()));
 System.out.println(courseList);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NTYxNzU0MiwxMTg1Nzc0NDM3LDIxMz
+eyJoaXN0b3J5IjpbMTMxOTYxMjI1OCwxMTg1Nzc0NDM3LDIxMz
 k4MzA4NzMsLTY2MTk2MDkyNywxNzI3MTIxNzIzLC0zNDA5NjE1
 NTMsLTE4NDI5NTk0NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMT
 Y2MDg5OTQ0MCwtOTY5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5
