@@ -297,13 +297,15 @@ System.out.println(myFile.getAbsolutePath());
 ```Java
 static <T,U extends Comparable<? super U>> Comparator<T> comparing(Function<? super T,? extends U> keyExtractor)
 ```
-* Acepta una función y regresa un objeto ```Comparable<T>```. Dicho objeto se crea  extrayendo  el objeto que regresa la funci
+* Acepta una función y regresa un objeto ```Comparable<T>```. Dicho objeto se crea  extrayendo  el objeto que regresa la función tipo ```U``` mismo que será empleado como llave para realizar la comparación.
+##### Ejemplo:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQwNjE1NjEsMjEzOTgzMDg3MywtNj
-YxOTYwOTI3LDE3MjcxMjE3MjMsLTM0MDk2MTU1MywtMTg0Mjk1
-OTQ0OSwtNjg0NTQ1NDg2LDk4MzAzOTYyMSwxNjYwODk5NDQwLC
-05Njk1MjQ5NzEsLTEzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4
-OTQ5LC0xNzQwNTkwNDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LD
-E1NjIxMTU5MTksMTg3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0
-MTc0NzQ0Nl19
+eyJoaXN0b3J5IjpbMTE4NTc3NDQzNywyMTM5ODMwODczLC02Nj
+E5NjA5MjcsMTcyNzEyMTcyMywtMzQwOTYxNTUzLC0xODQyOTU5
+NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLDE2NjA4OTk0NDAsLT
+k2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC0zNzg5
+NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMT
+U2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQx
+NzQ3NDQ2XX0=
 -->
