@@ -289,13 +289,15 @@ System.out.println(myFile.getAbsolutePath());
 * La expresión lambda crea un objeto ```File```empleando el constructor que acepta un ```String```.  La expresión es ejecutada al invocar al método ```apply```.
 * En la segunda parte , se obtiene el mismo resultado haciendo referencia al constructor de la clase ```File```que recibe un ```String```como parámetro.
 
-### Métodos de utilería en  Interaces funcionales.
-
+### Métodos de utilería en  Interfaces funcionales.
 * Son implementaciones por default definidas en una interface funcional.
 * Permiten crear expresiones lambda  a partir de otras, algunas de ellas más complejas que la original.
-* 
+#### Creando comparadores
+```Java
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MjE5NDkwMSwyMTM5ODMwODczLC02Nj
+eyJoaXN0b3J5IjpbLTEyNTcwMjk0MywyMTM5ODMwODczLC02Nj
 E5NjA5MjcsMTcyNzEyMTcyMywtMzQwOTYxNTUzLC0xODQyOTU5
 NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLDE2NjA4OTk0NDAsLT
 k2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC0zNzg5
