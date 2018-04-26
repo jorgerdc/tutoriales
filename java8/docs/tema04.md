@@ -13,8 +13,8 @@
 ### Conceptos básicos
 #### Secuencia de elementos
 * Tanto una colección como un Stream está fuertemente relacionados con una secuencia o conjuntos de elementos pero con distintos enfoques:
-	* En una colección el enfoque es su almacenamiento empleando diversas estructuras de datos: listas, pilas, colas, etc.
-	* En un Stream, el enfoque  son las operaciones que se pued 
+	* En una colección el enfoque es su almacenamiento y acceso empleando diversas estructuras de datos: listas, pilas, colas, etc.
+	* En un Stream, el enfoque  son las operaciones que se pueden aplicar a la secuencia de elementos: ordenamiento, filtrado, etc.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDA5NTQ2MywyMTczMDQzMDNdfQ==
+eyJoaXN0b3J5IjpbLTgxMTg4NDQ1NCwyMTczMDQzMDNdfQ==
 -->
