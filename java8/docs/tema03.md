@@ -293,15 +293,17 @@ System.out.println(myFile.getAbsolutePath());
 * Son implementaciones por default definidas en una interface funcional.
 * Permiten crear expresiones lambda  a partir de otras, algunas de ellas más complejas que la original.
 #### Creando comparadores
+* Método ```Comparator.comparing```
 ```Java
-
+static <T,U extends Comparable<? super U>>
+Comparator<T>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTcwMjk0MywyMTM5ODMwODczLC02Nj
-E5NjA5MjcsMTcyNzEyMTcyMywtMzQwOTYxNTUzLC0xODQyOTU5
-NDQ5LC02ODQ1NDU0ODYsOTgzMDM5NjIxLDE2NjA4OTk0NDAsLT
-k2OTUyNDk3MSwtMTMzMTE5MTc5MiwxNDA5OTQ2MjA1LC0zNzg5
-NDksLTE3NDA1OTA0NDIsMzE0MTIxNDYxLC03ODM4NTAyODgsMT
-U2MjExNTkxOSwxODcwNzAwNTg1LC0xMzA4MzYxNTQyLC0yMTQx
-NzQ3NDQ2XX0=
+eyJoaXN0b3J5IjpbNzAzNjA5NjA2LDIxMzk4MzA4NzMsLTY2MT
+k2MDkyNywxNzI3MTIxNzIzLC0zNDA5NjE1NTMsLTE4NDI5NTk0
+NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMTY2MDg5OTQ0MCwtOT
+Y5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5NDYyMDUsLTM3ODk0
+OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwxNT
+YyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3
+NDc0NDZdfQ==
 -->
