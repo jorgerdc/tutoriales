@@ -288,13 +288,17 @@ System.out.println(myFile.getAbsolutePath());
 * En este ejemplo, se  usa la interface ```Function```que recibe un  ```String``` y regresa un objeto ```java.io.File```
 * La expresión lambda crea un objeto ```File```empleando el constructor que acepta un ```String```.  La expresión es ejecutada al invocar al método ```apply```.
 * En la segunda parte , se obtiene el mismo resultado haciendo referencia al constructor de la clase ```File```que recibe un ```String```como parámetro.
-* 
+
+### Métodos de utilería en  Interaces funcionales.
+
+* Son implementaciones por default definidas en una interface funcional.
+* Permiten crear expresiones lambda m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTgzMDg3MywtNjYxOTYwOTI3LDE3Mj
-cxMjE3MjMsLTM0MDk2MTU1MywtMTg0Mjk1OTQ0OSwtNjg0NTQ1
-NDg2LDk4MzAzOTYyMSwxNjYwODk5NDQwLC05Njk1MjQ5NzEsLT
-EzMzExOTE3OTIsMTQwOTk0NjIwNSwtMzc4OTQ5LC0xNzQwNTkw
-NDQyLDMxNDEyMTQ2MSwtNzgzODUwMjg4LDE1NjIxMTU5MTksMT
-g3MDcwMDU4NSwtMTMwODM2MTU0MiwtMjE0MTc0NzQ0NiwtMTEz
-NDM5NDk2MF19
+eyJoaXN0b3J5IjpbODI4NjA5MzA2LDIxMzk4MzA4NzMsLTY2MT
+k2MDkyNywxNzI3MTIxNzIzLC0zNDA5NjE1NTMsLTE4NDI5NTk0
+NDksLTY4NDU0NTQ4Niw5ODMwMzk2MjEsMTY2MDg5OTQ0MCwtOT
+Y5NTI0OTcxLC0xMzMxMTkxNzkyLDE0MDk5NDYyMDUsLTM3ODk0
+OSwtMTc0MDU5MDQ0MiwzMTQxMjE0NjEsLTc4Mzg1MDI4OCwxNT
+YyMTE1OTE5LDE4NzA3MDA1ODUsLTEzMDgzNjE1NDIsLTIxNDE3
+NDc0NDZdfQ==
 -->
