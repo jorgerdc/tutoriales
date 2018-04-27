@@ -21,8 +21,9 @@
 * Operaciones a realizar sobre los elementos del stream: ```filter, map , reduce, find, mach, sort, ``` etc.  Realizadas  de forma secuencial o en paalelo.
 #### Pipelining 
 * La mayoría de las operaciones regresan un Stream como resultado, lo que permite realizar encadenamiento de operaciones. Permite realizar optimizaciones como *laziness* y *short-circuiting*
-* 
+#### Iteraciones internas
+* Generalmente las interaciones requeridas para trabajar con los elementos se hacen de forma implicita. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjIyMzc4NSwxNzgxNjAzNDUsLTEwOT
-EyMzcxNjksMjE3MzA0MzAzXX0=
+eyJoaXN0b3J5IjpbLTI3NTU1NTIzLDE3ODE2MDM0NSwtMTA5MT
+IzNzE2OSwyMTczMDQzMDNdfQ==
 -->
