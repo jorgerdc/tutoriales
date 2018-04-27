@@ -17,8 +17,9 @@
 	* En un Stream, el enfoque  son las operaciones y cálculos que se pueden aplicar a la secuencia de elementos: ordenamiento, filtrado, mapeo, etc.
 #### Origen o fuente
 * Streams consumen los elementos de una fuente, por ejemplo, colecciones, arreglos o recursos I/O.+
-* 
+#### Operaciones
+* Operaciones a realizar 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjQ2NzI3NiwtMTA5MTIzNzE2OSwyMT
-czMDQzMDNdfQ==
+eyJoaXN0b3J5IjpbMTc4MTYwMzQ1LC0xMDkxMjM3MTY5LDIxNz
+MwNDMwM119
 -->
