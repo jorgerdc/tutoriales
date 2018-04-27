@@ -20,8 +20,9 @@
 #### Operaciones
 * Operaciones a realizar sobre los elementos del stream: ```filter, map , reduce, find, mach, sort, ``` etc.  Realizadas  de forma secuencial o en paalelo.
 #### Pipelining 
-* La mayoria de las operaciones regresan un Stream como resultado, lo que permite realizar encade
+* La mayoría de las operaciones regresan un Stream como resultado, lo que permite realizar encadenamiento de operaciones. Permite realizar optimizaciones como *laziness* y *short-circuiting*
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDYyNjg2MywxNzgxNjAzNDUsLTEwOT
+eyJoaXN0b3J5IjpbMTk2MjIyMzc4NSwxNzgxNjAzNDUsLTEwOT
 EyMzcxNjksMjE3MzA0MzAzXX0=
 -->
