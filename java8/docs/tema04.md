@@ -18,8 +18,8 @@
 #### Origen o fuente
 * Streams consumen los elementos de una fuente, por ejemplo, colecciones, arreglos o recursos I/O.+
 #### Operaciones
-* Operaciones a realizar 
+* Operaciones a realizar sobre los elementos del stream: filter, map , reduce, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTYwMzQ1LC0xMDkxMjM3MTY5LDIxNz
-MwNDMwM119
+eyJoaXN0b3J5IjpbLTI2OTA5MzcxOSwxNzgxNjAzNDUsLTEwOT
+EyMzcxNjksMjE3MzA0MzAzXX0=
 -->
