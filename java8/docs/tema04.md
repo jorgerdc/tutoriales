@@ -16,8 +16,9 @@
 	* En una colección el enfoque es su almacenamiento y acceso empleando diversas estructuras de datos: listas, pilas, colas, etc.
 	* En un Stream, el enfoque  son las operaciones y cálculos que se pueden aplicar a la secuencia de elementos: ordenamiento, filtrado, mapeo, etc.
 #### Origen o fuente
-* Representa la fuente de 
+* Streams consumen los elementos de una fuente, por ejemplo, colecciones, arreglos o recursos I/O.+
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjYyMjUzMywtMTA5MTIzNzE2OSwyMT
+eyJoaXN0b3J5IjpbMTI5NjQ2NzI3NiwtMTA5MTIzNzE2OSwyMT
 czMDQzMDNdfQ==
 -->
