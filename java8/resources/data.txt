@@ -1,0 +1,4 @@
+Functional programming languages
+-Java (since Java8)
+-Scala
+-Groovy
