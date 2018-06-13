@@ -1,6 +1,6 @@
 # Scala
 ## 1. Introducción.
-
+### Lenguaje escalable
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MTQ5MDY1OF19
+eyJoaXN0b3J5IjpbNDM0ODI2MDZdfQ==
 -->
