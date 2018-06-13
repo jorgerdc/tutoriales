@@ -1,7 +1,7 @@
 # Scala
 ## 1. Introducción.
 ### Lenguaje escalable
-* Diseñado para implementar las necesidades d
+* Diseñado como un lenguaje que permite implementa
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MDY1MTg0NF19
+eyJoaXN0b3J5IjpbMjg2NDQyNzk5XX0=
 -->
