@@ -5,8 +5,9 @@
 * Se ejecuta sobre el estándar de la plataforma Java
 * Interactua con todas las librerías Java.
 * Scala representa una mezcla de conceptos de la programación orientada a objetos y de la programación funcional a través de un lenguaje estáticamente tipado.
-* Esta combinación permite definir nuevos patrones de programación,  abstracción de componentes. 
+* Esta combinación permite definir nuevos patrones de programación,  abstracción de componentes. Es un lenguaje altamente **maleable** .
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTczNTk0MSwtMTM4NTM0NDEwNCwtOD
-UwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NT
+A1ODE5NzhdfQ==
 -->
