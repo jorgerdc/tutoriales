@@ -43,7 +43,7 @@ public class CourseUtilRefactor {
 
 	/**
 	 * @param courses
-	 * @param p the predicate to apply (expression Lambda)
+	 * @param p the predicate to apply ( Lambda expression)
 	 * @return
 	 */
 	public static List<Course> filterCourses(List<Course> courses, Predicate<Course> p) {
