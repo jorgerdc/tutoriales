@@ -28,9 +28,10 @@ def factorial(x: BigInt): BigInt =
 	if(x==0) 1 else x * factorial(x-1)
 ```
 * Dentro de la librería estándar que ofrece Scala, se encuentra ```BigInt``` que extiende a tipos de datos numéricos con la finalidad de manejar grandes cantidades.
-*
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjQyNjgxOCwtNjU0NDM2MDUwLDEwOD
-M4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5
-LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbNjkzNjYyMDQyLC02NTQ0MzYwNTAsMTA4Mz
+gyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTks
+LTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
 -->
