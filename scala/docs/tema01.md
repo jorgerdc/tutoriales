@@ -1,6 +1,6 @@
 # Scala
 ## 1. Introducción.
-### Lenguaje escalable
+### 1.1 Lenguaje escalable
 * Diseñado como un lenguaje que permite adaptarse , evolucionar y crecer con base a las necesidades de un usuario.
 * Se ejecuta sobre el estándar de la plataforma Java
 * Interactua con todas las librerías Java.
@@ -17,7 +17,7 @@ println(capitales("Mexico"))
 * Esta funcionalidad permite adaptar y escalar el lenguaje a las necesidades del usuario en lugar de *aumentar* la sintaxis e instrucciones del lenguaje (hacer crecer un lenguaje). 
 * Scala está basado en *módulos de librerías* que se pueden extender y adaptar con facilidad con base a necesidades específicas.
 
-### Adaptabilidad del lenguaje.
+### 1.2 Adaptabilidad del lenguaje.
 * Para que un lenguaje se considere como *completo*, de tal forma que pueda satisfacer las necesidades de todos sus programadores, el lenguaje deberá ofrecer una API, módulos, y sintaxis muy diversa y extensa: "*Lenguaje perfectamente completo*".
 * En Scala, en lugar de extender el lenguaje con todo lo anterior,  ha sido diseñado para que  los programadores lo extiendan y  lo adapten a sus necesidades.
 * Proporcionar un lenguaje que ofrezca una infinidad de funcionalidades implide una adecuada escalabilidad.
@@ -28,7 +28,7 @@ def factorial(x: BigInt): BigInt =
 	if(x==0) 1 else x * factorial(x-1)
 ```
 * Dentro de la librería estándar que ofrece Scala, se encuentra ```BigInt``` que extiende a tipos de datos numéricos con la finalidad de manejar grandes cantidades.
-#### Un ejemplo de adaptabilidad: Akka.
+#### 1.2.1 Un ejemplo de adaptabilidad: Akka.
 * Esta adaptabilidad también aplica a otras construcciones, por ejemplo, a estructuras de control.
 * ***Akka*** es un API de Scala que ilustra esta extensibilidad. Se trata de un API basada en el concepto de  *actor* para implementar programación concurrente. 
 * Aplicaciones basadas en la arquitectura  "*message passing*"  representan una alternativa al modelo de hilos de ejecución  como el de Java.  
@@ -50,8 +50,9 @@ def receive = {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOT
-UxMjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5
-MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OT
-kyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbLTE3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNT
+U4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2
+MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMj
+UwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgx
+OTc4XX0=
 -->
