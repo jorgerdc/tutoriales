@@ -31,12 +31,12 @@ def factorial(x: BigInt): BigInt =
 * Esta adaptabilidad también aplica a otras construcciones, por ejemplo, a estructuras de control.
 * ***Akka*** es un API de Scala que ilustra esta extensibilidad. Se trata de un API basada en el concepto de  *actor* para implementar programación concurrente. 
 * Aplicaciones basadas en la arquitectura  "*message passing*"  representan una alternativa al modelo de hilos de ejecución  como el de Java.  
-* La técnica empleada es a través del uso del concepto de *actor* .
-* Algunos 
+* La técnica empleada es a través del uso del concepto de *actor* (modelo de actores) .
+* Algunos leguajes usan este concepto, p.e.  Erlang. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTg5MjE0NDcsNjkzNjYyMDQyLC02NT
-Q0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1
-LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NT
-A1ODE5NzhdfQ==
+eyJoaXN0b3J5IjpbNTYyOTAzNTAxLDY5MzY2MjA0MiwtNjU0ND
+M2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwt
+MjUwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtODUwNT
+gxOTc4XX0=
 -->
