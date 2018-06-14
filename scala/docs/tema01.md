@@ -63,11 +63,11 @@ class checksumActor extends Actor {
 * En este ejemplo, el autor recibe 2 tipos de mensajes: el primero  es para aumentar el valor de la variable ```suma```y el segundo es una solicitud para calcular el checksum de la variable. el cual es enviado al actor. Notar el uso del operador "!"
 * Lo importante de esta sección es que ni el operador "!" , ni  el bloque ```receive```son funcionalidades o elementos sintácticos de Scala!
 * Ambos elementos son métodos definidos en la librería  *Akka* y son totalmente independientes de Scala.
-* 
+* Sin embargo, en el código, pareciera que son parte del lenguaje, en especial el operador "!".
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODkzMTY3MSwyMDE3MjY4MzAwLC0xNz
-A3NzA5NjUyLDE3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0
-MzEwMCw2OTM2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LD
-U4ODQ0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5
-OTMsLTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MD
+c3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQz
+MTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5MjgsNT
+g4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTkyMjk5
+MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
 -->
