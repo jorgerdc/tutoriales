@@ -22,8 +22,12 @@ println(capitales("Mexico"))
 * En Scala, en lugar de extender el lenguaje con todo lo anterior,  ha sido diseñado para que  los programadores lo extiendan y  lo adapten a sus necesidades.
 * Proporcionar un lenguaje que ofrezca una infinidad de funcionalidades implide una adecuada escalabilidad.
 * En el caso de Scala, programadores definen *librerías* de fácil uso que permiten extender y adaptar el lenguaje de tal forma que al ser empleadas pareciera que el lenguaje ofrece todas  esas funcionalidades de forma nativa.
+##### Ejemplo:
+```Scala
+def factorial(x: BigInt
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4OD
-Q0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMs
-LTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbNzE3NTI5NjAyLC02NTQ0MzYwNTAsMTA4Mz
+gyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTks
+LTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
 -->
