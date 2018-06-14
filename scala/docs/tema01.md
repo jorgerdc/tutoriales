@@ -44,12 +44,13 @@ myActor ! mensaje
 * Al ser asíncrono, cada actor define un *buzón de mensajes* que permite *encolar* y procesar mensajes.
 ```Scala
 def receive = {
-	case mensaje1 => 
+	case mensaje1 => //código para manejar el mensaje1
+	case mensaje2 => //código para manejar el mensaje2
 }
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjE3NzMyOCwtNTU4NTkzMjI4LC0xOT
+eyJoaXN0b3J5IjpbMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOT
 UxMjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5
 MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OT
 kyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
