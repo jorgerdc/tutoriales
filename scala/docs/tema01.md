@@ -41,10 +41,15 @@ def factorial(x: BigInt): BigInt =
 myActor ! mensaje
 ```
 * En el ejemplo el actor ```myActor```envía un mensaje a un actor de forma asíncrona. 
-* Al ser asíncrono, cada actor define un *buzón de mensajes* que permite *enco
+* Al ser asíncrono, cada actor define un *buzón de mensajes* que permite *encolar* y procesar mensajes.
+```Scala
+def receive = {
+	case mensaje1 => 
+}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTY1ODYzNywtNTU4NTkzMjI4LC0xOT
+eyJoaXN0b3J5IjpbMTU5NjE3NzMyOCwtNTU4NTkzMjI4LC0xOT
 UxMjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5
 MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OT
 kyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
