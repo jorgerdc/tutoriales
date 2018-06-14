@@ -16,8 +16,11 @@ println(capitales("Mexico"))
 * En este ejemplo, se obtiene una implementación default de un ``` map```  la cual se puede modificar con facilidad, p.e. es posible sobrescribir cualquier método del  map.
 * Esta funcionalidad permite adaptar y escalar el lenguaje a las necesidades del usuario en lugar de *aumentar* la sintaxis e instrucciones del lenguaje (hacer crecer un lenguaje). 
 * Scala está basado en *módulos de librerías* que se pueden extender y adaptar con facilidad con base a necesidades específicas.
+
+### Adaptabilidad del lenguaje.
+* EN 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMz
-MzMzk5LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4
-XX0=
+eyJoaXN0b3J5IjpbNTA1MDk3MzQsNTg4NDQ1MTcwLDk2NDQ0OD
+U2NSwtMjUwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0NDEwNCwt
+ODUwNTgxOTc4XX0=
 -->
