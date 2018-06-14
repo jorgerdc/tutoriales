@@ -48,11 +48,14 @@ def receive = {
 	case mensaje2 => //código para manejar el mensaje2
 }
 ```
-E
+#####Ejemplo:
+```Scala
+class calculaCh
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQwODc0MjEsLTE3MDc3MDk2NTIsMT
-c3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2
-MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLD
-k2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0
-NDEwNCwtODUwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbMjAzMzI4ODIzNSwtMTcwNzcwOTY1MiwxNz
+c2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYy
+MDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOT
+Y0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0
+MTA0LC04NTA1ODE5NzhdfQ==
 -->
