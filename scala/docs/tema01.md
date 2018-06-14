@@ -37,11 +37,14 @@ def factorial(x: BigInt): BigInt =
 * Un actor es una abstracción aplicada al concepto de concurrencia que pueden ser implementada  como una siguiente capa sobre el modelo Multi-hilos de Java.
 * En el modelo de actores, estos se comunican enviándose mensajes entre ellos empleando 2 operaciones básicas: ```send``` y ```receive```.  El signo de admiración se emplea para implementar la operación send.
 #####Ejemplo:
-
+```Scala
+myActor ! mensaje
+```
+* En el ejemplo el ac
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc3Mzg4MDMsLTU1ODU5MzIyOCwtMT
-k1MTI0MzEwMCw2OTM2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2
-OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtND
-k5MjI5OTMsLTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbODQ3NDYxNDgxLC01NTg1OTMyMjgsLTE5NT
+EyNDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNTAsMTA4MzgyNjky
+OCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OT
+IyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
 -->
