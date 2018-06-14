@@ -56,13 +56,15 @@ class checksumActor extends Actor {
 		case Data(byte) => sum += byte
 		case GetChecksum(requested) =>
 			val checksum=~(sum & 0xFF) + 1
+			requester ! checksum
 	}
 }
 ```
+* En este ejemplo, el autor recibe 2 tipos de mensajes: el primero  es para 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDY3NzUxLC0xNzA3NzA5NjUyLDE3Nz
-Y3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIw
-NDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5Nj
-Q0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQx
-MDQsLTg1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbMTc5NTc5MzQ3NCwtMTcwNzcwOTY1MiwxNz
+c2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYy
+MDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOT
+Y0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0
+MTA0LC04NTA1ODE5NzhdfQ==
 -->
