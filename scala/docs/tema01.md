@@ -24,10 +24,12 @@ println(capitales("Mexico"))
 * En el caso de Scala, programadores definen *librerías* de fácil uso que permiten extender y adaptar el lenguaje de tal forma que al ser empleadas pareciera que el lenguaje ofrece todas  esas funcionalidades de forma nativa.
 ##### Ejemplo:
 ```Scala
-def factorial(x: BigInt
+def factorial(x: BigInt): BigInt =
+	if(x==0) 1 else x * factorial(x-1)
 ```
+* Dentro de la 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE3NTI5NjAyLC02NTQ0MzYwNTAsMTA4Mz
-gyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTks
-LTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
+eyJoaXN0b3J5IjpbMTI3MjA0MTQ4NSwtNjU0NDM2MDUwLDEwOD
+M4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5
+LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
 -->
