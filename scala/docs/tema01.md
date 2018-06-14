@@ -13,11 +13,11 @@ capital += ("Chile"->"Santiago")
 println(capitales("Mexico")) 
 ```
 * En Scala los maps no son parte de la sintaxis del lenguaje.  Maps son *library abstractions*  que se pueden extender y adaptar
-* En este ejemplo, se obtiene una implementación default de un ``` map```  la cual se puede modificar con facilidad, es posible sobrescribir cualquier método del  map.
-* Esta funcionalidad permite adaptar y escalar el lenguaje a las necesidades del usuario en lugar de aumentar la sintaxis e instrucciones del lenguaje. 
-* Scala está basado en *módulos de librerías* que se pueden extender y adaptar.
+* En este ejemplo, se obtiene una implementación default de un ``` map```  la cual se puede modificar con facilidad, p.e. es posible sobrescribir cualquier método del  map.
+* Esta funcionalidad permite adaptar y escalar el lenguaje a las necesidades del usuario en lugar de *aumentar* la sintaxis e instrucciones del lenguaje (hacer crecer un lenguaje). 
+* Scala está basado en *módulos de librerías* que se pueden extender y adaptar con facilidad.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjA1MjY3Myw5NjQ0NDg1NjUsLTI1MD
+eyJoaXN0b3J5IjpbMTI2Njc4MzQ1Nyw5NjQ0NDg1NjUsLTI1MD
 MzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLTg1MDU4MTk3
 OF19
 -->
