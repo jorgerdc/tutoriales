@@ -18,9 +18,9 @@ println(capitales("Mexico"))
 * Scala está basado en *módulos de librerías* que se pueden extender y adaptar con facilidad con base a necesidades específicas.
 
 ### Adaptabilidad del lenguaje.
-* Para que un lenguaje se considere como *completo*, de tal forma que pueda satisfacer las necesidades de
+* Para que un lenguaje se considere como *completo*, de tal forma que pueda satisfacer las necesidades de todos sus programadores, el lenguaje deberá ofrecer una API, mod
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODc1ODk5OCw1ODg0NDUxNzAsOTY0ND
-Q4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0
-LC04NTA1ODE5NzhdfQ==
+eyJoaXN0b3J5IjpbMzYwNzgwMDE1LDU4ODQ0NTE3MCw5NjQ0ND
+g1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQs
+LTg1MDU4MTk3OF19
 -->
