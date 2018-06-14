@@ -30,11 +30,11 @@ def factorial(x: BigInt): BigInt =
 * Dentro de la librería estándar que ofrece Scala, se encuentra ```BigInt``` que extiende a tipos de datos numéricos con la finalidad de manejar grandes cantidades.
 * Esta adaptabilidad también aplica a otras construcciones, por ejemplo, a estructuras de control.
 * ***Akka*** es un API de Scala que ilustra esta extensibilidad. Se trata de un API basada en el concepto de  *actor* para implementar programación concurrente. 
-* Aplicaciones basadas en la arquitectura  "*message passing*"  representan una alternativa al modelo de hilos como el de Ja
+* Aplicaciones basadas en la arquitectura  "*message passing*"  representan una alternativa al modelo de hilos de ejecución  como el de Java.  La técnica empleada es a través del uso del concepto de *actor* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NDMwNzE3NCw2OTM2NjIwNDIsLTY1ND
-QzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1NjUs
-LTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLTg1MD
-U4MTk3OF19
+eyJoaXN0b3J5IjpbMjY3NjY2NTgsNjkzNjYyMDQyLC02NTQ0Mz
+YwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0y
+NTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1OD
+E5NzhdfQ==
 -->
