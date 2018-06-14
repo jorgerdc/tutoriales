@@ -33,11 +33,11 @@ def factorial(x: BigInt): BigInt =
 * Aplicaciones basadas en la arquitectura  "*message passing*"  representan una alternativa al modelo de hilos de ejecución  como el de Java.  
 * La técnica empleada es a través del uso del concepto de *actor* (modelo de actores) .
 * Algunos leguajes usan este concepto, p.e.  Erlang.
-* Un actor es una abstracción aplicada al concepto de concurrencia que pueden ser implementados  
+* Un actor es una abstracción aplicada al concepto de concurrencia que pueden ser implementada  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NT
-Q0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1
-LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NT
-A1ODE5NzhdfQ==
+eyJoaXN0b3J5IjpbLTE0NDkyNjI2ODEsLTE5NTEyNDMxMDAsNj
+kzNjYyMDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUx
+NzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMz
+g1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
 -->
