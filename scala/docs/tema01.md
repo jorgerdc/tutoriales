@@ -12,10 +12,10 @@ var capitales = Map("Mexico" -> "CDMX","Japón" ->"Tokio")
 capital += ("Chile"->"Santiago")
 println(capitales("Mexico")) 
 ```
-* En Scala maps no son parte de la sintaxis del lenguaje.  Maps 
+* En Scala maps no son parte de la sintaxis del lenguaje.  Maps son *library abstractions* 
 * En este ejemplo, se obtiene una implementación default de un ``` map``` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTQ2ODIyOCw5NjQ0NDg1NjUsLTI1MD
-MzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLTg1MDU4MTk3
-OF19
+eyJoaXN0b3J5IjpbNjA3MzE5NzkyLDk2NDQ0ODU2NSwtMjUwMz
+MzMzk5LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4
+XX0=
 -->
