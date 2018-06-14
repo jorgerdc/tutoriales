@@ -28,17 +28,17 @@ def factorial(x: BigInt): BigInt =
 	if(x==0) 1 else x * factorial(x-1)
 ```
 * Dentro de la librería estándar que ofrece Scala, se encuentra ```BigInt``` que extiende a tipos de datos numéricos con la finalidad de manejar grandes cantidades.
-#
+#### Un ejemplo de adaptabilidad: Akka.
 * Esta adaptabilidad también aplica a otras construcciones, por ejemplo, a estructuras de control.
 * ***Akka*** es un API de Scala que ilustra esta extensibilidad. Se trata de un API basada en el concepto de  *actor* para implementar programación concurrente. 
 * Aplicaciones basadas en la arquitectura  "*message passing*"  representan una alternativa al modelo de hilos de ejecución  como el de Java.  
 * La técnica empleada es a través del uso del concepto de *actor* (modelo de actores) .
 * Algunos leguajes usan este concepto, p.e.  Erlang.
 * Un actor es una abstracción aplicada al concepto de concurrencia que pueden ser implementada  como una siguiente capa sobre el modelo Multi-hilos de Java.
-* 
+* En el modelo de actores, estos se comunican enviándose mensajes entre ellos. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTYxMTE5MiwtMTk1MTI0MzEwMCw2OT
+eyJoaXN0b3J5IjpbMTk3MjYwNjA3MywtMTk1MTI0MzEwMCw2OT
 M2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3
 MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzOD
 UzNDQxMDQsLTg1MDU4MTk3OF19
