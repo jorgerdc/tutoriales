@@ -40,10 +40,10 @@ def factorial(x: BigInt): BigInt =
 ```Scala
 myActor ! mensaje
 ```
-* En el ejemplo el ac
+* En el ejemplo el actor ```myActor```envía un mensaje a un actor de forma asíncrona. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3NDYxNDgxLC01NTg1OTMyMjgsLTE5NT
+eyJoaXN0b3J5IjpbODQxNTM5NzQzLC01NTg1OTMyMjgsLTE5NT
 EyNDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNTAsMTA4MzgyNjky
 OCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OT
 IyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
