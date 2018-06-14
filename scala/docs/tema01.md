@@ -50,10 +50,16 @@ def receive = {
 ```
 #####Ejemplo:
 ```Scala
-class calculaCh
+class checksumActor extends Actor {
+	var suma = 0
+	def receive ={
+		case Data(byte) => sum += byte
+		case GetChec
+	}
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzI4ODIzNSwtMTcwNzcwOTY1MiwxNz
+eyJoaXN0b3J5IjpbMTE3MjU0NzM5OCwtMTcwNzcwOTY1MiwxNz
 c2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYy
 MDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOT
 Y0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0
