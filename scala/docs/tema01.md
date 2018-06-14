@@ -21,9 +21,9 @@ println(capitales("Mexico"))
 * Para que un lenguaje se considere como *completo*, de tal forma que pueda satisfacer las necesidades de todos sus programadores, el lenguaje deberá ofrecer una API, módulos, y sintaxis muy diversa y extensa: "*Lenguaje perfectamente completo*".
 * En Scala, en lugar de extender el lenguaje con todo lo anterior,  ha sido diseñado para que  los programadores lo extiendan y  lo adapten a sus necesidades.
 * Proporcionar un lenguaje que ofrezca una infinidad de funcionalidades implide una adecuada escalabilidad.
-* En el caso de Scala, programadores definen *librería
+* En el caso de Scala, programadores definen *librerías* de fácil uso que permiten extender y adaptar el lenguaje de tal forma que su uso 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDE0MjQ3LDEwODM4MjY5MjgsNTg4ND
-Q1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTkyMjk5Mywt
-MTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbMTQwNjY4MjUwMCwxMDgzODI2OTI4LDU4OD
+Q0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMs
+LTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
 -->
