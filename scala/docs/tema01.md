@@ -20,8 +20,9 @@ println(capitales("Mexico"))
 ### Adaptabilidad del lenguaje.
 * Para que un lenguaje se considere como *completo*, de tal forma que pueda satisfacer las necesidades de todos sus programadores, el lenguaje deberá ofrecer una API, módulos, y sintaxis muy diversa y extensa: "*Lenguaje perfectamente completo*".
 * En Scala, en lugar de extender el lenguaje con todo lo anterior,  ha sido diseñado para que  los programadores lo extiendan y  lo adapten a sus necesidades.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0ND
-Q4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0
-LC04NTA1ODE5NzhdfQ==
+eyJoaXN0b3J5IjpbLTg1OTczOTk5MiwxMDgzODI2OTI4LDU4OD
+Q0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMs
+LTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
 -->
