@@ -35,10 +35,10 @@ def factorial(x: BigInt): BigInt =
 * La técnica empleada es a través del uso del concepto de *actor* (modelo de actores) .
 * Algunos leguajes usan este concepto, p.e.  Erlang.
 * Un actor es una abstracción aplicada al concepto de concurrencia que pueden ser implementada  como una siguiente capa sobre el modelo Multi-hilos de Java.
-* En el modelo de actores, estos se comunican enviándose mensajes entre ellos. 
+* En el modelo de actores, estos se comunican enviándose mensajes entre ellos empleando 2 operaciones básicas: ```send``` y ```receive```. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MjYwNjA3MywtMTk1MTI0MzEwMCw2OT
+eyJoaXN0b3J5IjpbLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OT
 M2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3
 MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzOD
 UzNDQxMDQsLTg1MDU4MTk3OF19
