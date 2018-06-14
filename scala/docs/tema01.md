@@ -27,9 +27,10 @@ println(capitales("Mexico"))
 def factorial(x: BigInt): BigInt =
 	if(x==0) 1 else x * factorial(x-1)
 ```
-* Dentro de la librería estándar que ofrece Scala, se encuentra ```BigInt
+* Dentro de la librería estándar que ofrece Scala, se encuentra ```BigInt``` que extiende a tipos de datos numéricos con la finalidad de manejar grandes cantidades.
+*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTgxNzExNDAsLTY1NDQzNjA1MCwxMD
-gzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5
-OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbLTY3NjQyNjgxOCwtNjU0NDM2MDUwLDEwOD
+M4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5
+LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
 -->
