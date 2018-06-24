@@ -64,10 +64,12 @@ class checksumActor extends Actor {
 * Lo importante de esta sección es que ni el operador "!" , ni  el bloque ```receive```son funcionalidades o elementos sintácticos de Scala!
 * Ambos elementos son métodos definidos en la librería  *Akka* y son totalmente independientes de Scala.
 * Sin embargo, en el código, pareciera que son parte del lenguaje, en especial el operador "!".
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MD
-c3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQz
-MTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5MjgsNT
-g4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTkyMjk5
-MywtMTM4NTM0NDEwNCwtODUwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNz
+I2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1OTMy
+MjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNTAsMT
+A4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMz
+OTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ
+==
 -->
