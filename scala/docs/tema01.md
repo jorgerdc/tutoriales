@@ -108,13 +108,15 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 ### 1.4 Características principales de Scala 
 #### 1.4.1 Compatibilidad
 * Ofrece interoperbilidad con Java.  Scala reutiliza buena parte del API de Java
-* Mejora el API de Java. P.e.  los métodos ```toInt```  aplicados a cadenas: ```str.toInt``` en lugar de ```Integer.parseInt(str)```	 
+* Mejora el API de Java. P.e.  los métodos ```toInt```  aplicados a cadenas: ```str.toInt``` en lugar de ```Integer.parseInt(str)```
+* A pesar de que el método ```toInt```no existe en la clase ```String```es posible aplicarlo a cadenas. 
+	* En este caso Scala 	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjcyNzI4Myw1NDE2NTY1NDgsNjM2Nz
-YwNzkwLDE5ODc4NDkzOTIsNDMyMDYxODUyLC0xMjMyOTY3NjIz
-LDEwODk2MDE5OCwtMzk3MzY2OTg1LDE5OTA2NDE4NywtMTI4ND
-c3MTcyMSwxMzQ3MjgyODUzLC04MzA2MzM1MTUsLTE5OTA1NTc3
-MywyMTE2ODMwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAwLC0xNz
-A3NzA5NjUyLDE3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0
-MzEwMF19
+eyJoaXN0b3J5IjpbNDk0MDIzMTgxLDU0MTY1NjU0OCw2MzY3Nj
+A3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMs
+MTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0Nz
+cxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1Nzcz
+LDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MD
+c3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQz
+MTAwXX0=
 -->
