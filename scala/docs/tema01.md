@@ -71,8 +71,12 @@ class checksumActor extends Actor {
 	* Cada  valor en Scala es un objeto (no primitivos)
 	* Cada operación en Scala es una llamada a un método.
 ##### Ejemplo:
+```scala
+1 + 2
+```
+* En el ejemplo anterior se invóca al metodo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTg1ODA2MywyMTE2ODMwMzAzLDg4NT
+eyJoaXN0b3J5IjpbMjAzMjU2ODI2NCwyMTE2ODMwMzAzLDg4NT
 AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
 MjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLT
 Y1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1
