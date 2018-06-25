@@ -88,13 +88,14 @@ class checksumActor extends Actor {
 	* ¿ Qué método empleará la clase D?  La implementación de la clase B,   o la implementación de la clase C ¿?
 * A esta ambigüedad se le conoce como el efecto diamánte.
 #### 1.3.2 Scala es Funcional
-La programaci
+La programación funcional está dirigida por 2 principales conceptos:
+* Funciones son tratadas como *First-class values* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDcxNzUxMzcsMTk5MDY0MTg3LC0xMj
-g0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1
-NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLT
-E3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUx
-MjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5Mj
-gsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTky
-Mjk5M119
+eyJoaXN0b3J5IjpbLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEyOD
+Q3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3
+NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMT
+cwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEy
+NDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOC
+w1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OTIy
+OTkzXX0=
 -->
