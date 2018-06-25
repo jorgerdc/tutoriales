@@ -66,9 +66,11 @@ class checksumActor extends Actor {
 * Sin embargo, en el código, pareciera que son parte del lenguaje, en especial el operador "!".
 ### 1.3 ¿Qué es lo que hace a Scala  escalable ?
 * En buena parte  se debe a a la combinación entre  la programación funcional y la programación orientada a objetos. 
-#### Orientado a obje
+#### Orientado a objetos.
+* Se dice que Scala es orientado a objetos de forma pura: 
+	* Cada  valor en Scala es ub
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyNzYwODA0LDIxMTY4MzAzMDMsODg1MD
+eyJoaXN0b3J5IjpbMTA5NzQwNTEzLDIxMTY4MzAzMDMsODg1MD
 AxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAy
 MSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0MiwtNj
 U0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2
