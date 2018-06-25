@@ -92,12 +92,18 @@ La programación funcional está dirigida por 2 principales conceptos:
 * Funciones son tratadas como *First-class values* :  capacidad de pasar una función como argumento, ser enviadas como valor de retorno de una función, ser almacenadas en estructuras de datos como cualquier otro dato, o  referenciarlas a través de una variable.
 * Estas características permiten aumentar la expresividad, legibilidad y consistencia de un programa.
 * Otra característica es las propiedad de escalabilidad que adquiere el código.
+##### Ejemplo:
+```scala
+val xs = 1 to 3
+val it = xs.iterator
+eventually
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MD
-Y0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUx
-NSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMT
-cyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkz
-MjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLD
-EwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMz
-Mzk5XX0=
+eyJoaXN0b3J5IjpbLTEwMjczMTEyNDgsMTA4OTYwMTk4LC0zOT
+czNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4
+NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsOD
+g1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2
+NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0Mi
+wtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0
+ODU2NV19
 -->
