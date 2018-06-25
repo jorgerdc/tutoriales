@@ -131,14 +131,14 @@ class MyClass(index: Int, name String)
 ```
 * La única diferencia entre los 2 ejemplos, es que los atributos de la clase en Scala serán creados como ```final```.
 * Scala define librerías que permiten la eliminación de código repetitivo y comportamiento común.
-### #1.4.3 De alto nivel.
+#### 1.4.3 De alto nivel.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNzkxOTA5MywtMjg2NTE0ODQzLDQ5ND
-AyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIs
-NDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3Mz
-Y2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUz
-LC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NT
-AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
-MjFdfQ==
+eyJoaXN0b3J5IjpbLTIyMDU4MSwtMjg2NTE0ODQzLDQ5NDAyMz
+E4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMy
+MDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3MzY2OT
+g1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04
+MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NTAwMT
+g0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQwMjFd
+fQ==
 -->
