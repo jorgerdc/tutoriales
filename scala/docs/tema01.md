@@ -79,12 +79,12 @@ class checksumActor extends Actor {
 * Scala hace uso del concepto de *Trait*
 * Un *Trait*  es similar a una interface en Java pero con funcionalidades adicionales:
 	* Objetos pueden ser construidos por composición:  formado por atributos de una clase y por atributos de varios *Traits*.
-	* Lo anterior pareciera herencia múltiple. Un *Trait* puede agregar funcionalidad 
+	* Lo anterior pareciera herencia múltiple. Un *Trait* puede agregar funcionalidad a una super clase o clase base sin ser especificada !. (Se revisará más adelante).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMT
-Y4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2
-NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLD
-Y5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1
-MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTkyMjk5MywtMT
-M4NTM0NDEwNCwtODUwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbODc3OTEyNTIwLC04MzA2MzM1MTUsLTE5OT
+A1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAw
+LC0xNzA3NzA5NjUyLDE3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMT
+k1MTI0MzEwMCw2OTM2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2
+OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtND
+k5MjI5OTMsLTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
 -->
