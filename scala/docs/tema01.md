@@ -129,14 +129,16 @@ class MyClass {
 ```Scala
 class MyClass(index: Int, name String)
 ```
+* La única diferencia entre los 2 ejemplos, es que los atributos de la clase en Scala serán creados como ```final```.
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2ODAwMjg1LC0yODY1MTQ4NDMsNDk0MD
-IzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5Miw0
-MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOTczNj
-Y5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMs
-LTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MD
-AxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAy
-MV19
+eyJoaXN0b3J5IjpbLTE0Mzc3NzE2NjEsLTI4NjUxNDg0Myw0OT
+QwMjMxODEsNTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5Mzky
+LDQzMjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5Nz
+M2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1
+MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4OD
+UwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0
+MDIxXX0=
 -->
