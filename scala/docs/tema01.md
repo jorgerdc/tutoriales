@@ -90,13 +90,14 @@ class checksumActor extends Actor {
 #### 1.3.2 Scala es Funcional
 La programación funcional está dirigida por 2 principales conceptos:
 * Funciones son tratadas como *First-class values* :  capacidad de pasar una función como argumento, ser enviadas como valor de retorno de una función, ser almacenadas en estructuras de datos como cualquier otro dato, o  referenciarlas a través de una variable.
-* Estas caracter
+* Estas características permiten aumentar la expresividad, legibilidad y consistencia de un programa.
+* Otra característica es las propiedad de e
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjE4MjI5NywtMzk3MzY2OTg1LDE5OT
-A2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04MzA2MzM1
-MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0MSwyMD
-E3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQwMjEsLTU1ODU5
-MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLTY1NDQzNjA1MC
-wxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1NjUsLTI1MDMz
-MzM5OV19
+eyJoaXN0b3J5IjpbLTIwODg1Mzg2MTgsLTM5NzM2Njk4NSwxOT
+kwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMz
+NTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMj
+AxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1
+OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNT
+AsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAz
+MzMzOTldfQ==
 -->
