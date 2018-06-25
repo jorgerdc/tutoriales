@@ -84,13 +84,13 @@ class checksumActor extends Actor {
 ##### Efecto diamante:
 ![Efecto diamante, tomada de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Diamond_inheritance.svg/220px-Diamond_inheritance.svg.png)
 * Suponer que la clase A define un método que es sobrescrito o implementado tanto por la clase B como por la clase C.
-* Suponer 
+* Suponer 	que la clase D no sobrescribe al método.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtOD
-MwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4
-NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC
-01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0
-MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC
-0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1
-ODE5NzhdfQ==
+eyJoaXN0b3J5IjpbMTYxNzQzNjQ1OCwtMTI4NDc3MTcyMSwxMz
+Q3MjgyODUzLC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMw
+MzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLD
+E3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2
+NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MC
+w5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUz
+NDQxMDRdfQ==
 -->
