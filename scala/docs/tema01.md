@@ -83,14 +83,14 @@ class checksumActor extends Actor {
 	* Esta característica permite evitar el típico problema de *efecto diamante* que se provoca al tener herencia múltiple el cual se explica  brevemente a continuación.
 ##### Efecto diamante:
 ![Efecto diamante, tomada de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Diamond_inheritance.svg/220px-Diamond_inheritance.svg.png)
-* Suponer que la clase A define un método que es sobrescrito o implementado tanto por la clase B como por la clase C.
-* Suponer 	que la clase D no sobrescribe al método.
+* Suponer que la clase A define un método ```m1``` que es sobrescrito o implementado tanto por la clase B como por la clase C.
+* Suponer 	que la clase D no sobrescribe al método . Debido a que D extiende de ambas clases (herencia múltiple) m 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzQzNjQ1OCwtMTI4NDc3MTcyMSwxMz
-Q3MjgyODUzLC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMw
-MzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLD
-E3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2
-NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MC
-w5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUz
-NDQxMDRdfQ==
+eyJoaXN0b3J5IjpbLTE2NzU1MzczNTEsLTEyODQ3NzE3MjEsMT
+M0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgz
+MDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1Mi
+wxNzc2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkz
+NjYyMDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNz
+AsOTY0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1
+MzQ0MTA0XX0=
 -->
