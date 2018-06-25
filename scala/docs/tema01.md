@@ -100,9 +100,9 @@ eventually { it.next() shouldBe 3}
 ```
 El método ```eventually``` recibe  a una función como parámetro representada por la aserción indicada entre { } la cual no cuenta con un nombre. 
 
-* Concepto 2:  Las operaciones que se realizan en una función deben
+* Concepto 2:  Debe existir un mapeo entre valores de entrada y valores de salida de una función. Es decir,  una función no debe modificar los valores de las variables o paràmet
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMDU0Njk5MiwxMDg5NjAxOTgsLTM5Nz
+eyJoaXN0b3J5IjpbMTc1ODA0ODY2NiwxMDg5NjAxOTgsLTM5Nz
 M2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1
 MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4OD
 UwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0
