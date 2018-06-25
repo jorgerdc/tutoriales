@@ -130,15 +130,14 @@ class MyClass {
 class MyClass(index: Int, name String)
 ```
 * La única diferencia entre los 2 ejemplos, es que los atributos de la clase en Scala serán creados como ```final```.
-
-
+* Scala define librerías que p
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc3NzE2NjEsLTI4NjUxNDg0Myw0OT
-QwMjMxODEsNTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5Mzky
-LDQzMjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5Nz
-M2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1
-MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4OD
-UwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0
-MDIxXX0=
+eyJoaXN0b3J5IjpbLTk1NDQyMTUwMCwtMjg2NTE0ODQzLDQ5ND
+AyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIs
+NDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3Mz
+Y2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUz
+LC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NT
+AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
+MjFdfQ==
 -->
