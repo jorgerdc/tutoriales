@@ -96,14 +96,15 @@ La programación funcional está dirigida por 2 principales conceptos:
 ```scala
 val xs = 1 to 3
 val it = xs.iterator
-eventually
+eventually { it.next() shouldBe 3}
 ```
+* El método ```eventually```recibe  a una función como parámetro representada por la aserción i 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjczMTEyNDgsMTA4OTYwMTk4LC0zOT
-czNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4
-NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsOD
-g1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2
-NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0Mi
-wtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0
-ODU2NV19
+eyJoaXN0b3J5IjpbMTMwMzYwMzc0MywxMDg5NjAxOTgsLTM5Nz
+M2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1
+MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4OD
+UwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0
+MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC
+02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4
+NTY1XX0=
 -->
