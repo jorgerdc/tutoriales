@@ -78,12 +78,12 @@ class checksumActor extends Actor {
 * En Scala se pueden emplear operadores para definir métodos!
 * Scala hace uso del concepto de *Trait*
 * Un *Trait*  es similar a una interface en Java pero con funcionalidades adicionales:
-	* Objetos pueden ser construidos por composic
+	* Objetos pueden ser construidos por composición:  formado por atributos de una clase 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTYxMDI0NDYsLTE5OTA1NTc3MywyMT
-E2ODMwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5
-NjUyLDE3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMC
-w2OTM2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0
-NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLT
-EzODUzNDQxMDQsLTg1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbMzIzNzU4ODA1LC0xOTkwNTU3NzMsMjExNj
+gzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1
+MiwxNzc2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNj
+kzNjYyMDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUx
+NzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMz
+g1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
 -->
