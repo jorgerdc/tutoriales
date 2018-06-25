@@ -105,14 +105,14 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 	* Scala define múltiples tipos de datos inmutables: listas, mapas, sets, etc.
 	* Otra forma de ver este concepto es que una función no debe provocar efectos secundarios: *Referencialmente transparente* . La función trabaja únicamente con los valores de entrada y regresa un valor. No afecta la semántica del programa.
 * Cuando no se siguen estos 2 conceptos, se  tiene un estilo de programación *imperativo* .
- 
-	 
+### 1.4 Características principales de Scala 
+#### 1.4.1 C	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3OD
-Q5MzkyLDQzMjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgs
-LTM5NzM2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0Nz
-I4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMw
-Myw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNz
-c2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYy
-MDQyXX0=
+eyJoaXN0b3J5IjpbMTQxMjgyOTQzLDU0MTY1NjU0OCw2MzY3Nj
+A3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMs
+MTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0Nz
+cxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1Nzcz
+LDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MD
+c3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQz
+MTAwXX0=
 -->
