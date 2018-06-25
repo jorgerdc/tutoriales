@@ -86,13 +86,15 @@ class checksumActor extends Actor {
 * Suponer que la clase A define un método ```m1``` que es sobrescrito o implementado tanto por la clase B como por la clase C.
 * Suponer 	que la clase D no sobrescribe al método ```m1```. Debido a que D extiende de ambas clases (herencia múltiple),  ocurre una ambigüedad: 
 	* ¿ Qué método empleará la clase D?  La implementación de la clase B,   o la implementación de la clase C ¿?
-* A est
+* A esta ambigüedad se le conoce como el efecto diamánte.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODQ3NDY1NiwtMTI4NDc3MTcyMSwxMz
-Q3MjgyODUzLC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMw
-MzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLD
-E3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2
-NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MC
-w5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUz
-NDQxMDRdfQ==
+eyJoaXN0b3J5IjpbMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzND
+cyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAz
+MDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMT
+c3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2
+MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLD
+k2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0
+NDEwNF19
 -->
