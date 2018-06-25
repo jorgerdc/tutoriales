@@ -104,15 +104,17 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 	* Inmutabilidad representa una piedra angular en programación funcional.
 	* Scala define múltiples tipos de datos inmutables: listas, mapas, sets, etc.
 	* Otra forma de ver este concepto es que una función no debe provocar efectos secundarios: *Referencialmente transparente* . La función trabaja únicamente con los valores de entrada y regresa un valor. No afecta la semántica del programa.
-* Cuando no se siguien estos 2 c
+* Cuando no se siguen estos 2 conceptos, se  tiene un estilo de programación *imperativo* .
+
+
 	* 
 	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMTAwMzI1OSwxOTg3ODQ5MzkyLDQzMj
-A2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Njk4
-NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtOD
-MwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4
-NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC
-01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0
-MzYwNTBdfQ==
+eyJoaXN0b3J5IjpbNjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMyMD
+YxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3MzY2OTg1
+LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04Mz
+A2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0
+MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQwMjEsLT
+U1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLTY1NDQz
+NjA1MF19
 -->
