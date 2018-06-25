@@ -80,11 +80,12 @@ class checksumActor extends Actor {
 * Un *Trait*  es similar a una interface en Java pero con funcionalidades adicionales:
 	* Objetos pueden ser construidos por composición:  formado por atributos de una clase y por atributos de varios *Traits*.
 	* Lo anterior pareciera herencia múltiple. Un *Trait* puede agregar funcionalidad a una super clase o clase base sin ser especificada !. (Se revisará más adelante).
+	* Esta característica permite evitar el típico problema de *efecto diamante* que se provoca al tener herencia múltiple.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3OTEyNTIwLC04MzA2MzM1MTUsLTE5OT
-A1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAw
-LC0xNzA3NzA5NjUyLDE3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMT
-k1MTI0MzEwMCw2OTM2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2
-OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtND
-k5MjI5OTMsLTEzODUzNDQxMDQsLTg1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOT
+kwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMw
+MCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1OTMyMjgsLT
+E5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNTAsMTA4Mzgy
+NjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMzOTksLT
+Q5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ==
 -->
