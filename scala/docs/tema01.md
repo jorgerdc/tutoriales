@@ -106,13 +106,15 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 	* Otra forma de ver este concepto es que una función no debe provocar efectos secundarios: *Referencialmente transparente* . La función trabaja únicamente con los valores de entrada y regresa un valor. No afecta la semántica del programa.
 * Cuando no se siguen estos 2 conceptos, se  tiene un estilo de programación *imperativo* .
 ### 1.4 Características principales de Scala 
-#### 1.4.1 C	 
+#### 1.4.1 Compatibilidad
+* Ofrece interoperbilidad con Java.  Scala reutiliza buena parte del API de Java
+* Mej	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjgyOTQzLDU0MTY1NjU0OCw2MzY3Nj
-A3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMs
-MTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0Nz
-cxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1Nzcz
-LDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MD
-c3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQz
-MTAwXX0=
+eyJoaXN0b3J5IjpbLTEyODE3MTAzMzcsNTQxNjU2NTQ4LDYzNj
+c2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2NzYy
+MywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEyOD
+Q3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3
+NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMT
+cwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEy
+NDMxMDBdfQ==
 -->
