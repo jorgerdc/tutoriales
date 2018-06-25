@@ -36,7 +36,7 @@ def factorial(x: BigInt): BigInt =
 * Algunos leguajes usan este concepto, p.e.  Erlang.
 * Un actor es una abstracción aplicada al concepto de concurrencia que pueden ser implementada  como una siguiente capa sobre el modelo Multi-hilos de Java.
 * En el modelo de actores, estos se comunican enviándose mensajes entre ellos empleando 2 operaciones básicas: ```send``` y ```receive```.  El signo de admiración se emplea para implementar la operación send.
-#####Ejemplo:
+##### Ejemplo:
 ```Scala
 myActor ! mensaje
 ```
@@ -48,7 +48,7 @@ def receive = {
 	case mensaje2 => //código para manejar el mensaje2
 }
 ```
-#####Ejemplo:
+##### Ejemplo:
 ```Scala
 class checksumActor extends Actor {
 	var suma = 0
@@ -66,10 +66,10 @@ class checksumActor extends Actor {
 * Sin embargo, en el código, pareciera que son parte del lenguaje, en especial el operador "!".
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNz
-I2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1OTMy
-MjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNTAsMT
-A4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAzMzMz
-OTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1ODE5NzhdfQ
-==
+eyJoaXN0b3J5IjpbMTkwMzU1MjY3NywyMTE2ODMwMzAzLDg4NT
+AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
+MjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLT
+Y1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1
+NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLT
+g1MDU4MTk3OF19
 -->
