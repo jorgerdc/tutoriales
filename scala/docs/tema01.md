@@ -84,9 +84,10 @@ class checksumActor extends Actor {
 ##### Efecto diamante:
 ![Efecto diamante, tomada de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Diamond_inheritance.svg/220px-Diamond_inheritance.svg.png)
 * Suponer que la clase A define un método ```m1``` que es sobrescrito o implementado tanto por la clase B como por la clase C.
-* Suponer 	que la clase D no sobrescribe al método . Debido a que D extiende de ambas clases (herencia múltiple) m 
+* Suponer 	que la clase D no sobrescribe al método ```m1```. Debido a que D extiende de ambas clases (herencia múltiple),  ocurre una ambigüedad: 
+	* ¿ QU?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzU1MzczNTEsLTEyODQ3NzE3MjEsMT
+eyJoaXN0b3J5IjpbLTE3ODQ0NzA0ODIsLTEyODQ3NzE3MjEsMT
 M0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgz
 MDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1Mi
 wxNzc2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkz
