@@ -68,12 +68,14 @@ class checksumActor extends Actor {
 * En buena parte  se debe a a la combinación entre  la programación funcional y la programación orientada a objetos. 
 #### Orientado a objetos.
 * Se dice que Scala es orientado a objetos de forma pura: 
-	* Cada  valor en Scala es ub
+	* Cada  valor en Scala es un objeto (no primitivos)
+	* Cada operación en Scala es una llamada a un método.
+##### Ejemplo:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NzQwNTEzLDIxMTY4MzAzMDMsODg1MD
-AxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAy
-MSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0MiwtNj
-U0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2
-NSwtMjUwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtOD
-UwNTgxOTc4XX0=
+eyJoaXN0b3J5IjpbMTEyNTg1ODA2MywyMTE2ODMwMzAzLDg4NT
+AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
+MjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLT
+Y1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1
+NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLT
+g1MDU4MTk3OF19
 -->
