@@ -66,7 +66,7 @@ class checksumActor extends Actor {
 * Sin embargo, en el código, pareciera que son parte del lenguaje, en especial el operador "!".
 ### 1.3 ¿Qué es lo que hace a Scala  escalable ?
 * En buena parte  se debe a a la combinación entre  la programación funcional y la programación orientada a objetos. 
-#### Orientado a objetos.
+#### 1.3.1 Scala es Orientado a objetos.
 * Se dice que Scala es orientado a objetos de forma pura: 
 	* Cada  valor en Scala es un objeto (no primitivos)
 	* Cada operación en Scala es una llamada a un método.
@@ -87,14 +87,14 @@ class checksumActor extends Actor {
 * Suponer 	que la clase D no sobrescribe al método ```m1```. Debido a que D extiende de ambas clases (herencia múltiple),  ocurre una ambigüedad: 
 	* ¿ Qué método empleará la clase D?  La implementación de la clase B,   o la implementación de la clase C ¿?
 * A esta ambigüedad se le conoce como el efecto diamánte.
-
-
+#### 1.3.2 Scala es Funcional
+La programaci
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzND
-cyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAz
-MDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMT
-c3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2
-MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLD
-k2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0
-NDEwNF19
+eyJoaXN0b3J5IjpbLTE4NDcxNzUxMzcsMTk5MDY0MTg3LC0xMj
+g0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1
+NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLT
+E3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUx
+MjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLDEwODM4MjY5Mj
+gsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMzMzk5LC00OTky
+Mjk5M119
 -->
