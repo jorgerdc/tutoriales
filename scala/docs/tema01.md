@@ -91,13 +91,13 @@ class checksumActor extends Actor {
 La programación funcional está dirigida por 2 principales conceptos:
 * Funciones son tratadas como *First-class values* :  capacidad de pasar una función como argumento, ser enviadas como valor de retorno de una función, ser almacenadas en estructuras de datos como cualquier otro dato, o  referenciarlas a través de una variable.
 * Estas características permiten aumentar la expresividad, legibilidad y consistencia de un programa.
-* Otra característica es las propiedad de e
+* Otra característica es las propiedad de escalabilidad que adquiere el código.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODg1Mzg2MTgsLTM5NzM2Njk4NSwxOT
-kwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMz
-NTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMj
-AxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1
-OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0MzYwNT
-AsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC0yNTAz
-MzMzOTldfQ==
+eyJoaXN0b3J5IjpbMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MD
+Y0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUx
+NSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMT
+cyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkz
+MjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2MDUwLD
+EwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2NSwtMjUwMzMz
+Mzk5XX0=
 -->
