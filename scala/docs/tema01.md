@@ -76,12 +76,13 @@ class checksumActor extends Actor {
 ```
 * En el ejemplo anterior se invoca al métod "+" que existe en la clase ```Int```
 * En Scala se pueden emplear operadores para definir métodos!
-* 
+* Scala hace uso del concepto de *Trait*
+* Un *Trait*  es similar a una int
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NT
-AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
-MjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLT
-Y1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1
-NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLT
-g1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbNTY3OTA4MTAsLTE5OTA1NTc3MywyMTE2OD
+MwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUy
+LDE3NzY3NjQwMjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OT
+M2NjIwNDIsLTY1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3
+MCw5NjQ0NDg1NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzOD
+UzNDQxMDQsLTg1MDU4MTk3OF19
 -->
