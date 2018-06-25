@@ -89,22 +89,22 @@ class checksumActor extends Actor {
 * A esta ambigüedad se le conoce como el efecto diamánte.
 #### 1.3.2 Scala es Funcional
 La programación funcional está dirigida por 2 principales conceptos:
-* Funciones son tratadas como *First-class values* :  capacidad de pasar una función como argumento, ser enviadas como valor de retorno de una función, ser almacenadas en estructuras de datos como cualquier otro dato, o  referenciarlas a través de una variable.
-* Estas características permiten aumentar la expresividad, legibilidad y consistencia de un programa.
-* Otra característica es las propiedad de escalabilidad que adquiere el código.
+* Concepto 1:  Funciones son tratadas como *First-class values* :  capacidad de pasar una función como argumento, ser enviadas como valor de retorno de una función, ser almacenadas en estructuras de datos como cualquier otro dato, o  referenciarlas a través de una variable.
+	* Estas características permiten aumentar la expresividad, legibilidad y consistencia de un programa.
+	* Otra característica es la propiedad de escalabilidad que adquiere el código.
 ##### Ejemplo:
 ```scala
 val xs = 1 to 3
 val it = xs.iterator
 eventually { it.next() shouldBe 3}
 ```
-* El método ```eventually```recibe  a una función como parámetro representada por la aserción indicada entre { } la cual no cuenta con un nombre. 
+	* El método ```eventually```recibe  a una función como parámetro representada por la aserción indicada entre { } la cual no cuenta con un nombre. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDEyNTU3NiwxMDg5NjAxOTgsLTM5Nz
-M2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1
-MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4OD
-UwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0
-MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC
-02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4
-NTY1XX0=
+eyJoaXN0b3J5IjpbLTE2ODYxMjUxMDcsMTA4OTYwMTk4LC0zOT
+czNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4
+NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsOD
+g1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2
+NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0Mi
+wtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0
+ODU2NV19
 -->
