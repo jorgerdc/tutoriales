@@ -110,13 +110,14 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 * Ofrece interoperbilidad con Java.  Scala reutiliza buena parte del API de Java
 * Mejora el API de Java. P.e.  los métodos ```toInt```  aplicados a cadenas: ```str.toInt``` en lugar de ```Integer.parseInt(str)```
 * A pesar de que el método ```toInt```no existe en la clase ```String```es posible aplicarlo a cadenas. 
-	* En este caso Scala utiliza el concepto 	 
+	* Para lograr interoperabilidad,  Scala utiliza el concepto de *conversiones implicitas*.  
+		* Cuando el método ```toInt```no es encontrado en la clase ```String```,   	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzAxOTk3NzcsNDk0MDIzMTgxLDU0MT
-Y1NjU0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIs
-LTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MD
-Y0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUx
-NSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMT
-cyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkz
-MjI4XX0=
+eyJoaXN0b3J5IjpbMTM1NjUwMjA1OCw0OTQwMjMxODEsNTQxNj
+U2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1Miwt
+MTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNj
+QxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1
+LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNz
+I2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1OTMy
+MjhdfQ==
 -->
