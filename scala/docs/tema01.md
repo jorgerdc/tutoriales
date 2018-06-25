@@ -89,9 +89,9 @@ class checksumActor extends Actor {
 * A esta ambigüedad se le conoce como el efecto diamánte.
 #### 1.3.2 Scala es Funcional
 La programación funcional está dirigida por 2 principales conceptos:
-* Funciones son tratadas como *First-class values* :  capacidad de pasar una función como argumento, ser enviadas como valor de retorno de una función, ser almacenadas en estructuras de datos como cualquier otro dato, o 
+* Funciones son tratadas como *First-class values* :  capacidad de pasar una función como argumento, ser enviadas como valor de retorno de una función, ser almacenadas en estructuras de datos como cualquier otro dato, o  referenciarlas a través de una variable.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTU3MDM4MDUsLTM5NzM2Njk4NSwxOT
+eyJoaXN0b3J5IjpbLTE2MjIyMjQ5MDgsLTM5NzM2Njk4NSwxOT
 kwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMz
 NTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMj
 AxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1
