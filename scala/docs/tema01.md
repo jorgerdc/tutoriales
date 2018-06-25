@@ -98,14 +98,15 @@ val xs = 1 to 3
 val it = xs.iterator
 eventually { it.next() shouldBe 3}
 ```
-*  El método ```eventually``` recibe  a una función como parámetro representada por la aserción indicada entre { } la cual no cuenta con un nombre. 
-* Concepto 2: 
+El método ```eventually``` recibe  a una función como parámetro representada por la aserción indicada entre { } la cual no cuenta con un nombre. 
+
+* Concepto 2:  Las operaciones que se realizan en una función deben
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkxMjgxODI2LDEwODk2MDE5OCwtMzk3Mz
-Y2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUz
-LC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NT
-AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
-MjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLT
-Y1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1
-NjVdfQ==
+eyJoaXN0b3J5IjpbMTkzMDU0Njk5MiwxMDg5NjAxOTgsLTM5Nz
+M2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1
+MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4OD
+UwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0
+MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC
+02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4
+NTY1XX0=
 -->
