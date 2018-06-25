@@ -82,13 +82,14 @@ class checksumActor extends Actor {
 	* Lo anterior pareciera herencia múltiple. Un *Trait* puede agregar funcionalidad a una super clase o clase base sin ser especificada !. (Se revisará más adelante).
 	* Esta característica permite evitar el típico problema de *efecto diamante* que se provoca al tener herencia múltiple el cual se explica  brevemente a continuación.
 ##### Efecto diamante:
-![Efect](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Diamond_inheritance.svg/220px-Diamond_inheritance.svg.png)
+![Efecto diamante, tomada de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Diamond_inheritance.svg/220px-Diamond_inheritance.svg.png)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzU3MjA3NSwxMzQ3MjgyODUzLC04Mz
-A2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0
-MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQwMjEsLT
-U1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLTY1NDQz
-NjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1NjUsLT
-I1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLTg1MDU4
-MTk3OF19
+eyJoaXN0b3J5IjpbLTE3ODQzMTg4ODcsMTM0NzI4Mjg1MywtOD
+MwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4
+NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC
+01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0
+MzYwNTAsMTA4MzgyNjkyOCw1ODg0NDUxNzAsOTY0NDQ4NTY1LC
+0yNTAzMzMzOTksLTQ5OTIyOTkzLC0xMzg1MzQ0MTA0LC04NTA1
+ODE5NzhdfQ==
 -->
