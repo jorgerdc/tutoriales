@@ -110,13 +110,13 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 * Ofrece interoperbilidad con Java.  Scala reutiliza buena parte del API de Java
 * Mejora el API de Java. P.e.  los métodos ```toInt```  aplicados a cadenas: ```str.toInt``` en lugar de ```Integer.parseInt(str)```
 * A pesar de que el método ```toInt```no existe en la clase ```String```es posible aplicarlo a cadenas. 
-	* En este caso Scala 	 
+	* En este caso Scala utiliza el concepto 	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk0MDIzMTgxLDU0MTY1NjU0OCw2MzY3Nj
-A3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMs
-MTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0Nz
-cxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1Nzcz
-LDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MD
-c3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQz
-MTAwXX0=
+eyJoaXN0b3J5IjpbLTE1NzAxOTk3NzcsNDk0MDIzMTgxLDU0MT
+Y1NjU0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIs
+LTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MD
+Y0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUx
+NSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMT
+cyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkz
+MjI4XX0=
 -->
