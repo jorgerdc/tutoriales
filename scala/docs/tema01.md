@@ -74,12 +74,13 @@ class checksumActor extends Actor {
 ```scala
 1 + 2
 ```
-* En el ejemplo anterior se invóca al metodo
+* En el ejemplo anterior se invoca al métod "+" que existe en la clase ```Int```
+* En Scala se pueden emplear operadores para de
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMjU2ODI2NCwyMTE2ODMwMzAzLDg4NT
-AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
-MjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLT
-Y1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1
-NjUsLTI1MDMzMzM5OSwtNDk5MjI5OTMsLTEzODUzNDQxMDQsLT
-g1MDU4MTk3OF19
+eyJoaXN0b3J5IjpbNDc3NTkzOTkxLDIxMTY4MzAzMDMsODg1MD
+AxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAy
+MSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0MiwtNj
+U0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0ODU2
+NSwtMjUwMzMzMzk5LC00OTkyMjk5MywtMTM4NTM0NDEwNCwtOD
+UwNTgxOTc4XX0=
 -->
