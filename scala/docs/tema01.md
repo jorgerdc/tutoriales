@@ -111,13 +111,13 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 * Mejora el API de Java. P.e.  los métodos ```toInt```  aplicados a cadenas: ```str.toInt``` en lugar de ```Integer.parseInt(str)```
 * A pesar de que el método ```toInt```no existe en la clase ```String```es posible aplicarlo a cadenas. 
 	* Para lograr interoperabilidad,  Scala utiliza el concepto de *conversiones implicitas*.  
-		* Cuando el método ```toInt```no es encontrado en la clase ```String```, se realiza una conversión  ```String -> StringOps```. Esta última clase (de Scala) contiene al método ```toI 	 
+		* Cuando el método ```toInt```no es encontrado en la clase ```String```, se realiza una conversión  ```String -> StringOps```. Esta última clase (de Scala) contiene al método ```toInt```, por tanto se hace una transformación y se invoca al método. 	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0OTg5OTY1LDQ5NDAyMzE4MSw1NDE2NT
-Y1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMyMDYxODUyLC0x
-MjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3MzY2OTg1LDE5OTA2ND
-E4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04MzA2MzM1MTUs
-LTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0MSwyMDE3Mj
-Y4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQwMjEsLTU1ODU5MzIy
-OF19
+eyJoaXN0b3J5IjpbMzc5NzU0MjEsNDk0MDIzMTgxLDU0MTY1Nj
+U0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEy
+MzI5Njc2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MT
+g3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwt
+MTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNj
+gzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNTU4NTkzMjI4
+XX0=
 -->
