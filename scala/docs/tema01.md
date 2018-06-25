@@ -103,15 +103,16 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 * Concepto 2:  Debe existir un mapeo entre valores de entrada y valores de salida de una función. Es decir,  una función no debe modificar los valores de las variables o parámetros de entrada. E.g.  Cadenas inmutables en Java.
 	* Inmutabilidad representa una piedra angular en programación funcional.
 	* Scala define múltiples tipos de datos inmutables: listas, mapas, sets, etc.
-	* Otra forma de ver este concepto es que una función no debe provocar efectos secundarios: *Referencialmente transparente* . La función trabaja únicamente con los valores de entrada y regresa un valor. No 
+	* Otra forma de ver este concepto es que una función no debe provocar efectos secundarios: *Referencialmente transparente* . La función trabaja únicamente con los valores de entrada y regresa un valor. No afecta la semántica del programa.
+* Cuando no se siguien estos 2 c
 	* 
 	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkwNTgwMzEsMTk4Nzg0OTM5Miw0MzIwNj
-E4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUs
-MTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMD
-YzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MDAxODQx
-LDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAyMSwtNT
-U4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0MiwtNjU0NDM2
-MDUwXX0=
+eyJoaXN0b3J5IjpbLTMzMTAwMzI1OSwxOTg3ODQ5MzkyLDQzMj
+A2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Njk4
+NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtOD
+MwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4
+NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC
+01NTg1OTMyMjgsLTE5NTEyNDMxMDAsNjkzNjYyMDQyLC02NTQ0
+MzYwNTBdfQ==
 -->
