@@ -112,12 +112,13 @@ El método ```eventually``` recibe  a una función como parámetro representada 
 * A pesar de que el método ```toInt```no existe en la clase ```String```es posible aplicarlo a cadenas. 
 	* Para lograr interoperabilidad,  Scala utiliza el concepto de *conversiones implicitas*.  
 	* Cuando el método ```toInt```no es encontrado en la clase ```String```, se realiza una conversión  ```String -> StringOps```. Esta última clase (de Scala) contiene al método ```toInt```, por tanto se hace una transformación y se invoca al método. 	 
+#### 1.4.1 Conciso
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjUxNDg0Myw0OTQwMjMxODEsNTQxNj
-U2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1Miwt
-MTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNj
-QxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1
-LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNz
-I2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIxLC01NTg1OTMy
-MjhdfQ==
+eyJoaXN0b3J5IjpbODgzMjc5MjUsLTI4NjUxNDg0Myw0OTQwMj
+MxODEsNTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLDQz
+MjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Nj
+k4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1Mywt
+ODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMD
+E4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1MiwxNzc2NzY0MDIx
+XX0=
 -->
