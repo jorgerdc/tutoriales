@@ -64,9 +64,10 @@ class checksumActor extends Actor {
 * Lo importante de esta sección es que ni el operador "!" , ni  el bloque ```receive```son funcionalidades o elementos sintácticos de Scala!
 * Ambos elementos son métodos definidos en la librería  *Akka* y son totalmente independientes de Scala.
 * Sin embargo, en el código, pareciera que son parte del lenguaje, en especial el operador "!".
-### 1.3 ¿
+### 1.3 ¿Qué es lo que hace a Scala  escalable ?
+* En buena parte  se debe a a la combinación entre  la programación funcional y la programación orientada a 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTAyNzk0NSwyMTE2ODMwMzAzLDg4NT
+eyJoaXN0b3J5IjpbMTc5NTQ2NTkxNiwyMTE2ODMwMzAzLDg4NT
 AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
 MjEsLTU1ODU5MzIyOCwtMTk1MTI0MzEwMCw2OTM2NjIwNDIsLT
 Y1NDQzNjA1MCwxMDgzODI2OTI4LDU4ODQ0NTE3MCw5NjQ0NDg1
