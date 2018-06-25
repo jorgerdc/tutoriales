@@ -101,12 +101,13 @@ eventually { it.next() shouldBe 3}
 El método ```eventually``` recibe  a una función como parámetro representada por la aserción indicada entre { } la cual no cuenta con un nombre. 
 
 * Concepto 2:  Debe existir un mapeo entre valores de entrada y valores de salida de una función. Es decir,  una función no debe modificar los valores de las variables o parámetros de entrada. E.g.  Cadenas inmutables en Java.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOT
-czNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4
-NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsOD
-g1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2
-NDAyMSwtNTU4NTkzMjI4LC0xOTUxMjQzMTAwLDY5MzY2MjA0Mi
-wtNjU0NDM2MDUwLDEwODM4MjY5MjgsNTg4NDQ1MTcwLDk2NDQ0
-ODU2NV19
+eyJoaXN0b3J5IjpbMTY5MjY3MjM2OSwtMTIzMjk2NzYyMywxMD
+g5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3
+MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMj
+ExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcw
+OTY1MiwxNzc2NzY0MDIxLC01NTg1OTMyMjgsLTE5NTEyNDMxMD
+AsNjkzNjYyMDQyLC02NTQ0MzYwNTAsMTA4MzgyNjkyOCw1ODg0
+NDUxNzBdfQ==
 -->
