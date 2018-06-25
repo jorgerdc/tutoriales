@@ -130,14 +130,14 @@ class MyClass {
 class MyClass(index: Int, name String)
 ```
 * La única diferencia entre los 2 ejemplos, es que los atributos de la clase en Scala serán creados como ```final```.
-* Scala define librerías que p
+* Scala define librerías que permiten la eliminación de código repetitivo y comportamiento común.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NDQyMTUwMCwtMjg2NTE0ODQzLDQ5ND
-AyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIs
-NDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3Mz
-Y2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUz
-LC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NT
-AwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUyLDE3NzY3NjQw
-MjFdfQ==
+eyJoaXN0b3J5IjpbNDU3MTE4MDEzLC0yODY1MTQ4NDMsNDk0MD
+IzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5Miw0
+MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOTczNj
+Y5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMs
+LTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAzMDMsODg1MD
+AxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTIsMTc3Njc2NDAy
+MV19
 -->
