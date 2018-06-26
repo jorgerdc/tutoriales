@@ -138,11 +138,15 @@ class MyClass(index: Int, name String)
 ```java
 boolean hasMayusculas = false;
 for(int i =0;i<cadena.length();i++){
-	if(Character.isUpperCase(cadena.charAt(i)))
+	if(Character.isUpperCase(cadena.charAt(i))){
+		hasMayusculas = true;
+		break;
+	}
 }
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDM3MjM5OTQsLTIyMDU4MSwtMjg2NT
+eyJoaXN0b3J5IjpbLTIwNzk4Mjg0MzEsLTIyMDU4MSwtMjg2NT
 E0ODQzLDQ5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5
 ODc4NDkzOTIsNDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MD
 E5OCwtMzk3MzY2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwx
