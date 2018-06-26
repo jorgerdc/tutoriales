@@ -159,15 +159,15 @@ val hasMayusculas = cadena.exists(_.isUpper)
 * Esta función toma como parámetro a un caracter representado por "_" guión bajo.
 #### 1.4.4 Estáticamente tipado.
 * Scala define un sistema avanzado de tipado de variables.
-* Permite parametrizar  tipos  de datos con genéricos.
-* Permite combinar  tipos empleando intersecciones.
-* Permite ocultar detalles de los tipos de datos empleando tipos abstractos.
+* Permite parametrizar  tipos  de datos con *genéricos*.
+* Permite combinar  tipos empleando *intersecciones*.
+* Permite ocultar detalles de los tipos de datos empleando *tipos abstractos*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDI5NzY2NjMsLTE3NzkwOTU1MDQsLT
-IwNzk4Mjg0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLDQ5NDAyMzE4
-MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMyMD
-YxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3MzY2OTg1
-LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04Mz
-A2MzM1MTUsLTE5OTA1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0
-MV19
+eyJoaXN0b3J5IjpbMTU2MDE3Mjc3MywtMTg0Mjk3NjY2MywtMT
+c3OTA5NTUwNCwtMjA3OTgyODQzMSwtMjIwNTgxLC0yODY1MTQ4
+NDMsNDk0MDIzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4Nz
+g0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMTk4
+LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzND
+cyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4MzAz
+MDNdfQ==
 -->
