@@ -157,12 +157,14 @@ val hasMayusculas = cadena.exists(_.isUpper)
 * En Scala a los caracteres de la cadena se les pueden aplicar predicados.
 * En este caso, la  expresión ```_.isUpper```es una *función literal* que representa un predicado.
 * Esta función toma como parámetro a un caracter representado por "_" guión bajo.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkxMDExODE1LC0yMDc5ODI4NDMxLC0yMj
-A1ODEsLTI4NjUxNDg0Myw0OTQwMjMxODEsNTQxNjU2NTQ4LDYz
-Njc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2Nz
-YyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEy
-ODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNT
-U3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMF19
+#### 1.4.4 Estáticamente tipado.
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NzkwOTU1MDQsLTIwNzk4Mjg0MzEsLT
+IyMDU4MSwtMjg2NTE0ODQzLDQ5NDAyMzE4MSw1NDE2NTY1NDgs
+NjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMyMDYxODUyLC0xMjMyOT
+Y3NjIzLDEwODk2MDE5OCwtMzk3MzY2OTg1LDE5OTA2NDE4Nywt
+MTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04MzA2MzM1MTUsLTE5OT
+A1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAw
+XX0=
 -->
