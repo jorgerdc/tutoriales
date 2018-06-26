@@ -152,14 +152,16 @@ boolean hasMayusculas = cadena.chars().anyMatch(
 ```
 * En Scala:
 ```scala
-val hasMayusculas = cadena.exists(_.isUpp)
+val hasMayusculas = cadena.exists(_.isUpper)
 ```
+* En Scala a los caracteres de la cadena se les pueden aplicar predicados.
+* En este caso, la 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Njc2ODU5MCwtMjA3OTgyODQzMSwtMj
-IwNTgxLC0yODY1MTQ4NDMsNDk0MDIzMTgxLDU0MTY1NjU0OCw2
-MzY3NjA3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Nj
-c2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0x
-Mjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MD
-U1NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDBd
-fQ==
+eyJoaXN0b3J5IjpbNTc4NjU1OTQyLC0yMDc5ODI4NDMxLC0yMj
+A1ODEsLTI4NjUxNDg0Myw0OTQwMjMxODEsNTQxNjU2NTQ4LDYz
+Njc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2Nz
+YyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEy
+ODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNT
+U3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMF19
+
 -->
