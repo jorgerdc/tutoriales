@@ -168,13 +168,16 @@ val hasMayusculas = cadena.exists(_.isUpper)
 	* Refactors seguro. Al mover el tipo de dato de un parámetro, es fácil identificar donde se debe aplicar la corrección. 
 	* Documentación y posibilidad de autocompletar métodos y atributos disponibles del tipo de dato en una IDE de desarrollo. 
 * Scala define un sofisticado sistema de inferencia de tipos de datos que permite omitir tipos de datos.
-*
+##### Ejemplo:
+```scala
+val x =  new HashMap[Int,String]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjYyMzQ5MCwtMTU0MTgzNjM0NSwxNz
-YzNDA2NjE2LDE1NjAxNzI3NzMsLTE4NDI5NzY2NjMsLTE3Nzkw
-OTU1MDQsLTIwNzk4Mjg0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLD
-Q5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkz
-OTIsNDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMz
-k3MzY2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3Mjgy
-ODUzXX0=
+eyJoaXN0b3J5IjpbLTkxNzc5OTY3LC0xNTQxODM2MzQ1LDE3Nj
+M0MDY2MTYsMTU2MDE3Mjc3MywtMTg0Mjk3NjY2MywtMTc3OTA5
+NTUwNCwtMjA3OTgyODQzMSwtMjIwNTgxLC0yODY1MTQ4NDMsND
+k0MDIzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5
+Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOT
+czNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4
+NTNdfQ==
 -->
