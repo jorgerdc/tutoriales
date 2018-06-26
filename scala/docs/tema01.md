@@ -174,9 +174,9 @@ val x =  new HashMap[Int,String]
 ```
 * Programas en Scala tienen una estructura similar a un lenguaje dinámico que no contiene definición de tipos  de datos.
 	* Esto es verdadero para programas finales (usuario final) ya que hace uso de liberías previamente creadas.
-	* Sin embargo no para implementación de librerías.
+	* Sin embargo no tan cierto para implementación de librerías.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUyODI0MDksMTUxMDMzODM2OCwtMT
+eyJoaXN0b3J5IjpbLTExNzc2ODIxMTAsMTUxMDMzODM2OCwtMT
 U0MTgzNjM0NSwxNzYzNDA2NjE2LDE1NjAxNzI3NzMsLTE4NDI5
 NzY2NjMsLTE3NzkwOTU1MDQsLTIwNzk4Mjg0MzEsLTIyMDU4MS
 wtMjg2NTE0ODQzLDQ5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYw
