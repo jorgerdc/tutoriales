@@ -132,13 +132,14 @@ class MyClass(index: Int, name String)
 * La única diferencia entre los 2 ejemplos, es que los atributos de la clase en Scala serán creados como ```final```.
 * Scala define librerías que permiten la eliminación de código repetitivo y comportamiento común.
 #### 1.4.3 De alto nivel.
-* Scala ayuda a manejar la complejidad de un programa 
+* Scala ayuda a manejar la complejidad de un programa incrementando el nivel de abstracción en las interfaces que forman parte de un diseño.
+##### Ejemplo:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODA5Mjk1NjIsLTIyMDU4MSwtMjg2NT
-E0ODQzLDQ5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5
-ODc4NDkzOTIsNDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MD
-E5OCwtMzk3MzY2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwx
-MzQ3MjgyODUzLC04MzA2MzM1MTUsLTE5OTA1NTc3MywyMTE2OD
-MwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAwLC0xNzA3NzA5NjUy
-XX0=
+eyJoaXN0b3J5IjpbLTM1MDc2NTk2MywtMjIwNTgxLC0yODY1MT
+Q4NDMsNDk0MDIzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4
+Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMT
+k4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEz
+NDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4Mz
+AzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTJd
+fQ==
 -->
