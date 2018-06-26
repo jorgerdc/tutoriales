@@ -172,13 +172,14 @@ val hasMayusculas = cadena.exists(_.isUpper)
 ```scala
 val x =  new HashMap[Int,String]
 ```
-* Programas en Scala tienen una estructura similar a un leguaje dinámico que no contiene definición de tipos  de datos.
+* Programas en Scala tienen una estructura similar a un lenguaje dinámico que no contiene definición de tipos  de datos.
+	* Esto es 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDMzODM2OCwtMTU0MTgzNjM0NSwxNz
-YzNDA2NjE2LDE1NjAxNzI3NzMsLTE4NDI5NzY2NjMsLTE3Nzkw
-OTU1MDQsLTIwNzk4Mjg0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLD
-Q5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkz
-OTIsNDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMz
-k3MzY2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3Mjgy
-ODUzXX0=
+eyJoaXN0b3J5IjpbLTExODgzNzU5LDE1MTAzMzgzNjgsLTE1ND
+E4MzYzNDUsMTc2MzQwNjYxNiwxNTYwMTcyNzczLC0xODQyOTc2
+NjYzLC0xNzc5MDk1NTA0LC0yMDc5ODI4NDMxLC0yMjA1ODEsLT
+I4NjUxNDg0Myw0OTQwMjMxODEsNTQxNjU2NTQ4LDYzNjc2MDc5
+MCwxOTg3ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2NzYyMywxMD
+g5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3
+MjFdfQ==
 -->
