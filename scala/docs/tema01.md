@@ -172,9 +172,9 @@ val hasMayusculas = cadena.exists(_.isUpper)
 ```scala
 val x =  new HashMap[Int,String]
 ```
-* Programas en Scala tienen una estructura similar a un leg
+* Programas en Scala tienen una estructura similar a un leguaje dinámico que no contiene definición de tipos  de datos.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MzY1MzA2OCwtMTU0MTgzNjM0NSwxNz
+eyJoaXN0b3J5IjpbMTUxMDMzODM2OCwtMTU0MTgzNjM0NSwxNz
 YzNDA2NjE2LDE1NjAxNzI3NzMsLTE4NDI5NzY2NjMsLTE3Nzkw
 OTU1MDQsLTIwNzk4Mjg0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLD
 Q5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkz
