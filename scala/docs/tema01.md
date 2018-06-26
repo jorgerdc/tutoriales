@@ -150,8 +150,12 @@ boolean hasMayusculas = cadena.chars().anyMatch(
 	(int c) -> Character.isUpperCase((char) c)
 );
 ```
+* En Scala:
+```scala
+val hasMayusculas = cadena.exists(_.isUpp)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzIyMjYxNSwtMjA3OTgyODQzMSwtMj
+eyJoaXN0b3J5IjpbLTI3Njc2ODU5MCwtMjA3OTgyODQzMSwtMj
 IwNTgxLC0yODY1MTQ4NDMsNDk0MDIzMTgxLDU0MTY1NjU0OCw2
 MzY3NjA3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Nj
 c2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0x
