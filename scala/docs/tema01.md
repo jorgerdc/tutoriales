@@ -1,3 +1,4 @@
+
 # Scala
 ## 1. Introducción.
 ### 1.1 Lenguaje escalable
@@ -176,11 +177,11 @@ val x =  new HashMap[Int,String]
 	* Esto es verdadero para programas finales (usuario final) ya que hace uso de liberías previamente creadas.
 	* Sin embargo no tan cierto para implementación de librerías.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzc2ODIxMTAsMTUxMDMzODM2OCwtMT
-U0MTgzNjM0NSwxNzYzNDA2NjE2LDE1NjAxNzI3NzMsLTE4NDI5
-NzY2NjMsLTE3NzkwOTU1MDQsLTIwNzk4Mjg0MzEsLTIyMDU4MS
-wtMjg2NTE0ODQzLDQ5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYw
-NzkwLDE5ODc4NDkzOTIsNDMyMDYxODUyLC0xMjMyOTY3NjIzLD
-EwODk2MDE5OCwtMzk3MzY2OTg1LDE5OTA2NDE4NywtMTI4NDc3
-MTcyMV19
+eyJoaXN0b3J5IjpbLTEwNzU0NDUzNTYsLTExNzc2ODIxMTAsMT
+UxMDMzODM2OCwtMTU0MTgzNjM0NSwxNzYzNDA2NjE2LDE1NjAx
+NzI3NzMsLTE4NDI5NzY2NjMsLTE3NzkwOTU1MDQsLTIwNzk4Mj
+g0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLDQ5NDAyMzE4MSw1NDE2
+NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMyMDYxODUyLC
+0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3MzY2OTg1LDE5OTA2
+NDE4N119
 -->
