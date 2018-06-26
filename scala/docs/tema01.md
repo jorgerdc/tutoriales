@@ -164,13 +164,15 @@ val hasMayusculas = cadena.exists(_.isUpper)
 	* Permite ocultar detalles de los tipos de datos empleando *tipos abstractos*.
 * Estos 3 conceptos se revisarán más adelante. 
 * Beneficios de ser estáticamente tipado:
-	* Facilidad para validar propiedades de cada tipo de datos: rango de valores (dominio), atributos de acceso, ordenar  argumentos por su tipo de dato al invocar a un a funciónm
+	* Facilidad para validar propiedades de cada tipo de datos: rango de valores (dominio), atributos de acceso, ordenar  argumentos por su tipo de dato al invocar a un a función, etc.
+	* Refactors seguro. Al mover el tipo de dato de un parámetro, es fácil identificar donde se debe aplicar la corrección. 
+	* Documentación y 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDQ4Mzk0MywxNzYzNDA2NjE2LDE1Nj
-AxNzI3NzMsLTE4NDI5NzY2NjMsLTE3NzkwOTU1MDQsLTIwNzk4
-Mjg0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLDQ5NDAyMzE4MSw1ND
-E2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMyMDYxODUy
-LC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMzk3MzY2OTg1LDE5OT
-A2NDE4NywtMTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04MzA2MzM1
-MTVdfQ==
+eyJoaXN0b3J5IjpbOTc3Nzk5MjQwLDE3NjM0MDY2MTYsMTU2MD
+E3Mjc3MywtMTg0Mjk3NjY2MywtMTc3OTA5NTUwNCwtMjA3OTgy
+ODQzMSwtMjIwNTgxLC0yODY1MTQ4NDMsNDk0MDIzMTgxLDU0MT
+Y1NjU0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIs
+LTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MD
+Y0MTg3LC0xMjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUx
+NV19
 -->
