@@ -147,15 +147,15 @@ for(int i =0;i<cadena.length();i++){
 * En Java 8:
 ```java
 boolean hasMayusculas = cadena.chars().anyMatch(
-	
+	(int c) -> Character.isUpperCase((char) c)
 );
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2NDA1MDcxLC0yMDc5ODI4NDMxLC0yMj
-A1ODEsLTI4NjUxNDg0Myw0OTQwMjMxODEsNTQxNjU2NTQ4LDYz
-Njc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2Nz
-YyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEy
-ODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNT
-U3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMF19
-
+eyJoaXN0b3J5IjpbMTAwMzIyMjYxNSwtMjA3OTgyODQzMSwtMj
+IwNTgxLC0yODY1MTQ4NDMsNDk0MDIzMTgxLDU0MTY1NjU0OCw2
+MzY3NjA3OTAsMTk4Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Nj
+c2MjMsMTA4OTYwMTk4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0x
+Mjg0NzcxNzIxLDEzNDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MD
+U1NzczLDIxMTY4MzAzMDMsODg1MDAxODQxLDIwMTcyNjgzMDBd
+fQ==
 -->
