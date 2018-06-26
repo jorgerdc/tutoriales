@@ -136,14 +136,17 @@ class MyClass(index: Int, name String)
 ##### Ejemplo
 * Programa  en Java que verifica si una cadena contiene un carater en mayúsculas  (antes de Java 8)
 ```java
-
+boolean hasMayusculas = false;
+for(int i =0;i<cadena.length();i++){
+	if(Charac)
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3ODY1NDAwMywtMjIwNTgxLC0yODY1MT
-Q4NDMsNDk0MDIzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4
-Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMT
-k4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEz
-NDcyODI4NTMsLTgzMDYzMzUxNSwtMTk5MDU1NzczLDIxMTY4Mz
-AzMDMsODg1MDAxODQxLDIwMTcyNjgzMDAsLTE3MDc3MDk2NTJd
-fQ==
+eyJoaXN0b3J5IjpbMTUwMDgwOTExLC0yMjA1ODEsLTI4NjUxND
+g0Myw0OTQwMjMxODEsNTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3
+ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOT
+gsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0
+NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3NzMsMjExNjgzMD
+MwMyw4ODUwMDE4NDEsMjAxNzI2ODMwMCwtMTcwNzcwOTY1Ml19
+
 -->
