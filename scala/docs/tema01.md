@@ -133,9 +133,13 @@ class MyClass(index: Int, name String)
 * Scala define librerías que permiten la eliminación de código repetitivo y comportamiento común.
 #### 1.4.3 De alto nivel.
 * Scala ayuda a manejar la complejidad de un programa incrementando el nivel de abstracción en las interfaces que forman parte de un diseño.
-##### Ejemplo:
+##### Ejemplo
+* Programa  en Java que verifica si una cadena contiene un carater en mayúsculas  (antes de Java 8)
+```java
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDc2NTk2MywtMjIwNTgxLC0yODY1MT
+eyJoaXN0b3J5IjpbMTI3ODY1NDAwMywtMjIwNTgxLC0yODY1MT
 Q4NDMsNDk0MDIzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4
 Nzg0OTM5Miw0MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMT
 k4LC0zOTczNjY5ODUsMTk5MDY0MTg3LC0xMjg0NzcxNzIxLDEz
