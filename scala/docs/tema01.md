@@ -158,13 +158,14 @@ val hasMayusculas = cadena.exists(_.isUpper)
 * En este caso, la  expresión ```_.isUpper```es una *función literal* que representa un predicado.
 * Esta función toma como parámetro a un caracter representado por "_" guión bajo.
 #### 1.4.4 Estáticamente tipado.
-
+* Scala define un sistema avanzado de tipado de variables.
+* Permite parametrizar  t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzkwOTU1MDQsLTIwNzk4Mjg0MzEsLT
-IyMDU4MSwtMjg2NTE0ODQzLDQ5NDAyMzE4MSw1NDE2NTY1NDgs
-NjM2NzYwNzkwLDE5ODc4NDkzOTIsNDMyMDYxODUyLC0xMjMyOT
-Y3NjIzLDEwODk2MDE5OCwtMzk3MzY2OTg1LDE5OTA2NDE4Nywt
-MTI4NDc3MTcyMSwxMzQ3MjgyODUzLC04MzA2MzM1MTUsLTE5OT
-A1NTc3MywyMTE2ODMwMzAzLDg4NTAwMTg0MSwyMDE3MjY4MzAw
-XX0=
+eyJoaXN0b3J5IjpbNjIyODExMzc2LC0xNzc5MDk1NTA0LC0yMD
+c5ODI4NDMxLC0yMjA1ODEsLTI4NjUxNDg0Myw0OTQwMjMxODEs
+NTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MT
+g1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwx
+OTkwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNj
+MzNTE1LC0xOTkwNTU3NzMsMjExNjgzMDMwMyw4ODUwMDE4NDFd
+fQ==
 -->
