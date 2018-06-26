@@ -167,12 +167,14 @@ val hasMayusculas = cadena.exists(_.isUpper)
 	* Facilidad para validar propiedades de cada tipo de datos: rango de valores (dominio), atributos de acceso, ordenar  argumentos por su tipo de dato al invocar a un a función, etc.
 	* Refactors seguro. Al mover el tipo de dato de un parámetro, es fácil identificar donde se debe aplicar la corrección. 
 	* Documentación y posibilidad de autocompletar métodos y atributos disponibles del tipo de dato en una IDE de desarrollo. 
+* Scala define un sofisticado sistema de inferencia de tipos de datos que permite omitir tipos de datos.
+*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDE4MzYzNDUsMTc2MzQwNjYxNiwxNT
-YwMTcyNzczLC0xODQyOTc2NjYzLC0xNzc5MDk1NTA0LC0yMDc5
-ODI4NDMxLC0yMjA1ODEsLTI4NjUxNDg0Myw0OTQwMjMxODEsNT
-QxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1
-MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOT
-kwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMz
-NTE1XX0=
+eyJoaXN0b3J5IjpbLTg4MjYyMzQ5MCwtMTU0MTgzNjM0NSwxNz
+YzNDA2NjE2LDE1NjAxNzI3NzMsLTE4NDI5NzY2NjMsLTE3Nzkw
+OTU1MDQsLTIwNzk4Mjg0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLD
+Q5NDAyMzE4MSw1NDE2NTY1NDgsNjM2NzYwNzkwLDE5ODc4NDkz
+OTIsNDMyMDYxODUyLC0xMjMyOTY3NjIzLDEwODk2MDE5OCwtMz
+k3MzY2OTg1LDE5OTA2NDE4NywtMTI4NDc3MTcyMSwxMzQ3Mjgy
+ODUzXX0=
 -->
