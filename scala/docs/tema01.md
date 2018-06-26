@@ -1,4 +1,3 @@
-
 # Scala
 ## 1. Introducción.
 ### 1.1 Lenguaje escalable
@@ -177,7 +176,7 @@ val x =  new HashMap[Int,String]
 	* Esto es verdadero para programas finales (usuario final) ya que hace uso de liberías previamente creadas.
 	* Sin embargo no tan cierto para implementación de librerías.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzU0NDUzNTYsLTExNzc2ODIxMTAsMT
+eyJoaXN0b3J5IjpbLTExNzc2ODIxMTAsLTExNzc2ODIxMTAsMT
 UxMDMzODM2OCwtMTU0MTgzNjM0NSwxNzYzNDA2NjE2LDE1NjAx
 NzI3NzMsLTE4NDI5NzY2NjMsLTE3NzkwOTU1MDQsLTIwNzk4Mj
 g0MzEsLTIyMDU4MSwtMjg2NTE0ODQzLDQ5NDAyMzE4MSw1NDE2
