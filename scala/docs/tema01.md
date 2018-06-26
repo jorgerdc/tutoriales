@@ -163,12 +163,14 @@ val hasMayusculas = cadena.exists(_.isUpper)
 	* Permite combinar  tipos empleando *intersecciones*.
 	* Permite ocultar detalles de los tipos de datos empleando *tipos abstractos*.
 * Estos 3 conceptos se revisarán más adelante. 
+* Beneficios de ser estáticamente tipado:
+	* Facilidad para validar propiedades de cada tipo de datos: rango de valores (dominio),
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MzQwNjYxNiwxNTYwMTcyNzczLC0xOD
-QyOTc2NjYzLC0xNzc5MDk1NTA0LC0yMDc5ODI4NDMxLC0yMjA1
-ODEsLTI4NjUxNDg0Myw0OTQwMjMxODEsNTQxNjU2NTQ4LDYzNj
-c2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2NzYy
-MywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOTkwNjQxODcsLTEyOD
-Q3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMzNTE1LC0xOTkwNTU3
-NzNdfQ==
+eyJoaXN0b3J5IjpbLTExOTc0OTA5MjYsMTc2MzQwNjYxNiwxNT
+YwMTcyNzczLC0xODQyOTc2NjYzLC0xNzc5MDk1NTA0LC0yMDc5
+ODI4NDMxLC0yMjA1ODEsLTI4NjUxNDg0Myw0OTQwMjMxODEsNT
+QxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLDQzMjA2MTg1
+MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2Njk4NSwxOT
+kwNjQxODcsLTEyODQ3NzE3MjEsMTM0NzI4Mjg1MywtODMwNjMz
+NTE1XX0=
 -->
