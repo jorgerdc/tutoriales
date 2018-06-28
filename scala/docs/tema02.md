@@ -63,10 +63,10 @@ scala>
 * Lo anterior significa que la instrucción se puede completar en la siguiente línea.
 * Para cancelar la edición de una siguiente línea se vuelve a presionar ```Enter```.
 #### 2.1.3  definición de funciones.
-* F
+* Función que compara 2 números y regresa el mayor.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzEzNjYzMiwtOTUwNDc1NjI0LC0xNj
-I0OTY0Nzg2LDE0NzIwMzgwMDksMzQ3NTc2MjkzLC02ODk2MjAz
-OTBdfQ==
+eyJoaXN0b3J5IjpbNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2Mj
+Q5NjQ3ODYsMTQ3MjAzODAwOSwzNDc1NzYyOTMsLTY4OTYyMDM5
+MF19
 -->
