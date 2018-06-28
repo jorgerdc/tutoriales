@@ -61,8 +61,10 @@ scala>
 ```
 * Al presionar ```Enter``` en la primera línea, el intérprete automáticamente detecta que la instrucción está incompleta y responde con un pipe ```|```.
 * Lo anterior significa que la instrucción se puede completar en la siguiente línea.
-* Para cancelar la edición de una siguiente l
+* Para cancelar la edición de una siguiente línea se vuelve a presionar ```Enter```.
+####2.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3Njk0NDM3MywtMTYyNDk2NDc4NiwxND
+eyJoaXN0b3J5IjpbMTUyMjQ3NDU2MywtMTYyNDk2NDc4NiwxND
 cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
 -->
