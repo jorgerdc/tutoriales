@@ -73,9 +73,9 @@ max: (a: Int, b: Int)Int
 scala>
 ```
 * La definición de funciones inicia con ```def```
-* 
+* Notar que los parámetros requi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTk5MDU4OSwxNzQxNzU4NzA3LDQ2ND
+eyJoaXN0b3J5IjpbLTkzNjkzNjc4OCwxNzQxNzU4NzA3LDQ2ND
 M0NjAxMSwtOTUwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgw
 MDksMzQ3NTc2MjkzLC02ODk2MjAzOTBdfQ==
 -->
