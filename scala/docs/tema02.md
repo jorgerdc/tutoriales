@@ -59,8 +59,9 @@ scala> print(
 Este es un mensaje en 2 lineas
 scala>
 ```
-* Al presionar ```Enter``` en la primera línea, el intérprete automáticamente detecta que la instrucción está incompleta y esta se puede comple
+* Al presionar ```Enter``` en la primera línea, el intérprete automáticamente detecta que la instrucción está incompleta y responde con un pipe ```|```.
+* Lo anterior significa que la instrucción se puede completar en la siguiente línea.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzE4MTk0NjIsLTE2MjQ5NjQ3ODYsMT
-Q3MjAzODAwOSwzNDc1NzYyOTMsLTY4OTYyMDM5MF19
+eyJoaXN0b3J5IjpbLTkyNDc3MzYyNCwtMTYyNDk2NDc4NiwxND
+cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
 -->
