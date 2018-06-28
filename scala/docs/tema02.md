@@ -37,8 +37,9 @@ scala> saludo ="Hola Mundo Scala"
 saludo ="Hola Mundo Scala"
         ^
 ```
-* Notar que no fue necesario especificar el tipo de dato de la variable ```saludo``. Scala lo infiere: ```t
+* Notar que no fue necesario especificar el tipo de dato de la variable ```saludo``. Scala lo infiere:  *type inference*
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjY0NTMyNywxNDcyMDM4MDA5LDM0Nz
+eyJoaXN0b3J5IjpbMTc1MzUzNzUzMCwxNDcyMDM4MDA5LDM0Nz
 U3NjI5MywtNjg5NjIwMzkwXX0=
 -->
