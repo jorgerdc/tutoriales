@@ -93,11 +93,14 @@ max: (a: Int, b: Int)Int
 ```
 * Invocando a la función:
 ```scala
+scala> max(-20,19)
+res4: Int = 19
 ```
+* Función sin parámetros y sin valor de retorno.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQ3MTEyOTYsLTMyNTI1MTM2NSwtMT
-E5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3
-NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYyNCwtMT
-YyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIw
-MzkwXX0=
+eyJoaXN0b3J5IjpbMjA2MTAxMDAyMywtMzI1MjUxMzY1LC0xMT
+kzNjc0MDYxLDc4NTU4ODA4Nyw4NDEyMjIwMzQsMTY0MTUwMTc1
+MCwxNzQxNzU4NzA3LDQ2NDM0NjAxMSwtOTUwNDc1NjI0LC0xNj
+I0OTY0Nzg2LDE0NzIwMzgwMDksMzQ3NTc2MjkzLC02ODk2MjAz
+OTBdfQ==
 -->
