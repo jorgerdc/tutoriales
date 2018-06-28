@@ -9,9 +9,10 @@ ok# Scala
 scala
 Welcome to Scala 2.12.6 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151).
 Type in expressions for evaluation. Or try :help.
+scala>
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU0MTUyODc5LDM0NzU3NjI5MywtNjg5Nj
-IwMzkwXX0=
+eyJoaXN0b3J5IjpbMTQ3MjAzODAwOSwzNDc1NzYyOTMsLTY4OT
+YyMDM5MF19
 -->
