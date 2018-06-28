@@ -72,9 +72,9 @@ scala> def max(a: Int, b: Int): Int ={
 max: (a: Int, b: Int)Int
 scala>
 ```
-
+* La e
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MD
-Q3NTYyNCwtMTYyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5
-MywtNjg5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbLTkyNzgwNzEzMywxNzQxNzU4NzA3LDQ2ND
+M0NjAxMSwtOTUwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgw
+MDksMzQ3NTc2MjkzLC02ODk2MjAzOTBdfQ==
 -->
