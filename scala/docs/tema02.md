@@ -104,11 +104,11 @@ saluda: ()Unit
 scala> saluda()
 Saludando desde función
 ```
-
+* Observar que el intérprete regresa ```Unit``` como tipo de dato de retorno, el cual corresponde 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTQxMTc0LC0zMjUyNTEzNjUsLTExOT
-M2NzQwNjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUw
-LDE3NDE3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2Mj
-Q5NjQ3ODYsMTQ3MjAzODAwOSwzNDc1NzYyOTMsLTY4OTYyMDM5
-MF19
+eyJoaXN0b3J5IjpbOTU1MjY2Mzk0LC0zODk0MTE3NCwtMzI1Mj
+UxMzY1LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4NDEyMjIwMzQs
+MTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAxMSwtOTUwND
+c1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgwMDksMzQ3NTc2Mjkz
+LC02ODk2MjAzOTBdfQ==
 -->
