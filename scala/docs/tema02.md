@@ -63,10 +63,22 @@ scala>
 * Lo anterior significa que la instrucción se puede completar en la siguiente línea.
 * Para cancelar la edición de una siguiente línea se vuelve a presionar ```Enter```.
 #### 2.1.3  definición de funciones.
-* Función que compara 2 números y regresa el mayor.
+* Función que compara 2 números y regresa el valor mayor o igual.
+```scala
+scala> def max(a: Int, b: Int): Int ={
+|        if(a > b) a
+| else b
+| }
+
+max: (a: Int, b: Int)Int
+
+  
+
+scala>
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2Mj
-Q5NjQ3ODYsMTQ3MjAzODAwOSwzNDc1NzYyOTMsLTY4OTYyMDM5
-MF19
+eyJoaXN0b3J5IjpbLTEwMzc0NTMwOTMsNDY0MzQ2MDExLC05NT
+A0NzU2MjQsLTE2MjQ5NjQ3ODYsMTQ3MjAzODAwOSwzNDc1NzYy
+OTMsLTY4OTYyMDM5MF19
 -->
