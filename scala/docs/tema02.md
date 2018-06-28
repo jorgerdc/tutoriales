@@ -29,9 +29,21 @@ scala>
 	* ```var```  Variables que no son ``final```
 ##### Ejemplo:
 ```scala
+scala> 1+1
 
+res0: Int = 2
+
+  
+
+scala> res0*4
+
+res1: Int = 8
+
+  
+
+scala>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MDU4MDQ1OSwxNDcyMDM4MDA5LDM0Nz
-U3NjI5MywtNjg5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbLTE2MjI3ODEyMDksMTQ3MjAzODAwOSwzND
+c1NzYyOTMsLTY4OTYyMDM5MF19
 -->
