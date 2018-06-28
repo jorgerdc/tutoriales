@@ -107,10 +107,11 @@ Saludando desde función
 * Observar que el intérprete regresa ```Unit``` como tipo de dato de retorno, el cual corresponde a ```void```en Java.
 * Para salir del intérprete:
 ```scala
-
+scala> :quit
 ```
+* O de forma alternativa: ```:q```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjk5MDYzOCwtMzg5NDExNzQsLTMyNT
+eyJoaXN0b3J5IjpbMTQ1OTM0ODcwNCwtMzg5NDExNzQsLTMyNT
 I1MTM2NSwtMTE5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0
 LDE2NDE1MDE3NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MD
 Q3NTYyNCwtMTYyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5
