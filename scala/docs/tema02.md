@@ -23,8 +23,11 @@ scala>
 ```
 * El resultado de 1 +1 se asigna a una variable ```res0```que se puede emplear posteriormente. 
 * Después del nombre de la variable se especifica el tipo de dato. En este caso la clase ```Int```del paquete  ```scala```, es decir, ```scala.Int```
-#### 2.1.2 Definición de a
+#### 2.1.2 Definición de variables.
+* Scala define 2 tipos de variables:
+	* ```val``` 
+	* ```var```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTQ2ODgwMiwxNDcyMDM4MDA5LDM0Nz
-U3NjI5MywtNjg5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbNTgwODc0ODYyLDE0NzIwMzgwMDksMzQ3NT
+c2MjkzLC02ODk2MjAzOTBdfQ==
 -->
