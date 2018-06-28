@@ -104,9 +104,10 @@ saluda: ()Unit
 scala> saluda()
 Saludando desde función
 ```
-* Observar que el intérprete regresa ```Unit``` como tipo de dato de retorno, el cual corresponde 
+* Observar que el intérprete regresa ```Unit``` como tipo de dato de retorno, el cual corresponde a ```void```en Java.
+* Para salir del int
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU1MjY2Mzk0LC0zODk0MTE3NCwtMzI1Mj
+eyJoaXN0b3J5IjpbOTgyMTUwNjczLC0zODk0MTE3NCwtMzI1Mj
 UxMzY1LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4NDEyMjIwMzQs
 MTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAxMSwtOTUwND
 c1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgwMDksMzQ3NTc2Mjkz
