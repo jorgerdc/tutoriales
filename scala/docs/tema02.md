@@ -91,9 +91,13 @@ scala>
 scala> def max(a: Int, b: Int) = if ( a > b ) a else b
 max: (a: Int, b: Int)Int
 ```
+* Invocando a la función:
+```scala
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTI1MTM2NSwtMTE5MzY3NDA2MSw3OD
-U1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3NTAsMTc0MTc1ODcw
-Nyw0NjQzNDYwMTEsLTk1MDQ3NTYyNCwtMTYyNDk2NDc4NiwxND
-cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbLTEwNDQ3MTEyOTYsLTMyNTI1MTM2NSwtMT
+E5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3
+NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYyNCwtMT
+YyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIw
+MzkwXX0=
 -->
