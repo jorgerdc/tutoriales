@@ -45,9 +45,14 @@ scala> val nuevoSaludo: java.lang.String = "Hola Mundo otra vez"
 nuevoSaludo: String = Hola Mundo otra vez
 
 scala> val otroSaludo: String = "Hello World again!"
-otroSaludo: String = Hello World again!```
-* Instrucciones en varias li
+otroSaludo: String = Hello World again!
+```
+* Instrucciones en varias líneas:
+##### Ejemplo:
+```scala
+```
+*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE4MTkxMjk4LDE0NzIwMzgwMDksMzQ3NT
-c2MjkzLC02ODk2MjAzOTBdfQ==
+eyJoaXN0b3J5IjpbLTE2MjQ5NjQ3ODYsMTQ3MjAzODAwOSwzND
+c1NzYyOTMsLTY4OTYyMDM5MF19
 -->
