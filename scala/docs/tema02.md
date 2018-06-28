@@ -26,8 +26,12 @@ scala>
 #### 2.1.2 Definición de variables.
 * Scala define 2 tipos de variables:
 	* ```val```  similar a una variable ```final``` en  Java
-	* ```var```
+	* ```var```  Variables que no son ``final```
+##### Ejemplo:
+```scala
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYxOTExNDMxLDE0NzIwMzgwMDksMzQ3NT
-c2MjkzLC02ODk2MjAzOTBdfQ==
+eyJoaXN0b3J5IjpbLTg5MDU4MDQ1OSwxNDcyMDM4MDA5LDM0Nz
+U3NjI5MywtNjg5NjIwMzkwXX0=
 -->
