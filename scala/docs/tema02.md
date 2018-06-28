@@ -78,10 +78,18 @@ scala>
 * Notar el uso del signo ```=``` antes de la definición o cuerpo de la función, resalta el estilo de programación funcional.
 * El tipo de dato del valor de retorno es obligatorio si la función es recursiva. Se recomienda especificarlo siempre por legibilidad.
 ##### Ejemplo:
+```scala
+scala> def max(a: Int, b: Int) = {
+		 if( a > b ) a
+		 else b
+	 }
+max: (a: Int, b: Int)Int
+scala>
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNT
-AxNzUwLDE3NDE3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2MjQs
-LTE2MjQ5NjQ3ODYsMTQ3MjAzODAwOSwzNDc1NzYyOTMsLTY4OT
-YyMDM5MF19
+eyJoaXN0b3J5IjpbLTExOTM2NzQwNjEsNzg1NTg4MDg3LDg0MT
+IyMjAzNCwxNjQxNTAxNzUwLDE3NDE3NTg3MDcsNDY0MzQ2MDEx
+LC05NTA0NzU2MjQsLTE2MjQ5NjQ3ODYsMTQ3MjAzODAwOSwzND
+c1NzYyOTMsLTY4OTYyMDM5MF19
 -->
