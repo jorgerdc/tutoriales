@@ -74,9 +74,9 @@ scala>
 ```
 * La definición de funciones inicia con ```def```
 * Notar que  los parámetros incluyen su tipo de dato.   La declaración de parámetros en Scala requiere especificar el tipo de dato!
-* Posteriormente se indica ```
+* Posteriormente se indica ```: Int``` que corresponde al tipo de dato de retorno que en Scala se le conoce como *result type*  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDQ5MjIwMSwxNzQxNzU4NzA3LDQ2ND
+eyJoaXN0b3J5IjpbMTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2ND
 M0NjAxMSwtOTUwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgw
 MDksMzQ3NTc2MjkzLC02ODk2MjAzOTBdfQ==
 -->
