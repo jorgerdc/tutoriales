@@ -88,9 +88,12 @@ scala>
 ```
 * En forma más corta:
 ```scala
+scala> def max(a: Int, b: Int) = if ( a > b ) a else b
 
+max: (a: Int, b: Int)Int
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MzEzNDAwNSwtMTE5MzY3NDA2MSw3OD
+eyJoaXN0b3J5IjpbMTgyNjc0MTIyOSwtMTE5MzY3NDA2MSw3OD
 U1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3NTAsMTc0MTc1ODcw
 Nyw0NjQzNDYwMTEsLTk1MDQ3NTYyNCwtMTYyNDk2NDc4NiwxND
 cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
