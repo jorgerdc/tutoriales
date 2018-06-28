@@ -19,7 +19,9 @@ scala> res0*4
 res1: Int = 8
 scala>
 ```
+* El resultado de 1 +1 se asigna a una variable ```res0```que se puede emplear posteriormente. 
+* Después del nombre de la variable se especifica el tipo de dato. En este 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDU1NzE1MTgsMTQ3MjAzODAwOSwzND
-c1NzYyOTMsLTY4OTYyMDM5MF19
+eyJoaXN0b3J5IjpbLTkwOTM0ODYxMSwxNDcyMDM4MDA5LDM0Nz
+U3NjI5MywtNjg5NjIwMzkwXX0=
 -->
