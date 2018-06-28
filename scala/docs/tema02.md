@@ -97,11 +97,18 @@ scala> max(-20,19)
 res4: Int = 19
 ```
 * Función sin parámetros y sin valor de retorno.
+```scala
+scala> def saluda() = println("Saludando desde función")
+saluda: ()Unit
+
+scala> saluda()
+Saludando desde función
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTA2NzI5MzksLTMyNTI1MTM2NSwtMT
-E5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3
-NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYyNCwtMT
-YyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIw
-MzkwXX0=
+eyJoaXN0b3J5IjpbLTM4OTQxMTc0LC0zMjUyNTEzNjUsLTExOT
+M2NzQwNjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUw
+LDE3NDE3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2Mj
+Q5NjQ3ODYsMTQ3MjAzODAwOSwzNDc1NzYyOTMsLTY4OTYyMDM5
+MF19
 -->
