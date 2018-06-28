@@ -66,19 +66,15 @@ scala>
 * Función que compara 2 números y regresa el valor mayor o igual.
 ```scala
 scala> def max(a: Int, b: Int): Int ={
-|        if(a > b) a
-| else b
-| }
-
+	       if(a > b) a
+	       else b
+	    }
 max: (a: Int, b: Int)Int
-
-  
-
 scala>
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzc0NTMwOTMsNDY0MzQ2MDExLC05NT
-A0NzU2MjQsLTE2MjQ5NjQ3ODYsMTQ3MjAzODAwOSwzNDc1NzYy
-OTMsLTY4OTYyMDM5MF19
+eyJoaXN0b3J5IjpbMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MD
+Q3NTYyNCwtMTYyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5
+MywtNjg5NjIwMzkwXX0=
 -->
