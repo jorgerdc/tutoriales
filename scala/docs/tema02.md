@@ -63,9 +63,10 @@ scala>
 * Lo anterior significa que la instrucción se puede completar en la siguiente línea.
 * Para cancelar la edición de una siguiente línea se vuelve a presionar ```Enter```.
 #### 2.1.3  definición de funciones.
-
+* F
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MDQ3NTYyNCwtMTYyNDk2NDc4NiwxND
-cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbLTEwMzEzNjYzMiwtOTUwNDc1NjI0LC0xNj
+I0OTY0Nzg2LDE0NzIwMzgwMDksMzQ3NTc2MjkzLC02ODk2MjAz
+OTBdfQ==
 -->
