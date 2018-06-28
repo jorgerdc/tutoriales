@@ -45,9 +45,10 @@ scala> val nuevoSaludo: java.lang.String = "Hola Mundo otra vez"
 nuevoSaludo: String = Hola Mundo otra vez
 
 scala> val otroSaludo: String = "Hello World again!"
-
 otroSaludo: String = Hello World again!```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NzI2OTY2MSwxNDcyMDM4MDA5LDM0Nz
+eyJoaXN0b3J5IjpbLTYyMzIxMDAzNywxNDcyMDM4MDA5LDM0Nz
 U3NjI5MywtNjg5NjIwMzkwXX0=
 -->
