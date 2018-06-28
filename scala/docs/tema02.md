@@ -46,9 +46,8 @@ nuevoSaludo: String = Hola Mundo otra vez
 
 scala> val otroSaludo: String = "Hello World again!"
 otroSaludo: String = Hello World again!```
-
-
+* Instrucciones en varias li
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMzIxMDAzNywxNDcyMDM4MDA5LDM0Nz
-U3NjI5MywtNjg5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbNzE4MTkxMjk4LDE0NzIwMzgwMDksMzQ3NT
+c2MjkzLC02ODk2MjAzOTBdfQ==
 -->
