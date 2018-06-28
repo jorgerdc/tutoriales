@@ -50,9 +50,24 @@ otroSaludo: String = Hello World again!
 * Instrucciones en varias líneas:
 ##### Ejemplo:
 ```scala
+scala> var mensajeLargo =
+
+| "Este es un mensaje en 2 lineas "
+
+mensajeLargo: String = "Este es un mensaje en 2 lineas "
+
+  
+
+scala> print(
+
+| mensajeLargo)
+
+Este es un mensaje en 2 lineas
+
+scala>
 ```
 *
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ5NjQ3ODYsMTQ3MjAzODAwOSwzND
-c1NzYyOTMsLTY4OTYyMDM5MF19
+eyJoaXN0b3J5IjpbMTMyMjY5NzQ3MCwtMTYyNDk2NDc4NiwxND
+cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
 -->
