@@ -51,23 +51,16 @@ otroSaludo: String = Hello World again!
 ##### Ejemplo:
 ```scala
 scala> var mensajeLargo =
-
 | "Este es un mensaje en 2 lineas "
-
 mensajeLargo: String = "Este es un mensaje en 2 lineas "
 
-  
-
 scala> print(
-
 | mensajeLargo)
-
 Este es un mensaje en 2 lineas
-
 scala>
 ```
-*
+* Al El intérprete automáticamente detecta que la primer línea está incompleta
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjY5NzQ3MCwtMTYyNDk2NDc4NiwxND
+eyJoaXN0b3J5IjpbMjA3Mjc4MzM3MCwtMTYyNDk2NDc4NiwxND
 cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
 -->
