@@ -72,9 +72,10 @@ scala> def max(a: Int, b: Int): Int ={
 max: (a: Int, b: Int)Int
 scala>
 ```
-* La e
+* La definición de funciones inicia con ```def```
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNzgwNzEzMywxNzQxNzU4NzA3LDQ2ND
+eyJoaXN0b3J5IjpbLTU2MTk5MDU4OSwxNzQxNzU4NzA3LDQ2ND
 M0NjAxMSwtOTUwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgw
 MDksMzQ3NTc2MjkzLC02ODk2MjAzOTBdfQ==
 -->
