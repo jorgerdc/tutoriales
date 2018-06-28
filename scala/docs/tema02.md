@@ -38,8 +38,12 @@ saludo ="Hola Mundo Scala"
         ^
 ```
 * Notar que no fue necesario especificar el tipo de dato de la variable ```saludo``. Scala lo infiere:  *type inference*
-* En casos donde sea necesario definir tipos de datos,  ya sea por conveniencia o por l
+* En casos donde sea necesario definir tipos de datos,  ya sea por ser requerido o por legibilidad de código se emplea la siguiente sintaxis (contraria a Java).
+##### Ejemplo:
+```scala
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0Nzk5NTYwLDE0NzIwMzgwMDksMzQ3NT
-c2MjkzLC02ODk2MjAzOTBdfQ==
+eyJoaXN0b3J5IjpbLTEyMjMzOTEwNDMsMTQ3MjAzODAwOSwzND
+c1NzYyOTMsLTY4OTYyMDM5MF19
 -->
