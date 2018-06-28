@@ -25,9 +25,9 @@ scala>
 * Después del nombre de la variable se especifica el tipo de dato. En este caso la clase ```Int```del paquete  ```scala```, es decir, ```scala.Int```
 #### 2.1.2 Definición de variables.
 * Scala define 2 tipos de variables:
-	* ```val``` 
+	* ```val```  similar a una variable ```final``` en  Java
 	* ```var```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgwODc0ODYyLDE0NzIwMzgwMDksMzQ3NT
+eyJoaXN0b3J5IjpbMzYxOTExNDMxLDE0NzIwMzgwMDksMzQ3NT
 c2MjkzLC02ODk2MjAzOTBdfQ==
 -->
