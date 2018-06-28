@@ -29,21 +29,15 @@ scala>
 	* ```var```  Variables que no son ``final```
 ##### Ejemplo:
 ```scala
-scala> 1+1
+scala> val saludo ="Hola Mundo"
+saludo: String = Hola Mundo
 
-res0: Int = 2
-
-  
-
-scala> res0*4
-
-res1: Int = 8
-
-  
-
-scala>
+scala> saludo ="Hola Mundo Scala"
+<console>:12: error: reassignment to val
+saludo ="Hola Mundo Scala"
+        ^
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjI3ODEyMDksMTQ3MjAzODAwOSwzND
-c1NzYyOTMsLTY4OTYyMDM5MF19
+eyJoaXN0b3J5IjpbLTc2MTExMDk4NSwxNDcyMDM4MDA5LDM0Nz
+U3NjI5MywtNjg5NjIwMzkwXX0=
 -->
