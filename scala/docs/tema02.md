@@ -59,8 +59,8 @@ scala> print(
 Este es un mensaje en 2 lineas
 scala>
 ```
-* Al El intérprete automáticamente detecta que la primer línea está incompleta
+* Al presionar ```Enter``` en la primera línea, el intérprete automáticamente detecta que la instrucción está incompleta y esta se puede comple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Mjc4MzM3MCwtMTYyNDk2NDc4NiwxND
-cyMDM4MDA5LDM0NzU3NjI5MywtNjg5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbLTE5NzE4MTk0NjIsLTE2MjQ5NjQ3ODYsMT
+Q3MjAzODAwOSwzNDc1NzYyOTMsLTY4OTYyMDM5MF19
 -->
