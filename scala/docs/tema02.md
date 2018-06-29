@@ -152,9 +152,9 @@ args.foreach((arg: String) => print(" " + arg))
 println()
 ```
 * Observar los paréntesis , requeridos.
-* En Scala si una función literal recibe un solo argumento
+* En Scala si una función literal recibe un solo argumento, se puede omitir tanto en nombre  como si tipo de dato,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNjgzMTk4MSwtNzI4MDQ0MjUyLDExOD
+eyJoaXN0b3J5IjpbLTczNjc3Nzc0MywtNzI4MDQ0MjUyLDExOD
 I5MTI2NzcsLTE3NjMxMTc1MTgsNjQ5MTUyMTU2LC01NjY2NDg0
 OTcsLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMTMzODQ0NjIsMT
 Q1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2NSwtMTE5MzY3
