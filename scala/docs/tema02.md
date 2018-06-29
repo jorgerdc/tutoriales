@@ -158,12 +158,13 @@ args.foreach(println)
 println()
 ```
 * En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
+* A este tipo de sintaxis se le conoce como *partially applied function* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODMwMDk2OCwtNzI4MDQ0MjUyLDExOD
-I5MTI2NzcsLTE3NjMxMTc1MTgsNjQ5MTUyMTU2LC01NjY2NDg0
-OTcsLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMTMzODQ0NjIsMT
-Q1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2NSwtMTE5MzY3
-NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3NTAsMT
-c0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYyNCwtMTYyNDk2
-NDc4Nl19
+eyJoaXN0b3J5IjpbMjcxMDIzNTEsLTcyODA0NDI1MiwxMTgyOT
+EyNjc3LC0xNzYzMTE3NTE4LDY0OTE1MjE1NiwtNTY2NjQ4NDk3
+LC0xNzcwMzMzNzcxLC0xNTM4MDE1NDQ4LDEzMzg0NDYyLDE0NT
+kzNDg3MDQsLTM4OTQxMTc0LC0zMjUyNTEzNjUsLTExOTM2NzQw
+NjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUwLDE3ND
+E3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2MjQ5NjQ3
+ODZdfQ==
 -->
