@@ -115,7 +115,8 @@ scala> :quit
 ##### Ejemplo:
 * Suponer el contenido del siguiente archivo ```saludo.scala```
 ```bash
-//saludando con argumentos
+/**
+ *saludo.scalasaludando con argumentos
 println("Hola mundo "+ args(0) +" desde script ")
 ```
 * Ejecución del script:
@@ -160,11 +161,11 @@ println()
 * En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
 * A este tipo de sintaxis se le conoce como *partially applied function* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcxMDIzNTEsLTcyODA0NDI1MiwxMTgyOT
-EyNjc3LC0xNzYzMTE3NTE4LDY0OTE1MjE1NiwtNTY2NjQ4NDk3
-LC0xNzcwMzMzNzcxLC0xNTM4MDE1NDQ4LDEzMzg0NDYyLDE0NT
-kzNDg3MDQsLTM4OTQxMTc0LC0zMjUyNTEzNjUsLTExOTM2NzQw
-NjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUwLDE3ND
-E3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2MjQ5NjQ3
-ODZdfQ==
+eyJoaXN0b3J5IjpbMTczNzg1NjQ5NiwyNzEwMjM1MSwtNzI4MD
+Q0MjUyLDExODI5MTI2NzcsLTE3NjMxMTc1MTgsNjQ5MTUyMTU2
+LC01NjY2NDg0OTcsLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMT
+MzODQ0NjIsMTQ1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2
+NSwtMTE5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2ND
+E1MDE3NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYy
+NF19
 -->
