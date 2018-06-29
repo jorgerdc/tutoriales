@@ -171,14 +171,21 @@ println()
 * A este tipo de sintaxis se le conoce como *partially applied function* 
 * Ejemplo con ```for```  Más adelante se explica a detalle.
 ```scala
+/*
+ * script: for.scala
+ * Imprimineodo argumentos estilo funcional con for
+ */
 
+ for( arg <- args )
+ 	print(" "+arg)
+ println
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3Mjk3MTE5NiwxMDQ4NDAwNDkyLC0xMT
-YzNTkyNjAyLDI3MTAyMzUxLC03MjgwNDQyNTIsMTE4MjkxMjY3
-NywtMTc2MzExNzUxOCw2NDkxNTIxNTYsLTU2NjY0ODQ5NywtMT
-c3MDMzMzc3MSwtMTUzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4
-NzA0LC0zODk0MTE3NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLD
-c4NTU4ODA4Nyw4NDEyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4
-NzA3XX0=
+eyJoaXN0b3J5IjpbMTIwMDAyNzI4MSwtNzcyOTcxMTk2LDEwND
+g0MDA0OTIsLTExNjM1OTI2MDIsMjcxMDIzNTEsLTcyODA0NDI1
+MiwxMTgyOTEyNjc3LC0xNzYzMTE3NTE4LDY0OTE1MjE1NiwtNT
+Y2NjQ4NDk3LC0xNzcwMzMzNzcxLC0xNTM4MDE1NDQ4LDEzMzg0
+NDYyLDE0NTkzNDg3MDQsLTM4OTQxMTc0LC0zMjUyNTEzNjUsLT
+ExOTM2NzQwNjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNTAx
+NzUwXX0=
 -->
