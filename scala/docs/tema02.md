@@ -115,16 +115,18 @@ scala> :quit
 ##### Ejemplo:
 * Suponer el contenido del siguiente archivo ```saludo.scala```
 ```bash
+//saludando con argumentos
+println("Hola mundo "+ args(0) +" desde script ")
 ```
-
+* Ejecución del script:
 ```scala
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMT
-MzODQ0NjIsMTQ1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2
-NSwtMTE5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2ND
-E1MDE3NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYy
-NCwtMTYyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5MywtNj
-g5NjIwMzkwXX0=
+eyJoaXN0b3J5IjpbMjA0MTI5MzEyMywtMTc3MDMzMzc3MSwtMT
+UzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4NzA0LC0zODk0MTE3
+NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4ND
+EyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAx
+MSwtOTUwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgwMDksMz
+Q3NTc2MjkzLC02ODk2MjAzOTBdfQ==
 -->
