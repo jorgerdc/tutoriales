@@ -118,7 +118,7 @@ scala> :quit
 /**
  * script: saludo.scala
  * saludando con argumentos
- * /
+ */
 println("Hola mundo "+ args(0) +" desde script ")
 ```
 * Ejecución del script:
@@ -163,11 +163,11 @@ println()
 * En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
 * A este tipo de sintaxis se le conoce como *partially applied function* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MzQ0OTYzOCwyNzEwMjM1MSwtNzI4MD
-Q0MjUyLDExODI5MTI2NzcsLTE3NjMxMTc1MTgsNjQ5MTUyMTU2
-LC01NjY2NDg0OTcsLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMT
-MzODQ0NjIsMTQ1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2
-NSwtMTE5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2ND
-E1MDE3NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYy
-NF19
+eyJoaXN0b3J5IjpbLTExNDE4Njg5NzIsMjcxMDIzNTEsLTcyOD
+A0NDI1MiwxMTgyOTEyNjc3LC0xNzYzMTE3NTE4LDY0OTE1MjE1
+NiwtNTY2NjQ4NDk3LC0xNzcwMzMzNzcxLC0xNTM4MDE1NDQ4LD
+EzMzg0NDYyLDE0NTkzNDg3MDQsLTM4OTQxMTc0LC0zMjUyNTEz
+NjUsLTExOTM2NzQwNjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNj
+QxNTAxNzUwLDE3NDE3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2
+MjRdfQ==
 -->
