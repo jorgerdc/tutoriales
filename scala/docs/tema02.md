@@ -132,7 +132,10 @@ Hola mundo Jorge desde script
 * En Scala ```++i```o ```i++```no funciona.  Se debe emplear por ejemplo, ```i=i+1```
 * Imprimiendo los argumentos de entrada,  versión imperativa:
 ```scala
-//argumentos.scala
+/*
+ * script: while-imperativo.scala
+ * Imprimineodo argumentos con while
+ */
 var i = 0
 while(i < args.length){
 	if(i!=0){
@@ -163,11 +166,11 @@ println()
 * En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
 * A este tipo de sintaxis se le conoce como *partially applied function* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjM1OTI2MDIsMjcxMDIzNTEsLTcyOD
-A0NDI1MiwxMTgyOTEyNjc3LC0xNzYzMTE3NTE4LDY0OTE1MjE1
-NiwtNTY2NjQ4NDk3LC0xNzcwMzMzNzcxLC0xNTM4MDE1NDQ4LD
-EzMzg0NDYyLDE0NTkzNDg3MDQsLTM4OTQxMTc0LC0zMjUyNTEz
-NjUsLTExOTM2NzQwNjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNj
-QxNTAxNzUwLDE3NDE3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2
-MjRdfQ==
+eyJoaXN0b3J5IjpbNjQ1ODIyMzk2LC0xMTYzNTkyNjAyLDI3MT
+AyMzUxLC03MjgwNDQyNTIsMTE4MjkxMjY3NywtMTc2MzExNzUx
+OCw2NDkxNTIxNTYsLTU2NjY0ODQ5NywtMTc3MDMzMzc3MSwtMT
+UzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4NzA0LC0zODk0MTE3
+NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4ND
+EyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAx
+MV19
 -->
