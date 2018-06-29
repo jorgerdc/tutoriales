@@ -146,13 +146,19 @@ args.foreach(arg => print(" " + arg))
 println()
 ```
 * La función ```foreach```recibe una *función literal*  que recibe un argumento ```arg```
-* Si se desea especificar el yt
+* Si se desea especificar el tipo de dato:
+```scala
+args.foreach((arg: String) => print(" " + arg))
+println()
+```
+* Observar los paréntesis , requeridos.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3MzE5OTcyLC03MjgwNDQyNTIsMTE4Mj
-kxMjY3NywtMTc2MzExNzUxOCw2NDkxNTIxNTYsLTU2NjY0ODQ5
-NywtMTc3MDMzMzc3MSwtMTUzODAxNTQ0OCwxMzM4NDQ2MiwxND
-U5MzQ4NzA0LC0zODk0MTE3NCwtMzI1MjUxMzY1LC0xMTkzNjc0
-MDYxLDc4NTU4ODA4Nyw4NDEyMjIwMzQsMTY0MTUwMTc1MCwxNz
-QxNzU4NzA3LDQ2NDM0NjAxMSwtOTUwNDc1NjI0LC0xNjI0OTY0
-Nzg2XX0=
+eyJoaXN0b3J5IjpbLTIwMTMyNjYzODksLTcyODA0NDI1MiwxMT
+gyOTEyNjc3LC0xNzYzMTE3NTE4LDY0OTE1MjE1NiwtNTY2NjQ4
+NDk3LC0xNzcwMzMzNzcxLC0xNTM4MDE1NDQ4LDEzMzg0NDYyLD
+E0NTkzNDg3MDQsLTM4OTQxMTc0LC0zMjUyNTEzNjUsLTExOTM2
+NzQwNjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUwLD
+E3NDE3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2MjQ5
+NjQ3ODZdfQ==
 -->
