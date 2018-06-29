@@ -127,7 +127,7 @@ Hola mundo Jorge desde script
 * Observar el uso de parámetros.  En Scala se emplea ```arg(n)``` en lugar de ```arg[n]``` como en Java.
 #### 2.1.5 Sentencias de control
 * En Scala ```++i```o ```i++```no funciona.  Se debe emplear por ejemplo, ```i=i+1```
-* Imprimiendo los argumentos de entrada,  versión imperativa.
+* Imprimiendo los argumentos de entrada,  versión imperativa:
 ```scala
 //argumentos.scala
 var i = 0
@@ -145,20 +145,20 @@ println()
 args.foreach(arg => print(" " + arg))
 println()
 ```
-* La función ```foreach```recibe una *función literal*  que recibe un argumento ```arg```
+* La función ```foreach```recibe una *función literal*  que a su vez recibe un argumento ```arg```
 * Si se desea especificar el tipo de dato:
 ```scala
 args.foreach((arg: String) => print(" " + arg))
 println()
 ```
 * Observar los paréntesis , requeridos.
-* 
+* En Scala si una función literal recibe un solo argumento
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTMyNjYzODksLTcyODA0NDI1MiwxMT
-gyOTEyNjc3LC0xNzYzMTE3NTE4LDY0OTE1MjE1NiwtNTY2NjQ4
-NDk3LC0xNzcwMzMzNzcxLC0xNTM4MDE1NDQ4LDEzMzg0NDYyLD
-E0NTkzNDg3MDQsLTM4OTQxMTc0LC0zMjUyNTEzNjUsLTExOTM2
-NzQwNjEsNzg1NTg4MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUwLD
-E3NDE3NTg3MDcsNDY0MzQ2MDExLC05NTA0NzU2MjQsLTE2MjQ5
-NjQ3ODZdfQ==
+eyJoaXN0b3J5IjpbLTMzNjgzMTk4MSwtNzI4MDQ0MjUyLDExOD
+I5MTI2NzcsLTE3NjMxMTc1MTgsNjQ5MTUyMTU2LC01NjY2NDg0
+OTcsLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMTMzODQ0NjIsMT
+Q1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2NSwtMTE5MzY3
+NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3NTAsMT
+c0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYyNCwtMTYyNDk2
+NDc4Nl19
 -->
