@@ -119,14 +119,17 @@ scala> :quit
 println("Hola mundo "+ args(0) +" desde script ")
 ```
 * Ejecución del script:
-```scala
+```bash
+scala saludo.scala Jorge
 
+Hola mundo Jorge desde script
 ```
+* Observar el uso de parámetros.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MTI5MzEyMywtMTc3MDMzMzc3MSwtMT
-UzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4NzA0LC0zODk0MTE3
-NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4ND
-EyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAx
-MSwtOTUwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgwMDksMz
-Q3NTc2MjkzLC02ODk2MjAzOTBdfQ==
+eyJoaXN0b3J5IjpbNzE4MDg1NjAzLC0xNzcwMzMzNzcxLC0xNT
+M4MDE1NDQ4LDEzMzg0NDYyLDE0NTkzNDg3MDQsLTM4OTQxMTc0
+LC0zMjUyNTEzNjUsLTExOTM2NzQwNjEsNzg1NTg4MDg3LDg0MT
+IyMjAzNCwxNjQxNTAxNzUwLDE3NDE3NTg3MDcsNDY0MzQ2MDEx
+LC05NTA0NzU2MjQsLTE2MjQ5NjQ3ODYsMTQ3MjAzODAwOSwzND
+c1NzYyOTMsLTY4OTYyMDM5MF19
 -->
