@@ -111,12 +111,17 @@ scala> :quit
 ```
 * O de forma alternativa: ```:q```
 #### 2.1.4 Scripts en Scala
-* Scripts en Scala son representados por archivos de texto con instrucciones que se ejecutan de forma seuenci
+* Scripts en Scala son representados por archivos de texto con instrucciones que se ejecutan de forma secuencial. 
+##### Ejemplo:
+* Supober
+```scala
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjA0NTQ2MiwtMTUzODAxNTQ0OCwxMz
-M4NDQ2MiwxNDU5MzQ4NzA0LC0zODk0MTE3NCwtMzI1MjUxMzY1
-LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4NDEyMjIwMzQsMTY0MT
-UwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAxMSwtOTUwNDc1NjI0
-LC0xNjI0OTY0Nzg2LDE0NzIwMzgwMDksMzQ3NTc2MjkzLC02OD
-k2MjAzOTBdfQ==
+eyJoaXN0b3J5IjpbLTE2MzI5MTQ0NjksLTE1MzgwMTU0NDgsMT
+MzODQ0NjIsMTQ1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2
+NSwtMTE5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2ND
+E1MDE3NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYy
+NCwtMTYyNDk2NDc4NiwxNDcyMDM4MDA5LDM0NzU3NjI5MywtNj
+g5NjIwMzkwXX0=
 -->
