@@ -169,13 +169,16 @@ println()
 ```
 * En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
 * A este tipo de sintaxis se le conoce como *partially applied function* 
+* Ejemplo con ```for```  Más adelante se explica a detalle.
+```scala
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzA5Njk4NDYsMTA0ODQwMDQ5MiwtMT
-E2MzU5MjYwMiwyNzEwMjM1MSwtNzI4MDQ0MjUyLDExODI5MTI2
-NzcsLTE3NjMxMTc1MTgsNjQ5MTUyMTU2LC01NjY2NDg0OTcsLT
-E3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMTMzODQ0NjIsMTQ1OTM0
-ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2NSwtMTE5MzY3NDA2MS
-w3ODU1ODgwODcsODQxMjIyMDM0LDE2NDE1MDE3NTAsMTc0MTc1
-ODcwN119
+eyJoaXN0b3J5IjpbLTc3Mjk3MTE5NiwxMDQ4NDAwNDkyLC0xMT
+YzNTkyNjAyLDI3MTAyMzUxLC03MjgwNDQyNTIsMTE4MjkxMjY3
+NywtMTc2MzExNzUxOCw2NDkxNTIxNTYsLTU2NjY0ODQ5NywtMT
+c3MDMzMzc3MSwtMTUzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4
+NzA0LC0zODk0MTE3NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLD
+c4NTU4ODA4Nyw4NDEyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4
+NzA3XX0=
 -->
