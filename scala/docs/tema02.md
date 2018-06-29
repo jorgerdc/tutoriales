@@ -127,7 +127,7 @@ Hola mundo Jorge desde script
 * Observar el uso de parámetros.  En Scala se emplea ```arg(n)``` en lugar de ```arg[n]``` como en Java.
 #### 2.1.5 Sentencias de control
 * En Scala ```++i```o ```i++```no funciona.  Se debe emplear por ejemplo, ```i=i+1```
-* Imprimiendo los parámetros de entrada:
+* Imprimiendo los argumentos de entrada,  versión imperativa.
 ```scala
 //argumentos.scala
 var i = 0
@@ -140,12 +140,13 @@ while(i < args.length){
 }
 println()
 ```
+* Imprimiendo argumentos de entrada,  estilo funci
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMjc1MTg1NiwxMTgyOTEyNjc3LC0xNz
-YzMTE3NTE4LDY0OTE1MjE1NiwtNTY2NjQ4NDk3LC0xNzcwMzMz
-NzcxLC0xNTM4MDE1NDQ4LDEzMzg0NDYyLDE0NTkzNDg3MDQsLT
-M4OTQxMTc0LC0zMjUyNTEzNjUsLTExOTM2NzQwNjEsNzg1NTg4
-MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUwLDE3NDE3NTg3MDcsND
-Y0MzQ2MDExLC05NTA0NzU2MjQsLTE2MjQ5NjQ3ODYsMTQ3MjAz
-ODAwOV19
+eyJoaXN0b3J5IjpbLTIwMTAxODYzNzQsMTE4MjkxMjY3NywtMT
+c2MzExNzUxOCw2NDkxNTIxNTYsLTU2NjY0ODQ5NywtMTc3MDMz
+Mzc3MSwtMTUzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4NzA0LC
+0zODk0MTE3NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLDc4NTU4
+ODA4Nyw4NDEyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4NzA3LD
+Q2NDM0NjAxMSwtOTUwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIw
+MzgwMDldfQ==
 -->
