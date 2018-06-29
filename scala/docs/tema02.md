@@ -150,9 +150,9 @@ println()
 ```scala
 /*
  * script: foreach.scala
- * Imprimineodo argumentos estilo funcional
+ * Imprimiendo argumentos estilo funcional
  */
-args.foreach(println)
+args.foreach(arg => print(" " + arg))
 println()
 ```
 * La función ```foreach```recibe una *función literal*  que a su vez recibe un argumento ```arg```
@@ -170,11 +170,11 @@ println()
 * En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
 * A este tipo de sintaxis se le conoce como *partially applied function* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0ODQwMDQ5MiwtMTE2MzU5MjYwMiwyNz
-EwMjM1MSwtNzI4MDQ0MjUyLDExODI5MTI2NzcsLTE3NjMxMTc1
-MTgsNjQ5MTUyMTU2LC01NjY2NDg0OTcsLTE3NzAzMzM3NzEsLT
-E1MzgwMTU0NDgsMTMzODQ0NjIsMTQ1OTM0ODcwNCwtMzg5NDEx
-NzQsLTMyNTI1MTM2NSwtMTE5MzY3NDA2MSw3ODU1ODgwODcsOD
-QxMjIyMDM0LDE2NDE1MDE3NTAsMTc0MTc1ODcwNyw0NjQzNDYw
-MTFdfQ==
+eyJoaXN0b3J5IjpbMjA3MDQwNjEwOCwxMDQ4NDAwNDkyLC0xMT
+YzNTkyNjAyLDI3MTAyMzUxLC03MjgwNDQyNTIsMTE4MjkxMjY3
+NywtMTc2MzExNzUxOCw2NDkxNTIxNTYsLTU2NjY0ODQ5NywtMT
+c3MDMzMzc3MSwtMTUzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4
+NzA0LC0zODk0MTE3NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLD
+c4NTU4ODA4Nyw4NDEyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4
+NzA3XX0=
 -->
