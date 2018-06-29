@@ -113,12 +113,15 @@ scala> :quit
 #### 2.1.4 Scripts en Scala
 * Scripts en Scala son representados por archivos de texto con instrucciones que se ejecutan de forma secuencial. 
 ##### Ejemplo:
-* Supober
+* Suponer el contenido del siguiente archivo ```saludo.scala```
+```bash
+```
+
 ```scala
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI5MTQ0NjksLTE1MzgwMTU0NDgsMT
+eyJoaXN0b3J5IjpbLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMT
 MzODQ0NjIsMTQ1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2
 NSwtMTE5MzY3NDA2MSw3ODU1ODgwODcsODQxMjIyMDM0LDE2ND
 E1MDE3NTAsMTc0MTc1ODcwNyw0NjQzNDYwMTEsLTk1MDQ3NTYy
