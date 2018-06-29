@@ -114,7 +114,7 @@ scala> :quit
 * Scripts en Scala son representados por archivos de texto con instrucciones que se ejecutan de forma secuencial. 
 ##### Ejemplo:
 * Suponer el contenido del siguiente archivo ```saludo.scala```
-```bash
+```scala
 /*
  * script: saludo.scala
  * saludando con argumentos
@@ -166,11 +166,11 @@ println()
 * En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
 * A este tipo de sintaxis se le conoce como *partially applied function* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1ODIyMzk2LC0xMTYzNTkyNjAyLDI3MT
-AyMzUxLC03MjgwNDQyNTIsMTE4MjkxMjY3NywtMTc2MzExNzUx
-OCw2NDkxNTIxNTYsLTU2NjY0ODQ5NywtMTc3MDMzMzc3MSwtMT
-UzODAxNTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4NzA0LC0zODk0MTE3
-NCwtMzI1MjUxMzY1LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4ND
-EyMjIwMzQsMTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAx
-MV19
+eyJoaXN0b3J5IjpbLTEwNDgzNTQ0NzYsLTExNjM1OTI2MDIsMj
+cxMDIzNTEsLTcyODA0NDI1MiwxMTgyOTEyNjc3LC0xNzYzMTE3
+NTE4LDY0OTE1MjE1NiwtNTY2NjQ4NDk3LC0xNzcwMzMzNzcxLC
+0xNTM4MDE1NDQ4LDEzMzg0NDYyLDE0NTkzNDg3MDQsLTM4OTQx
+MTc0LC0zMjUyNTEzNjUsLTExOTM2NzQwNjEsNzg1NTg4MDg3LD
+g0MTIyMjAzNCwxNjQxNTAxNzUwLDE3NDE3NTg3MDcsNDY0MzQ2
+MDExXX0=
 -->
