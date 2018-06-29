@@ -129,13 +129,23 @@ Hola mundo Jorge desde script
 * En Scala ```++i```o ```i++```no funciona.  Se debe emplear por ejemplo, ```i=i+1```
 * Imprimiendo los parámetros de entrada:
 ```scala
+//argumentos.scala
+var i = 0
+while(i < args.length){
+	if(i!=0){
+		print(" ")
+	}
+	print(args(i))
+	i = i +1
+}
+println()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MjkxMjY3NywtMTc2MzExNzUxOCw2ND
-kxNTIxNTYsLTU2NjY0ODQ5NywtMTc3MDMzMzc3MSwtMTUzODAx
-NTQ0OCwxMzM4NDQ2MiwxNDU5MzQ4NzA0LC0zODk0MTE3NCwtMz
-I1MjUxMzY1LC0xMTkzNjc0MDYxLDc4NTU4ODA4Nyw4NDEyMjIw
-MzQsMTY0MTUwMTc1MCwxNzQxNzU4NzA3LDQ2NDM0NjAxMSwtOT
-UwNDc1NjI0LC0xNjI0OTY0Nzg2LDE0NzIwMzgwMDksMzQ3NTc2
-MjkzXX0=
+eyJoaXN0b3J5IjpbMTkzMjc1MTg1NiwxMTgyOTEyNjc3LC0xNz
+YzMTE3NTE4LDY0OTE1MjE1NiwtNTY2NjQ4NDk3LC0xNzcwMzMz
+NzcxLC0xNTM4MDE1NDQ4LDEzMzg0NDYyLDE0NTkzNDg3MDQsLT
+M4OTQxMTc0LC0zMjUyNTEzNjUsLTExOTM2NzQwNjEsNzg1NTg4
+MDg3LDg0MTIyMjAzNCwxNjQxNTAxNzUwLDE3NDE3NTg3MDcsND
+Y0MzQ2MDExLC05NTA0NzU2MjQsLTE2MjQ5NjQ3ODYsMTQ3MjAz
+ODAwOV19
 -->
