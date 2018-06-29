@@ -157,9 +157,9 @@ println()
 args.foreach(println)
 println()
 ```
-* En este caso la función ```println```recibe como argumento, a cada valor 
+* En este caso la función ```println```recibe como argumento, a cada valor del arreglo ```args```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NDkwMTI0MiwtNzI4MDQ0MjUyLDExOD
+eyJoaXN0b3J5IjpbMTc0ODMwMDk2OCwtNzI4MDQ0MjUyLDExOD
 I5MTI2NzcsLTE3NjMxMTc1MTgsNjQ5MTUyMTU2LC01NjY2NDg0
 OTcsLTE3NzAzMzM3NzEsLTE1MzgwMTU0NDgsMTMzODQ0NjIsMT
 Q1OTM0ODcwNCwtMzg5NDExNzQsLTMyNTI1MTM2NSwtMTE5MzY3
