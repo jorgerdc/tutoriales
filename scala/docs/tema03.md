@@ -209,6 +209,179 @@ res26: Int = 7
 * Por esta razón no es posible usar la misma notación que una lista para obtener sus elementos, es decir: ```estudiante(1)``` no funcionaría. ¿ por qué?
 * Recordando de secciones anteriores, ```estudiante(1)``` es equivalente a ```estudiante.apply(1)``` .  El método ```apply```solo puede regresar un tipo de dato,  y por lo tanto no podría emplearse en tuplas.
 * Finalmente, se inicia en 1 en lugar de en 0 por tradición y compatibilidad con otros lenguajes como Haskell y ML.
-### 3.4 Uso de Sets y Maps
-* Scala ofrece soporte para Sets y Maps  tanto para inmutable como para Inmutable implementaciones.  Observar la siguiente Jerarquía:
+### 3.4 Uso de Sets
+* Scala ofrece soporte para Sets  tanto para implementaciones inmutables como para implementaciones Inmutables .  Observar la siguiente Jerarquía:
+*
 ![enter image description here](https://lh3.googleusercontent.com/Zxff_n3OhRN3Cffh7xon_rFjt2J8NhUuZWWXiyYtNyF0WBfBmfrj_s_YUDE0x9l-yhhkLUco6tyW "Scala collection hierarchy") 
+
+* Por default se crea una colección inmutable.
+##### Ejemplo:
+```scala
+scala> var set1 = Set("one","two")
+set1: scala.collection.immutable.Set[String] = Set(one, two)
+
+scala> set1 += "three"
+scala> print(set1)
+Set(one, two, three)
+```
+* Observar el uso de ```var```en lugar de ```val```
+* Observar el uso del  método ```+=``` , regresa una nueva colección con los 3 elementos. Se requiere el uso de ```var```ya que se trata de un nuevo objeto.
+* En el siguiente ejemplo se muestra el mismo código , pero con una colección mutable. 
+```scala
+scala> import scala.collection.mutable
+import scala.collection.mutable
+
+scala> val set1 = mutable.Set("one","two")
+set1: scala.collection.mutable.Set[String] = Set(two, one)
+
+scala> set1 += "three"
+res14: set1.type = Set(three, two, one)
+
+scala> print(set1)
+Set(three, two, one)
+```
+* Observar el uso de ```val```en lugar de ```var```.
+* A pesar de realizar una reasignación con ```+=```no  existe error ya  que el objeto es el mismo.
+* Observar que el objeto se agregó al inicio.
+
+### 3.5 Uso de Maps
+* Similar a un Set, existem implementaciones mutables e inmutables.
+
+![enter image description here](https://lh3.googleusercontent.com/ow5zUIP3pdJc0jcLOHSQJhiEURc9wzFyKt4k1odHQL7LmgeZJH-MmXUmACJkNH9PrzedjSUdFb9y "Scala Maps")
+
+##### Ejemplo:
+```scala
+scala> var myMap = Map[Int,String]()
+myMap: scala.collection.immutable.Map[Int,String] = Map()
+
+scala> myMap +=(1 -> "One")
+scala> myMap +=(2 -> "two")
+
+scala> print(myMap)
+Map(1 -> One, 2 -> two)
+```
+* Notar que la expresión para agregar un nuevo elemento al map es equivalente a: ```myMap +=((3).-> ("three"))```
+* Para acceder a un elemento del map:
+```scala
+scala> myMap(2)
+res24: String = two
+// de forma equivalente:
+scala> myMap.apply(2)
+res25: String = two
+```
+### 3.6 Algunos tips para identificar estilo funcional de programación.
+1. Usar ```val```en lugar de ```var```  (Objetos inmutables)
+2. Hacer uso de funciones que no tengan efectos secundarios, es decir, trabajan con los parámetros, los procesan y regresan un valor sin afectar otras cosas.
+3. Verificar el uso de loops.
+##### Ejemplo 1:  Estilo imperativo
+```scala
+def imprimeArgs(args: Array[String]): Unit = {
+	var i = 0
+	while(i < args.length){
+		println(args(i))
+		i += 1
+	}
+}
+```
+##### Ejemplo 2: Eliminando vars
+```scala
+def imprimeArgs(args: Array[String]): Unit = {
+	for(arg <- args){
+		println(arg)
+	}
+}
+```
+* Otra solución al código anterior:
+```scala
+def imprimeArgs(args: Array[String]): Unit = {
+	args.foreach(println)
+}
+```
+* El código anterior tiene un estilo casi funcional.
+* La función ```imprimeArgs```tiene un efecto secundario ya que imprime  un mensaje a consola.
+* Si se quisiera solucionar este detalle, la función ```imprimeArgs```tendría que generar la cadena completa que se va a imprimir en consola y que la regresara como valor de retorno:
+```scala
+def imprimeArgs(args: Array[String])  ) args.mkString("\n")
+```
+* En esta última versión se tiene un método completamente funcional.
+* La función ```mkString```  es aplicable sobre objetos iterables. Agrega la cadena especificada en el parámetro al final de cada elemento de la colección o arreglo, que es justamente lo que se va a imprimir.
+* Llevar hasta este nivel tiene varios beneficios:
+	* Reusabilidad.
+	* Facilidad para probar:
+```scala
+var cadena = imprimeArgs(Array("1","2","3"))
+assert(res == "1\n2\n3")
+```
+* El estilo imperativo no necesariamente es malo. Se debe optar por el estilo funcional, pero en situaciones particulares se puede preferir el imperativo con su respectiva justificación.
+##### Ejemplo:
+* *Crear un script que lea las líneas de un archivo, imprima el contenido de la línea y el número de caracteres que contiene*.
+* Versión 1
+```scala
+/*
+ * script: tema03/leeArchivoV1.scala
+ * Lectura de un archivo de texto version 1
+ */
+import scala.io.Source
+
+if(args.length > 0){
+	for(line <- Source.fromFile(args(0)).getLines()){
+		println(line.length + " "+ line)
+	}
+}else{
+	Console.err.println("Especificar una ruta valida de un archivo")
+}
+```
+* Salida del programa:
+```shell
+67 The following are the graphical (non-control) characters defined by
+66 ISO 8859-1 (1987).  Descriptions in words aren't all that helpful,
+69 but they're the best we can do in text.  A graphics file illustrating
+67 the character set should be available from the same archive as this
+5 file.
+```
+* Versión 2
+*Formatear el número que aparece a la izquierda seguido de un " | " de tal forma que el contenido del archivo inicie en la misma columna*:
+```shell
+67 | The following are the graphical (non-control) characters defined by
+66 | ISO 8859-1 (1987).  Descriptions in words aren't all that helpful,
+69 | but they're the best we can do in text.  A graphics file illustrating
+67 | the character set should be available from the same archive as this
+5  | file.
+```
+* La solución se muestra a continuación:
+```scala {.line-numbers}
+import scala.io.Source
+
+def getLongitudNumeroLinea(s: String) = s.length.toString.length
+
+if(args.length >0){
+	val lineas = Source.fromFile(args(0)).getLines().toList
+	val lineaMasLarga = lineas.reduceLeft(
+		(a,b) => if(a.length > b.length) a else b
+	)
+	val maxLongitud = getLongitudNumeroLinea(lineaMasLarga)
+	for(linea <- lineas){
+		val numEspacios = maxLongitud - getLongitudNumeroLinea(linea)
+		val padding = " " * numEspacios
+		println(padding + linea.length + " | " + linea)
+	}
+
+}else{
+	Console.err.println("Especificar una ruta valida de un archivo")
+}
+```
+* En este ejemplo se hace uso de un estilo funcional.
+* En la función ```getLongitudNumeroLinea``` obtiene la longitud de la cadena que representa al número de línea. Esto con la finalidad de determinar el número máximo de espacios necesarios para justificar a la izquierda.
+* Se crea una lista con el contenido de las líneas del archivo llamada ```lineas```.
+* Observar el uso de ```reduceLeft```  . En esta función se comparan los elementos de la lista, en este caso las longitudes de cada línea del archivo.  En la primera iteración se comparan las líneas 1 y 2. La función que se pasa como parámetro elige a una de ellas ( la que tiene la mayor longitud) la cual será comparada con la siguiente, es decir, la línea 3. 
+* El uso de ```reduceLeft``` permite obtener la línea con la  mayor longitud  evitando el uso de ```var```en un estilo imperativo:
+```scala
+var maxLongitud = 0
+for(line <- lineas)
+	maxLongitud = maxLongitud.max(getLongitudNumeroLinea(linea))
+```
+* Finalmente en el ciclo for se calcula el número exacto de espacios que se deben imprimir para justificar correctamente.    Observar la siguiente expresión:
+```scala
+val padding = " " * numEspacios
+```
+* ¡El caracter espacio es multiplicado N veces! , ¡se obtiene una cadena de N espacios!
