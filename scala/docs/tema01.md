@@ -6,8 +6,8 @@
 * Interactua con todas las librerías Java.
 * Representa una mezcla de conceptos de la programación orientada a objetos y de la programación funcional a través de un lenguaje estáticamente tipado.
 * Esta combinación permite definir nuevos patrones de programación,  abstracción de componentes. Es un lenguaje altamente **maleable** .
-##### Ejemplo 1:
-``` scala {.line-numbers}
+##### Ejemplo :
+``` scala
 var capitales = Map("Mexico" -> "CDMX","Japón" ->"Tokio")
 capital += ("Chile"->"Santiago")
 println(capitales("Mexico")) 
@@ -176,11 +176,11 @@ val x =  new HashMap[Int,String]
 	* Esto es verdadero para programas finales (usuario final) ya que hace uso de liberías previamente creadas.
 	* Sin embargo no tan cierto para implementación de librerías.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDk5MTg0OCwtMTE3NzY4MjExMCwtMT
-E3NzY4MjExMCwxNTEwMzM4MzY4LC0xNTQxODM2MzQ1LDE3NjM0
-MDY2MTYsMTU2MDE3Mjc3MywtMTg0Mjk3NjY2MywtMTc3OTA5NT
-UwNCwtMjA3OTgyODQzMSwtMjIwNTgxLC0yODY1MTQ4NDMsNDk0
-MDIzMTgxLDU0MTY1NjU0OCw2MzY3NjA3OTAsMTk4Nzg0OTM5Mi
-w0MzIwNjE4NTIsLTEyMzI5Njc2MjMsMTA4OTYwMTk4LC0zOTcz
-NjY5ODVdfQ==
+eyJoaXN0b3J5IjpbMzU4NjgxNDc4LC0xMTc3NjgyMTEwLC0xMT
+c3NjgyMTEwLDE1MTAzMzgzNjgsLTE1NDE4MzYzNDUsMTc2MzQw
+NjYxNiwxNTYwMTcyNzczLC0xODQyOTc2NjYzLC0xNzc5MDk1NT
+A0LC0yMDc5ODI4NDMxLC0yMjA1ODEsLTI4NjUxNDg0Myw0OTQw
+MjMxODEsNTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLD
+QzMjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2
+Njk4NV19
 -->
