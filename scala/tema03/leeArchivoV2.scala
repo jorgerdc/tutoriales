@@ -1,4 +1,8 @@
-import scala.io.Source
+/*
+ * script: tema03/leeArchivoV2.scala
+ * Lectura de un archivo de texto version 2
+ */
+ import scala.io.Source
 
 def getLongitudNumeroLinea(s: String) = s.length.toString.length
 
