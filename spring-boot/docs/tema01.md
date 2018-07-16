@@ -7,12 +7,15 @@
 ### 1.2 Administración simple de dependencias.
 * Spring boot hace uso de dependencias del tipo ```spring-boot-stater-*```.
 * Los starters configuran e incluyen ciertas dependencias que comúnmente se emplean para diferentes tipos de aplicaciones.
-##### Ejemplo:
-* ```spring-boot-starter-web```
+* El "*" se sustituye por el tipo de aplicación que se desea desarrollar.
+##### Ejemplos:
+* ```spring-boot-starter-webflux```
+* ```spring-boot-starter-data-jpa```
+*  ```spring-boot-starter-web```
 	* Adicional a las dependencias, el starter también configura algunos Beans que comúnmente son configurados en una app web: ```DispatcherServlet```,  ```ResourceHandler```, etc. 
 	* Estos Beans son configurados con valores por default comúnmente empleados. 
-* ```spring-boot-starter-jpa```
-* Etc.
+* ```spring-boot-starter-data-mongodb```
+* Etc. La  lista completa  se encuentra en la documentación oficial.
 ### 1.3 Starters y Auto Configuración
 * Ambos conceptos pueden ser incorporados conjuntamente o por separado.
 * Es posible administrar dependencias sin el uso de starters, pero conservar la capacidad de autoconfiguración.
@@ -61,7 +64,7 @@ apply plugin: 'io.spring.dependency-management'
 ```java
 @RestController
 @EnableAutoConfiguration
-public class Main {
+public class Application {
 
 	@RequestMapping("/")
 	public String home() {
@@ -80,9 +83,61 @@ public class Main {
 	* ```spring-boot-starter-test```
 * El punto central de inicio de la aplicación se especifica en el método ```main```de la clase.  
 * Se autoconfigura también un servidor tomcat para desplegar la aplicación en dicho contenedor.
+
+### 1.4 Ejecución de la aplicación
+#### 1.4.1 Ejecución de la aplicación con gradle
 * Para ejecutar la aplicación ejecutar en una terminal la siguiente instrucción:
 ```bash 
 ./gradlew bootRun
 ``` 
 * Observar que se hace uso de wrapper de Gradle como buena práctica de portabilidad. 
 *  Finalmente Abrir la aplicación en [http://localhost:8080/](http://localhost:8080/) 
+#### 1.4.2 Ejecución con fat Jars o Uber Jars.
+* Fat Jar o Jar ejecutable es un Jar que contiene todo lo necesario para ejecutar la aplicación (aplicación auto contenida). Generalmente son Jars de varios MB de tamaño.
+* En este tipo de aplicaciones es común tener Jars anidados. Es decir, Jars dentro de otros.
+* Java no soporta Jars anidados. 
+* Spring boot ofrece una solución conveniente para realizar el manejo de este tipo de Jars a través de la clase ```org.springframework.boot.loader.jar.JarFile```
+* Para generar un Fat Jar  a través de  esta  funcionalidad, basta con ejecutar la siguiente tarea en gradle:
+```shell
+./gradlew bootJar
+```
+* Esto es posible gracias a que se emplea el plugin de spring boot configurado anteriormente.
+* En Gradle, el archivo se genera en el directorio ```build/libs```
+* Para ejecutar la aplicación:
+```shell
+lap-mac:libs jorge$ java -jar raven-course-spring-boot.jar 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v2.1.0.BUILD-SNAPSHOT)
+
+2018-07-09 20:59:20.100  INFO 1467 --- [           main] com.raven.Main                           : Starting Main on lap-mac.local with PID 1467 (/Volumes/PROYS/Github/individual/raven/raven-course-spring-boot/build/libs/raven-course-spring-boot.jar started by jorge in /Volumes/PROYS/Github/individual/raven/raven-course-spring-boot/build/libs)
+```
+### 1.5 Estructura recomendada para un proyecto, buenas prácticas.
+#### 1.5.1 Clase principal de la aplicación
+* La clase principal que contiene al método ```main``` se recomienda  ubicarla en un paquete raíz o hasta un nivel mayor al de las demás clases.
+* Típicamente  la clase se llama ```Application.java```
+* La anotación ```@SpringBootApplication```puede emplearse para anotar esta clase en lugar de las siguientes  anotaciones. Es decir, cubre las funcionalidades de las siguientes anotaciones:
+	* ```@EnableAutoConfiguration```
+	*  ```@ComponentScan ``` habilita ```@Component``` para ubicar beans en el paquete donde esta la clase ```Application```
+	* ```@Configuration```
+* ```@SpringBootApplication```  realiza automáticamente el escaneo de componentes anotados a partir del paquete donde se encuentra la clase ```Application```.  Por tal razón ```@ComponentScan```se puede omitir.
+##### Ejemplo:
+```java
+@SpringBootApplication
+public class Application {
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+}
+```
+#### 1.5.2 Incorporando múltiples componentes a la aplicación (beans).
+* Spring boot recomienda usar la configuración basada en Java con respecto al uso de XML.
+* ```@Configuration```Permite definir los beans necesarios o adicionales.
+* Es posible tener varias clases que definen beans.
+*   ```@Import```se emplea para  incluir definiciones de beans en múltiples clases.
+* ```@ImportResource``` se emplea en caso de usar XML.
