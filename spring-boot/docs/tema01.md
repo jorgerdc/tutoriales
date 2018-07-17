@@ -1,5 +1,13 @@
 ﻿# Spring Boot
 ## 1. Introducción.
+* Spring boot es un  framework  que facilita el desarrollo de aplicaciones basadas en Spring  de forma rápida y fácil. 
+* Uno de los objetivos principales es evitar la configuración y programación que repetidamente se realiza al desarrollar una aplicación.
+* Los conceptos clave que utiliza spring boot para lograr estos objetivos son:
+	* Spring boot starters
+	* Spring boot auto configuration
+	* Spring boot actuator
+		* Permite conocer aspectos de la aplicación en producción: configuración de beans, mapeo de URLs, parámetros de configuración, métricas de desempeño y buena salud.
+	* Easy-to-use embedded servlet container support.
 ### 1.1 Beneficios  Spring boot
 * Configura todos los componentes de la aplicación de forma automática.
 * Ofrece flexibilidad para modificar defaults.
@@ -15,7 +23,7 @@
 	* Adicional a las dependencias, el starter también configura algunos Beans que comúnmente son configurados en una app web: ```DispatcherServlet```,  ```ResourceHandler```, etc. 
 	* Estos Beans son configurados con valores por default comúnmente empleados. 
 * ```spring-boot-starter-data-mongodb```
-* Etc. La  lista completa  se encuentra en la documentación oficial.
+* Etc. La  lista completa  se encuentra [aquí](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter)
 ### 1.3 Starters y Auto Configuración
 * Ambos conceptos pueden ser incorporados conjuntamente o por separado.
 * Es posible administrar dependencias sin el uso de starters, pero conservar la capacidad de autoconfiguración.
@@ -80,9 +88,12 @@ public class Application {
 * En este ejemplo se agregaron los siguientes starters:
 	* ```spring-boot-starter-web```
 		* Al existir estas dependencias,   se realizará la configuración para levantar una aplicación web.
+		* Algunas de las dependencias que se agregan con este starter son: ```spring-webmvc, jackson-json, validation-api, tomcat```, etc.
 	* ```spring-boot-starter-test```
+		* Empleada para dar soporte y configuración automática a pruebas unitarias y de integración entre otras.
 * El punto central de inicio de la aplicación se especifica en el método ```main```de la clase.  
-* Se autoconfigura también un servidor tomcat para desplegar la aplicación en dicho contenedor.
+* Se autoconfigura también un servidor tomcat para desplegar la aplicación en dicho contenedor. 
+* Por default se emplea tomcat.  Si se deseara emplear otro servidor, por ejemplo Jetty,   se excluye ```spring- boot-starter-tomcat``` y se agrega ```spring- boot-starter-jetty```
 
 ### 1.4 Ejecución de la aplicación
 #### 1.4.1 Ejecución de la aplicación con gradle
@@ -120,6 +131,8 @@ lap-mac:libs jorge$ java -jar raven-course-spring-boot.jar
 ### 1.5 Estructura recomendada para un proyecto, buenas prácticas.
 #### 1.5.1 Clase principal de la aplicación
 * La clase principal que contiene al método ```main``` se recomienda  ubicarla en un paquete raíz o hasta un nivel mayor al de las demás clases.
+* Lo anterior con la finalidad de hacer una correcta detección de beans.  En caso de no encontrarse en un paquete raíz, se puede emplear el atributo ```basePackages```:
+*  ```@ComponentScan(basePackages = "com.mycompany.myproject")```
 * Típicamente  la clase se llama ```Application.java```
 * La anotación ```@SpringBootApplication```puede emplearse para anotar esta clase en lugar de las siguientes  anotaciones. Es decir, cubre las funcionalidades de las siguientes anotaciones:
 	* ```@EnableAutoConfiguration```
@@ -135,9 +148,63 @@ public class Application {
 	}
 }
 ```
+* En resumen ```@SpringBootApplication``` es una anotación compuesta por las siguientes anotaciones:
+```java
+@Target(value=TYPE)
+ @Retention(value=RUNTIME)
+ @Documented
+ @Inherited
+ @SpringBootConfiguration
+ @EnableAutoConfiguration
+ @ComponentScan(excludeFilters={@ComponentScan.Filter(type=CUSTOM,classes=TypeExcludeFilter.class),})
+```
+
 #### 1.5.2 Incorporando múltiples componentes a la aplicación (beans).
 * Spring boot recomienda usar la configuración basada en Java con respecto al uso de XML.
 * ```@Configuration```Permite definir los beans necesarios o adicionales.
 * Es posible tener varias clases que definen beans.
 *   ```@Import```se emplea para  incluir definiciones de beans en múltiples clases.
 * ```@ImportResource``` se emplea en caso de usar XML.
+### 2. Configuración de la aplicación.
+* Spring boot permite configurar la aplicación a través de diferentes medios externos:
+	* Archivos properties
+	* Archivos YAML
+	* Variables de entorno del s.o.
+	* Argumentos en línea de comandos.
+* En la aplicación, los valores de las propiedades se pueden recuperar a través de las siguientes anotaciones:
+	* ```@value```
+	* ```@ConfigurationProperties```
+*  Existe un orden establecido para realizar sobrescritura de propiedades. Por ejemplo,  properties especificadas a linea de comandos sobrescriben  properties en archivos ubicados en el classpath:
+```shell
+java -jar app.jar --name="Spring"
+``` 
+#### 2.1 Archivos properties
+* Por default  se usa el archivo con nombre ```application.properties```. 
+* Este nombre se puede modificar empleando el property ```spring.config.name```
+* ```SpringApplication``` carga archivos properties de las siguientes ubicaciones:
+1. Del directorio ```/config``` con respecto al directorio donde se ejecuta la aplicación
+2. Del directorio donde se ejecuta la aplicación
+3. Dentro de paquete ```/config``` ubicado en el classpath.
+4. Dentro del directorio raíz del classpath.
+* La lista anterior esta ordenada por precedencia.  Archivos al principio de la lista sobrescriben a los demás.
+* Es posible indicar una ubicación personalizada empleando ```spring.config.location``` . Se emplean los prefijos ```file:```y ```classpath:```
+* Estas 2 properties debe ser especificadas a linea  de comandos, como variable de entorno o como System property.
+* Variables de entorno emplean ```_``` en lugar del punto: ```SPRING_CONFIG_NAME```
+* ```spring.config.location``` reemplaza las ubicaciones por default.
+* ```spring.config.additional-location``` se puede emplear  en lugar de ```spring.config.location```  para no reemplazarlas.
+##### Ejemplo:
+```shell
+java -jar myproject.jar --spring.config.location=classpath:/default.properties,classpath:/
+override.properties
+```
+#### 2.2  Archivos properties con profiles - Multiples ambientes.
+* Adicional al archivo ```application.properties```se puede emplear el formato ```application-{profile}.properties``` el cual será empleado cuando se active algún profile:  test, dev, producción, etc.
+* En caso de no existir algún profile activado, se puede emplear el archivo ```application-default.properties```
+* Si se emplean profiles en los archivos properties, estos sobrescriben al default ```application.properties```
+* Si se emplean los properties para especificar ubicaciones o nombres personalizados, el uso de profiles se deshabilita.
+#### 2.3 Placeholders en archivos properties:
+* Se emplea la siguiente sintaxis.
+```properties
+app.name=MyApp  
+app.description=${app.name} is a Spring Boot application
+```
