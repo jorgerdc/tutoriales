@@ -1,0 +1,2 @@
+rootProject.name = 'parent-spring-boot'
+include 'properties-spring-boot'
