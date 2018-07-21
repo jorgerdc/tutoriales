@@ -120,3 +120,56 @@ val checksum = ChecksumAccumulator.calculate("HOLA")
 * Empleados para múltiples propósitos:
 	* métodos de utileria
 	* punto de inicio de una aplicación escrita en Scala  (similar al método main de Java).
+### 4.3 Aplicaciones en Scala.
+* Para ejecutar una aplicación en Scala es necesario hacer uso de un objeto standalone con un método main, acepta un ```Array[String]``` y regresa ```Unit```.
+##### Ejemplo:
+```scala
+/*
+ * script: tema04/ChecksumApp.scala
+ * Definición de una pequeña App en Scala
+ */
+ import ChecksumAccumulator.calculate
+ object ChecksumApp {
+ 	def main(args: Array[String]) = {
+ 		for(arg <- args){
+ 			println(arg +" : "+ calculate(arg))
+ 		}
+ 	}
+ }
+```
+* El ejemplo imprime en valor de  cada elemento del arreglo ```args``` seguido de su checksum.
+* Notar la instrucción ```import```,  similar a un ```static import``` en Java que hace referencia al método ```calculate``` del objeto singleton ```ChecksumAccumulator```
+* En Scala se puede importar cualquier miembro de  cualquier objeto, no solo de objetos singleton.
+* Por default, Scala realiza *imports*  de forma automática de los  siguientes elementos:
+	* Paquete ```java.lang```
+	* Paquete ```scala```
+	* Métodos del objeto singleton llamado ```Predef``` ubicado en el paquete ```scala```.
+* El objeto ```Predef```contiene una gran cantidad de métodos de utilería, por ejemplo, al invoca ```println```, en realidad se invoca ```Predef.println```
+* Notar que los 2 objetos  ```ChecksumApp```y ```ChecksupAccumulator``` se definen en 2 archivos  que tienen el mismo nombre.
+* En Scala esto no es requisito  (en Java si ), sin embargo, se recomienda seguir esta convención por claridad y facilidad para ubicar código.
+* Por otro lado, observar que ambos archivos solo contienen definiciones de clases y objetos,  no contienen expresiones, es decir,  ***no son scripts.***
+* Para que un archivo sea considerado como  script, este debe terminar en  una expresión.
+* Lo anterior hace que dichos archivos no pueden ser ejecutados empleando el interprete ```scala``` .
+* Los archivos deben ser compilados empleando el compilador de Scala:
+```bash
+scalac ChecksumAccumulator.scala ChecksumApp.scala
+```
+* Observar los archivos generados:
+```bash
+ls *.class
+ChecksumAccumulator$.class  ChecksumAccumulator.class  ChecksumApp$.class  ChecksumApp.class
+```
+* La primera vez que se ejecuta el compilador se observa un cierto *delay* ya que requiere realizar ciertas operaciones iniciales.
+* Para mejorar los tiempos de ejecución, Scala proporciona un *deamon* llamado ```fsc```(fast scala compiler) :
+```bash
+fsc ChecksumAccumulator.scala ChecksumApp.scala
+```
+* Este deamon hace uso de un puerto como medio de comunicación para realizar la compilación de archivos.
+* Para detener el deamon se  emplea ```fsc -shutdown ```
+* Finalmente, al ejecutar la aplicación se obtiene la siguiente salida. 
+```bash
+scala ChecksumApp Hola Scala
+Hola : -132
+Scala : -228
+```
+* Notar que se especifica el nombre del objeto singleton en lugar del nombre del archivo.

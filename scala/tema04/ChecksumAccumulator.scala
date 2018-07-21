@@ -28,7 +28,3 @@ object ChecksumAccumulator {
 
 	}
 }
-
-//invocando al companion object
-val checksum = ChecksumAccumulator.calculate("HOLA")
-println("Checksum para HOLA es " + checksum)
