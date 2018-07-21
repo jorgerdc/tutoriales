@@ -8,7 +8,6 @@ class ChecksumAccumulator {
 	def checksum(): Int = ~(sum & 0xFF) + 1
 }
 
-
 import scala.collection.mutable
 object ChecksumAccumulator {
 
