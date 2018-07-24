@@ -173,3 +173,19 @@ Hola : -132
 Scala : -228
 ```
 * Notar que se especifica el nombre del objeto singleton en lugar del nombre del archivo.
+#### 4.3.1 Empleando  el Traint App
+* Existe un *Trait* llamado ```scala.App``` que puede simplificar la programación del objeto singleton para iniciar  una aplicación  (el concepto de Trait se revisará mas adelante)  de la siguiente forma:  
+```scala
+/*
+ * script: tema04/ChecksumTraitApp.scala
+ * Definición de una pequeña App en Scala que hace uso del trait App
+ */
+ import ChecksumAccumulator.calculate
+ object ChecksumTraitApp extends App {
+	for(arg <- args){
+		println(arg +" : "+ calculate(arg))
+	} 
+}
+```
+* Observar que ya no existe el método ```main```. Basta con colocar el código directamente en el cuerpo de la clase.
+* El atributo ```args```se hereda de  ```App```.
