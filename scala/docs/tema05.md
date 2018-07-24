@@ -182,5 +182,5 @@ res3: Boolean = true
 *  ```Double:  scala.runtime.RichDouble```
 *  ```Boolean: scala.runtime.RichBoolean```
 *  ```String:  scala.collection.immutable.StringOps```
-* La lista de métodos de estas clases está [aquí](https://www.scala-lang.org/api/current/scala/)
+* La lista de métodos de estas clases está [aquí](https://www.scala-lang.org/api/current/scala/runtime/index.html)
 
