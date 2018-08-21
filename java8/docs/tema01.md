@@ -5,7 +5,14 @@
 * Uno de los principales objetivos de estos cambios es la posibilidad de escribir código más simple y conciso, evitando código repetitivo, verboso.
 #####  Ejemplo:
 * Suponer que se tiene  la siguiente clase que define a un objeto ```Course``` 
-* Escribir un programa que realice el ordenamiento de 
+```java
+public  class Course {
+	private  double  price;
+	private String name;
+	//getters & setters
+}
+```
+* Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando un comparador.
 
 
  * Lambdas
@@ -35,6 +42,7 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NT
-Q5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
+eyJoaXN0b3J5IjpbMTA3ODcwODQwNSwtOTAyMjQ3MzIwLDQ1MD
+g1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMy
+NjRdfQ==
 -->
