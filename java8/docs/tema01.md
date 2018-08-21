@@ -34,6 +34,6 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4NT
-MwMzY3NDEsLTY3NzEyMzI2NF19
+eyJoaXN0b3J5IjpbNDczNTIyMzE1LDQ1MDg1NjU4MiwtMTQ1ND
+kyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
 -->
