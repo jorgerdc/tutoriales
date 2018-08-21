@@ -4,7 +4,8 @@
 * Java 8  lanzada en Marzo del 2014 representa  a la versión con la mayor cantidad de cambios a fondo que se haya tenido desde el lanzamiento del JDK 1.0 en 1996.
 * Uno de los principales objetivos de estos cambios es la posibilidad de escribir código más simple y conciso, evitando código repetitivo, verboso.
 #####  Ejemplo:
-* Suponer que se tiene  la siguiente clase que define a un objeto ```Apple```Escribir un programa que realice el ordenamiento de 
+* Suponer que se tiene  la siguiente clase que define a un objeto ```Course``` 
+* Escribir un programa que realice el ordenamiento de 
 
 
  * Lambdas
@@ -34,6 +35,6 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczNTIyMzE1LDQ1MDg1NjU4MiwtMTQ1ND
-kyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NT
+Q5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
 -->
