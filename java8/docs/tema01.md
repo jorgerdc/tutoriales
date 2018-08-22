@@ -13,6 +13,9 @@ public  class Course {
 }
 ```
 * Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando un comparador.
+	A) Antes de Java 8
+	B) Después de Java 8
+
 
 
  * Lambdas
@@ -42,7 +45,7 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODcwODQwNSwtOTAyMjQ3MzIwLDQ1MD
-g1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMy
-NjRdfQ==
+eyJoaXN0b3J5IjpbNzk1ODQzMDkwLC05MDIyNDczMjAsNDUwOD
+U2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3NDEsLTY3NzEyMzI2
+NF19
 -->
