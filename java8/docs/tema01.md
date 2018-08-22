@@ -40,7 +40,8 @@ public class CourseOrderingJava7 {
 
 		courses = Arrays.asList(new Course("Web Services", 7899.3),
 			new Course("Java 8", 2100), new Course("C programming", 3400));
-
+		
+		//nuevo en Java8 (por ahora no se requiere comprender):
 		courses.sort(Comparator.comparing(Course::getName));
 		System.out.println(courses);
 	}
@@ -73,7 +74,7 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MTYxMTM1MSwxNzI5Mzk4MTQwLDE5NT
+eyJoaXN0b3J5IjpbLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NT
 UyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIyNDcz
 MjAsNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3NDEsLT
 Y3NzEyMzI2NF19
