@@ -12,7 +12,7 @@ public  class Course {
 	//getters & setters
 }
 ```
-* Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando un comparador.
+* Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando como criterio de ordenamiento el nombre del curso 
 	* Antes de Java 8
 ```java
 public class CourseOrderingJava7 {
@@ -21,6 +21,7 @@ public class CourseOrderingJava7 {
 		List<Course> courses;
 		courses = Arrays.asList(new Course("Web Services", 7899.3),
 			new Course("Java 8", 2100), new Course("C programming", 3400));
+		
 		courses.sort(new Comparator<Course>() {
 			@Override
 			public int compare(Course o1, Course o2) {
@@ -59,8 +60,8 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTc0NTI5NDYsMTk1NTI0MzkzNiwtMT
-kwNjUzMDQ2OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1
-ODIsLTE0NTQ5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX
-0=
+eyJoaXN0b3J5IjpbMTgxMDY3MTI3OSwxOTU1MjQzOTM2LC0xOT
+A2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4
+MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ
+==
 -->
