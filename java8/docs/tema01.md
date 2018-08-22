@@ -14,7 +14,23 @@ public  class Course {
 ```
 * Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando un comparador.
 	* Antes de Java 8
+```java
+public class CourseOrderingJava7 {
 
+	public static void main(String[] args) {
+		List<Course> courses;
+		courses = Arrays.asList(new Course("Web Services", 7899.3),
+			new Course("Java 8", 2100), new Course("C programming", 3400));
+		courses.sort(new Comparator<Course>() {
+			@Override
+			public int compare(Course o1, Course o2) {
+				return o1.getName().compareTo(o2.getName());
+			}
+		});
+		System.out.println("Ordered course list: " + courses);
+	}
+}
+```
  B) Después de Java 8
  * Lambdas
  *  Streams
@@ -43,7 +59,8 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3OT
-U4NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NTQ5MjMy
-MDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
+eyJoaXN0b3J5IjpbLTEyMTc0NTI5NDYsMTk1NTI0MzkzNiwtMT
+kwNjUzMDQ2OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1
+ODIsLTE0NTQ5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX
+0=
 -->
