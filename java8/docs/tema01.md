@@ -1,7 +1,7 @@
 # Java 8
 ## 1. Introducción
 ### 1.1 Principales características de Java 8
-* Java 8  lanzada en Marzo del 2014 representa  a la versión con la mayor cantidad de cambios a fondo que se haya tenido desde el lanzamiento del JDK 1.0 en 1996.
+* Java 8  lanzada en marzo del 2014 representa  a la versión con la mayor cantidad de cambios a fondo que se haya tenido desde el lanzamiento del JDK 1.0 en 1996.
 * Uno de los principales objetivos de estos cambios es la posibilidad de escribir código más simple y conciso, evitando código repetitivo, verboso.
 #####  Ejemplo:
 * Suponer que se tiene  la siguiente clase que define a un objeto ```Course``` 
@@ -12,7 +12,7 @@ public  class Course {
 	//getters & setters
 }
 ```
-* Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando como criterio de ordenamiento el nombre del curso 
+* Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando como criterio de ordenamiento el nombre del curso.
 	* Antes de Java 8
 ```java
 public class CourseOrderingJava7 {
@@ -32,7 +32,10 @@ public class CourseOrderingJava7 {
 	}
 }
 ```
- B) Después de Java 8
+ * En Java 8 se tiene lo siguiente:
+ ```java
+ 
+ ```
  * Lambdas
  *  Streams
  * Programación funcional
@@ -60,7 +63,7 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDY3MTI3OSwxOTU1MjQzOTM2LC0xOT
+eyJoaXN0b3J5IjpbMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOT
 A2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4
 MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ
 ==
