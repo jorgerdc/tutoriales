@@ -24,6 +24,6 @@
 #### Iteraciones internas
 * Generalmente las iteraciones requeridas para trabajar con los elementos se hacen de forma implícita. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIwNDgyMDgwLDE3ODE2MDM0NSwtMTA5MT
-IzNzE2OSwyMTczMDQzMDNdfQ==
+eyJoaXN0b3J5IjpbLTE4NzQ4Nzg3NTUsNjIwNDgyMDgwLDE3OD
+E2MDM0NSwtMTA5MTIzNzE2OSwyMTczMDQzMDNdfQ==
 -->
