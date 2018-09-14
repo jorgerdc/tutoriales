@@ -55,6 +55,8 @@ public class CourseOrderingJava7 {
 	 * Técnicas de pasar código a métodos:  Parametrización del comportamiento
 	 * Métodos default en interfaces
 	 * Otras ideas de la programación funcional.
+### 1.2 Stream API.
+* A modo de introducción, un Stream representa a una secuencia de datos que son producidos por una fuente.
 
 Lambdas
  *  Streams
@@ -83,8 +85,8 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDUyNzg4MCwtMzEyMzg1OTA3LC01OD
-QwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMw
-NDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4MiwtMT
-Q1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
+eyJoaXN0b3J5IjpbMTY0MjI1MzYsLTMxMjM4NTkwNywtNTg0MD
+M5NjUyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2
+OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NT
+Q5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
 -->
