@@ -50,6 +50,7 @@ public class CourseOrderingJava7 {
  * A nivel  de hardware también existen mejoras.  Un programa en Java puede aprovechar la capacidad multi-core de los procesadores sin que el programador tenga que hacer uso de programación multi-hilos haciendo uso de los complicados *Threads*
  * En Java 5 se agregaron algunas mejoras como son: Thread pools y colecciones concurrentes.
  * En Java 7 se incorpora el framework Fork/Join haciendo el paralelismo más práctico, pero un tanto complicado.
+ *Adicional las características vistas hasta el momento, Java 8 ofrece
 
 Lambdas
  *  Streams
@@ -78,8 +79,8 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjM4NTkwNywtNTg0MDM5NjUyLDE3Mj
-kzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3OTU4NDMw
-OTAsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NTQ5MjMyMDEsMT
-g1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
+eyJoaXN0b3J5IjpbMTA0MjUyNTgyMywtMzEyMzg1OTA3LC01OD
+QwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMw
+NDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4MiwtMT
+Q1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
 -->
