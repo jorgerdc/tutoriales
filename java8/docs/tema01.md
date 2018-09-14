@@ -78,15 +78,18 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 * Visto de otra forma, las funciones representan *valores* que pueden ser pasados a un método. 
 * Otras terminologías comúnmente empleadas para nombrar a estos *valores* son *first class values*  o *first value citizens*.
 #### 1.2.1 Method References
-* Una de las  aplicaciones del uso de funciones como valores son las referencias a m`
+* Una de las  aplicaciones del uso de funciones como valores son las referencias a métodos.
+##### Ejemplo:
+* Suponer que se desea crear un programa que haga el filtrado de los archivos que se encuentran en un directorio. El programa debe mostrar a todos los archivos que son ocultos.  Antes de Java 8 se tendría el siguiente código:
+* 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjQ2OTg5NCwxNDQyNDEzODUxLDE4Mj
-gxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4
-Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1Mi
-wxNzI5Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1
-ODQzMDkwLC05MDIyNDczMjAsNDUwODU2NTgyLC0xNDU0OTIzMj
-AxLDE4NTMwMzY3NDEsLTY3NzEyMzI2NF19
+eyJoaXN0b3J5IjpbNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMTgyOD
+E2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2Mjg3
+OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5NjUyLD
+E3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3OTU4
+NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NTQ5MjMyMD
+EsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
 -->
