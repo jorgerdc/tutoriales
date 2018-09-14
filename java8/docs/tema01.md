@@ -90,13 +90,14 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 * El comando ``sort`` realiza el ordenamiento de los registros, recibe un Stream de entrada y produce otro.
 * El comando ```tail```obtiene las últimas 3 líneas del Stream de salida.
 * Los comandos ```cat``` , ```sort``` y ```tail``` pueden ser ejecutados de forma paralela, es decir, ```sort``` se puede ejecutar antes que ```tr``` o ```cat``` terminen.
-* El uso de Streams permite un estilo de programación a un nivel  mayor de abstracción.  Una analogía de lo anterior son las sentencias SQL, en las que se escribe lo que se desea obtener
+* El uso de Streams permite un estilo de programación a un nivel  mayor de abstracción.  Una analogía de lo anterior son las sentencias SQL, en las que se escribe lo que se desea obtener. Se especifica el "Qué" y no el "Cómo" se obtiene los datos.
+* Otra ventaja es la posibilidad de hacer "pipeline" empleando la capacidad multi-core de los procesadores de forma transparente.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3Nzc2MTk0LC0xNzE5ODY5MzE3LC01Nj
-YyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2
-NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4LD
-c5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4MiwtMTQ1NDky
-MzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLT
+U2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAz
+OTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0Nj
+gsNzk1ODQzMDkwLC05MDIyNDczMjAsNDUwODU2NTgyLC0xNDU0
+OTIzMjAxLDE4NTMwMzY3NDEsLTY3NzEyMzI2NF19
 -->
