@@ -58,8 +58,9 @@ public class CourseOrderingJava7 {
 ### 1.2 Stream API.
 * A modo de introducción, un Stream representa a una secuencia de datos (elementos) que son producidos por una fuente. Un programa en Java puede leer y/o escribir estos elementos. La salida de uno puede ser la entrada de otro. Algo similar al proceso de pipeling en linux:
 ```bash
-cat file1 file2 | tr "[A-z
+cat file1 file2 | tr "[A-Z]" "[a-z]" | sort | tail -3
 ```
+* El comando ```cat```crea un stream concatenando el contendo de los 2 archivos
 
 Lambdas
  *  Streams
@@ -88,7 +89,7 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTY1OTU1NywtMzEyMzg1OTA3LC01OD
+eyJoaXN0b3J5IjpbLTYyNTM0ODc4NCwtMzEyMzg1OTA3LC01OD
 QwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMw
 NDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4MiwtMT
 Q1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
