@@ -58,10 +58,11 @@ public class CourseOrderingJava7 {
 ### 1.2 Stream API.
 * A modo de introducción, un Stream representa a una secuencia de datos (elementos) que son producidos por una fuente. Un programa en Java puede leer y/o escribir estos elementos. La salida de uno puede ser la entrada de otro. Algo similar al proceso de pipeling en linux:
 ```bash
-cat file1 file2 | tr "[A-Z]" "[a-z]" | sort | tail -3
+cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 ```
 * El comando ```cat```crea un stream concatenando el contenido de los 2 archivos.
-* el comando ```tr```  crea un nuevo stream tomando a cada uno de los caracteres del stream.  Como salida Crea un nuevo stream  
+* el comando ```tr```  crea un nuevo stream tomando a cada uno de los caracteres del stream convirtiéndolos  a mayúsculas. 
+* El comando ```sort```realiza el ordenamiento lexicográfico de cada palabra, generando 
 
 Lambdas
  *  Streams
@@ -90,9 +91,9 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1OTExMTkwLC0xMjc0NDY1MTA5LC0zMT
-IzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5
-MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIyNDczMjAsND
-UwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3NDEsLTY3NzEy
-MzI2NF19
+eyJoaXN0b3J5IjpbLTcwMDU1NDcyNywtMTI3NDQ2NTEwOSwtMz
+EyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQz
+OTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLD
+Q1MDg1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02Nzcx
+MjMyNjRdfQ==
 -->
