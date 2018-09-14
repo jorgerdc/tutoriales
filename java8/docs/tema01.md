@@ -75,15 +75,16 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 - Antes de Java 8 esto se realizaba con *Clases anónimas*.
 -  Esta capacidad de pasar código permite establecer un nuevo estilo de programación: *Programación funcional*.
 - Al código que se pasa como argumento se le llama *función*.
- * Vis
+ * Visto de otra forma, las funciones representan *valores* que pueden ser pasados a un método. 
+ * Otras terminologías comúnmente empleadas para nombrar a estos *valores* son *first value classes*  o 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk1Njk5NjgxLDE4MjgxNjc3MDksLTEzOD
-U0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1
-MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLD
-E5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIy
-NDczMjAsNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3ND
-EsLTY3NzEyMzI2NF19
+eyJoaXN0b3J5IjpbMTQyMjUyNzM5NCwxODI4MTY3NzA5LC0xMz
+g1NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2
+NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MC
+wxOTU1MjQzOTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAy
+MjQ3MzIwLDQ1MDg1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2Nz
+QxLC02NzcxMjMyNjRdfQ==
 -->
