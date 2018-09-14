@@ -47,7 +47,9 @@ public class CourseOrderingJava7 {
 	}
 } 
 ```
- * Lambdas
+ * A nivel  de hardware también existen mejoras.  Un programa en Java puede aprovechar la capacidad mult 
+
+Lambdas
  *  Streams
  * Programación funcional
  * Pasar código como parámetro a un método.
@@ -74,8 +76,8 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NT
-UyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIyNDcz
-MjAsNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3NDEsLT
-Y3NzEyMzI2NF19
+eyJoaXN0b3J5IjpbNzYyNTE1NjI3LC01ODQwMzk2NTIsMTcyOT
+M5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5
+MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4MiwtMTQ1NDkyMzIwMSwxOD
+UzMDM2NzQxLC02NzcxMjMyNjRdfQ==
 -->
