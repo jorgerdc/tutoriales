@@ -81,15 +81,39 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 * Una de las  aplicaciones del uso de funciones como valores son las referencias a métodos.
 ##### Ejemplo:
 * Suponer que se desea crear un programa que haga el filtrado de los archivos que se encuentran en un directorio. El programa debe mostrar a todos los archivos que son ocultos.  Antes de Java 8 se tendría el siguiente código:
-* 
+```java
+/**
+ * Shows hidden files using imperative programming style.
+ */
+private static void showHiddenFilesJava7() {
+	File[] hiddenFiles;
+
+	System.out.println("Showing hidden files before Java8. Verbose..");
+	hiddenFiles =
+		new File(System.getProperty("java.io.tmpdir")).listFiles(new FileFilter() {
+			@Override
+			public boolean accept(File f) {
+				return f.isHidden();
+			}
+		});
+	for (File file : hiddenFiles) {
+		System.out.println(file.getAbsolutePath());
+	}
+}
+```
+* En Java 8 el código será:
+```java
+
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMTgyOD
-E2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2Mjg3
-OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5NjUyLD
-E3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3OTU4
-NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NTQ5MjMyMD
-EsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
+eyJoaXN0b3J5IjpbLTI1NjkyNDI0Myw2MDI3NDg2ODYsMTQ0Mj
+QxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5
+MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC
+01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2
+NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4Mi
+wtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
+
 -->
