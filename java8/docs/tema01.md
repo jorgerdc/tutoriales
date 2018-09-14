@@ -103,13 +103,24 @@ private static void showHiddenFilesJava7() {
 ```
 * En Java 8 el código será:
 ```java
+/**
+ * Shows hidden files using lambda expressions and method references.
+ */
+private static void showHiddendFilesJava8() {
+	List<File> files;
 
+	System.out.println("Showing hidden files with Java8 :");
+	files = Arrays.asList(
+		new File(System.getProperty("java.io.tmpdir")).listFiles(File::isHidden));
+	files.forEach(System.out::println);
+
+}
 ```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NjkyNDI0Myw2MDI3NDg2ODYsMTQ0Mj
+eyJoaXN0b3J5IjpbLTE3OTkwOTcwNyw2MDI3NDg2ODYsMTQ0Mj
 QxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5
 MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC
 01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2
