@@ -90,13 +90,13 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 * El comando ``sort`` realiza el ordenamiento de los registros, recibe un Stream de entrada y produce otro.
 * El comando ```tail```obtiene las últimas 3 líneas del Stream de salida.
 * Los comandos ```cat``` , ```sort``` y ```tail``` pueden ser ejecutados de forma paralela, es decir, ```sort``` se puede ejecutar antes que ```tr``` o ```cat``` terminen.
-
+* El uso
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMj
-c0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4
-MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC
-05MDIyNDczMjAsNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMw
-MzY3NDEsLTY3NzEyMzI2NF19
+eyJoaXN0b3J5IjpbNDM2MTM3OTMzLC0xNzE5ODY5MzE3LC01Nj
+YyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2
+NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4LD
+c5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4MiwtMTQ1NDky
+MzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
 -->
