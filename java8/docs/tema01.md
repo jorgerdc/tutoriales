@@ -76,12 +76,12 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 -  Esta capacidad de pasar código permite establecer un nuevo estilo de programación: *Programación funcional*.
 - Al código que se pasa como argumento se le llama *función*.
  * Visto de otra forma, las funciones representan *valores* que pueden ser pasados a un método. 
- * Otras terminologías comúnmente empleadas para nombrar a estos *valores* son *first value classes*  o 
+ * Otras terminologías comúnmente empleadas para nombrar a estos *valores* son *first class values*  o *first value citizens*  
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjUyNzM5NCwxODI4MTY3NzA5LC0xMz
+eyJoaXN0b3J5IjpbMTgwNjYxNDg3NSwxODI4MTY3NzA5LC0xMz
 g1NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2
 NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MC
 wxOTU1MjQzOTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAy
