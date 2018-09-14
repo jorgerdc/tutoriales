@@ -64,7 +64,8 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 * el comando ```tr```  crea un nuevo stream tomando a cada uno de los caracteres del stream convirtiéndolos  a mayúsculas. 
 * El comando ```sort```realiza el ordenamiento lexicográfico de cada palabra, generando un nuevo stream con las palabras ordenadas.
 * El comando ```tail``` obtiene las  últimas 3 palabras ordenas (ya no crea un nuevo stream).
-* Debido a que solo se requieren las últimas 3 palabras, la ejecución de este comando se realiz
+* Debido a que solo se requieren las últimas 3 palabras, la ejecución de este comando se realiza en el siguiente orden:
+	* La primera 
 
 Lambdas
  *  Streams
@@ -93,9 +94,9 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3NTc5NzQ1LC0xMjc0NDY1MTA5LC0zMT
-IzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5
-MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIyNDczMjAsND
-UwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3NDEsLTY3NzEy
-MzI2NF19
+eyJoaXN0b3J5IjpbLTk5MjY5NDYzMCwtMTI3NDQ2NTEwOSwtMz
+EyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQz
+OTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLD
+Q1MDg1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02Nzcx
+MjMyNjRdfQ==
 -->
