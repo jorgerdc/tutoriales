@@ -56,7 +56,7 @@ public class CourseOrderingJava7 {
 	 * Métodos default en interfaces
 	 * Otras ideas de la programación funcional.
 ### 1.2 Stream API.
-* A modo de introducción, un Stream representa a una secuencia de datos que son producidos por una fuente.
+* A modo de introducción, un Stream representa a una secuencia de datos (elementos) que son producidos por una fuente. Un programa en Java puede leer y/o escribir estos elementos. La salida de uno puede ser la entrada de otro.
 
 Lambdas
  *  Streams
@@ -85,8 +85,8 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MjI1MzYsLTMxMjM4NTkwNywtNTg0MD
-M5NjUyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2
-OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NT
-Q5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
+eyJoaXN0b3J5IjpbNjU5OTUxNjQxLC0zMTIzODU5MDcsLTU4ND
+AzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0
+NjgsNzk1ODQzMDkwLC05MDIyNDczMjAsNDUwODU2NTgyLC0xND
+U0OTIzMjAxLDE4NTMwMzY3NDEsLTY3NzEyMzI2NF19
 -->
