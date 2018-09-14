@@ -63,8 +63,9 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 * El comando ```cat```crea un stream concatenando el contenido de los 2 archivos.
 * el comando ```tr```  crea un nuevo stream tomando a cada uno de los caracteres del stream convirtiéndolos  a mayúsculas. 
 * El comando ```sort```realiza el ordenamiento lexicográfico de cada linea del archivo, generando un nuevo stream.
-* El comando ```tail``` obtiene las  últimas 3 palabras ordenas (ya no crea un nuevo stream).
+* El comando ```tail``` obtiene las  últimas 3 palabras ordenas (ya no crea un nuevo stream). y las imprime en consola.
 * Cada una de estas operaciones puede ser ejecutada con cierto nivel de paralelismo. No se necesita que ```cat``` termine de ejecutarse antes de que ```tr``` comience a transformar las primeras líneas.
+* En Java8 la 
 
 Lambdas
  *  Streams
@@ -93,9 +94,9 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjIyNjM0MDYsLTEyNzQ0NjUxMDksLT
-MxMjM4NTkwNywtNTg0MDM5NjUyLDE3MjkzOTgxNDAsMTk1NTI0
-MzkzNiwtMTkwNjUzMDQ2OCw3OTU4NDMwOTAsLTkwMjI0NzMyMC
-w0NTA4NTY1ODIsLTE0NTQ5MjMyMDEsMTg1MzAzNjc0MSwtNjc3
-MTIzMjY0XX0=
+eyJoaXN0b3J5IjpbLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMT
+IzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5
+MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIyNDczMjAsND
+UwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3NDEsLTY3NzEy
+MzI2NF19
 -->
