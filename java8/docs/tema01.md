@@ -75,15 +75,15 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 - Antes de Java 8 esto se realizaba con *Clases anónimas*.
 -  Esta capacidad de pasar código permite establecer un nuevo estilo de programación: *Programación funcional*.
 - Al código que se pasa como argumento se le llama *función*.
- 
+ * Vis
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMT
-cxOTg2OTMxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4
-NTkwNywtNTg0MDM5NjUyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNi
-wtMTkwNjUzMDQ2OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4
-NTY1ODIsLTE0NTQ5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMj
-Y0XX0=
+eyJoaXN0b3J5IjpbNjk1Njk5NjgxLDE4MjgxNjc3MDksLTEzOD
+U0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1
+MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLD
+E5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIy
+NDczMjAsNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3ND
+EsLTY3NzEyMzI2NF19
 -->
