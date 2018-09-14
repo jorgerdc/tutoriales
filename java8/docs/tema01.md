@@ -60,7 +60,8 @@ public class CourseOrderingJava7 {
 ```bash
 cat file1 file2 | tr "[A-Z]" "[a-z]" | sort | tail -3
 ```
-* El comando ```cat```crea un stream concatenando el contenido de los 2 archivos,  el comando ```tr```toma a los elementos del stream y los convierte a 
+* El comando ```cat```crea un stream concatenando el contenido de los 2 archivos.
+* el comando ```tr``` toma a cada uno de los caracteres  
 
 Lambdas
  *  Streams
@@ -89,8 +90,9 @@ cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywtNT
-g0MDM5NjUyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUz
-MDQ2OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLT
-E0NTQ5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
+eyJoaXN0b3J5IjpbLTExNzA1ODYzMCwtMTI3NDQ2NTEwOSwtMz
+EyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQz
+OTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLD
+Q1MDg1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02Nzcx
+MjMyNjRdfQ==
 -->
