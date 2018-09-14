@@ -68,11 +68,6 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 * En Java 8  un Stream está representado por ```java.util.stream.Stream<T>``` : secuencia de elementos tipo ```T```
 * * El uso de Streams permite un estilo de programación a un nivel  mayor de abstracción.  Una analogía de lo anterior son las sentencias SQL, en las que se escribe lo que se desea obtener. Se especifica el "Qué" y no el "Cómo" se obtiene los datos.
 * Otra ventaja es la posibilidad de hacer "pipeline" empleando la capacidad multi-core de los procesadores de forma transparente.
-
-Lambdas
- *  Streams
- * Programación funcional
- * Pasar código como parámetro a un método.
 ### 1.2 Parametrización del comportamiento.
 - Suponer 2 métodos con código similar.
 - Solo algunas líneas son diferentes.
@@ -80,26 +75,15 @@ Lambdas
 - Antes de Java 8 esto se realizaba con *Clases anónimas*.
 -  Esta capacidad de pasar código permite establecer un nuevo estilo de programación: *Programación funcional*.
 - Al código que se pasa como argumento se le llama *función*.
- ### 1.3 Stream processing 
- * Stream: Secuencia de elementos (datos) que son leídos por programas de forma secuencial.
- * El resultado del procesamiento de estos elementos puede ser escrito a otro Stream: *Output Stream*  
- #####  Ejemplo:
-```bash
-cat archivo1 archivo2 | tr “[A-Z]” “[a z]” | sort | tail -3
-```
-* El comando ```cat``` crea el stream de datos concatenando el contenido de ambos archivos.
-* El comando ```tr```  realiza la transformación de mayúsculas a minúsculas
-* El comando ``sort`` realiza el ordenamiento de los registros, recibe un Stream de entrada y produce otro.
-* El comando ```tail```obtiene las últimas 3 líneas del Stream de salida.
-* Los comandos ```cat``` , ```sort``` y ```tail``` pueden ser ejecutados de forma paralela, es decir, ```sort``` se puede ejecutar antes que ```tr``` o ```cat``` terminen.
+ 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODMwNzY0MzUsLTEzODU0MDQ1NTUsLT
-E3MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIz
-ODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5Mz
-YsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05MDIyNDczMjAsNDUw
-ODU2NTgyLC0xNDU0OTIzMjAxLDE4NTMwMzY3NDEsLTY3NzEyMz
-I2NF19
+eyJoaXN0b3J5IjpbMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMT
+cxOTg2OTMxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4
+NTkwNywtNTg0MDM5NjUyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNi
+wtMTkwNjUzMDQ2OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4
+NTY1ODIsLTE0NTQ5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMj
+Y0XX0=
 -->
