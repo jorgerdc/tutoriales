@@ -182,13 +182,21 @@ public interface Predicate<T> {
 }
 ```
 * Debido a que todas las implementaciones de la interface definen al método ```test```, este será invocado para aplicar diferentes criterios para filtrar cursos.
-* Para invocar al método ```filterCourses``` en Java 8 se puede e
+* Para invocar al método ```filterCourses``` en Java 8 se pueden escribir  las siguientes expresiones lambda:
+```java
+List<Course> courses, cursosJava, cheapCourses;
+courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
+javaCourses = filterCourses(
+			courses, c -> c.getName().toLowerCase().contains("java")
+);
+cheapCourses = filterCourses(courses, (Course c) -> c.getPrice() <= 10000);
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDgyOTA2MSwtMTgxNzY4MjcwOCwtMT
-c1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNiwtMTE3NjA3
-NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLD
-E4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2
-NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOT
-Y1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0Njgs
-Nzk1ODQzMDkwXX0=
+eyJoaXN0b3J5IjpbLTE2OTUwNTg1NzEsLTE4MTc2ODI3MDgsLT
+E3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYw
+NzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MS
+wxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01
+NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMz
+k2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4
+LDc5NTg0MzA5MF19
 -->
