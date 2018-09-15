@@ -202,13 +202,15 @@ cheapCourses = filterCourses(
 	courses, (Course c) -> c.getPrice() <= 10000
 ```
 * Estas expresiones representan la idea del concepto de  *parametrizar el comportamiento*.
-* Notar que ambas expresiones cumplen con la definición del método ``test``de la función ```Predicate```:   
+* Notar que ambas expresiones cumplen con la definición del método ``test``de la función ```Predicate``` y por lo tanto pueden ser empleadas como parámetro del método ```filterCourses```   
+	* Un método que reciba un objeto ```T```, en este caso, un objeto ```Course```
+	* Debe regresar un ```boolean```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NjI4MDE0NSwtMTgxNzY4MjcwOCwtMT
-c1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNiwtMTE3NjA3
-NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLD
-E4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2
-NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOT
-Y1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0Njgs
-Nzk1ODQzMDkwXX0=
+eyJoaXN0b3J5IjpbLTIxMDY2ODU5MjQsLTE4MTc2ODI3MDgsLT
+E3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYw
+NzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MS
+wxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01
+NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMz
+k2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4
+LDc5NTg0MzA5MF19
 -->
