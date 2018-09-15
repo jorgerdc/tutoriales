@@ -146,8 +146,22 @@ public static List<Course> getCoursesByName(List<Course> courses, String courseN
 	return javaCourses;
 }
 ```
+* Para filtrar por precio máximo:
+```java
+public static List<Course> getCoursesByMaxPrice(List<Course> courses,
+	double maxPrice) {
+	List<Course> javaCourses = new ArrayList<>();
+	for (Course course : courses) {
+		if (course.getPrice() <= maxPrice) {
+			javaCourses.add(course);
+		}
+	}
+	return javaCourses;
+}
+```
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc2NzM0ODksMTkwMTIwNTc5MiwxOD
+eyJoaXN0b3J5IjpbLTE0MTA2NDExMzIsMTkwMTIwNTc5MiwxOD
 IyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2
 ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC
 0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEy
