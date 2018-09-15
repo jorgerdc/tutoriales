@@ -175,13 +175,19 @@ public static List<Course> filterCourses(List<Course> courses, Predicate<Course>
 }
 ```
 * Observar el uso de la función ```java.util.function.Predicate```	 empleada como parámetro y cuyo valor contendrá al código que será ejecutado para aplicarse como filtro a la lista de cursos!.
-* 
+* El código de esta interface (llamada funcional) es:
+```java
+public interface Predicate<T> {
+	boolean test(T t);
+}
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjg0MjA2NDYsLTE4MTc2ODI3MDgsLT
-E3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYw
-NzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MS
-wxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01
-NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMz
-k2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4
-LDc5NTg0MzA5MF19
+eyJoaXN0b3J5IjpbODIxNzM2NjI4LC0xODE3NjgyNzA4LC0xNz
+U2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC0xMTc2MDc1
+NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMT
+gyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2
+Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5Nj
+UyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3
+OTU4NDMwOTBdfQ==
 -->
