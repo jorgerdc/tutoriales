@@ -199,14 +199,16 @@ cheapCourses = filterCourses(
 ```
 * La segunda es:
 ```java
-courses, (Course c) -> c.getPrice() <= 10000
+	courses, (Course c) -> c.getPrice() <= 10000
 ```
+* Estas expresiones representan la idea del concepto de  *parametrizar el comportamiento*.
+* Notar que ambas expresiones cumplen con la definición del método ``test``de la función ```Predicate```:   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyNzY5MTQ1LC0xODE3NjgyNzA4LC0xNz
-U2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC0xMTc2MDc1
-NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMT
-gyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2
-Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5Nj
-UyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3
-OTU4NDMwOTBdfQ==
+eyJoaXN0b3J5IjpbLTc0NjI4MDE0NSwtMTgxNzY4MjcwOCwtMT
+c1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNiwtMTE3NjA3
+NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLD
+E4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2
+NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOT
+Y1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0Njgs
+Nzk1ODQzMDkwXX0=
 -->
