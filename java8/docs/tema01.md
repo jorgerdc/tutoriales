@@ -160,15 +160,16 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses,
 }
 ```
 * Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
-* En Java 8 se puede realizar el siguiente refactor:  El código que e
+* En Java 8 se puede realizar el siguiente refactor: 
+	* En los 2 ejemplos anteriores, existen unas cuantas líneas de código que son diferentes y que corresponden a los criterios de cada filtro.  Dichas líneas se pueden extraer del código y ser parametrizadas a través de una *función* !
 ```java
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQwNDk4NjEsLTE3NTYzNjQ0MDMsMT
-kwMTIwNTc5MiwxODIyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQz
-MTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC
-0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3
-NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5OD
-E0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwt
-OTAyMjQ3MzIwXX0=
+eyJoaXN0b3J5IjpbMjIwNjMwMDM5LC0xNzU2MzY0NDAzLDE5MD
+EyMDU3OTIsMTgyMjg2MTE2LC0xMTc2MDc1NDE1LDEyMDU0MzE5
+NjksNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMTgyODE2NzcwOSwtMT
+M4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2Mjg3OTYsLTEyNzQ0
+NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5NjUyLDE3MjkzOTgxND
+AsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3OTU4NDMwOTAsLTkw
+MjI0NzMyMF19
 -->
