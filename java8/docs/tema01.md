@@ -174,9 +174,9 @@ public static List<Course> filterCourses(List<Course> courses, Predicate<Course>
 	return filteredCourses;
 }
 ```
-* Observar el uso de ```java.function.Predicate```	
+* Observar el uso de la función ```java.util.function.Predicate```	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzcwNjM0MzQsLTE4MTc2ODI3MDgsLT
+eyJoaXN0b3J5IjpbLTIxMzA3ODIzNzksLTE4MTc2ODI3MDgsLT
 E3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYw
 NzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MS
 wxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01
