@@ -131,11 +131,11 @@ private static void showHiddendFilesJava8() {
 ```
 * La parte izquierda de la expresión representa a la lista de parámetros del método pero sin su nombre.
 * Se lee de la siguiente manera:  "La función que, cuando  sea invocada  con un argumento tipo ```int``` regresará el valor ```x+1```.
-* Este tip
+* Las expresiones lambda son convenientes en especial cuando no existe un método que implemente cierta funcionalidad. La definición del dicho método se representa por una expresión lambda resultando en un código conciso y entendible.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTIwNTY1NTEsMTIwNTQzMTk2OSw2MD
+eyJoaXN0b3J5IjpbLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MD
 I3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0
 NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOS
 wtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1
