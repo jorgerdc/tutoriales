@@ -159,9 +159,9 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses,
 	return javaCourses;
 }
 ```
-* 
+* Observar que estos 2 métodos presentan código repetitivo: iterar 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTA2NDExMzIsMTkwMTIwNTc5MiwxOD
+eyJoaXN0b3J5IjpbLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxOD
 IyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2
 ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC
 0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEy
