@@ -124,10 +124,15 @@ private static void showHiddendFilesJava8() {
 * Estos conceptos se revisarán más adelante.
 #### 1.2.2 Expresiones Lambda.
 * Otra forma de considerar a las funciones como valores es  a través del concepto de *expresión lambda* llamadas también *funciones anónimas*.
+* Este último nombre se deriva debido a que una expresión lambda representa a la definición de un método pero sin su nombre:
+##### Ejemplo:
+```java
+
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMjQxMTU3Nyw2MDI3NDg2ODYsMTQ0Mj
+eyJoaXN0b3J5IjpbLTgzMTkwMzYwNyw2MDI3NDg2ODYsMTQ0Mj
 QxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5
 MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC
 01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2
