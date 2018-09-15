@@ -134,13 +134,24 @@ private static void showHiddendFilesJava8() {
 * Se lee de la siguiente manera:  "La función que, cuando  sea invocada  con un argumento tipo ```int``` regresará el valor ```x+1```.
 * Las expresiones lambda son convenientes en especial cuando no existe un método que implemente cierta funcionalidad. La definición del dicho método se representa por una expresión lambda resultando en un código conciso y entendible.
 ##### Ejemplo:
-* Suponer que se tiene el siguiente requerimiento:  Crear un programa que reciba  una lista de objetos tipo ```Course```. Se requiere escribir funcionalidad para obtener una lista de cursos que cumplan con ciertos criterios: Filtrar cursos por nombre, o por precio máximo. 
+* Suponer que se tiene el siguiente requerimiento:  Crear un programa que reciba  una lista de objetos tipo ```Course```. Se requiere escribir funcionalidad para obtener una lista de cursos que cumplan con ciertos criterios: Filtrar cursos por nombre, o por precio máximo.  Una solución a esto es crear los siguientes métodos:
+```java
+public static List<Course> getCoursesByName(List<Course> courses, String courseName) {
+	List<Course> javaCourses = new ArrayList<>();
+	for (Course course : courses) {
+		if (course.getName().toLowerCase().contains(courseName)) {
+			javaCourses.add(course);
+		}
+	}
+	return javaCourses;
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNz
-YwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1
-MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC
-01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQw
-Mzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwND
-Y4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4MiwtMTQ1
-NDkyMzIwMV19
+eyJoaXN0b3J5IjpbLTIwNzc2NzM0ODksMTkwMTIwNTc5MiwxOD
+IyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2
+ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC
+0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEy
+Mzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOT
+M2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1
+MDg1NjU4Ml19
 -->
