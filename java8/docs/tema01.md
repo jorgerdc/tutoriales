@@ -130,11 +130,12 @@ private static void showHiddendFilesJava8() {
 (int x) -> x + 1
 ```
 * La parte izquierda de la expresión representa a la lista de parámetros del método pero sin su nombre.
-* Se lee de la siguiente manera:  "La función que, cuando  sea invocada  con un argumento tupo
+* Se lee de la siguiente manera:  "La función que, cuando  sea invocada  con un argumento tipo ```int``` regresará el valor ```x+1```.
+* 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjI5MzMwODMsMTIwNTQzMTk2OSw2MD
+eyJoaXN0b3J5IjpbLTExODE3NTg4MjksMTIwNTQzMTk2OSw2MD
 I3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0
 NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOS
 wtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1
