@@ -127,16 +127,17 @@ private static void showHiddendFilesJava8() {
 * Este último nombre se deriva debido a que una expresión lambda representa a la definición de un método pero sin su nombre:
 ##### Ejemplo:
 ```java
-
+(int x) -> x + 1
 ```
+* La parte izquierda del
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTkwMzYwNyw2MDI3NDg2ODYsMTQ0Mj
-QxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5
-MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC
-01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2
-NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4Mi
-wtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTEyMDczNjY5MzIsNjAyNzQ4Njg2LDE0ND
+I0MTM4NTEsMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2
+OTMxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNy
+wtNTg0MDM5NjUyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkw
+NjUzMDQ2OCw3OTU4NDMwOTAsLTkwMjI0NzMyMCw0NTA4NTY1OD
+IsLTE0NTQ5MjMyMDEsMTg1MzAzNjc0MSwtNjc3MTIzMjY0XX0=
 
 -->
