@@ -222,11 +222,12 @@ cheapCourses = courses.stream().filter(
 ).collect(Collectors.toList());
 ```
 * Las colecciones definen un nuevo método llamado ```stream``` que construye un objeto ```Stream```  el cual es accedido a través del método ```filter``` que pertenece al API de Streams. 
-* Con esta técnica, se elimina la necesidad de iterar sobre la lista de cursos !  El API de
-
-* Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos.
+* Con esta técnica, se elimina la necesidad de iterar sobre la lista de cursos !  El API de Streams lo hace internamente y con la posibilidad de aplicar paralelismo!
+* Mas adeante se explica a detalle el uso del API de  Streams.
+* Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos:
+##### Refactor 4
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MjU1NDQ1NSwtMTY0MjI0MjI0MiwtMT
+eyJoaXN0b3J5IjpbLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMT
 gxNzY4MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4
 NjExNiwtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4Ni
 wxNDQyNDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3
