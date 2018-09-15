@@ -160,13 +160,13 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses,
 }
 ```
 * Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
-* 
+* En Java 8 s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MzQ0NDU3NywtMTc1NjM2NDQwMywxOT
-AxMjA1NzkyLDE4MjI4NjExNiwtMTE3NjA3NTQxNSwxMjA1NDMx
-OTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLDE4MjgxNjc3MDksLT
-EzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0
-NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MT
-QwLDE5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05
-MDIyNDczMjBdfQ==
+eyJoaXN0b3J5IjpbLTEwMzE4MzQ3MDMsLTE3NTYzNjQ0MDMsMT
+kwMTIwNTc5MiwxODIyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQz
+MTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC
+0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3
+NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5OD
+E0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwt
+OTAyMjQ3MzIwXX0=
 -->
