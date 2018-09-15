@@ -184,7 +184,7 @@ public interface Predicate<T> {
 ```
 * Debido a que todas las implementaciones de la interface definen al método ```test```, este será invocado para aplicar diferentes criterios para filtrar cursos.
 * Para invocar al método ```filterCourses``` en Java 8 se pueden escribir  las siguientes expresiones lambda:
-#####
+##### Refactor 2
 ```java
 List<Course> courses, cursosJava, cheapCourses;
 courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
@@ -207,13 +207,16 @@ cheapCourses = filterCourses(
 * Notar que ambas expresiones cumplen con la definición del método ``test``de la función ```Predicate``` y por lo tanto pueden ser empleadas como parámetro del método ```filterCourses```. Las condiciones son:   
 	* Un método que reciba un objeto ```T```, en este caso, un objeto ```Course```
 	* Debe regresar un ```boolean```
+* Una mejora del refactor anterior es  la posibilidad de eliminar al método ```filterCourses```!.  Esto es posible con el uso del API de Streams:
+
+
 * Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDk5NzI1ODcsLTE2NDIyNDIyNDIsLT
-E4MTc2ODI3MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIy
-ODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2OD
-YsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0x
-NzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMz
-g1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2
-LC0xOTA2NTMwNDY4XX0=
+eyJoaXN0b3J5IjpbMTI4NzA3NTUxMywtMTY0MjI0MjI0MiwtMT
+gxNzY4MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4
+NjExNiwtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4Ni
+wxNDQyNDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3
+MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzOD
+U5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYs
+LTE5MDY1MzA0NjhdfQ==
 -->
