@@ -134,9 +134,9 @@ private static void showHiddendFilesJava8() {
 * Se lee de la siguiente manera:  "La función que, cuando  sea invocada  con un argumento tipo ```int``` regresará el valor ```x+1```.
 * Las expresiones lambda son convenientes en especial cuando no existe un método que implemente cierta funcionalidad. La definición del dicho método se representa por una expresión lambda resultando en un código conciso y entendible.
 ##### Ejemplo:
-* Suponer que se tiene el siguiente requerimiento:  Crear un programa que reciba  una lista de objetos tipo ```Course```. Se requiere escribir funcionalidad para obtener una lista de cursos que cumplan con ciertos criterios:
+* Suponer que se tiene el siguiente requerimiento:  Crear un programa que reciba  una lista de objetos tipo ```Course```. Se requiere escribir funcionalidad para obtener una lista de cursos que cumplan con ciertos criterios: Filtrar cursos por nombre, o por precio máximo. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMjM5Nzk2MiwxODIyODYxMTYsLTExNz
+eyJoaXN0b3J5IjpbMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNz
 YwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1
 MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC
 01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQw
