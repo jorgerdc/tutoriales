@@ -4,6 +4,7 @@
 * Java 8  lanzada en marzo del 2014 representa  a la versión con la mayor cantidad de cambios a fondo que se haya tenido desde el lanzamiento del JDK 1.0 en 1996.
 * Uno de los principales objetivos de estos cambios es la posibilidad de escribir código más simple y conciso, evitando código repetitivo, verboso.
 #####  Ejemplo:
+* El código completo de este capítulo se encuentra dentro de
 * Suponer que se tiene  la siguiente clase que define a un objeto ```Course``` 
 ```java
 public  class Course {
@@ -132,14 +133,14 @@ private static void showHiddendFilesJava8() {
 * La parte izquierda de la expresión representa a la lista de parámetros del método pero sin su nombre.
 * Se lee de la siguiente manera:  "La función que, cuando  sea invocada  con un argumento tipo ```int``` regresará el valor ```x+1```.
 * Las expresiones lambda son convenientes en especial cuando no existe un método que implemente cierta funcionalidad. La definición del dicho método se representa por una expresión lambda resultando en un código conciso y entendible.
-
+##### Ejemplo:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MD
-I3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0
-NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOS
-wtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1
-MjQzOTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3Mz
-IwLDQ1MDg1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02
-NzcxMjMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTIwOTc5MDc5MCwtMTE3NjA3NTQxNSwxMj
+A1NDMxOTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLDE4MjgxNjc3
+MDksLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4Nzk2LC
+0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1MiwxNzI5
+Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMD
+kwLC05MDIyNDczMjAsNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4
+NTMwMzY3NDFdfQ==
 -->
