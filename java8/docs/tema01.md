@@ -208,15 +208,27 @@ cheapCourses = filterCourses(
 	* Un método que reciba un objeto ```T```, en este caso, un objeto ```Course```
 	* Debe regresar un ```boolean```
 * Una mejora del refactor anterior es  la posibilidad de eliminar al método ```filterCourses```!.  Esto es posible con el uso del API de Streams:
+##### Refactor 3
+```java
+List<Course> courses, javaCourses, cheapCourses;
+courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
 
+javaCourses = courses.stream().filter(
+	c -> c.getName().toLowerCase().contains("java"))
+		.collect(Collectors.toList()
+);
+
+cheapCourses = courses.stream().filter((Course c) -> c.getPrice() <= 10000)
+	.collect(Collectors.toList());
+```
 
 * Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzA3NTUxMywtMTY0MjI0MjI0MiwtMT
-gxNzY4MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4
-NjExNiwtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4Ni
-wxNDQyNDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3
-MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzOD
-U5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYs
-LTE5MDY1MzA0NjhdfQ==
+eyJoaXN0b3J5IjpbLTE3MzM5NTIyNDIsLTE2NDIyNDIyNDIsLT
+E4MTc2ODI3MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIy
+ODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2OD
+YsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0x
+NzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMz
+g1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2
+LC0xOTA2NTMwNDY4XX0=
 -->
