@@ -159,13 +159,14 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses,
 	return javaCourses;
 }
 ```
-* Observar que estos 2 métodos presentan código repetitivo: iterar 
+* Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxOD
-IyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2
-ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC
-0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEy
-Mzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOT
-M2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1
-MDg1NjU4Ml19
+eyJoaXN0b3J5IjpbLTY1MzQ0NDU3NywtMTc1NjM2NDQwMywxOT
+AxMjA1NzkyLDE4MjI4NjExNiwtMTE3NjA3NTQxNSwxMjA1NDMx
+OTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLDE4MjgxNjc3MDksLT
+EzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0
+NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MT
+QwLDE5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMDkwLC05
+MDIyNDczMjBdfQ==
 -->
