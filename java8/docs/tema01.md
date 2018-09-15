@@ -162,6 +162,7 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses,
 * Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
 * En Java 8 se puede realizar el siguiente refactor: 
 	* En los 2 ejemplos anteriores, existen unas cuantas líneas de código que son diferentes y que corresponden a los criterios de cada filtro.  Dichas líneas se pueden extraer del código y ser parametrizadas a través de una *función* !
+##### Refactor 1:
 ```java
 public static List<Course> filterCourses(List<Course> courses, Predicate<Course> p) {
 
@@ -183,6 +184,7 @@ public interface Predicate<T> {
 ```
 * Debido a que todas las implementaciones de la interface definen al método ```test```, este será invocado para aplicar diferentes criterios para filtrar cursos.
 * Para invocar al método ```filterCourses``` en Java 8 se pueden escribir  las siguientes expresiones lambda:
+#####
 ```java
 List<Course> courses, cursosJava, cheapCourses;
 courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
@@ -207,11 +209,11 @@ cheapCourses = filterCourses(
 	* Debe regresar un ```boolean```
 * Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDIyNDIyNDIsLTE4MTc2ODI3MDgsLT
-E3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYw
-NzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MS
-wxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01
-NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMz
-k2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4
-LDc5NTg0MzA5MF19
+eyJoaXN0b3J5IjpbLTE3NDk5NzI1ODcsLTE2NDIyNDIyNDIsLT
+E4MTc2ODI3MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIy
+ODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2OD
+YsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0x
+NzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMz
+g1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2
+LC0xOTA2NTMwNDY4XX0=
 -->
