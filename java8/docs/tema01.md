@@ -129,15 +129,16 @@ private static void showHiddendFilesJava8() {
 ```java
 (int x) -> x + 1
 ```
-* La parte izquierda de la expresión representa a la lista de parámetros 
+* La parte izquierda de la expresión representa a la lista de parámetros del método pero sin su nombre.
+* Se lee de la siguiente manera:  "La función que, cuando  sea invocada  con un argumento tupo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0Mj
-QxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5
-MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC
-01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2
-NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3MzIwLDQ1MDg1NjU4Mi
-wtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02NzcxMjMyNjRdfQ==
-
+eyJoaXN0b3J5IjpbLTE1MjI5MzMwODMsMTIwNTQzMTk2OSw2MD
+I3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0
+NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOS
+wtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1
+MjQzOTM2LC0xOTA2NTMwNDY4LDc5NTg0MzA5MCwtOTAyMjQ3Mz
+IwLDQ1MDg1NjU4MiwtMTQ1NDkyMzIwMSwxODUzMDM2NzQxLC02
+NzcxMjMyNjRdfQ==
 -->
