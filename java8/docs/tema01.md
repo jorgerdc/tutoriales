@@ -187,16 +187,26 @@ public interface Predicate<T> {
 List<Course> courses, cursosJava, cheapCourses;
 courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
 javaCourses = filterCourses(
-			courses, c -> c.getName().toLowerCase().contains("java")
+	courses, c -> c.getName().toLowerCase().contains("java")
 );
-cheapCourses = filterCourses(courses, (Course c) -> c.getPrice() <= 10000);
+cheapCourses = filterCourses(
+	courses, (Course c) -> c.getPrice() <= 10000
+);
+```
+* En este ejemplo se tienen 2 expresiones lambda:
+```java
+	courses, c -> c.getName().toLowerCase().contains("java")
+```
+* La segunda es:
+```java
+courses, (Course c) -> c.getPrice() <= 10000
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTUwNTg1NzEsLTE4MTc2ODI3MDgsLT
-E3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYw
-NzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MS
-wxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01
-NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMz
-k2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2NTMwNDY4
-LDc5NTg0MzA5MF19
+eyJoaXN0b3J5IjpbODUyNzY5MTQ1LC0xODE3NjgyNzA4LC0xNz
+U2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC0xMTc2MDc1
+NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMT
+gyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2
+Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5Nj
+UyLDE3MjkzOTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3
+OTU4NDMwOTBdfQ==
 -->
