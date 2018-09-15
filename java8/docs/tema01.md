@@ -108,19 +108,23 @@ private static void showHiddenFilesJava7() {
  */
 private static void showHiddendFilesJava8() {
 	List<File> files;
+	String tmpDir;
 
+	tmpDir = System.getProperty("java.io.tmpdir");
 	System.out.println("Showing hidden files with Java8 :");
-	files = Arrays.asList(
-		new File(System.getProperty("java.io.tmpdir")).listFiles(File::isHidden));
+
+	// new in Java 8
+	files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
+	// new in Java 8
 	files.forEach(System.out::println);
 
 }
 ```
-
+* Observar el paso de una referencia de un método empleando la sintaxis ```File::isHidde
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTkwOTcwNyw2MDI3NDg2ODYsMTQ0Mj
+eyJoaXN0b3J5IjpbMTY1MTIzMTUzOSw2MDI3NDg2ODYsMTQ0Mj
 QxMzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5
 MzE3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC
 01ODQwMzk2NTIsMTcyOTM5ODE0MCwxOTU1MjQzOTM2LC0xOTA2
