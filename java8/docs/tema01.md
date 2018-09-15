@@ -202,11 +202,12 @@ cheapCourses = filterCourses(
 	courses, (Course c) -> c.getPrice() <= 10000
 ```
 * Estas expresiones representan la idea del concepto de  *parametrizar el comportamiento*.
-* Notar que ambas expresiones cumplen con la definición del método ``test``de la función ```Predicate``` y por lo tanto pueden ser empleadas como parámetro del método ```filterCourses```   
+* Notar que ambas expresiones cumplen con la definición del método ``test``de la función ```Predicate``` y por lo tanto pueden ser empleadas como parámetro del método ```filterCourses```. Las condiciones son:   
 	* Un método que reciba un objeto ```T```, en este caso, un objeto ```Course```
 	* Debe regresar un ```boolean```
+* Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDY2ODU5MjQsLTE4MTc2ODI3MDgsLT
+eyJoaXN0b3J5IjpbLTE2NDIyNDIyNDIsLTE4MTc2ODI3MDgsLT
 E3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYw
 NzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MS
 wxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01
