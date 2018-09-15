@@ -4,7 +4,7 @@
 * Java 8  lanzada en marzo del 2014 representa  a la versión con la mayor cantidad de cambios a fondo que se haya tenido desde el lanzamiento del JDK 1.0 en 1996.
 * Uno de los principales objetivos de estos cambios es la posibilidad de escribir código más simple y conciso, evitando código repetitivo, verboso.
 #####  Ejemplo:
-* El código completo de este capítulo se encuentra dentro de
+* El código completo de este capítulo se encuentra dentro del paquete ```modulo1``` .
 * Suponer que se tiene  la siguiente clase que define a un objeto ```Course``` 
 ```java
 public  class Course {
@@ -136,11 +136,11 @@ private static void showHiddendFilesJava8() {
 ##### Ejemplo:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTc5MDc5MCwtMTE3NjA3NTQxNSwxMj
-A1NDMxOTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLDE4MjgxNjc3
-MDksLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4Nzk2LC
-0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1MiwxNzI5
-Mzk4MTQwLDE5NTUyNDM5MzYsLTE5MDY1MzA0NjgsNzk1ODQzMD
-kwLC05MDIyNDczMjAsNDUwODU2NTgyLC0xNDU0OTIzMjAxLDE4
-NTMwMzY3NDFdfQ==
+eyJoaXN0b3J5IjpbMTgyMjg2MTE2LC0xMTc2MDc1NDE1LDEyMD
+U0MzE5NjksNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMTgyODE2Nzcw
+OSwtMTM4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2Mjg3OTYsLT
+EyNzQ0NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5NjUyLDE3Mjkz
+OTgxNDAsMTk1NTI0MzkzNiwtMTkwNjUzMDQ2OCw3OTU4NDMwOT
+AsLTkwMjI0NzMyMCw0NTA4NTY1ODIsLTE0NTQ5MjMyMDEsMTg1
+MzAzNjc0MV19
 -->
