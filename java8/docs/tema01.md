@@ -160,9 +160,11 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses,
 }
 ```
 * Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
-* En Java 8 s
+* En Java 8 se puede realizar el siguiente refactor:  El código que e
+```java
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzE4MzQ3MDMsLTE3NTYzNjQ0MDMsMT
+eyJoaXN0b3J5IjpbLTEzMDQwNDk4NjEsLTE3NTYzNjQ0MDMsMT
 kwMTIwNTc5MiwxODIyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQz
 MTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC
 0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3
