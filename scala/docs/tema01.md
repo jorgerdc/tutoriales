@@ -176,11 +176,11 @@ val x =  new HashMap[Int,String]
 	* Esto es verdadero para programas finales (usuario final) ya que hace uso de liberías previamente creadas.
 	* Sin embargo no tan cierto para implementación de librerías.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU4NjgxNDc4LC0xMTc3NjgyMTEwLC0xMT
-c3NjgyMTEwLDE1MTAzMzgzNjgsLTE1NDE4MzYzNDUsMTc2MzQw
-NjYxNiwxNTYwMTcyNzczLC0xODQyOTc2NjYzLC0xNzc5MDk1NT
-A0LC0yMDc5ODI4NDMxLC0yMjA1ODEsLTI4NjUxNDg0Myw0OTQw
-MjMxODEsNTQxNjU2NTQ4LDYzNjc2MDc5MCwxOTg3ODQ5MzkyLD
-QzMjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5NjAxOTgsLTM5NzM2
-Njk4NV19
+eyJoaXN0b3J5IjpbLTEwMDEyMzExNzUsMzU4NjgxNDc4LC0xMT
+c3NjgyMTEwLC0xMTc3NjgyMTEwLDE1MTAzMzgzNjgsLTE1NDE4
+MzYzNDUsMTc2MzQwNjYxNiwxNTYwMTcyNzczLC0xODQyOTc2Nj
+YzLC0xNzc5MDk1NTA0LC0yMDc5ODI4NDMxLC0yMjA1ODEsLTI4
+NjUxNDg0Myw0OTQwMjMxODEsNTQxNjU2NTQ4LDYzNjc2MDc5MC
+wxOTg3ODQ5MzkyLDQzMjA2MTg1MiwtMTIzMjk2NzYyMywxMDg5
+NjAxOThdfQ==
 -->
