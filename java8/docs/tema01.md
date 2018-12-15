@@ -70,11 +70,19 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 * * El uso de Streams permite un estilo de programación a un nivel  mayor de abstracción.  Una analogía de lo anterior son las sentencias SQL, en las que se escribe lo que se desea obtener. Se especifica el "Qué" y no el "Cómo" se obtiene los datos.
 * Otra ventaja es la posibilidad de hacer "pipeline" empleando la capacidad multi-core de los procesadores de forma transparente.
 ### 1.2 Parametrización del comportamiento.
-* Suponer 2 métodos con código similar.
-* Solo algunas líneas son diferentes.
-* En Java 8 es posible pasar como argumento el código que es diferente y dejar uno solo con el código común:  *Parametrización del comportamiento*
-* Antes de Java 8 esto se realizaba con *Clases anónimas*.
-*  Esta capacidad de pasar código permite establecer un nuevo estilo de programación: *Programación funcional*.
+* * Lambdas
+ *  Streams
+ * Programación funcional
+ * Pasar código como parámetro a un método.
+
+ *Ejemplo:*
+- Suponer 2 métodos con código similar.
+*- Solo algunas líneas son diferentes.
+*- En Java 8 es posible pasar como argumento el código que es diferente y dejar uno solo con el código común:  *Parametrización del    comportamiento*
+.
+
+ * Antes de Java 8 esto se realizaba con *Clases anónimas*.
+* * Esta capacidad de pasar código permite establecer un nuevo estilo de programación: *Programación funcional*.
 * Al código que se pasa como argumento se le llama *función*.
 * Visto de otra forma, las funciones representan *valores* que pueden ser pasados a un método. 
 * Otras terminologías comúnmente empleadas para nombrar a estos *valores* son *first class values*  o *first value citizens*.
@@ -225,13 +233,16 @@ cheapCourses = courses.stream().filter(
 * Con esta técnica, se elimina la necesidad de iterar sobre la lista de cursos !  El API de Streams lo hace internamente y con la posibilidad de aplicar paralelismo!
 * Mas adeante se explica a detalle el uso del API de  Streams.
 * Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos:
-##### Refactor 4
+##### Refactor 4 * Al código que se pasa como argumento se le llama *función*.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMT
-gxNzY4MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4
-NjExNiwtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4Ni
-wxNDQyNDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3
-MTk4NjkzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzOD
-U5MDcsLTU4NDAzOTY1MiwxNzI5Mzk4MTQwLDE5NTUyNDM5MzYs
-LTE5MDY1MzA0NjhdfQ==
+eyJoaXN0b3J5IjpbNTg4NDIzMjUyLC0xNjY1MzIzOTgsLTE2ND
+IyNDIyNDIsLTE4MTc2ODI3MDgsLTE3NTYzNjQ0MDMsMTkwMTIw
+NTc5MiwxODIyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OS
+w2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1
+NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NT
+EwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwx
+OTU1MjQzOTM2XX0=
 -->
