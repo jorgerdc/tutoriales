@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-import com.jorgerdc.java8.intro.Course;
+import com.jorgerdc.java8.comun.Course;
 
 /**
  * This example shows how to build a {@link Comparator} object using the

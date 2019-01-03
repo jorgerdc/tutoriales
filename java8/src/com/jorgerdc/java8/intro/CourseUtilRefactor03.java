@@ -19,6 +19,8 @@ import static java.util.Arrays.asList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.jorgerdc.java8.comun.Course;
+
 /**
  * Third refactor of {@link CourseUtil} class. It shows more Java8 features.
  */

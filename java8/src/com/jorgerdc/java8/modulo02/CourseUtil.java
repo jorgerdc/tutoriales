@@ -19,7 +19,7 @@ import static java.util.Arrays.asList;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jorgerdc.java8.intro.Course;
+import com.jorgerdc.java8.comun.Course;
 
 /**
  * Utility class used to test {@link CoursePredicate} implementations.

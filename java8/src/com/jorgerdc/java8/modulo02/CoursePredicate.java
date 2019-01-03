@@ -16,7 +16,7 @@ package com.jorgerdc.java8.modulo02;
 
 import java.util.function.Predicate;
 
-import com.jorgerdc.java8.intro.Course;
+import com.jorgerdc.java8.comun.Course;
 
 /**
  * This simple interface represents a Predicate using {@link Course} objects.

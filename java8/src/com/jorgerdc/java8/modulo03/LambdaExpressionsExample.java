@@ -17,7 +17,7 @@ package com.jorgerdc.java8.modulo03;
 import java.io.File;
 import java.util.Comparator;
 
-import com.jorgerdc.java8.intro.Course;
+import com.jorgerdc.java8.comun.Course;
 
 /**
  * Examples of some lambda expressions

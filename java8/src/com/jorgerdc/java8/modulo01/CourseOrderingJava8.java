@@ -1,6 +1,6 @@
 /**
- * CourseUtilComparator.java
- * Creation Date: 11/04/2018, 20:09:08
+ * CourseOrderingJava8.java
+ * Creation Date: 21/08/2018, 19:29:58
  *
  * Copyright (C) The Project *java8-01-basico* Authors.
  *
@@ -12,31 +12,34 @@
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  */
-package com.jorgerdc.java8.modulo02;
 
-import static java.util.Arrays.asList;
+package com.jorgerdc.java8.modulo01;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 import com.jorgerdc.java8.comun.Course;
 
 /**
- * This class show how to create a comparator using a lambda expression.
+ * This class shows how to Order a Course List using Java 7
  */
-public class CourseUtilComparator {
+public class CourseOrderingJava8 {
 
 	/**
+	 * main method
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		List<Course> courses;
 
-		List<Course> cursos;
+		courses = Arrays.asList(new Course("Web Services", 7899.3),
+			new Course("Java 8", 2100), new Course("C programming", 3400));
 
-		cursos = asList(new Course("Java", 8500), new Course("WebServices", 18500));
+		courses.sort(Comparator.comparing(Course::getName));
 
-		System.out.println("Sorting courses");
-		cursos.sort((Course c1, Course c2) -> c1.getName().compareTo(c2.getName()));
-		System.out.println(cursos);
+		System.out.println(courses);
 
 	}
+
 }

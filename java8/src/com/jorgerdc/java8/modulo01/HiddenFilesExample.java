@@ -12,7 +12,7 @@
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  */
-package com.jorgerdc.java8.intro;
+package com.jorgerdc.java8.modulo01;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -49,7 +49,6 @@ public class HiddenFilesExample {
 		for (File file : hiddenFiles) {
 			System.out.println(file.getAbsolutePath());
 		}
-
 	}
 
 	/**
@@ -57,10 +56,14 @@ public class HiddenFilesExample {
 	 */
 	private static void showHiddendFilesJava8() {
 		List<File> files;
+		String tmpDir;
 
+		tmpDir = System.getProperty("java.io.tmpdir");
 		System.out.println("Showing hidden files with Java8 :");
-		files = Arrays.asList(
-			new File(System.getProperty("java.io.tmpdir")).listFiles(File::isHidden));
+
+		// new in Java 8
+		files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
+		// new in Java 8
 		files.forEach(System.out::println);
 
 	}

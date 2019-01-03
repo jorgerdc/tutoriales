@@ -1,5 +1,5 @@
 /**
- * CourseUtilRefactor.java
+ * CourseUtilRefactor01.java
  * Creation Date: 11/04/2018, 20:09:08
  *
  * Copyright (C) The Project *java8-01-basico* Authors.
@@ -19,10 +19,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
+import com.jorgerdc.java8.comun.Course;
+
 /**
  * Refactor of {@link CourseUtil} class using some new features of Java8
  */
-public class CourseUtilRefactor {
+public class CourseUtilRefactor01 {
 
 	/**
 	 * @param c
@@ -66,7 +68,7 @@ public class CourseUtilRefactor {
 
 		courses = Arrays.asList(new Course("Java", 8500), new Course("WebServices", 18500));
 
-		cursosJava = CourseUtilRefactor.filterCourses(courses, CourseUtilRefactor::isJava);
+		cursosJava = CourseUtilRefactor01.filterCourses(courses, CourseUtilRefactor01::isJava);
 
 		System.out.println("Cursos de java");
 		System.out.println(cursosJava);

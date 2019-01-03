@@ -18,6 +18,8 @@ package com.jorgerdc.java8.intro;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.jorgerdc.java8.comun.Course;
+
 /**
  * Utility Course class without using Java8 main features.
  */
@@ -25,13 +27,14 @@ public class CourseUtil {
 
 	/**
 	 * @param courses
+	 * @param courseName
 	 * @return
 	 */
-	public static List<Course> getJavaCourses(List<Course> courses) {
+	public static List<Course> getCoursesByName(List<Course> courses, String courseName) {
 
 		List<Course> javaCourses = new ArrayList<>();
 		for (Course course : courses) {
-			if (course.getName().toLowerCase().contains("java")) {
+			if (course.getName().toLowerCase().contains(courseName)) {
 				javaCourses.add(course);
 			}
 		}

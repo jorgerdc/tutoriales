@@ -14,7 +14,7 @@
  */
 package com.jorgerdc.java8.modulo02;
 
-import com.jorgerdc.java8.intro.Course;
+import com.jorgerdc.java8.comun.Course;
 
 /**
  * CoursePredicate implementation. It filters Java course only.

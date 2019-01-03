@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+import com.jorgerdc.java8.comun.Course;
+
 /**
  * Second Refactor of {@link CourseUtil} class. It shows more Java8 features.
  */
@@ -46,17 +48,17 @@ public class CourseUtilRefactor02 {
 	 */
 	public static void main(String[] args) {
 
-		List<Course> courses, cursosJava, cheapCourses;
+		List<Course> courses, javaCourses, cheapCourses;
 
 		courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
 
-		cursosJava =
+		javaCourses =
 			filterCourses(courses, c -> c.getName().toLowerCase().contains("java"));
 
 		cheapCourses = filterCourses(courses, (Course c) -> c.getPrice() <= 10000);
 
 		System.out.println("Java courses:");
-		System.out.println(cursosJava);
+		System.out.println(javaCourses);
 
 		System.out.println("Cheap courses:");
 		System.out.println(cheapCourses);
