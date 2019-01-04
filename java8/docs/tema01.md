@@ -133,15 +133,16 @@ private static void showHiddendFilesJava8() {
 ##### Ejemplo:
 * Suponer que se tiene el siguiente requerimiento:  Crear un programa que reciba  una lista de objetos tipo ```Course```. Se requiere escribir funcionalidad para obtener una lista de cursos que cumplan con ciertos criterios: Filtrar cursos por nombre, o por precio máximo.  Una solución a esto es crear los siguientes métodos:
 ```java
-public static List<Course> getCoursesByName(List<Course> courses, String courseName) {
-	List<Course> javaCourses = new ArrayList<>();
-	for (Course course : courses) {
-		if (course.getName().toLowerCase().contains(courseName)) {
-			javaCourses.add(course);
-		}
-	}
-	return javaCourses;
-}
+  public static List<Course> getCoursesByName(List<Course> courses, String courseName) {
+
+    List<Course> javaCourses = new ArrayList<>();
+    for (Course course : courses) {
+      if (course.getName().toLowerCase().contains(courseName)) {
+        javaCourses.add(course);
+      }
+    }
+    return javaCourses;
+  }
 ```
 * Para filtrar por precio máximo:
 ```java
@@ -227,11 +228,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTU2ODgyLDE4NDEyMTI1MjMsNTg4ND
-IzMjUyLC0xNjY1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3
-MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLT
-ExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQx
-Mzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5Mz
-E3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01
-ODQwMzk2NTJdfQ==
+eyJoaXN0b3J5IjpbLTIxMzkwMzI0NTIsMTg0MTIxMjUyMyw1OD
+g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
+MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
+wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
+NDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4Nj
+kzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcs
+LTU4NDAzOTY1Ml19
 -->
