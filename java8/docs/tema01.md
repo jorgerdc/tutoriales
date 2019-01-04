@@ -133,30 +133,30 @@ private static void showHiddendFilesJava8() {
 ##### Ejemplo:
 * Suponer que se tiene el siguiente requerimiento:  Crear un programa que reciba  una lista de objetos tipo ```Course```. Se requiere escribir funcionalidad para obtener una lista de cursos que cumplan con ciertos criterios: Filtrar cursos por nombre, o por precio máximo.  Una solución a esto es crear los siguientes métodos:
 ```java
-  public static List<Course> getCoursesByName(List<Course> courses, String courseName) {
+public static List<Course> getCoursesByName(List<Course> courses, String courseName) {
 
-    List<Course> javaCourses = new ArrayList<>();
-    for (Course course : courses) {
-      if (course.getName().toLowerCase().contains(courseName)) {
-        javaCourses.add(course);
-      }
+  List<Course> javaCourses = new ArrayList<>();
+  for (Course course : courses) {
+    if (course.getName().toLowerCase().contains(courseName)) {
+      javaCourses.add(course);
     }
-    return javaCourses;
   }
+  return javaCourses;
+}
 ```
 * Para filtrar por precio máximo:
 ```java
-public static List<Course> getCoursesByMaxPrice(List<Course> courses,
-	double maxPrice) {
-	List<Course> javaCourses = new ArrayList<>();
-	for (Course course : courses) {
-		if (course.getPrice() <= maxPrice) {
-			javaCourses.add(course);
-		}
-	}
-	return javaCourses;
+public static List<Course> getCoursesByMaxPrice(List<Course> courses, double maxPrice) {
+  List<Course> javaCourses = new ArrayList<>();
+  for (Course course : courses) {
+    if (course.getPrice() <= maxPrice) {
+      javaCourses.add(course);
+    }
+  }
+  return javaCourses;
 }
-```
+  ```
+* El código completo se encuentra en la clase ```CourseUtil
 * Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
 * En Java 8 se puede realizar el siguiente refactor: 
 	* En los 2 ejemplos anteriores, existen unas cuantas líneas de código que son diferentes y que corresponden a los criterios de cada filtro.  Dichas líneas se pueden extraer del código y ser parametrizadas a través de una *función* !
@@ -228,7 +228,7 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzkwMzI0NTIsMTg0MTIxMjUyMyw1OD
+eyJoaXN0b3J5IjpbLTE3MzYyMjM3NTMsMTg0MTIxMjUyMyw1OD
 g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
 MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
 wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
