@@ -8,10 +8,9 @@
 * Suponer que se tiene  la siguiente clase que define a un objeto ```Course``` 
 ```java
 public class Course {
-	private double price;
-
-	private String name;
-	//getters & setters
+  private double price;
+  private String name;
+  //getters & setters
 }
 ```
 * Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando como criterio de ordenamiento el nombre del curso.
@@ -239,7 +238,7 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTcyOTgyMDgsNTg4NDIzMjUyLC0xNj
+eyJoaXN0b3J5IjpbLTEwODU0MTgxODYsNTg4NDIzMjUyLC0xNj
 Y1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3MDgsLTE3NTYz
 NjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYwNzU0MT
 UsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4
