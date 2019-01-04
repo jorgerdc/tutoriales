@@ -185,14 +185,18 @@ public interface Predicate<T> {
 * Para invocar al método ```filterCourses``` en Java 8 se pueden escribir  las siguientes expresiones lambda:
 ##### Refactor 2
 ```java
-List<Course> courses, cursosJava, cheapCourses;
-courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
-javaCourses = filterCourses(
-	courses, c -> c.getName().toLowerCase().contains("java")
-);
-cheapCourses = filterCourses(
-	courses, (Course c) -> c.getPrice() <= 10000
-);
+   List<Course> courses, javaCourses, cheapCourses;
+
+    courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
+
+    javaCourses = filterCourses(courses, c -> c.getName().toLowerCase().contains("java"));
+    cheapCourses = filterCourses(courses, (Course c) -> c.getPrice() <= 10000);
+
+    System.out.println("Java courses:");
+    System.out.println(javaCourses);
+
+    System.out.println("Cheap courses:");
+    System.out.println(cheapCourses);
 ```
 * En este ejemplo se tienen 2 expresiones lambda:
 ```java
@@ -229,11 +233,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0OTY5MTYyLDE4NDEyMTI1MjMsNTg4ND
-IzMjUyLC0xNjY1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3
-MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLT
-ExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQx
-Mzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5Mz
-E3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01
-ODQwMzk2NTJdfQ==
+eyJoaXN0b3J5IjpbMTQyNjE5ODg5MSwxODQxMjEyNTIzLDU4OD
+QyMzI1MiwtMTY2NTMyMzk4LC0xNjQyMjQyMjQyLC0xODE3Njgy
+NzA4LC0xNzU2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC
+0xMTc2MDc1NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0
+MTM4NTEsMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OT
+MxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywt
+NTg0MDM5NjUyXX0=
 -->
