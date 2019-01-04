@@ -86,41 +86,38 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 ##### Ejemplo:
 * Suponer que se desea crear un programa que haga el filtrado de los archivos que se encuentran en un directorio. El programa debe mostrar a todos los archivos que son ocultos.  Antes de Java 8 se tendría el siguiente código:
 ```java
-  private static void showHiddenFilesJava7() {
-    File[] hiddenFiles;
+private static void showHiddenFilesJava7() {
+  File[] hiddenFiles;
 
-    System.out.println("Showing hidden files before Java8. Verbose..");
-    hiddenFiles =
-      new File(System.getProperty("java.io.tmpdir")).listFiles(new FileFilter() {
-        @Override
-        public boolean accept(File f) {
-          return f.isHidden();
-        }
-      });
-    for (File file : hiddenFiles) {
-      System.out.println(file.getAbsolutePath());
-    }
+  System.out.println("Showing hidden files before Java8. Verbose..");
+  hiddenFiles =
+    new File(System.getProperty("java.io.tmpdir")).listFiles(new FileFilter() {
+      @Override
+      public boolean accept(File f) {
+        return f.isHidden();
+      }
+    });
+  for (File file : hiddenFiles) {
+    System.out.println(file.getAbsolutePath());
   }
+}
  ```
 * En Java 8 el código será:
 ```java
-/**
- * Shows hidden files using lambda expressions and method references.
- */
-private static void showHiddendFilesJava8() {
-	List<File> files;
-	String tmpDir;
+  private static void showHiddendFilesJava8() {
+    List<File> files;
+    String tmpDir;
 
-	tmpDir = System.getProperty("java.io.tmpdir");
-	System.out.println("Showing hidden files with Java8 :");
+    tmpDir = System.getProperty("java.io.tmpdir");
+    System.out.println("Showing hidden files with Java8 :");
 
-	// new in Java 8
-	files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
-	// new in Java 8
-	files.forEach(System.out::println);
+    // new in Java 8
+    files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
+    // new in Java 8
+    files.forEach(System.out::println);
 
-}
-```
+  }
+  ``` 
 * Observar el paso de una referencia de un método empleando la sintaxis ```File::isHidden```y  ```System.out::println``` , reduce considerablemente las líneas de código haciéndolo más entendible.
 * Estos conceptos se revisarán más adelante.
 #### 1.2.2 Expresiones Lambda.
@@ -230,7 +227,7 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTU5NTA0NywxODQxMjEyNTIzLDU4OD
+eyJoaXN0b3J5IjpbLTQ0MjY4MDYxNCwxODQxMjEyNTIzLDU4OD
 QyMzI1MiwtMTY2NTMyMzk4LC0xNjQyMjQyMjQyLC0xODE3Njgy
 NzA4LC0xNzU2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC
 0xMTc2MDc1NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0
