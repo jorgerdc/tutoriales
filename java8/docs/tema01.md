@@ -7,8 +7,9 @@
 * El código completo de este capítulo se encuentra dentro del paquete ```modulo1``` .
 * Suponer que se tiene  la siguiente clase que define a un objeto ```Course``` 
 ```java
-public  class Course {
-	private  double  price;
+public class Course {
+	private double price;
+
 	private String name;
 	//getters & setters
 }
@@ -238,11 +239,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4NDIzMjUyLC0xNjY1MzIzOTgsLTE2ND
-IyNDIyNDIsLTE4MTc2ODI3MDgsLTE3NTYzNjQ0MDMsMTkwMTIw
-NTc5MiwxODIyODYxMTYsLTExNzYwNzU0MTUsMTIwNTQzMTk2OS
-w2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4MTY3NzA5LC0xMzg1
-NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyODc5NiwtMTI3NDQ2NT
-EwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIsMTcyOTM5ODE0MCwx
-OTU1MjQzOTM2XX0=
+eyJoaXN0b3J5IjpbLTE1OTcyOTgyMDgsNTg4NDIzMjUyLC0xNj
+Y1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3MDgsLTE3NTYz
+NjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYwNzU0MT
+UsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4
+MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyOD
+c5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIs
+MTcyOTM5ODE0MF19
 -->
