@@ -104,20 +104,20 @@ private static void showHiddenFilesJava7() {
  ```
 * En Java 8 el código será:
 ```java
-  private static void showHiddendFilesJava8() {
-    List<File> files;
-    String tmpDir;
+private static void showHiddendFilesJava8() {
+  List<File> files;
+  String tmpDir;
 
-    tmpDir = System.getProperty("java.io.tmpdir");
-    System.out.println("Showing hidden files with Java8 :");
+  tmpDir = System.getProperty("java.io.tmpdir");
+  System.out.println("Showing hidden files with Java8 :");
 
-    // new in Java 8
-    files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
-    // new in Java 8
-    files.forEach(System.out::println);
-
-  }
+  // new in Java 8
+  files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
+  // new in Java 8
+  files.forEach(System.out::println);
+}
   ``` 
+* El código se encuentra en la clase ```HidenFilesExample```.
 * Observar el paso de una referencia de un método empleando la sintaxis ```File::isHidden```y  ```System.out::println``` , reduce considerablemente las líneas de código haciéndolo más entendible.
 * Estos conceptos se revisarán más adelante.
 #### 1.2.2 Expresiones Lambda.
@@ -227,11 +227,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjY4MDYxNCwxODQxMjEyNTIzLDU4OD
-QyMzI1MiwtMTY2NTMyMzk4LC0xNjQyMjQyMjQyLC0xODE3Njgy
-NzA4LC0xNzU2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC
-0xMTc2MDc1NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0
-MTM4NTEsMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OT
-MxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywt
-NTg0MDM5NjUyXX0=
+eyJoaXN0b3J5IjpbMjA1OTU2ODgyLDE4NDEyMTI1MjMsNTg4ND
+IzMjUyLC0xNjY1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3
+MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLT
+ExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQx
+Mzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5Mz
+E3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01
+ODQwMzk2NTJdfQ==
 -->
