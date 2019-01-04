@@ -155,29 +155,30 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses, double max
   }
   return javaCourses;
 }
-  ```
+```
 * El código completo se encuentra en la clase ```CourseUtil```
 * Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
 * En Java 8 se puede realizar el siguiente refactor: 
 	* En los 2 ejemplos anteriores, existen unas cuantas líneas de código que son diferentes y que corresponden a los criterios de cada filtro.  Dichas líneas se pueden extraer del código y ser parametrizadas a través de una *función* !
 ##### Refactor 1:
 ```java
-  public static List<Course> filterCourses(List<Course> courses, Predicate<Course> p) {
+public static List<Course> filterCourses(List<Course> courses, Predicate<Course> p) {
 
-    List<Course> filteredCourses = new ArrayList<>();
-    for (Course c : courses) {
-      if (p.test(c)) {
-        filteredCourses.add(c);
-      }
+  List<Course> filteredCourses = new ArrayList<>();
+  for (Course c : courses) {
+    if (p.test(c)) {
+      filteredCourses.add(c);
     }
-    return filteredCourses;
   }
+  return filteredCourses;
+}
 ``` 
+* El código completo se encuentra en ```CourseUtilRefactor01```
 * Observar el uso de la función ```java.util.function.Predicate```	 empleada como parámetro y cuyo valor contendrá al código que será ejecutado para aplicarse como filtro a la lista de cursos!.
 * El código de esta interface (llamada funcional) es:
 ```java
 public interface Predicate<T> {
-	boolean test(T t);
+  boolean test(T t);
 }
 ```
 * Debido a que todas las implementaciones de la interface definen al método ```test```, este será invocado para aplicar diferentes criterios para filtrar cursos.
@@ -228,11 +229,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzA0MjYyNTMsMTg0MTIxMjUyMyw1OD
-g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
-MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
-wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
-NDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4Nj
-kzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcs
-LTU4NDAzOTY1Ml19
+eyJoaXN0b3J5IjpbNTA0OTY5MTYyLDE4NDEyMTI1MjMsNTg4ND
+IzMjUyLC0xNjY1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3
+MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLT
+ExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQx
+Mzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5Mz
+E3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01
+ODQwMzk2NTJdfQ==
 -->
