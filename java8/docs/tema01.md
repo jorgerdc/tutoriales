@@ -188,7 +188,6 @@ public interface Predicate<T> {
    List<Course> courses, javaCourses, cheapCourses;
 
     courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
-
     javaCourses = filterCourses(courses, c -> c.getName().toLowerCase().contains("java"));
     cheapCourses = filterCourses(courses, (Course c) -> c.getPrice() <= 10000);
 
@@ -198,13 +197,14 @@ public interface Predicate<T> {
     System.out.println("Cheap courses:");
     System.out.println(cheapCourses);
 ```
+* Código completo en ```CourseUtilRefactor01```
 * En este ejemplo se tienen 2 expresiones lambda:
 ```java
-	courses, c -> c.getName().toLowerCase().contains("java")
+courses, c -> c.getName().toLowerCase().contains("java")
 ```
 * La segunda es:
 ```java
-	courses, (Course c) -> c.getPrice() <= 10000
+courses, (Course c) -> c.getPrice() <= 10000
 ```
 * Estas expresiones representan la idea del concepto de  *parametrizar el comportamiento*.
 * Notar que ambas expresiones cumplen con la definición del método ``test``de la función ```Predicate``` y por lo tanto pueden ser empleadas como parámetro del método ```filterCourses```. Las condiciones son:   
@@ -213,17 +213,22 @@ public interface Predicate<T> {
 * Una mejora del refactor anterior es  la posibilidad de eliminar al método ```filterCourses```!.  Esto es posible con el uso del API de Streams:
 ##### Refactor 3
 ```java
-List<Course> courses, javaCourses, cheapCourses;
-courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
+    List<Course> courses, javaCourses, cheapCourses;
 
-javaCourses = courses.stream().filter(
-	c -> c.getName().toLowerCase().contains("java")
-).collect(Collectors.toList());
+    courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
 
-cheapCourses = courses.stream().filter(
-	(Course c) -> c.getPrice() <= 10000
-).collect(Collectors.toList());
-```
+    javaCourses = courses.stream().filter(c -> c.getName().toLowerCase().contains("java"))
+      .collect(Collectors.toList());
+
+    cheapCourses = courses.stream().filter((Course c) -> c.getPrice() <= 10000)
+      .collect(Collectors.toList());
+
+    System.out.println("Java courses");
+    System.out.println(javaCourses);
+
+    System.out.println("Cheap courses");
+    System.out.println(cheapCourses);
+``
 * Las colecciones definen un nuevo método llamado ```stream``` que construye un objeto ```Stream```  el cual es accedido a través del método ```filter``` que pertenece al API de Streams. 
 * Con esta técnica, se elimina la necesidad de iterar sobre la lista de cursos !  El API de Streams lo hace internamente y con la posibilidad de aplicar paralelismo!
 * Mas adeante se explica a detalle el uso del API de  Streams.
@@ -233,11 +238,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNjE5ODg5MSwxODQxMjEyNTIzLDU4OD
-QyMzI1MiwtMTY2NTMyMzk4LC0xNjQyMjQyMjQyLC0xODE3Njgy
-NzA4LC0xNzU2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC
-0xMTc2MDc1NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0
-MTM4NTEsMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OT
-MxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywt
-NTg0MDM5NjUyXX0=
+eyJoaXN0b3J5IjpbLTEwMjQzMzI0NDIsMTg0MTIxMjUyMyw1OD
+g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
+MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
+wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
+NDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4Nj
+kzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcs
+LTU4NDAzOTY1Ml19
 -->
