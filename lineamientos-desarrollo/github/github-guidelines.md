@@ -127,13 +127,14 @@ git push origin <nombre-branch>
 Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecutado de forma exitosa, se deberá solicitar un “pull request” para que los cambios del branch sean integrados al repositorio original posterior a su revisión y aprobación por los integrantes del equipo de desarrollo.
 * Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente.
 * Para crear un pull request se hará uso de GitHub.
-* La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo).
+* La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo upstream).
 ![pull.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull.png)
-* Al hacer clic en el botón “New Pull Request” se deberá realizar la siguiente configuración en la que se indica que los cambios del branch se integrarán a master del repositorio principal.
+* Hacer clic en el botón “New Pull Request”.  Se deberá realizar la siguiente configuración en la que se indica que los cambios del branch se integrarán a master del repositorio principal (upstream).
+* Posteriormente, hacer clic en  "Create pull Request".
 ![pull2.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull2.png)
 * En la siguiente pantalla se muestra el formulario para crear el Pull Request.
 * Notar que del lado derecho se configura la lista de revisores que deberán participar en la revisión. Es muy ***importante*** configurar esta sección.
-*  Al finalizar la captura, presionar “Create Pull Request”.
+*  Al finalizar la captura, hacer clic nuevamente en “Create Pull Request”.
 ![pull3.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull3.png)
 * Posterior a esto, los revisores recibirán un correo para que puedan comenzar a validar los cambios.
 * La siguiente figura muestra la pantalla para revisión de código:
