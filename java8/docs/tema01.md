@@ -30,20 +30,18 @@ public class CourseOrderingJava7 {
   }
 }
 ```
- * En Java 8 se tiene lo siguiente:
+ * En Java 8 se tiene lo siguiente (más adelante se explica a de:
  ```java
  public class CourseOrderingJava8 {
-	public static void main(String[] args) {
-		List<Course> courses;
 
-		courses = Arrays.asList(new Course("Web Services", 7899.3),
-			new Course("Java 8", 2100), new Course("C programming", 3400));
-		
-		//nuevo en Java8 (por ahora no se requiere comprender):
-		courses.sort(Comparator.comparing(Course::getName));
-		System.out.println(courses);
-	}
-} 
+  public static void main(String[] args) {
+    List<Course> courses;
+    courses = Arrays.asList(new Course("Web Services", 7899.3),
+      new Course("Java 8", 2100), new Course("C programming", 3400));
+    courses.sort(Comparator.comparing(Course::getName));
+    System.out.println(courses);
+  }
+}
 ```
  * A nivel  de hardware también existen mejoras.  Un programa en Java puede aprovechar la capacidad multi-core de los procesadores sin que el programador tenga que hacer uso de programación multi-hilos haciendo uso de los complicados *Threads*
  * En Java 5 se agregaron algunas mejoras como son: Thread pools y colecciones concurrentes.
@@ -235,11 +233,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MTIxMjUyMyw1ODg0MjMyNTIsLTE2Nj
-UzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4MjcwOCwtMTc1NjM2
-NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNiwtMTE3NjA3NTQxNS
-wxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQyNDEzODUxLDE4Mjgx
-Njc3MDksLTEzODU0MDQ1NTUsLTE3MTk4NjkzMTcsLTU2NjI4Nz
-k2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcsLTU4NDAzOTY1Miwx
-NzI5Mzk4MTQwXX0=
+eyJoaXN0b3J5IjpbNTExMzI5MTgxLDE4NDEyMTI1MjMsNTg4ND
+IzMjUyLC0xNjY1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3
+MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLT
+ExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQx
+Mzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5Mz
+E3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01
+ODQwMzk2NTJdfQ==
 -->
