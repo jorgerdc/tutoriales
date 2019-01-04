@@ -24,30 +24,30 @@ import com.jorgerdc.java8.comun.Course;
  */
 public class LambdaExpressionsExample {
 
-	/**
-	 * @param args
-	 */
-	@SuppressWarnings("unused")
-	public static void main(String[] args) {
-		Comparator<Course> oldComparator, lambdaComparator;
+  /**
+   * @param args
+   */
+  @SuppressWarnings("unused")
+  public static void main(String[] args) {
+    Comparator<Course> oldComparator, lambdaComparator;
 
-		// Before Java 8 (using anonymous class)
-		oldComparator = new Comparator<Course>() {
-			@Override
-			public int compare(Course o1, Course o2) {
-				return o1.getName().compareTo(o2.getName());
-			}
-		};
-		// java 8
-		lambdaComparator = (Course o1, Course o2) -> o1.getName().compareTo(o2.getName());
+    // Before Java 8 (using anonymous class)
+    oldComparator = new Comparator<Course>() {
+      @Override
+      public int compare(Course o1, Course o2) {
+        return o1.getName().compareTo(o2.getName());
+      }
+    };
+    // java 8
+    lambdaComparator = (Course o1, Course o2) -> o1.getName().compareTo(o2.getName());
 
-		// Using lambda expression as a parameter of a method, using the concept of
-		// functional interface.
-		File myFiles;
+    // Using lambda expression as a parameter of a method, using the concept of
+    // functional interface.
+    File myFiles;
 
-		String[] filteredFiles;
-		myFiles = new File("/tmp");
-		filteredFiles =
-			myFiles.list((file, fileName) -> file.canWrite() && fileName.endsWith(".txt"));
-	}
+    String[] filteredFiles;
+    myFiles = new File("/tmp");
+    filteredFiles =
+      myFiles.list((file, fileName) -> file.canWrite() && fileName.endsWith(".txt"));
+  }
 }

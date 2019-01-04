@@ -23,16 +23,16 @@ import java.io.IOException;
 @FunctionalInterface
 public interface ReaderProcessor {
 
-	/**
-	 * This method is used to process a {@link BufferedReader} object .
-	 * The strategy is to separate the functional code from the code that is
-	 * needed to handle the {@link BufferedReader} creation and the code used to release
-	 * resources. The functional code will we passed as a parameter using lambda
-	 * expressions.
-	 * @param reader
-	 * @return A String object that represents the processing result.
-	 * @throws IOException if something goes wrong. This avoid handling exception directly
-	 *         inside the lambda expression.
-	 */
-	String procesa(BufferedReader reader) throws IOException;
+  /**
+   * This method is used to process a {@link BufferedReader} object .
+   * The strategy is to separate the functional code from the code that is
+   * needed to handle the {@link BufferedReader} creation and the code used to release
+   * resources. The functional code will we passed as a parameter using lambda
+   * expressions.
+   * @param reader
+   * @return A String object that represents the processing result.
+   * @throws IOException if something goes wrong. This avoid handling exception directly
+   *         inside the lambda expression.
+   */
+  String procesa(BufferedReader reader) throws IOException;
 }

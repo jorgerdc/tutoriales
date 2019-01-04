@@ -19,61 +19,61 @@ package com.jorgerdc.java8.comun;
  */
 public class Course {
 
-	private double price;
+  private double price;
 
-	private String name;
+  private String name;
 
-	/**
-	 * @param price
-	 * @param name
-	 */
-	public Course(String name, double price) {
-		super();
-		this.price = price;
-		this.name = name;
-	}
+  /**
+   * @param price
+   * @param name
+   */
+  public Course(String name, double price) {
+    super();
+    this.price = price;
+    this.name = name;
+  }
 
-	/**
-	 * @return the price
-	 */
-	public double getPrice() {
-		return price;
-	}
+  /**
+   * @return the price
+   */
+  public double getPrice() {
+    return price;
+  }
 
-	/**
-	 * @param price the price to set
-	 */
-	public void setPrice(double price) {
-		this.price = price;
-	}
+  /**
+   * @param price the price to set
+   */
+  public void setPrice(double price) {
+    this.price = price;
+  }
 
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
+  /**
+   * @return the name
+   */
+  public String getName() {
+    return name;
+  }
 
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+  /**
+   * @param name the name to set
+   */
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	/*
-	 * See the original documentation of the method declaration
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Course [price=");
-		builder.append(price);
-		builder.append(", name=");
-		builder.append(name);
-		builder.append("]");
-		return builder.toString();
-	}
+  /*
+   * See the original documentation of the method declaration
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    StringBuilder builder = new StringBuilder();
+    builder.append("Course [price=");
+    builder.append(price);
+    builder.append(", name=");
+    builder.append(name);
+    builder.append("]");
+    return builder.toString();
+  }
 
 }

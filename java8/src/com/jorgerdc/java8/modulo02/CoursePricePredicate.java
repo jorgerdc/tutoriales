@@ -21,26 +21,26 @@ import com.jorgerdc.java8.comun.Course;
  */
 public class CoursePricePredicate implements CoursePredicate {
 
-	private double initialPrice;
+  private double initialPrice;
 
-	private double finalPrice;
+  private double finalPrice;
 
-	/**
-	 * @param costoInicial
-	 * @param finalPrice
-	 */
-	public CoursePricePredicate(double costoInicial, double finalPrice) {
-		this.initialPrice = costoInicial;
-		this.finalPrice = finalPrice;
-	}
+  /**
+   * @param costoInicial
+   * @param finalPrice
+   */
+  public CoursePricePredicate(double costoInicial, double finalPrice) {
+    this.initialPrice = costoInicial;
+    this.finalPrice = finalPrice;
+  }
 
-	/*
-	 * See the original documentation of the method declaration
-	 * @see
-	 * com.jorgerdc.java8.modulo02.CoursePredicate#test(com.jorgerdc.java8.intro.Course)
-	 */
-	@Override
-	public boolean test(Course c) {
-		return c.getPrice() >= initialPrice && c.getPrice() <= finalPrice;
-	}
+  /*
+   * See the original documentation of the method declaration
+   * @see
+   * com.jorgerdc.java8.modulo02.CoursePredicate#test(com.jorgerdc.java8.intro.Course)
+   */
+  @Override
+  public boolean test(Course c) {
+    return c.getPrice() >= initialPrice && c.getPrice() <= finalPrice;
+  }
 }

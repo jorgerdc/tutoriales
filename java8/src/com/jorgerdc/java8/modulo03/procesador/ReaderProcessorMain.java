@@ -31,51 +31,51 @@ import java.io.IOException;
  */
 public class ReaderProcessorMain {
 
-	/**
-	 * @param args
-	 * @throws IOException
-	 */
-	public static void main(String[] args) throws IOException {
-		String result;
+  /**
+   * @param args
+   * @throws IOException
+   */
+  public static void main(String[] args) throws IOException {
+    String result;
 
-		System.out
-			.println("Case 1. Functional code to read  the first line of the file only.");
-		result = processFile("resources/data.txt", (reader) -> reader.readLine());
-		System.out.println(result);
+    System.out
+      .println("Case 1. Functional code to read  the first line of the file only.");
+    result = processFile("resources/data.txt", (reader) -> reader.readLine());
+    System.out.println(result);
 
-		System.out.println("Case 2. Read first and second line of the file only");
-		result = processFile("resources/data.txt",
-			(reader) -> reader.readLine() + "\n" + reader.readLine());
-		System.out.println(result);
+    System.out.println("Case 2. Read first and second line of the file only");
+    result = processFile("resources/data.txt",
+      (reader) -> reader.readLine() + "\n" + reader.readLine());
+    System.out.println(result);
 
-		System.out.println("Case 3. Read all line and convert them to upper case.");
-		result = processFile("resources/data.txt", (reader) -> {
-			StringBuilder sb;
-			String line;
-			sb = new StringBuilder();
-			while ((line = reader.readLine()) != null) {
-				sb.append(line.toUpperCase());
-				sb.append("\n");
-			}
-			return sb.toString();
-		});
-		System.out.println(result);
-	}
+    System.out.println("Case 3. Read all line and convert them to upper case.");
+    result = processFile("resources/data.txt", (reader) -> {
+      StringBuilder sb;
+      String line;
+      sb = new StringBuilder();
+      while ((line = reader.readLine()) != null) {
+        sb.append(line.toUpperCase());
+        sb.append("\n");
+      }
+      return sb.toString();
+    });
+    System.out.println(result);
+  }
 
-	/**
-	 * This method executes the logic that is passed to this method using the processor
-	 * parameter.
-	 * This method is invoked from main using expression lambda.
-	 * @param file
-	 * @param processor
-	 * @return
-	 */
-	public static String processFile(String file, ReaderProcessor processor) {
+  /**
+   * This method executes the logic that is passed to this method using the processor
+   * parameter.
+   * This method is invoked from main using expression lambda.
+   * @param file
+   * @param processor
+   * @return
+   */
+  public static String processFile(String file, ReaderProcessor processor) {
 
-		try (BufferedReader reader = new BufferedReader(new FileReader(new File(file)))) {
-			return processor.procesa(reader);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
+    try (BufferedReader reader = new BufferedReader(new FileReader(new File(file)))) {
+      return processor.procesa(reader);
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
 }

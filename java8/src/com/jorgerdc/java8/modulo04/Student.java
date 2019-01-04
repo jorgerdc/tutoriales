@@ -20,121 +20,121 @@ package com.jorgerdc.java8.modulo04;
  */
 public class Student {
 
-	private long id;
+  private long id;
 
-	private String name;
+  private String name;
 
-	private double weight;
+  private double weight;
 
-	private double height;
+  private double height;
 
-	private int semester;
+  private int semester;
 
-	/**
-	 * @param id
-	 * @param name
-	 * @param weight
-	 * @param height
-	 * @param semester
-	 */
-	public Student(long id, String name, double weight, double height, int semester) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.weight = weight;
-		this.height = height;
-		this.semester = semester;
-	}
+  /**
+   * @param id
+   * @param name
+   * @param weight
+   * @param height
+   * @param semester
+   */
+  public Student(long id, String name, double weight, double height, int semester) {
+    super();
+    this.id = id;
+    this.name = name;
+    this.weight = weight;
+    this.height = height;
+    this.semester = semester;
+  }
 
-	/**
-	 * @return the id
-	 */
-	public long getId() {
-		return id;
-	}
+  /**
+   * @return the id
+   */
+  public long getId() {
+    return id;
+  }
 
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(long id) {
-		this.id = id;
-	}
+  /**
+   * @param id the id to set
+   */
+  public void setId(long id) {
+    this.id = id;
+  }
 
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
+  /**
+   * @return the name
+   */
+  public String getName() {
+    return name;
+  }
 
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+  /**
+   * @param name the name to set
+   */
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	/**
-	 * @return the weight
-	 */
-	public double getWeight() {
-		return weight;
-	}
+  /**
+   * @return the weight
+   */
+  public double getWeight() {
+    return weight;
+  }
 
-	/**
-	 * @param weight the weight to set
-	 */
-	public void setWeight(double weight) {
-		this.weight = weight;
-	}
+  /**
+   * @param weight the weight to set
+   */
+  public void setWeight(double weight) {
+    this.weight = weight;
+  }
 
-	/**
-	 * @return the height
-	 */
-	public double getHeight() {
-		return height;
-	}
+  /**
+   * @return the height
+   */
+  public double getHeight() {
+    return height;
+  }
 
-	/**
-	 * @param height the height to set
-	 */
-	public void setHeight(double height) {
-		this.height = height;
-	}
+  /**
+   * @param height the height to set
+   */
+  public void setHeight(double height) {
+    this.height = height;
+  }
 
-	/**
-	 * @return the semester
-	 */
-	public int getSemester() {
-		return semester;
-	}
+  /**
+   * @return the semester
+   */
+  public int getSemester() {
+    return semester;
+  }
 
-	/**
-	 * @param semester the semester to set
-	 */
-	public void setSemester(int semester) {
-		this.semester = semester;
-	}
+  /**
+   * @param semester the semester to set
+   */
+  public void setSemester(int semester) {
+    this.semester = semester;
+  }
 
-	/*
-	 * See the original documentation of the method declaration
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Student [id=");
-		builder.append(id);
-		builder.append(", name=");
-		builder.append(name);
-		builder.append(", weight=");
-		builder.append(weight);
-		builder.append(", height=");
-		builder.append(height);
-		builder.append(", semester=");
-		builder.append(semester);
-		builder.append("]");
-		return builder.toString();
-	}
+  /*
+   * See the original documentation of the method declaration
+   * @see java.lang.Object#toString()
+   */
+  @Override
+  public String toString() {
+    StringBuilder builder = new StringBuilder();
+    builder.append("Student [id=");
+    builder.append(id);
+    builder.append(", name=");
+    builder.append(name);
+    builder.append(", weight=");
+    builder.append(weight);
+    builder.append(", height=");
+    builder.append(height);
+    builder.append(", semester=");
+    builder.append(semester);
+    builder.append("]");
+    return builder.toString();
+  }
 
 }

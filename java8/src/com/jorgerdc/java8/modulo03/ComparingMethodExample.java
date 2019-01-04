@@ -30,23 +30,23 @@ import com.jorgerdc.java8.comun.Course;
 
 public class ComparingMethodExample {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		List<Course> courseList;
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
+    List<Course> courseList;
 
-		courseList =
-			Arrays.asList(new Course("Spring Framework", 230), new Course("Java 8", 130),
-				new Course("Angular", 50), new Course("Zeppelin apache", 230));
+    courseList =
+      Arrays.asList(new Course("Spring Framework", 230), new Course("Java 8", 130),
+        new Course("Angular", 50), new Course("Zeppelin apache", 230));
 
-		System.out.println("sorting courses using it's name:");
-		courseList.sort(comparing(c -> c.getName()));
-		System.out.println(courseList);
+    System.out.println("sorting courses using it's name:");
+    courseList.sort(comparing(c -> c.getName()));
+    System.out.println(courseList);
 
-		System.out.println("sorting by name, then by price");
-		courseList
-			.sort(comparing(Course::getName).thenComparing(Course::getPrice).reversed());
-		System.out.println(courseList);
-	}
+    System.out.println("sorting by name, then by price");
+    courseList
+      .sort(comparing(Course::getName).thenComparing(Course::getPrice).reversed());
+    System.out.println(courseList);
+  }
 }

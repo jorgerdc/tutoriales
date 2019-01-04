@@ -12,7 +12,7 @@
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  */
-package com.jorgerdc.java8.intro;
+package com.jorgerdc.java8.modulo01;
 
 import static java.util.Arrays.asList;
 
@@ -26,25 +26,24 @@ import com.jorgerdc.java8.comun.Course;
  */
 public class CourseUtilRefactor03 {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		List<Course> courses, javaCourses, cheapCourses;
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
+    List<Course> courses, javaCourses, cheapCourses;
 
-		courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
+    courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
 
-		javaCourses =
-			courses.stream().filter(c -> c.getName().toLowerCase().contains("java"))
-				.collect(Collectors.toList());
+    javaCourses = courses.stream().filter(c -> c.getName().toLowerCase().contains("java"))
+      .collect(Collectors.toList());
 
-		cheapCourses = courses.stream().filter((Course c) -> c.getPrice() <= 10000)
-			.collect(Collectors.toList());
+    cheapCourses = courses.stream().filter((Course c) -> c.getPrice() <= 10000)
+      .collect(Collectors.toList());
 
-		System.out.println("Java courses");
-		System.out.println(javaCourses);
+    System.out.println("Java courses");
+    System.out.println(javaCourses);
 
-		System.out.println("Cheap courses");
-		System.out.println(cheapCourses);
-	}
+    System.out.println("Cheap courses");
+    System.out.println(cheapCourses);
+  }
 }

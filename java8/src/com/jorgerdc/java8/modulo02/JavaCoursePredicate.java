@@ -20,8 +20,8 @@ import com.jorgerdc.java8.comun.Course;
  * CoursePredicate implementation. It filters Java course only.
  */
 public class JavaCoursePredicate implements CoursePredicate {
-	@Override
-	public boolean test(Course curso) {
-		return curso.getName().toLowerCase().contains("java");
-	}
+  @Override
+  public boolean test(Course curso) {
+    return curso.getName().toLowerCase().contains("java");
+  }
 }

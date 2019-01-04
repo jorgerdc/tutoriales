@@ -25,10 +25,10 @@ import com.jorgerdc.java8.comun.Course;
  */
 public interface CoursePredicate {
 
-	/**
-	 * Apply this predicate.
-	 * @param c
-	 * @return
-	 */
-	boolean test(Course c);
+  /**
+   * Apply this predicate.
+   * @param c
+   * @return
+   */
+  boolean test(Course c);
 }

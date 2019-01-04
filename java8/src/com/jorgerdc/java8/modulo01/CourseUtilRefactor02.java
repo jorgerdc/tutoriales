@@ -1,5 +1,5 @@
 /**
- * CourseUtil.java
+ * CourseUtilRefactor02.java
  * Creation Date: 11/04/2018, 20:09:08
  *
  * Copyright (C) The Project *java8-01-basico* Authors.
@@ -12,36 +12,35 @@
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  */
-package com.jorgerdc.java8.modulo02;
+package com.jorgerdc.java8.modulo01;
 
 import static java.util.Arrays.asList;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import com.jorgerdc.java8.comun.Course;
 
 /**
- * Utility class used to test {@link CoursePredicate} implementations.
+ * Second Refactor of {@link CourseUtil} class. It shows more Java8 features.
  */
-public class CourseUtil {
+public class CourseUtilRefactor02 {
 
   /**
-   * Generic course filter
    * @param courses
    * @param p
    * @return
    */
-  public static List<Course> filterCourses(List<Course> courses, CoursePredicate p) {
+  public static List<Course> filterCourses(List<Course> courses, Predicate<Course> p) {
 
-    List<Course> filteredCourses;
-    filteredCourses = new ArrayList<>();
-    for (Course course : courses) {
-      if (p.test(course)) {
-        filteredCourses.add(course);
+    List<Course> cursosFiltrados = new ArrayList<>();
+    for (Course c : courses) {
+      if (p.test(c)) {
+        cursosFiltrados.add(c);
       }
     }
-    return filteredCourses;
+    return cursosFiltrados;
   }
 
   /**
@@ -49,14 +48,20 @@ public class CourseUtil {
    */
   public static void main(String[] args) {
 
-    List<Course> courses;
-    CoursePredicate predicado;
+    List<Course> courses, javaCourses, cheapCourses;
 
     courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
-    predicado = new JavaCoursePredicate();
 
-    System.out.println("Java Courses");
-    System.out.println(filterCourses(courses, predicado));
+    javaCourses = filterCourses(courses, c -> c.getName().toLowerCase().contains("java"));
+
+    cheapCourses = filterCourses(courses, (Course c) -> c.getPrice() <= 10000);
+
+    System.out.println("Java courses:");
+    System.out.println(javaCourses);
+
+    System.out.println("Cheap courses:");
+    System.out.println(cheapCourses);
 
   }
+
 }

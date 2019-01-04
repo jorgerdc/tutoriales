@@ -27,37 +27,37 @@ import com.jorgerdc.java8.comun.Course;
  */
 public class CourseUtilLambda {
 
-	/**
-	 * * For every course on the list of courses, the Course predicate is applied using
-	 * the test method of the parameter p
-	 * @param courses
-	 * @param p the predicate
-	 * @return
-	 */
-	public static List<Course> filterCourses(List<Course> courses, CoursePredicate p) {
+  /**
+   * * For every course on the list of courses, the Course predicate is applied using
+   * the test method of the parameter p
+   * @param courses
+   * @param p the predicate
+   * @return
+   */
+  public static List<Course> filterCourses(List<Course> courses, CoursePredicate p) {
 
-		List<Course> filteredCourses;
-		filteredCourses = new ArrayList<>();
-		for (Course course : courses) {
-			if (p.test(course)) {
-				filteredCourses.add(course);
-			}
-		}
-		return filteredCourses;
-	}
+    List<Course> filteredCourses;
+    filteredCourses = new ArrayList<>();
+    for (Course course : courses) {
+      if (p.test(course)) {
+        filteredCourses.add(course);
+      }
+    }
+    return filteredCourses;
+  }
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
 
-		List<Course> courses;
+    List<Course> courses;
 
-		courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
+    courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
 
-		System.out.println("Java courses");
-		System.out.println(
-			filterCourses(courses, curso -> curso.getName().toLowerCase().contains("java")));
+    System.out.println("Java courses");
+    System.out.println(
+      filterCourses(courses, curso -> curso.getName().toLowerCase().contains("java")));
 
-	}
+  }
 }

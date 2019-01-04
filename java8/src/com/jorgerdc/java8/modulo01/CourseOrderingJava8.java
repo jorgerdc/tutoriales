@@ -26,20 +26,19 @@ import com.jorgerdc.java8.comun.Course;
  */
 public class CourseOrderingJava8 {
 
-	/**
-	 * main method
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		List<Course> courses;
+  /**
+   * main method
+   * @param args
+   */
+  public static void main(String[] args) {
+    List<Course> courses;
 
-		courses = Arrays.asList(new Course("Web Services", 7899.3),
-			new Course("Java 8", 2100), new Course("C programming", 3400));
+    courses = Arrays.asList(new Course("Web Services", 7899.3),
+      new Course("Java 8", 2100), new Course("C programming", 3400));
 
-		courses.sort(Comparator.comparing(Course::getName));
+    courses.sort(Comparator.comparing(Course::getName));
 
-		System.out.println(courses);
+    System.out.println(courses);
 
-	}
-
+  }
 }

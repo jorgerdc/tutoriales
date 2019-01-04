@@ -24,47 +24,47 @@ import java.util.List;
  */
 public class HiddenFilesExample {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		showHiddenFilesJava7();
-		showHiddendFilesJava8();
-	}
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
+    showHiddenFilesJava7();
+    showHiddendFilesJava8();
+  }
 
-	/**
-	 * Shows hidden files using imperative programming style.
-	 */
-	private static void showHiddenFilesJava7() {
-		File[] hiddenFiles;
+  /**
+   * Shows hidden files using imperative programming style.
+   */
+  private static void showHiddenFilesJava7() {
+    File[] hiddenFiles;
 
-		System.out.println("Showing hidden files before Java8. Verbose..");
-		hiddenFiles =
-			new File(System.getProperty("java.io.tmpdir")).listFiles(new FileFilter() {
-				@Override
-				public boolean accept(File f) {
-					return f.isHidden();
-				}
-			});
-		for (File file : hiddenFiles) {
-			System.out.println(file.getAbsolutePath());
-		}
-	}
+    System.out.println("Showing hidden files before Java8. Verbose..");
+    hiddenFiles =
+      new File(System.getProperty("java.io.tmpdir")).listFiles(new FileFilter() {
+        @Override
+        public boolean accept(File f) {
+          return f.isHidden();
+        }
+      });
+    for (File file : hiddenFiles) {
+      System.out.println(file.getAbsolutePath());
+    }
+  }
 
-	/**
-	 * Shows hidden files using lambda expressions and method references.
-	 */
-	private static void showHiddendFilesJava8() {
-		List<File> files;
-		String tmpDir;
+  /**
+   * Shows hidden files using lambda expressions and method references.
+   */
+  private static void showHiddendFilesJava8() {
+    List<File> files;
+    String tmpDir;
 
-		tmpDir = System.getProperty("java.io.tmpdir");
-		System.out.println("Showing hidden files with Java8 :");
+    tmpDir = System.getProperty("java.io.tmpdir");
+    System.out.println("Showing hidden files with Java8 :");
 
-		// new in Java 8
-		files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
-		// new in Java 8
-		files.forEach(System.out::println);
+    // new in Java 8
+    files = Arrays.asList(new File(tmpDir).listFiles(File::isHidden));
+    // new in Java 8
+    files.forEach(System.out::println);
 
-	}
+  }
 }

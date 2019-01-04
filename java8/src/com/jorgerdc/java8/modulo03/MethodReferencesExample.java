@@ -25,34 +25,34 @@ import java.util.function.Supplier;
  */
 public class MethodReferencesExample {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// example 1
-		List<String> list;
-		list = Arrays.asList("M", "j", "x", "0", "a");
-		list.sort(String::compareToIgnoreCase);
-		System.out.println(list);
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
+    // example 1
+    List<String> list;
+    list = Arrays.asList("M", "j", "x", "0", "a");
+    list.sort(String::compareToIgnoreCase);
+    System.out.println(list);
 
-		// example 2
-		// without method references
-		Supplier<String> supplier = () -> "hello";
-		System.out.println("s1: " + supplier.get());
-		// with method references
-		supplier = String::new;
+    // example 2
+    // without method references
+    Supplier<String> supplier = () -> "hello";
+    System.out.println("s1: " + supplier.get());
+    // with method references
+    supplier = String::new;
 
-		System.out.println("s2: " + supplier.get());
+    System.out.println("s2: " + supplier.get());
 
-		// example 3
-		// without method references
-		Function<String, File> fx1 = (path) -> new File(path);
-		File myFile = fx1.apply("/tmp/nonextisting.txt");
-		System.out.println(myFile.getAbsolutePath());
-		// with method references
-		fx1 = File::new;
-		myFile = fx1.apply("/tmp/nonextisting.txt");
-		System.out.println(myFile.getAbsolutePath());
-	}
+    // example 3
+    // without method references
+    Function<String, File> fx1 = (path) -> new File(path);
+    File myFile = fx1.apply("/tmp/nonextisting.txt");
+    System.out.println(myFile.getAbsolutePath());
+    // with method references
+    fx1 = File::new;
+    myFile = fx1.apply("/tmp/nonextisting.txt");
+    System.out.println(myFile.getAbsolutePath());
+  }
 
 }

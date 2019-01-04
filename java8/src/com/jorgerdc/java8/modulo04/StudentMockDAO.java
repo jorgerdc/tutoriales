@@ -23,14 +23,14 @@ import java.util.List;
  */
 public class StudentMockDAO {
 
-	/**
-	 * @return Get all students.
-	 */
-	public static List<Student> getStudents() {
-		return Arrays.asList(new Student(1, "John", 81, 1.7, 3),
-			new Student(2, "Mike", 74.9, 1.77, 8), new Student(3, "Susan", 67, 1.6, 5),
-			new Student(4, "Jio", 84, 1.5, 9), new Student(5, "Michel", 71, 1.8, 1),
-			new Student(6, "Gio", 89, 1.9, 9));
-	}
+  /**
+   * @return Get all students.
+   */
+  public static List<Student> getStudents() {
+    return Arrays.asList(new Student(1, "John", 81, 1.7, 3),
+      new Student(2, "Mike", 74.9, 1.77, 8), new Student(3, "Susan", 67, 1.6, 5),
+      new Student(4, "Jio", 84, 1.5, 9), new Student(5, "Michel", 71, 1.8, 1),
+      new Student(6, "Gio", 89, 1.9, 9));
+  }
 
 }

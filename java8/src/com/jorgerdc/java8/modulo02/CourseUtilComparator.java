@@ -25,18 +25,18 @@ import com.jorgerdc.java8.comun.Course;
  */
 public class CourseUtilComparator {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
 
-		List<Course> cursos;
+    List<Course> cursos;
 
-		cursos = asList(new Course("Java", 8500), new Course("WebServices", 18500));
+    cursos = asList(new Course("Java", 8500), new Course("WebServices", 18500));
 
-		System.out.println("Sorting courses");
-		cursos.sort((Course c1, Course c2) -> c1.getName().compareTo(c2.getName()));
-		System.out.println(cursos);
+    System.out.println("Sorting courses");
+    cursos.sort((Course c1, Course c2) -> c1.getName().compareTo(c2.getName()));
+    System.out.println(cursos);
 
-	}
+  }
 }
