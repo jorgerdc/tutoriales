@@ -86,7 +86,7 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 ##### Ejemplo:
 * Suponer que se desea crear un programa que haga el filtrado de los archivos que se encuentran en un directorio. El programa debe mostrar a todos los archivos que son ocultos.  Antes de Java 8 se tendría el siguiente código:
 ```java
-private static void showHiddenFilesJava7() {
+  private static void showHiddenFilesJava7() {
     File[] hiddenFiles;
 
     System.out.println("Showing hidden files before Java8. Verbose..");
@@ -100,7 +100,8 @@ private static void showHiddenFilesJava7() {
     for (File file : hiddenFiles) {
       System.out.println(file.getAbsolutePath());
     }
-  }``
+  }
+ ```
 * En Java 8 el código será:
 ```java
 /**
@@ -229,11 +230,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTY2MjEzODMsMTg0MTIxMjUyMyw1OD
-g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
-MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
-wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
-NDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4Nj
-kzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcs
-LTU4NDAzOTY1Ml19
+eyJoaXN0b3J5IjpbMTg4NTU5NTA0NywxODQxMjEyNTIzLDU4OD
+QyMzI1MiwtMTY2NTMyMzk4LC0xNjQyMjQyMjQyLC0xODE3Njgy
+NzA4LC0xNzU2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC
+0xMTc2MDc1NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0
+MTM4NTEsMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OT
+MxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywt
+NTg0MDM5NjUyXX0=
 -->
