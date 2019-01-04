@@ -30,7 +30,7 @@ public class CourseOrderingJava7 {
   }
 }
 ```
- * En Java 8 se tiene lo siguiente (más adelante se explica a de:
+ * En Java 8 se tiene lo siguiente (más adelante se explica a detalle esta sintaxis):
  ```java
  public class CourseOrderingJava8 {
 
@@ -86,25 +86,21 @@ cat file1 file2 | tr "[a-z]" "[A-Z]" | sort | tail -3
 ##### Ejemplo:
 * Suponer que se desea crear un programa que haga el filtrado de los archivos que se encuentran en un directorio. El programa debe mostrar a todos los archivos que son ocultos.  Antes de Java 8 se tendría el siguiente código:
 ```java
-/**
- * Shows hidden files using imperative programming style.
- */
 private static void showHiddenFilesJava7() {
-	File[] hiddenFiles;
+    File[] hiddenFiles;
 
-	System.out.println("Showing hidden files before Java8. Verbose..");
-	hiddenFiles =
-		new File(System.getProperty("java.io.tmpdir")).listFiles(new FileFilter() {
-			@Override
-			public boolean accept(File f) {
-				return f.isHidden();
-			}
-		});
-	for (File file : hiddenFiles) {
-		System.out.println(file.getAbsolutePath());
-	}
-}
-```
+    System.out.println("Showing hidden files before Java8. Verbose..");
+    hiddenFiles =
+      new File(System.getProperty("java.io.tmpdir")).listFiles(new FileFilter() {
+        @Override
+        public boolean accept(File f) {
+          return f.isHidden();
+        }
+      });
+    for (File file : hiddenFiles) {
+      System.out.println(file.getAbsolutePath());
+    }
+  }``
 * En Java 8 el código será:
 ```java
 /**
@@ -233,11 +229,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExMzI5MTgxLDE4NDEyMTI1MjMsNTg4ND
-IzMjUyLC0xNjY1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3
-MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLT
-ExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQx
-Mzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5Mz
-E3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01
-ODQwMzk2NTJdfQ==
+eyJoaXN0b3J5IjpbLTEzNTY2MjEzODMsMTg0MTIxMjUyMyw1OD
+g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
+MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
+wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
+NDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4Nj
+kzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcs
+LTU4NDAzOTY1Ml19
 -->
