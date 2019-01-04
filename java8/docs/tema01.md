@@ -197,7 +197,7 @@ public interface Predicate<T> {
     System.out.println("Cheap courses:");
     System.out.println(cheapCourses);
 ```
-* Código completo en ```CourseUtilRefactor01```
+* El código completo se encuentra en la clase ```CourseUtilRefactor02```
 * En este ejemplo se tienen 2 expresiones lambda:
 ```java
 courses, c -> c.getName().toLowerCase().contains("java")
@@ -228,21 +228,22 @@ courses, (Course c) -> c.getPrice() <= 10000
     System.out.println("Cheap courses");
     System.out.println(cheapCourses);
 ```
-* Código completo en ```
+* El código completo se encuentra en la clase ```CourseUtilRefactor03```
 * Las colecciones definen un nuevo método llamado ```stream``` que construye un objeto ```Stream```  el cual es accedido a través del método ```filter``` que pertenece al API de Streams. 
 * Con esta técnica, se elimina la necesidad de iterar sobre la lista de cursos !  El API de Streams lo hace internamente y con la posibilidad de aplicar paralelismo!
 * Mas adeante se explica a detalle el uso del API de  Streams.
 * Finalmente,  una forma adicional de implementar a la función ```Predicate``` es a través del concepto de referencias a métodos:
 ##### Refactor 4 * Al código que se pasa como argumento se le llama *función*.
+* continuara..
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjUxMDkzMiwxODQxMjEyNTIzLDU4OD
-QyMzI1MiwtMTY2NTMyMzk4LC0xNjQyMjQyMjQyLC0xODE3Njgy
-NzA4LC0xNzU2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC
-0xMTc2MDc1NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0
-MTM4NTEsMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OT
-MxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywt
-NTg0MDM5NjUyXX0=
+eyJoaXN0b3J5IjpbNzM4MzM3NjAzLDE4NDEyMTI1MjMsNTg4ND
+IzMjUyLC0xNjY1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3
+MDgsLTE3NTYzNjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLT
+ExNzYwNzU0MTUsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQx
+Mzg1MSwxODI4MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5Mz
+E3LC01NjYyODc5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01
+ODQwMzk2NTJdfQ==
 -->
