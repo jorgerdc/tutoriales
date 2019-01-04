@@ -156,23 +156,23 @@ public static List<Course> getCoursesByMaxPrice(List<Course> courses, double max
   return javaCourses;
 }
   ```
-* El código completo se encuentra en la clase ```CourseUtil
+* El código completo se encuentra en la clase ```CourseUtil```
 * Observar que estos 2 métodos presentan código repetitivo: iterar  sobre la lista, agregar los elementos a la lista de resultado. Si se requieren más criterios de búsqueda, más copy & paste !.
 * En Java 8 se puede realizar el siguiente refactor: 
 	* En los 2 ejemplos anteriores, existen unas cuantas líneas de código que son diferentes y que corresponden a los criterios de cada filtro.  Dichas líneas se pueden extraer del código y ser parametrizadas a través de una *función* !
 ##### Refactor 1:
 ```java
-public static List<Course> filterCourses(List<Course> courses, Predicate<Course> p) {
+  public static List<Course> filterCourses(List<Course> courses, Predicate<Course> p) {
 
-	List<Course> filteredCourses = new ArrayList<>();
-	for (Course c : courses) {
-		if (p.test(c)) {
-			filteredCourses.add(c);
-		}
-	}
-	return filteredCourses;
-}
-```
+    List<Course> filteredCourses = new ArrayList<>();
+    for (Course c : courses) {
+      if (p.test(c)) {
+        filteredCourses.add(c);
+      }
+    }
+    return filteredCourses;
+  }
+``` 
 * Observar el uso de la función ```java.util.function.Predicate```	 empleada como parámetro y cuyo valor contendrá al código que será ejecutado para aplicarse como filtro a la lista de cursos!.
 * El código de esta interface (llamada funcional) es:
 ```java
@@ -228,7 +228,7 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzYyMjM3NTMsMTg0MTIxMjUyMyw1OD
+eyJoaXN0b3J5IjpbLTIwNzA0MjYyNTMsMTg0MTIxMjUyMyw1OD
 g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
 MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
 wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
