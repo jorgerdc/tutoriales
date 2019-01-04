@@ -173,7 +173,7 @@ public static List<Course> filterCourses(List<Course> courses, Predicate<Course>
   return filteredCourses;
 }
 ``` 
-* El código completo se encuentra en ```CourseUtilRefactor01```
+* El código completo se encuentra en la clase ```CourseUtilRefactor01```
 * Observar el uso de la función ```java.util.function.Predicate```	 empleada como parámetro y cuyo valor contendrá al código que será ejecutado para aplicarse como filtro a la lista de cursos!.
 * El código de esta interface (llamada funcional) es:
 ```java
@@ -216,10 +216,9 @@ courses, (Course c) -> c.getPrice() <= 10000
     List<Course> courses, javaCourses, cheapCourses;
 
     courses = asList(new Course("Java", 8500), new Course("WebServices", 18500));
-
+    
     javaCourses = courses.stream().filter(c -> c.getName().toLowerCase().contains("java"))
       .collect(Collectors.toList());
-
     cheapCourses = courses.stream().filter((Course c) -> c.getPrice() <= 10000)
       .collect(Collectors.toList());
 
@@ -228,7 +227,8 @@ courses, (Course c) -> c.getPrice() <= 10000
 
     System.out.println("Cheap courses");
     System.out.println(cheapCourses);
-``
+```
+* Código completo en ```
 * Las colecciones definen un nuevo método llamado ```stream``` que construye un objeto ```Stream```  el cual es accedido a través del método ```filter``` que pertenece al API de Streams. 
 * Con esta técnica, se elimina la necesidad de iterar sobre la lista de cursos !  El API de Streams lo hace internamente y con la posibilidad de aplicar paralelismo!
 * Mas adeante se explica a detalle el uso del API de  Streams.
@@ -238,11 +238,11 @@ courses, (Course c) -> c.getPrice() <= 10000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQzMzI0NDIsMTg0MTIxMjUyMyw1OD
-g0MjMyNTIsLTE2NjUzMjM5OCwtMTY0MjI0MjI0MiwtMTgxNzY4
-MjcwOCwtMTc1NjM2NDQwMywxOTAxMjA1NzkyLDE4MjI4NjExNi
-wtMTE3NjA3NTQxNSwxMjA1NDMxOTY5LDYwMjc0ODY4NiwxNDQy
-NDEzODUxLDE4MjgxNjc3MDksLTEzODU0MDQ1NTUsLTE3MTk4Nj
-kzMTcsLTU2NjI4Nzk2LC0xMjc0NDY1MTA5LC0zMTIzODU5MDcs
-LTU4NDAzOTY1Ml19
+eyJoaXN0b3J5IjpbLTc5NjUxMDkzMiwxODQxMjEyNTIzLDU4OD
+QyMzI1MiwtMTY2NTMyMzk4LC0xNjQyMjQyMjQyLC0xODE3Njgy
+NzA4LC0xNzU2MzY0NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC
+0xMTc2MDc1NDE1LDEyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0
+MTM4NTEsMTgyODE2NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OT
+MxNywtNTY2Mjg3OTYsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywt
+NTg0MDM5NjUyXX0=
 -->
