@@ -16,22 +16,7 @@ public class Course {
 * Suponer que se tiene una lista de objetos ```Course```, escribir un programa que realice el ordenamiento de  estos objetos empleando como criterio de ordenamiento el nombre del curso.
 	* Antes de Java 8
 ```java
-public class CourseOrderingJava7 {
 
-	public static void main(String[] args) {
-		List<Course> courses;
-		courses = Arrays.asList(new Course("Web Services", 7899.3),
-			new Course("Java 8", 2100), new Course("C programming", 3400));
-		
-		courses.sort(new Comparator<Course>() {
-			@Override
-			public int compare(Course o1, Course o2) {
-				return o1.getName().compareTo(o2.getName());
-			}
-		});
-		System.out.println("Ordered course list: " + courses);
-	}
-}
 ```
  * En Java 8 se tiene lo siguiente:
  ```java
@@ -238,11 +223,11 @@ cheapCourses = courses.stream().filter(
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODU0MTgxODYsNTg4NDIzMjUyLC0xNj
-Y1MzIzOTgsLTE2NDIyNDIyNDIsLTE4MTc2ODI3MDgsLTE3NTYz
-NjQ0MDMsMTkwMTIwNTc5MiwxODIyODYxMTYsLTExNzYwNzU0MT
-UsMTIwNTQzMTk2OSw2MDI3NDg2ODYsMTQ0MjQxMzg1MSwxODI4
-MTY3NzA5LC0xMzg1NDA0NTU1LC0xNzE5ODY5MzE3LC01NjYyOD
-c5NiwtMTI3NDQ2NTEwOSwtMzEyMzg1OTA3LC01ODQwMzk2NTIs
-MTcyOTM5ODE0MF19
+eyJoaXN0b3J5IjpbMjk0NjQ0NTAyLDU4ODQyMzI1MiwtMTY2NT
+MyMzk4LC0xNjQyMjQyMjQyLC0xODE3NjgyNzA4LC0xNzU2MzY0
+NDAzLDE5MDEyMDU3OTIsMTgyMjg2MTE2LC0xMTc2MDc1NDE1LD
+EyMDU0MzE5NjksNjAyNzQ4Njg2LDE0NDI0MTM4NTEsMTgyODE2
+NzcwOSwtMTM4NTQwNDU1NSwtMTcxOTg2OTMxNywtNTY2Mjg3OT
+YsLTEyNzQ0NjUxMDksLTMxMjM4NTkwNywtNTg0MDM5NjUyLDE3
+MjkzOTgxNDBdfQ==
 -->
