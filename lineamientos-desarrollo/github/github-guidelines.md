@@ -38,7 +38,10 @@ El primer paso para contribuir al desarrollo de un proyecto es la creación de u
 * Observar también la leyenda  *forked from  octocat/Spoon-Knife* que representa el repo original.
 * El siguiente paso es guardar la copia del repositorio en la máquina del contribuyente. Para ello, hacer clic en el botón “Clone or Download”.
 * Observar que aparece el ícono de “copy” . Hacer clic sobre el para copiar la ruta del repositorio: https://github.com/jorgerdc/Spoon-Knife.git
-* Abrir una terminal en la máquina local (se asume que git ha sido instalado), ejecutar:
+* A partir de este momento se hará uso de Git el cual deberá ser instalado en el equipo de desarrollo.  Para mayores detalles, consultar los siguientes sitios:
+	* [Instalación de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+	* [Configuración con SSL](https://help.github.com/articles/connecting-to-github-with-ssh/).  Este paso es opcional, útil para autenticarse con GitHub sin tener que especificar usuario y password cada vez.
+* Una vez instalado, abrir una terminal en la máquina local, ejecutar:
 ``` bash
 git clone <repo_url> 
 ```
