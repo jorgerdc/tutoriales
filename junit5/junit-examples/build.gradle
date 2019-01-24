@@ -1,0 +1,41 @@
+group = 'com.jorgerdc.tutoriales.junit5'
+apply plugin: 'java'
+
+ext {
+  slf4jVersion = '1.7.25'
+}
+
+test {
+  useJUnitPlatform {
+    excludeTags 'qa', 'prod'
+  }
+  testLogging {
+    events "passed", "skipped", "failed"
+  }
+}
+
+dependencies {
+
+  compile "org.slf4j:slf4j-api:$slf4jVersion"
+  runtime "org.slf4j:slf4j-log4j12:$slf4jVersion"
+
+  //JUnit Jupiter API for writing tests and extensions.
+  testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.2'
+  
+  //junit-jupiter-engine is the implementation of junit-platform-engine
+  //required only at runtime
+  testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
+  
+  //Annotations for configuring test suites on the JUnit Platform. 
+  //Supported by the JUnitPlatform runner and possibly by 
+  //third-party TestEngine implementations.
+  //the following line was commented out to avoid adding JUnit4 dependencies
+  // to the classpath. See Section 4.1.1 and 4.1.2 form more details.
+ // testCompile 'org.junit.platform:junit-platform-suite-api:1.3.2'
+    
+}
+
+repositories {
+  jcenter()
+  mavenCentral()
+}
