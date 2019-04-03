@@ -4,7 +4,7 @@ Esta carpeta contiene documentos que indican a nivel general la forma en la que 
 Otro aspecto importante de estos documentos, es la adopción de convenciones y uso de buenas prácticas  de tal forma que el código y el contenido de cada proyecto tenga la mejor calidad  y  pueda ser mantenido y entendido de forma ágil.
 Se recomienda revisar  cada uno de los siguientes documentos en el orden que aparecen en  las siguientes secciones. 
 ### 1.2.  Uso de Github.
-* En la subcarpeta `github` se encuentra un documento llamado `ithub-guidelines.md` En el se definen los lineamientos y buenas prácticas  que deberán aplicarse para contribuir  con los proyectos independientemente de su tipo. 
+* En la subcarpeta `github` se encuentra un documento llamado `github-guidelines.md` En el se definen los lineamientos y buenas prácticas  que deberán aplicarse para contribuir  con los proyectos independientemente de su tipo. 
 * En caso de requerir practicar con algún repo de prueba, se puede emplear con toda libertad el repo [git-testing](https://github.com/jorgerdc/git-testing)
 
 ### 1.3 Eclipse.
