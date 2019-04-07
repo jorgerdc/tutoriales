@@ -163,6 +163,86 @@ git push origin <nombre-branch>
 	* Crear un “pull request”.
 ### 1.8 Pull Request y Merge
 Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecutado de forma exitosa, se deberá solicitar un “pull request” para que los cambios del branch sean integrados al repositorio original posterior a su revisión y aprobación por los integrantes del equipo de desarrollo.
+
+#### 1.8.1 Unificar commits antes De generar Pull Request
+* Durante el proceso de desarrollo de una tarea asociada a un branch, es posible realizar varias operaciones  `commit`  e inclusive operaciones  `push`  hacia el Fork.
+* Una vez que la tarea está lista para ser revisada, se deberá solicitar un "Pull Request" como se mencionó anteriormente.
+* Al existir varias operaciones  `commit`, el Pull Request incluirá la lista de todos los commits realizados por el programador.
+* Los revisores tendrán que revisar cada uno de estos commits lo cual puede ser tedioso o inclusive confuso. Lo ideal sería tener un solo commit ya que se trata de la primera revisión.
+* Git permite realizar una  _unificación_  de esta lista de commits de tal forma que el revisor verá uno solo y por lo tanto facilitará su revisión.
+* Lo anterior permite establecer la siguiente regla: Todos los programadores deberán unificar sus commits antes de crear un Pull Request.
+* Git hace uso del siguiente comando para realizar la unificación de commits:
+Ejecutando comando para unificar mensajes `'commits'`
+```bash
+ git rebase -i HEAD~X
+ Donde X representa el número de commits a unificar, para fines de este ejemplo 5.
+ git rebase -i HEAD~5
+```
+* En el siguiente ejemplo, se muestra un wizard a nivel consola en el cual se deben especificar ciertos paramatros necesarios para la tarea.
+* La siguiente sección muestra el primer paso de la configuración donde se puede observar un ménu con los históricos de los comentarios realizados y las posibles opciones a aplicar. Para efecto de este escenario seleccionaremos "squash = s"
+
+` Hash: Identificador de commit generado internamente por el motor de git`
+* Como se observa en el siguiente `wizard 1.0` existen tres columnas dentro de la interfaz:
+	* Columna 1: Hace referencia al tipo de comando a ejecutar, por defecto se encuentra `pick`, cada uno es un mensaje del histórico
+	* Columna 2: Representa el `hash`"generado por git" asociado al mensaje
+	* Columna 3: Muestra el mensaje correspondiente a ese hash.
+```bash
+`Wizard 1.0`
+'Columna 1'	'Columna 2'	'Columna 3' -->Estos títulos son para ejemplificar el escenario, en realidad el wizard no los muestra.
+'L1)' pick 		f7f3f6d 	changed my name a bit
+'L2)' pick 		310154e 	updated README formatting and added blame
+'L3)' pick		a5f4a0d 	added cat-filepick f7f3f6d changed my name a bit
+'L4)' pick 		310154e 	updated README formatting and added blame
+'L5)' pick 		a5f4a0d 	added cat-file
+'L = "Línea". Solo es representativo para fines de este ejemplo.'
+# Rebase f710f0f8..a5f4a0d onto 710f0f8
+# # Commands:
+# p, pick = use commit
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit # # If you remove a line here THAT COMMIT WILL BE LOST. # However, if you remove everything, the rebase will be aborted. ###
+```
+Nota: Para aplicar el cambio previamente  descrito se debe borrar la palabra "pick" y teclear la letra "s".
+* La primer línea `L1` no se modifica ya que representa el hash principal sobre el que se unificaran los mensajes.
+* Las líneas a modificar serían: L2, L3, L4 y L5 respectivamente.
+
+Una vez hecho lo anterior se debe mostrar el cambio como se muestra a continuación.
+```bash
+pick f7f3f6d changed my name a bit
+s 310154e updated README formatting and added blame
+s a5f4a0d added cat-filepick f7f3f6d changed my name a bit
+s 310154e updated README formatting and added blame
+s a5f4a0d added cat-file
+# Rebase 710f0f8..a5f4a0d onto 710f0f8
+# # Commands:
+# p, pick = use commit
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit # # If you remove a line here THAT COMMIT WILL BE LOST. # However, if you remove everything, the rebase will be aborted. ###
+```
+* Como se puede observar en la parte inferior se muestran la descripción de los comandos `pick`,`edit`,`squash`.
+* Guardar cambios correspondientes, esto será en funcion del editor configurado en el equipo.
+
+* Posterior a esto se mostrará la segunda pantalla del wizard en el que se deberá especificar los comentarios que queremos conservar para  la revisión.
+```bash
+# This is a combination of 5 commits.
+# This is the 1st commit message:
+'L1)' * changed my name a bit
+'L2)' * updated README formatting and added blame
+'L3)' * added cat-filepick f7f3f6d changed my name a bit
+'L4)' * updated README formatting and added blame
+'L5)' * added cat-file
+'L = "Línea". Solo es representativo para fines de este ejemplo.'
+```
+* Se debe mostrar con un mensaje "de preferencia" asociado al cambio, las lineas modificadas a diferencia de la primer interfaz, estas no tienen algun orden especifico y se puede agregar, borrar, actualizar. "debe ser descriptivo" que sea adecuado para los fines del cambio a subir en el PR.
+*  Como se muestra en el ejemplo se dejo mensaje de la `L4` y además se agrego texto.
+```bash
+# This is a combination of 5 commits.
+# This is the 1st commit message:
+'L4)' * added cat-file because it is missing file in previus version.
+```
+* Guardar cambios correspondientes, esto será en funcion del editor configurado en el equipo. Se recomienda ejecutar `git log` para estar seguros de lo realizado anteriormente.
+
+#### 1.8.2 Creación De Pull Request En Git Hub
+
 * Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente.
 * Para crear un pull request se hará uso de GitHub.
 * La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo upstream).
