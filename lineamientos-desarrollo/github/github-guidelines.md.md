@@ -170,80 +170,111 @@ Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecu
 * Al existir varias operaciones  `commit`, el Pull Request incluirá la lista de todos los commits realizados por el programador.
 * Los revisores tendrán que revisar cada uno de estos commits lo cual puede ser tedioso o inclusive confuso. Lo ideal sería tener un solo commit ya que se trata de la primera revisión.
 * Git permite realizar una  _unificación_  de esta lista de commits de tal forma que el revisor verá uno solo y por lo tanto facilitará su revisión.
-* Lo anterior permite establecer la siguiente regla: Todos los programadores deberán unificar sus commits antes de crear un Pull Request.
-* Git hace uso del siguiente comando para realizar la unificación de commits:
+
+* Lo anterior permite establecer la siguientes reglas:
+	1. Todos los programadores deberán unificar sus commits antes de crear un Pull Request.
+	2. Una vez que se ha creado el PR, ya NO se deberá realizar unificación. Es decir, la unificación de commits solo de debe realizar una vez , justo antes de hacer el primer  `push`  hacia el repo previo a la creación del PR.
 Ejecutando comando para unificar mensajes `'commits'`
 ```bash
  git rebase -i HEAD~X
- Donde X representa el número de commits a unificar, para fines de este ejemplo 5.
- git rebase -i HEAD~5
+ ```
+* El valor  `X`en el comando anterior debe ser sustituido por el número de commits que se van a unificar.
+* Para determinar este valor, ejecutar el comando  `git log`. El siguiente fragmento muestra una salida de este comando ( se omiten algunas líneas no relevantes por simplicidad):
 ```
-* En el siguiente ejemplo, se muestra un wizard a nivel consola en el cual se deben especificar ciertos paramatros necesarios para la tarea.
-* La siguiente sección muestra el primer paso de la configuración donde se puede observar un ménu con los históricos de los comentarios realizados y las posibles opciones a aplicar. Para efecto de este escenario seleccionaremos "squash = s"
+commit 303814664385dcbb36f34b3190ed3a1f600f5759 (HEAD -> dev-jorge-bootstrap-start)
+Author: jorgerdc <jorgerdc@gmail.com>
+Date:   Sat Mar 23 23:00:34 2019 -0600
+    add docs and examples of module 4
+    
+commit c1091158c1b4bef0906365592d7c0702d6bd6786
+Author: jorgerdc <jorgerdc@gmail.com>
+Date:   Sat Mar 16 15:54:16 2019 -0600
+    adding examples of module 4
+    
+commit 48d0831bd33e8b126df4cafff835b9e6c34dc7fb
+Author: jorgerdc <jorgerdc@gmail.com>
+Date:   Wed Feb 27 19:45:40 2019 -0600
+    Adding Navbar examples
 
-` Hash: Identificador de commit generado internamente por el motor de git`
-* Como se observa en el siguiente `wizard 1.0` existen tres columnas dentro de la interfaz:
-	* Columna 1: Hace referencia al tipo de comando a ejecutar, por defecto se encuentra `pick`, cada uno es un mensaje del histórico
-	* Columna 2: Representa el `hash`"generado por git" asociado al mensaje
-	* Columna 3: Muestra el mensaje correspondiente a ese hash.
+commit c3f69790c190a8e029eab3ccc9a06b4e09bb3467
+Author: jorgerdc <jorgerdc@gmail.com>
+Date:   Fri Feb 8 19:45:39 2019 -0600
+    adding bootstrap tutorial - first version
+```
+* Observar en la salida anterior una lista de varios commits. Cada uno de ellos cuenta con un identificador (hash) y entre otras cosas, su mensaje o descripción.
+* La lista de commits puede ser muy grande dependiendo de la historia de cambios del proyecto.
+* De esta historia se deberán identificar los commits que se desean unificar, iniciando en orden cronológico: de arriba hacia abajo. En esta muestra, se ha identificado que los últimos 4 commits pertenecen al branch en el que se está trabando y son los que se desean unificar.
+* Para identificar fácilmente esta lista, leer el mensaje o descripción del commit. Tip: Para salir de la historia de commits "git log", presionar  `q`.
+* Una vez determinado el valor de  `X`  ejecutar el comando con el valor correspondiente. Para este ejemplo será el 4:
+```
+git rebase -i HEAD~4
+```
+* Al ejecutar el comando anterior, aparecerá un Wizard a nivel consola en el cual se deberán aplicar las configuraciones que se describen a continuación. Nota: el Wizard será mostrado en el editor de texto configurado para GIT. Si se desea modificar o actualizar la configuración hacer clic  [aquí](https://help.github.com/en/articles/associating-text-editors-with-git).
+
+Ejemplo:
 ```bash
-`Wizard 1.0`
-'Columna 1'	'Columna 2'	'Columna 3' -->Estos títulos son para ejemplificar el escenario, en realidad el wizard no los muestra.
-'L1)' pick 		f7f3f6d 	changed my name a bit
-'L2)' pick 		310154e 	updated README formatting and added blame
-'L3)' pick		a5f4a0d 	added cat-filepick f7f3f6d changed my name a bit
-'L4)' pick 		310154e 	updated README formatting and added blame
-'L5)' pick 		a5f4a0d 	added cat-file
-'L = "Línea". Solo es representativo para fines de este ejemplo.'
-# Rebase f710f0f8..a5f4a0d onto 710f0f8
-# # Commands:
+pick c3f6979 adding bootstrap tuturial - first version
+pick 48d0831 Adding Navbar examples
+pick c109115 adding examples of module 4
+pick 3038146 add docs and examples of module 4
+
+# Rebase 06465fc..3038146 onto 06465fc (4 commands)
+#
+# Commands:
 # p, pick = use commit
+# r, reword = use commit, but edit the commit message
 # e, edit = use commit, but stop for amending
-# s, squash = use commit, but meld into previous commit # # If you remove a line here THAT COMMIT WILL BE LOST. # However, if you remove everything, the rebase will be aborted. ###
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
 ```
-Nota: Para aplicar el cambio previamente  descrito se debe borrar la palabra "pick" y teclear la letra "s".
-* La primer línea `L1` no se modifica ya que representa el hash principal sobre el que se unificaran los mensajes.
-* Las líneas a modificar serían: L2, L3, L4 y L5 respectivamente.
+* Observar que se ha sustituido el comando  `pick`  por el comando  `s`  (`squash`) a partir del segundo commit.
+* Guardar los cambios y salir del editor. Los comandos/opciones para realizar estas acciones dependerá del editor configurado.
+* Observar que al salir del editor, automáticamente se presentará un nuevo wizard. En esta ocasión se presenta un wizard para configurar los mensajes o descripción del commit unificado.
 
-Una vez hecho lo anterior se debe mostrar el cambio como se muestra a continuación.
-```bash
-pick f7f3f6d changed my name a bit
-s 310154e updated README formatting and added blame
-s a5f4a0d added cat-filepick f7f3f6d changed my name a bit
-s 310154e updated README formatting and added blame
-s a5f4a0d added cat-file
-# Rebase 710f0f8..a5f4a0d onto 710f0f8
-# # Commands:
-# p, pick = use commit
-# e, edit = use commit, but stop for amending
-# s, squash = use commit, but meld into previous commit # # If you remove a line here THAT COMMIT WILL BE LOST. # However, if you remove everything, the rebase will be aborted. ###
+Ejemplo :
 ```
-* Como se puede observar en la parte inferior se muestran la descripción de los comandos `pick`,`edit`,`squash`.
-* Guardar cambios correspondientes, esto será en funcion del editor configurado en el equipo.
-
-* Posterior a esto se mostrará la segunda pantalla del wizard en el que se deberá especificar los comentarios que queremos conservar para  la revisión.
-```bash
-# This is a combination of 5 commits.
+# This is a combination of 4 commits.
 # This is the 1st commit message:
-'L1)' * changed my name a bit
-'L2)' * updated README formatting and added blame
-'L3)' * added cat-filepick f7f3f6d changed my name a bit
-'L4)' * updated README formatting and added blame
-'L5)' * added cat-file
-'L = "Línea". Solo es representativo para fines de este ejemplo.'
-```
-* Se debe mostrar con un mensaje "de preferencia" asociado al cambio, las lineas modificadas a diferencia de la primer interfaz, estas no tienen algun orden especifico y se puede agregar, borrar, actualizar. "debe ser descriptivo" que sea adecuado para los fines del cambio a subir en el PR.
-*  Como se muestra en el ejemplo se dejo mensaje de la `L4` y además se agrego texto.
-```bash
-# This is a combination of 5 commits.
-# This is the 1st commit message:
-'L4)' * added cat-file because it is missing file in previus version.
-```
-* Guardar cambios correspondientes, esto será en funcion del editor configurado en el equipo. Se recomienda ejecutar `git log` para estar seguros de lo realizado anteriormente.
+adding bootstrap tuturial - first version
 
+# This is the commit message #2:
+Adding Navbar examples
+
+# This is the commit message #3:
+adding examples of module 4
+
+# This is the commit message #4:
+add docs and examples of module 4
+
+# Please enter the commit message for your changes. Lines starting
+```
+* Se recomienda dejar un solo mensaje en lugar de tener un comentario por cada commit.
+* Este mensaje debe ser claro, y debe describir los cambios que se hicieron en los commits que se están unificando.
+
+Ejemplo :
+```
+# This is a combination of 4 commits.
+# This is the 1st commit message:
+
+Adding bootstrap tuturial - first version
+
+# Please enter the commit message for your changes. Lines starting
+```
+* Guardar los cambios y salir de editor para que el comando sea ejecutado.
+* Aparecerá una salida similar a la siguiente con la que se da por concluida la unificación de commits.
+```
+create mode 100644 bootstrap/ejemplos/modulo05/raven-back3-original.jpg
+create mode 100644 bootstrap/ejemplos/modulo05/raven.png
+Successfully rebased and updated refs/heads/dev-jorge-bootstrap-start.
+```
+* Finalmente, para asegurar que el primer PR contenga únicamente el commit unificado, se recomienda eliminar el branch de GitHub y realizar un nuevo push:
+```
+git push origin <nombre-branch>
+```
 #### 1.8.2 Creación De Pull Request En Git Hub
 
-* Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente.
+* Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente : `git push origin <nombre-branch>`.
 * Para crear un pull request se hará uso de GitHub.
 * La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo upstream).
 ![pull.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull.png)
