@@ -174,11 +174,12 @@ Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecu
 * Lo anterior permite establecer la siguientes reglas:
 	1. Todos los programadores deberán unificar sus commits antes de crear un Pull Request.
 	2. Una vez que se ha creado el PR, ya NO se deberá realizar unificación. Es decir, la unificación de commits solo de debe realizar una vez , justo antes de hacer el primer  `push`  hacia el repo previo a la creación del PR.
-Ejecutando comando para unificar mensajes `'commits'`
+
+El comando para realizar la unificación de commits es:
 ```bash
  git rebase -i HEAD~X
  ```
-* El valor  `X`en el comando anterior debe ser sustituido por el número de commits que se van a unificar.
+* El valor  `X` en el comando anterior debe ser sustituido por el número de commits que se van a unificar.
 * Para determinar este valor, ejecutar el comando  `git log`. El siguiente fragmento muestra una salida de este comando ( se omiten algunas líneas no relevantes por simplicidad):
 ```
 commit 303814664385dcbb36f34b3190ed3a1f600f5759 (HEAD -> dev-jorge-bootstrap-start)
@@ -204,8 +205,8 @@ Date:   Fri Feb 8 19:45:39 2019 -0600
 * Observar en la salida anterior una lista de varios commits. Cada uno de ellos cuenta con un identificador (hash) y entre otras cosas, su mensaje o descripción.
 * La lista de commits puede ser muy grande dependiendo de la historia de cambios del proyecto.
 * De esta historia se deberán identificar los commits que se desean unificar, iniciando en orden cronológico: de arriba hacia abajo. En esta muestra, se ha identificado que los últimos 4 commits pertenecen al branch en el que se está trabando y son los que se desean unificar.
-* Para identificar fácilmente esta lista, leer el mensaje o descripción del commit. Tip: Para salir de la historia de commits "git log", presionar  `q`.
-* Una vez determinado el valor de  `X`  ejecutar el comando con el valor correspondiente. Para este ejemplo será el 4:
+* Para identificar fácilmente esta lista, leer el mensaje o descripción del commit. Tip: Para salir del comando `git log` presionar `q`.
+* Una vez determinado el valor de  `X`  ejecutar el comando con el valor correspondiente. Para este ejemplo será el 4.
 ```
 git rebase -i HEAD~4
 ```
@@ -214,9 +215,9 @@ git rebase -i HEAD~4
 Ejemplo:
 ```bash
 pick c3f6979 adding bootstrap tuturial - first version
-pick 48d0831 Adding Navbar examples
-pick c109115 adding examples of module 4
-pick 3038146 add docs and examples of module 4
+s 48d0831 Adding Navbar examples
+s c109115 adding examples of module 4
+s 3038146 add docs and examples of module 4
 
 # Rebase 06465fc..3038146 onto 06465fc (4 commands)
 #
@@ -230,6 +231,7 @@ pick 3038146 add docs and examples of module 4
 ```
 * Observar que se ha sustituido el comando  `pick`  por el comando  `s`  (`squash`) a partir del segundo commit.
 * Guardar los cambios y salir del editor. Los comandos/opciones para realizar estas acciones dependerá del editor configurado.
+* En caso de cancelar la ejecución del comando `git rebase` se deberán comentar las 4 líneas que contiene a cada uno de los commits. Con esta acción Git no detectará acción a ejecutar y por lo tanto cancelará la ejecución del comando y no mostraría la segunda parte del wizard.
 * Observar que al salir del editor, automáticamente se presentará un nuevo wizard. En esta ocasión se presenta un wizard para configurar los mensajes o descripción del commit unificado.
 
 Ejemplo :
