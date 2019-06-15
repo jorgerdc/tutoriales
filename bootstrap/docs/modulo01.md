@@ -1,4 +1,4 @@
-﻿# Bootstrap
+# Bootstrap
 ## 1. Introducción
 * El código de los ejemplos de este módulo se encuentran en GitHub, en la carpeta `ejemplos/modulo01`
 ### 1.1 ¿Qué es Bootstrap?
@@ -46,7 +46,7 @@
 * Bootstrap hace uso de estilos globales empleados en todas las vistas. De aquí la importancia de conocerlos y tenerlos presentes en todo momento.
 	* Uso de html 5 doctype
 	* Responsive meta-tag
-	* Uso de [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/) para proporcionar un *render* homogéneo entre navegadores y dispositivos móviles.
+	* Uso de Reboot para proporcionar un *render* homogéneo entre navegadores y dispositivos móviles.
 	* Para obtener un mejor dimensionamiento  de los elementos empleando CSS,  se actualiza el valor de  la propiedad `box-sizing` de `content-box` a `border-box`.
 ### 1.3 Obtener e Instalar Bootstrap
 * Bootstrap se puede descargar (archivo zip)  en su forma *compilada* (¡en bootstrap los archivos CSS se compilan empleando  *Sass compiler* !) y  *reducida*   (archivos css y js reducidos).
@@ -86,7 +86,7 @@ https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css
 ### 1.4  Bootstrap theming
 * A partir de Bootstrap 4 se hace uso de *Variables Saas* , *Saas Maps*, y CSS personalizado para construir la apariencia de un sitio web. 
 #### 1.4.1 Variables Saas
-* Las variables  Saas definen valores por default.  Estos valores pueden ser sobrescritos empleando scripts saas  (archivos con extensión saas: `custom.scss`). El archivo personalizado realizará `@import` de los archivos saas de Bootstrap para extender o sobrescribir  su valor.  En capítulos posteriores se hablará de este tema a detalle.
+* Las variables  Saas tienen definen valores por default.  Estos valores pueden ser sobrescritos empleando scripts saas  (archivos con extensión saas: `custom.scss`). El archivo personalizado realizará `@import` de los archivos saas de Bootstrap para extender o sobrescribir  su valor.
 ```scss
 $body-bg: #000;
 ```
@@ -98,7 +98,7 @@ $theme-colors: (
   "danger": #ff4136
 );
 ```
-* Este tipo de definiciones se pueden sobrescribir empleando un archivo `saas`personalizado. De forma similar, se hablará de este tema en módulos posteriores.
+* Este tipo de definiciones se pueden sobrescribir empleando un archivo `saas`personalizado.
 #### 1.4.3 Functions.
 * Las funciones representan otro elemento  para personalizar la apariencia de un sitio. 
 ```scss
