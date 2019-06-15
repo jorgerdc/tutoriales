@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+      crossorigin="anonymous">
+    <title>Capturar Curso - Parte 1</title>
+  </head>
+  <body>
+  	<div class="container">
+      <h4>Capturar Curso</h4>
+      <h6 class="text-secondary">Datos generales</h6>
+  	 <form action="">
+      <!-- row 1-->
+      <div class="form-group row">
+        <label for="nombre" class="col-md-2 col-form-label">Nombre: *</label>
+        <input type="text" name="nombre" id="nombre" class="form-control col-md-7" 
+          placeholder="Nombre del curso">
+        <label for="horas" class="col-md-2 col-form-label">Total de horas: *</label>
+        <input type="text" name="horas" id="horas" class="form-control col-md-1" 
+            placeholder="#">
+      </div>
+      <!-- row 2-->
+      <div class="form-group form-row">
+        <label for="descripcion" class="col-md-2 col-form-label">Descripci&oacute;n:*</label>
+        <textarea class="form-control col-md-4" name="descripcion" id="descripcion" 
+            placeholder="Descripcion del curso" rows="5"></textarea>
+        <label for="aprendizaje" class="col-md-2 col-form-label">
+          Aprendizaje adquirido:*
+        </label>
+        <textarea class="form-control col-md-4" name="aprendizaje" id="aprendizaje" 
+            placeholder="Aprendizaje adquirido en el curso" rows="5"></textarea>
+      </div>
+      <!-- row 3-->
+      <div class="form-group form-row">
+        <label for="landing" class="col-md-2 col-form-label">Lannding Page:*</label>
+        <input type="text" name="landing" id="landing" class="form-control col-md-4" 
+          placeholder=" http://www.landing.page.com">
+        <label for="landing" class="col-md-2 col-form-label">Logo:*</label>
+        <div class="custom-file col-md-4 col-form-label form-group">
+          <label class="custom-file-label " for="logo">Selecconar Archivo</label>
+          <input type="file" class="custom-file-input" id="logo" name="logo">
+        </div>
+      </div>
+      <!-- row 4-->
+      <div class="form-group form-row">
+        <label class="col-form-label col-md-2" for="modalidad-radios">Modalidad:*</label>
+        <div class="col-md-4" id="modalidad-radios">
+          <!-- radio 1-->
+          <div class="custom-control custom-radio custom-control-inline" id="modalidad-radios">
+            <input type="radio" name="modalidad" id="presencial" class="custom-control-input">
+            <label for="presencial" class="custom-control-label">Presencial</label>
+          </div>
+          <!-- radio 2-->
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" name="modalidad" id="en-linea" class="custom-control-input">
+            <label for="en-linea" class="custom-control-label">En l&iacute;nea</label>
+          </div>
+          <!-- radio 3-->
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" name="modalidad" id="hibrido" class="custom-control-input">
+            <label for="hibrido" class="custom-control-label">H&iacute;brido</label>    
+          </div>
+        </div>
+        <label class="col-md-2 col-form-label" for="status">Status:* </label>
+        <input type="text" name="landing" id="status" class="form-control col-md-2" 
+          value="VIGENTE" readonly="true">
+      </div>   
+      <!-- row 5-->
+      <div class="form-group form-row">
+        <div class="offset-sm-5 col-sm-6">
+          <input class="btn btn-primary" type="reset" value="Limpiar">
+          <button type="submit" class="btn btn-primary">Siguiente</button>  
+        </div>
+      </div>
+     </form>  
+   </div>
+  
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
+      crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
