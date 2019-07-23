@@ -20,13 +20,14 @@ import org.apache.logging.log4j.Logger;
 /**
  * Basic class to show in console some levels log, taking properties file as main
  * configuration.
+ * Some log levels taking a properties file as the source of configuration.
  * In case of error the console will show error as:
  * ERROR StatusLogger No log4j2 configuration file found. Using default configuration:
  * logging only errors to the console.
  */
 public class HelloWorldLog4j2 {
 
-  private static final Logger LOGGER = LogManager.getLogger(HelloWorldLog4j2.class.getName());
+  private static final Logger LOG = LogManager.getLogger(HelloWorldLog4j2.class.getName());
 
   /**
    * Method to show in differents log levels of some messages as example a good
@@ -34,8 +35,11 @@ public class HelloWorldLog4j2 {
    * @param args
    */
   public static void main(String[] args) {
-    LOGGER.debug("Debug Message Logged !!!");
-    LOGGER.info("Info Message Logged !!!");
-    LOGGER.error("Error Message Logged !!!", new NullPointerException("NullError"));
+    LOG.info("This Will Be Printed On Info");
+    LOG.debug("This Will Be Printed On Debug");
+    LOG.warn("This Will Be Printed On Warn");
+    LOG.error("This Will Be Printed On Error");
+    LOG.fatal("This Will Be Printed On Fatal");
+    LOG.info("Appending string: {}.", "Hello, World");
   }
 }
