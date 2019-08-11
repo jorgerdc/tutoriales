@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="logger declaration" enabled="true" name="logdef">${:import(org.slf4j.Logger,org.slf4j.LoggerFactory)}&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="logger declaration" enabled="true" name="logdef">${:import(org.apache.logging.log4j.LogManager,org.apache.logging.log4j.Logger)}&#13;
 	/**&#13;
 	 * Logger para todas las instancias de la clase&#13;
 	 */&#13;
-	private static final Logger ${name} = LoggerFactory.getLogger(${enclosing_type}.class);</template></templates>
+	private static final Logger ${name} = LogManager.getLogger(${enclosing_type}.class);</template></templates>

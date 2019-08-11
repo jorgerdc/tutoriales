@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="debug message" enabled="true" name="debug">${logger:var(org.slf4j.Logger)}.debug("${cursor}");</template></templates>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="debug message" enabled="true" name="debug">${logger:var(org.apache.logging.log4j.Logger)}.debug("${cursor}");</template></templates>
