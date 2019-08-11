@@ -163,7 +163,6 @@ git push origin <nombre-branch>
 	* Crear un “pull request”.
 ### 1.8 Pull Request y Merge
 Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecutado de forma exitosa, se deberá solicitar un “pull request” para que los cambios del branch sean integrados al repositorio original posterior a su revisión y aprobación por los integrantes del equipo de desarrollo.
-
 #### 1.8.1 Unificar commits antes De generar Pull Request
 * Durante el proceso de desarrollo de una tarea asociada a un branch, es posible realizar varias operaciones  `commit`  e inclusive operaciones  `push`  hacia el Fork.
 * Una vez que la tarea está lista para ser revisada, se deberá solicitar un "Pull Request" como se mencionó anteriormente.
@@ -275,7 +274,6 @@ Successfully rebased and updated refs/heads/dev-jorge-bootstrap-start.
 git push origin <nombre-branch>
 ```
 #### 1.8.2 Creación De Pull Request En Git Hub
-
 * Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente : `git push origin <nombre-branch>`.
 * Para crear un pull request se hará uso de GitHub.
 * La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo upstream).
