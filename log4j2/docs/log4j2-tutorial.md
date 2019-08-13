@@ -28,52 +28,88 @@
 	5. Scala API
 * En la siguiente liga se encuentrar la configuración tradicional y appenders mencionados en el punto anterior: https://logging.apache.org/log4j/2.x/maven-artifacts.html
 ### Archivo de configuración o implementación
-* Existen 4 diversos tipo de configuración o implementación, tales como:
-	 1. Json
-	 2. Yaml
-	 3. Xml
-	 4. Archivo de propiedades "fileName.properties".
+* Existen diversos formatos para realizar la configuración de Log4J :
+	1. Json
+	2. Yaml
+	3. Xml
+	4. Archivo de propiedades "fileName.properties".
 	* Para configurar cada una de las implementaciones visitar la liga correspondiente.
 		1. `Json` https://logging.apache.org/log4j/2.x/manual/configuration.html#JSON
 		2. `Yaml`https://logging.apache.org/log4j/2.x/manual/configuration.html#YAML
 		3. `Xml` https://logging.apache.org/log4j/2.x/manual/configuration.html#XML
 				 
-* Log4J2 cuenta con una configuración por default si no encuentra archivo a cargar.
-* Log4j2 tiene una clase llamada: `ConfigurationFactory` la cual se encarga de la configuración de las diversas implementaciones.
-* `ConfigurationFactory` contiene lógica para encontrar la implementación a cargar, el orden de busqueda es el siguiente :
-	1. Primero buscará el archivo especificado en la propiedad: "log4j.configurationFile".
-	2. Si no existe el archivo `log4j.configurationFile` la clase `ConfigurationFactory` buscará `log4j2-test.properties`.
-	3. Si no existe el archivo anterior la clase `ConfigurationFactory` buscará `log4j2-test.yaml` o `log4j2-test.yml`.
-	4. Si no existe el archivo anterior la clase `ConfigurationFactory` buscará `log4j2-test.json` o `log4j2-test.jsn`.
-	5. Si no existe el archivo anterior la clase `ConfigurationFactory` buscará `log4j2-test.xml` 
-	6. Sí el archivo de prueba anterior no existe `ConfigurationFactory` buscará `log4j2.properties`
-	7. Sí el archivo de propiedades anterior no existe `ConfigurationFactory` buscará `log4j2.yaml` o `log4j2.yml`.
-	8. Sí el archivo anterior no existe  `ConfigurationFactory` buscará `log4j2.json` o `log4j2.jsn`.
-	9. Sí el archivo anterior no existe, `ConfigurationFactory` buscará `log4j2.xml`.
+* Log4J2 cuenta con una configuración por default que es aplicada en caso de no encontrar archivos de configuración.
+* Log4J2 define la clase `ConfigurationFactory` encargada de detectar la presencia de archivos de configuración con base a las siguientes reglas:
+	1. Se intenta ubicar el archivo especificado por una JVM system property:  `log4j.configurationFile`
+	2. En caso de no existir el archivo especificado en el punto anterior, la clase `ConfigurationFactory` buscará `log4j2-test.properties` in the classpath.
+	3. En caso de no existir el archivo especificado en el punto anterior, la clase `ConfigurationFactory` buscará `log4j2-test.yaml` o `log4j2-test.yml` in the classpath.
+	4. En caso de no existir el archivo especificado en el punto anterior, la clase `ConfigurationFactory` buscará `log4j2-test.json` o `log4j2-test.jsn` in the classpath.
+	5. En caso de no existir el archivo especificado en el punto anterior, la clase `ConfigurationFactory` buscará `log4j2-test.xml` in the classpath. 
+	6. En caso de no existir el archivo especificado en el punto anterior, la clase `ConfigurationFactory` buscará `log4j2.properties` in the classpath.
+	7. En caso de no existir el archivo especificado en el punto anterior, la clase `ConfigurationFactory` buscará `log4j2.yaml` o `log4j2.yml` in the classpath.
+	8. En caso de no existir el archivo especificado en el punto anterior, la clase  `ConfigurationFactory` buscará `log4j2.json` o `log4j2.jsn`.
+	9. En caso de no existir el archivo especificado en el punto anterior, la clase, `ConfigurationFactory` buscará `log4j2.xml`.
 	10. Sí no encuentra ningún archivo de configuración, se cargará el default y la salida de la traza de errores será en la consola 
-### Configurando log42 con archivo de propiedades
-* Agregar archivo log42.properties en la ruta: `/src/main/resources` 
-
-Datos de archivo de propiedades
+### Configurando Log4J2 a través de un archivo properties.
+* Agregar archivo log4j2.properties en la ruta: `/src/main/resources` 
 ```bash
-status = error
+#Nivel de eventos Log4j internos que deben registrarse en la consola. 
+#Se recomienda poner debug para mostrar el comportamiento de un aplicativo ya que manda a consola registro de 
+lo que sucede incluso antes de encontrar el archivo "properties", util para encontrar errores de inicialización.
+#Posibles valores: "trace", "debug", "info", "warn", "error" and "fatal"
+status=debug
+
+#File name. "Optional"
 name = PropertiesConfig
  
-filters = threshold
+ #Path log file
+ property.filename = logs/logExample
  
-filter.threshold.type = ThresholdFilter
-filter.threshold.level = debug
+ #Type appender, this can be console, file, rolling, etc.
+appenders = console, file
  
-appenders = console
- 
+ ##		File configuration section
+ #FileAppender to initialize configuration
+appender.file.type = File
+appender.file.name = LOGFILE
+appender.file.fileName=${filename}/log4j2
+appender.file.layout.type=PatternLayout
+
+# Specify the pattern of the logs
+appender.file.layout.pattern=[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+
+#Configuration to writte in file
+loggers=file
+logger.file.name=log4j2.HelloWorldLog4j2
+logger.file.level = info
+logger.file.appenderRefs = file
+logger.file.appenderRef.file.ref = LOGFILE
+
+
+##		Console configuration section
+# ConsoleAppender to initialize configurations
 appender.console.type = Console
 appender.console.name = STDOUT
 appender.console.layout.type = PatternLayout
+
+# Specify the pattern of the logs
 appender.console.layout.pattern = %d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
  
-rootLogger.level = debug
+ #Configuration appender type, in this case show logs in console
 rootLogger.appenderRefs = stdout
 rootLogger.appenderRef.stdout.ref = STDOUT
+ 
+ #Level of events that belong to a class
+rootLogger.level = info
+#In addition it can configure in code, the equivalent values of level are:
+#		OFF  		   0
+#		FATAL 	 100
+#		ERROR  200
+#		WARN   300
+#		INFO     400
+#		DEBUG  500
+#		TRACE   600
+#		ALL  Integer.MAX_VALUE 
 ```
 * Agregar la configuración correspondiente "anexar dependencia", para este caso de prueba usaremos la herramienta gradle.
 
@@ -85,13 +121,13 @@ dependencies {
 }
 ```
 #
-### Descripción LogManager
+### 2 LogManager
 * Es una clase java con características especiales para log4j2.
-* Esta clase es usada por el cliente de la aplicación para solicitar las instancias de logger.
+* Esta clase es usada por el usuario de la aplicación para crear las instancias de logger.
 * Gestiona la configuración de logging framework, este se encarga de leer la configuración inicial que se tendra en las bitácoras de la aplicación.
-* Contiene configuración default, sí no se especifica alguna en particular.
+* Define la configuración que es aplicada por default.
 * Se puede especificar el nivel de logeo `info, debug, fatal, etc`.
-* Se carga durante el inicio del aplicativo pero no se puede modificar subsecuentemente cargado.
+* Se carga durante el inicio de la aplicación, no es posible modificarla posteriormente.
 * La configurarción se puede realizar mediante una clase java.
 #
 * Ejecutar la siguiente clase para confirmar que la configuración anterior sea correcta.
@@ -118,6 +154,6 @@ public class HelloWorld {
 java.lang.NullPointerException: NullError
 	at log4j2.HelloWorld.main(HelloWorld.java:23) [main/:?]
 ```
-
+Fin de modulo
 
 

@@ -27,7 +27,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class HelloWorldLog4j2 {
 
-  private static final Logger LOG = LogManager.getLogger(HelloWorldLog4j2.class.getName());
+  private static final Logger logger = LogManager.getLogger(HelloWorldLog4j2.class.getName());
 
   /**
    * Method to show in differents log levels of some messages as example a good
@@ -35,11 +35,11 @@ public class HelloWorldLog4j2 {
    * @param args
    */
   public static void main(String[] args) {
-    LOG.info("This Will Be Printed On Info");
-    LOG.debug("This Will Be Printed On Debug");
-    LOG.warn("This Will Be Printed On Warn");
-    LOG.error("This Will Be Printed On Error");
-    LOG.fatal("This Will Be Printed On Fatal");
-    LOG.info("Appending string: {}.", "Hello, World");
+    logger.info("This Will Be Printed On Info");
+    logger.debug("This Will Be Printed On Debug");
+    logger.warn("This Will Be Printed On Warn");
+    logger.error("This Will Be Printed On Error");
+    logger.fatal("This Will Be Printed On Fatal");
+    logger.info("Appending string: {}.", "Hello, World");
   }
 }
