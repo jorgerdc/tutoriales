@@ -27,7 +27,9 @@ import org.apache.logging.log4j.Logger;
  */
 public class HelloWorldLog4j2 {
 
+
   private static final Logger logger = LogManager.getLogger(HelloWorldLog4j2.class.getName());
+
 
   /**
    * Method to show in differents log levels of some messages as example a good
