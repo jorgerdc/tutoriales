@@ -34,6 +34,7 @@ setInterval(tick, 1000);
 ```
 * En este caso, se invoca a la función `tick` cada segundo. Dicha función actúa como *callback* de `setInterval`
 * En la práctica, las aplicaciones llaman una sola vez a `ReactDOM.render` y se hace uso de  componentes de tipo *stateful*
+* La función `render`acepta un parámetro que corresponde al objeto Javascript donde se realizará el *render* del elemento. En este caso en el elemento raíz `<div id="root">`.
 #### 2.1.2 Actualización dinámica.
  * ReactJS compara  el estado del elemento actual con el siguiente y actualiza únicamente las diferencias para mostrar el nuevo estado.
  * La forma correcta de visualizar los cambios de una vista es pensar en  **cómo se debe visualizar una vista en cierto instante en el tiempo**  en lugar de pensar en **cómo actualizarla a lo largo del tiempo** . 
