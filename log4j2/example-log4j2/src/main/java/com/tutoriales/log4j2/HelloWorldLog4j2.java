@@ -12,7 +12,7 @@
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  */
-package log4j2;
+package com.tutoriales.log4j2;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
