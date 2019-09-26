@@ -3,9 +3,11 @@
 En este documento se presenta la configuración de la herramienta de desarrollo Eclipse que se debe aplicar por parte de cada programador con la finalidad de homologar y automatizar en cierto grado la aplicación de los lineamientos y mejores prácticas de programación en Java.
 ### 1.1 Pasos iniciales.
 * Antes de iniciar con el proceso manual de configuración de la IDE de desarrollo, considerar reutilizar  el archivo `github-ws-gral.zip` .  Este archivo contiene un Workspace totalmente configurado con base a los lineamientos incluidos en el presente documento.  Dicho archivo puede ser descargado [aquí](https://github.com/jorgerdc/tutoriales/tree/master/lineamientos-desarrollo/eclipse).
-* Una vez que el workspace ha sido configurado ya sea manualmente o  a través de la descarga del archivo zip,  realizar las siguientes configuraciones en la IDE (externas al workspace).
-	* Abrir el archivo `SpringToolSuite4.ini` o `eclipse.ini`  que se encuentra en el directorio de instalación de la IDE.
-	* Agregar las siguientes líneas en negritas, justo después de la instrucción `openFile`
+#### 1.1.1 Configuraciones locales, externas  al workspace.
+Una vez que el workspace ha sido configurado ya sea manualmente o  a través de la descarga del archivo zip,  realizar las siguientes configuraciones en la IDE  la cuales por su naturaleza NO puede incluirse en el archivo ZIP ya que son totalmente dependientes de la máquina de desarrollo.
+* Instalar localmente  el JDK de Java  empleando la versión acordada para desarrollo. Por default el Workspace considera la versión 11.
+* Abrir el archivo `SpringToolSuite4.ini` o `eclipse.ini`  que se encuentra en el directorio de instalación de la IDE.
+* Agregar el parámetro  `-vm`  y su valor, justo después de la instrucción `openFile`
 ```bash
 openFile
 -vm
@@ -180,7 +182,7 @@ Para realizar esta configuración realizar los siguientes pasos:
 * `template-logdef.xml`
 
 Ambos archivos hacen referencia a instrucciones comúnmente empleadas para realizar el manejo de mensajes de log.  
-* El primer archivo permite insertar la siguiente liínea de código que contiene la definición de un atributo de tipo `Logger` empleada para el manejo de mensajes a bitácora:    
+* El primer archivo permite insertar la siguiente línea de código que contiene la definición de un atributo de tipo `Logger` empleada para el manejo de mensajes a bitácora:    
 ##### Ejemplo:
 ```java 
 private  static  Logger logger = LogManager.getLogger(Log4jExample.class);
