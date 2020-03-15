@@ -1,0 +1,25 @@
+plugins {
+  id 'org.springframework.boot'
+}
+
+jar{
+  archiveVersion =  '0.0.1-SNAPSHOT'
+}
+
+configurations {
+  all {
+    exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+  }
+}
+
+test {
+  useJUnitPlatform()
+}
+
+
+dependencies {
+  api 'org.springframework.boot:spring-boot-starter-web'
+  api 'org.springframework.boot:spring-boot-starter-log4j2'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

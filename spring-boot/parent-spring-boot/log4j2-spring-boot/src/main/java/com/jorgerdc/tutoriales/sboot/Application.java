@@ -1,8 +1,8 @@
 /**
  * Application.java
- * Creation Date: 08/07/2018, 23:54:55
+ * Creation Date: 17/07/2018, 18:43:26
  *
- * Copyright (C) The Project *raven-course-spring-boot* Authors.
+ * Copyright (C) The Project *properties-spring-boot* Authors.
  *
  * This software was created for didactic and academic purposes.
  * It can be used and even modified by referring to the author
@@ -13,32 +13,24 @@
  * included in all copies or substantial portions of the Software.
  */
 
-package com.jorgerdc;
+package com.jorgerdc.tutoriales.sboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Application Main class for this project.
+ * Application start point
  */
-@RestController
 @SpringBootApplication
 public class Application {
 
-  /**
-   * @return
-   */
-  @RequestMapping("/")
-  public String home() {
-    return "Hello World";
-  }
+	/**
+	 * Application main method
+	 * @param args
+	 */
+	public static void main(String[] args) {
 
-  /**
-   * @param args
-   */
-  public static void main(String[] args) {
-    SpringApplication.run(Application.class, args);
-  }
+		SpringApplication.run(Application.class, args);
+	}
+
 }

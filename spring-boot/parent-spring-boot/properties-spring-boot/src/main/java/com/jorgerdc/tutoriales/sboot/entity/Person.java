@@ -13,7 +13,7 @@
  * included in all copies or substantial portions of the Software.
  */
 
-package com.jorgerdc.tutoriales.sboot.bean;
+package com.jorgerdc.tutoriales.sboot.entity;
 
 /**
  * POJO used to inject properties.

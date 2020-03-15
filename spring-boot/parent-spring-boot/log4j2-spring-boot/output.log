@@ -1,0 +1,33 @@
+-2019-12-23 21:25:24.735 - INFO 1518 --- [main] om.jorgerdc.tutoriales.sboot.Application : Starting Application on lap-mac.local with PID 1518 (/Volumes/PROYS/git/individual/tutoriales/spring-boot/parent-spring-boot/log4j2-spring-boot/build/classes/java/main started by jorge in /Volumes/PROYS/git/individual/tutoriales/spring-boot/parent-spring-boot/log4j2-spring-boot)
+--2019-12-23 21:25:24.744 -DEBUG 1518 --- [main] om.jorgerdc.tutoriales.sboot.Application : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+--2019-12-23 21:25:24.745 - INFO 1518 --- [main] om.jorgerdc.tutoriales.sboot.Application : No active profile set, falling back to default profiles: default
+--2019-12-23 21:25:26.149 - INFO 1518 --- [main] om.jorgerdc.tutoriales.sboot.Application : Started Application in 1.945 seconds (JVM running for 2.859)
+--2019-12-23 21:26:37.343 -DEBUG 1518 --- [http-nio-8080-exec-3] toriales.sboot.controller.UserController : Using the Service UserInfoService to get data of user 1 
+--2019-12-23 21:26:37.347 -DEBUG 1518 --- [http-nio-8080-exec-3] tutoriales.sboot.service.UserInfoService : Building sample user data for id 10
+--2019-12-23 21:26:37.348 -DEBUG 1518 --- [http-nio-8080-exec-3] toriales.sboot.controller.UserController : Done. User detail: User [id=10, username=sampleUser, password=samplePassword, email=sample.user@mail.com]
+--2019-12-23 21:31:32.232 -DEBUG 1518 --- [http-nio-8080-exec-6] toriales.sboot.controller.UserController : Using the Service UserInfoService to get data of user 1 
+--2019-12-23 21:31:32.232 -DEBUG 1518 --- [http-nio-8080-exec-6] tutoriales.sboot.service.UserInfoService : Building sample user data for id 10
+--2019-12-23 21:31:32.233 -DEBUG 1518 --- [http-nio-8080-exec-6] toriales.sboot.controller.UserController : Done. User detail: User [id=10, username=sampleUser, password=samplePassword, email=sample.user@mail.com]
+--2019-12-23 21:31:32.885 -DEBUG 1518 --- [http-nio-8080-exec-8] toriales.sboot.controller.UserController : Using the Service UserInfoService to get data of user 1 
+--2019-12-23 21:31:32.886 -DEBUG 1518 --- [http-nio-8080-exec-8] tutoriales.sboot.service.UserInfoService : Building sample user data for id 10
+--2019-12-23 21:31:32.886 -DEBUG 1518 --- [http-nio-8080-exec-8] toriales.sboot.controller.UserController : Done. User detail: User [id=10, username=sampleUser, password=samplePassword, email=sample.user@mail.com]
+--2019-12-23 21:31:33.346 -DEBUG 1518 --- [http-nio-8080-exec-9] toriales.sboot.controller.UserController : Using the Service UserInfoService to get data of user 1 
+--2019-12-23 21:31:33.346 -DEBUG 1518 --- [http-nio-8080-exec-9] tutoriales.sboot.service.UserInfoService : Building sample user data for id 10
+--2019-12-23 21:31:33.347 -DEBUG 1518 --- [http-nio-8080-exec-9] toriales.sboot.controller.UserController : Done. User detail: User [id=10, username=sampleUser, password=samplePassword, email=sample.user@mail.com]
+--2019-12-23 21:31:43.689 - INFO 1540 --- [main] om.jorgerdc.tutoriales.sboot.Application : Starting Application on lap-mac.local with PID 1540 (/Volumes/PROYS/git/individual/tutoriales/spring-boot/parent-spring-boot/log4j2-spring-boot/build/classes/java/main started by jorge in /Volumes/PROYS/git/individual/tutoriales/spring-boot/parent-spring-boot/log4j2-spring-boot)
+--2019-12-23 21:31:43.700 -DEBUG 1540 --- [main] om.jorgerdc.tutoriales.sboot.Application : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+--2019-12-23 21:31:43.701 - INFO 1540 --- [main] om.jorgerdc.tutoriales.sboot.Application : No active profile set, falling back to default profiles: default
+--2019-12-23 21:31:45.121 - INFO 1540 --- [main] om.jorgerdc.tutoriales.sboot.Application : Started Application in 2.033 seconds (JVM running for 3.366)
+--2019-12-23 21:31:59.494 -DEBUG 1540 --- [http-nio-8080-exec-1] toriales.sboot.controller.UserController : Using the Service UserInfoService to get data of user 1 
+--2019-12-23 21:31:59.497 -DEBUG 1540 --- [http-nio-8080-exec-1] tutoriales.sboot.service.UserInfoService : Building sample user data for id 10
+--2019-12-23 21:31:59.498 -DEBUG 1540 --- [http-nio-8080-exec-1] toriales.sboot.controller.UserController : Done. User detail: User [id=10, username=sampleUser, password=samplePassword, email=sample.user@mail.com]
+--2019-12-23 21:44:18.837 - INFO 1560 --- [main] dc.tutoriales.sboot.test.UserServiceTest : Starting UserServiceTest on lap-mac.local with PID 1560 (started by jorge in /Volumes/PROYS/git/individual/tutoriales/spring-boot/parent-spring-boot/log4j2-spring-boot)
+--2019-12-23 21:44:18.853 -DEBUG 1560 --- [main] dc.tutoriales.sboot.test.UserServiceTest : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+--2019-12-23 21:44:18.855 - INFO 1560 --- [main] dc.tutoriales.sboot.test.UserServiceTest : No active profile set, falling back to default profiles: default
+--2019-12-23 21:44:21.138 - INFO 1560 --- [main] dc.tutoriales.sboot.test.UserServiceTest : Started UserServiceTest in 3.126 seconds (JVM running for 5.521)
+--2019-12-23 21:44:21.668 -DEBUG 1560 --- [main] tutoriales.sboot.service.UserInfoService : Building sample user data for id 10
+--2019-12-23 21:44:21.670 -DEBUG 1560 --- [main] dc.tutoriales.sboot.test.UserServiceTest : Get User Info from JUnit: User [id=10, username=sampleUser, password=samplePassword, email=sample.user@mail.com]
+--2019-12-23 21:50:38.124 -DEBUG 1540 --- [http-nio-8080-exec-4] toriales.sboot.controller.UserController : Using the Service UserInfoService to get data of user 1 
+--2019-12-23 21:50:38.125 -DEBUG 1540 --- [http-nio-8080-exec-4] tutoriales.sboot.service.UserInfoService : Building sample user data for id 10
+--2019-12-23 21:50:38.125 -DEBUG 1540 --- [http-nio-8080-exec-4] toriales.sboot.controller.UserController : Done. User detail: User [id=10, username=sampleUser, password=samplePassword, email=sample.user@mail.com]
+-

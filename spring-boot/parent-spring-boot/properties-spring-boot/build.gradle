@@ -1,6 +1,22 @@
+plugins {
+  id 'org.springframework.boot'
+}
 
-version =  '0.0.1-SNAPSHOT'
+jar{
+  archiveVersion =  '0.0.1-SNAPSHOT'
+}
+
+configurations {
+  all {
+    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+  }
+}
+
+test {
+  useJUnitPlatform()
+}
 
 dependencies {
-	testCompile("org.springframework.boot:spring-boot-starter-test")
+  implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
