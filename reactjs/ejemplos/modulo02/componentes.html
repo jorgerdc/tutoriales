@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Componentes en React con JSX</title>
+  </head>
+  <body>
+    <h2>Componentes en React con JSX</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- codigo JXS --->
+    <script type="text/babel">
+      //Este componente define un elemento Html simple    
+      function Saludo(props){
+        return <h2> Hola, mi nombre es <i>{props.nombre}</i>!</h2>
+      }
+      //Este componente está formado del componente <Saludo> y lo reutiliza.
+      function App(){
+        return (
+          <div>
+            <i> Mostrando diversios mensajes de saludo </i>
+            <Saludo nombre ="Juan"/>
+            <Saludo nombre="Paco"/>
+            <Saludo nombre="Mariana"/>
+            <Saludo nombre="Lucia"/>
+          </div>
+        );
+      }
+      //Dibujando App Notar el uso de <App/> en lugar de una variable.
+      ReactDOM.render(<App/>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
