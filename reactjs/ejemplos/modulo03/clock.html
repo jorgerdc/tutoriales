@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reloj con ReactJS</title>
+  </head>
+  <body>
+    <h2>Reloj con ReactJS - JSX</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- codigo JXS --->
+    <script type="text/babel">
+
+    class Clock extends React.Component {
+
+      /**
+       * Constructor. Se agrega un objeto date al estado del componente. Si
+       * Su valor llegara a cambiar el método render será invocado y por lo tanto
+       * La UI será actualizada
+       */
+      constructor(props){
+        //invocar siempre al constructor nbase
+        super(props);
+        // se agrega la fecha al estado de la clase.
+        this.state = {date: new Date()};
+      }
+      
+      /**
+       * Render. Actualiza la UI con el código definido en este método
+       * El valor de la fecha ahora se toma del estado de la clase.
+       */
+      render(){
+        return (
+          <div>
+            <h1>Mi reloj con ReactJS!</h1>
+            <h2> Son las {this.state.date.toLocaleTimeString()} </h2>
+          </div>
+        );
+      }
+
+      /**
+       * Se inicializa el timer justo después de montar el componente
+       * En el DOM
+       */
+      componentDidMount(){
+        this.timerId = setInterval(
+          () => this.tick(),
+          1000
+        );
+      }
+
+      /**
+       * Se liberan recursos justo antes de remover el componente del DOM.
+       */
+      componentWillUmount(){
+        clearInterval(this.timerId);
+      }
+
+      /**
+       * Este método actúa como callback del timer. Se invoca cada
+       * segundo. El método provoca un cambio en  state.date  Esto
+       * provoca un cambio en el estado de la clase y por lo tanto dispara
+       * la ejecución del método render.
+       */
+       tick(){
+        this.setState(
+          {date: new Date()}
+        );
+       }  
+    }
+
+    //ya fuera de la clase:
+    ReactDOM.render(<Clock/>, document.getElementById('root'));  
+    
+
+    </script>
+  </body>
+</html>
