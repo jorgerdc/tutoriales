@@ -29,7 +29,7 @@ class CourseList extends React.Component {
 <CourseList name="myCourses" />
 ```
 * Al código anterior se le conoce como *React Component class*  o *React Component Type*.
-* El componente puede acceder a una lista de parámetros llamados encapsulados en el objeto `props`.  Observar que el property `name`se especifica en el tag `<CourseList>`, el nombre del tag corresponde con el nombre del componente.
+* El componente puede acceder a una lista de parámetros  encapsulados en el objeto llamados `props`.  Observar que el property `name`se especifica en el tag `<CourseList>`, el nombre del tag corresponde con el nombre del componente.
 * Notar que el componente regresa el código a mostrar a través del método `render`.  A este código se le conoce como *description*.
 * Se suele emplear una sintaxis llamada *JSX* que permite escribir estas instrucciones de forma más sencilla.
 * En realidad, el método `render` regresa elementos `React`:
@@ -73,7 +73,9 @@ ReactDOM.render(
 );
 ```
 * En el ejemplo,  el elemento React llamado `myElement` invoca a una función JavaScript. El elemento puede contener cualquier código JavaScript válido  delimitado por llaves `{}` .
-* JSX se compila empleando **Babel** que produce código JavaScript.  Esto permite que las expresiones JSX puedan emplearse como valores de retorno de una función, el ciclos for, etc.
+* JSX se compila empleando **Babel** 
+* *Babel* es un compilador que produce código JavaScript a partir de JSX.  
+* Esto permite que las expresiones JSX puedan emplearse como valores de retorno de una función, el ciclos for, etc.
 ##### Ejemplo:
 ```jsx
 function getGreeting(user) {
@@ -101,6 +103,18 @@ const element = React.createElement(
 ```
 * Estos objetos son llamados *React elements* y pueden ser vistos como descripciones de lo que se desea ver en pantalla.
 * React lee estos objetos y los usa para construir el DOM y mantenerlos actualizados.
+* Los objetos  que son creados empleando el método `createElement`  están formados por  la siguiente estructura:
+##### Ejemplo:
+```javascript
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+```
+* Como se puede observar, el objeto contiene 2 atributos.: ```type``` y ```props```. 
 ### 1.3 Hola Mundo con React.
 * React ha sido diseñado para ser incorporado a un sitio web de forma gradual.
 * React puede ser empleado para agregar desde un simple componente a una página web existente, y hasta para crear aplicaciones basadas totalmente en React  grandes y complejas.
