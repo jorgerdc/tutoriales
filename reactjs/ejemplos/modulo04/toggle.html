@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Toggle con ReactJS</title>
+  </head>
+  <body>
+    <h2>Toggle con ReactJS - JSX</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- codigo JXS --->
+    <script type="text/babel">
+
+  class Toggle extends React.Component{
+
+  /**
+   *Constructor
+   */
+  constructor(props){
+    super(props);
+    this.state = {encendido: true}
+    //este binding es necesario para poder usar 'this.manejaClick' 
+    //en el html. Se explica más adente.
+    this.manejaClick = this.manejaClick.bind(this);   
+  }
+  
+  /**
+   *Método encargado de manejar el evento
+   */
+  manejaClick(){
+    this.setState( state => ({
+    encendido: !state.encendido
+  }));
+  }
+  
+  /**
+   * Render
+   */
+   render(){
+     return(
+       <button onClick={this.manejaClick}>
+         {this.state.encendido ? 'ON': 'OFF'}
+       </button>
+   );
+   }
+}
+ReactDOM.render(
+  <Toggle/>,document.getElementById('root')
+);
+    
+    </script>
+  </body>
+</html>
