@@ -4,12 +4,12 @@
 * La notación empleada en ReactJS para realizar el manejo de eventos es *camel case*
 * Empleando JSX el  código que atiende al evento es representado por una función y esta es pasada como parámetro al *event handler* 
 ##### Ejemplo:
-```html
+```jsx
 <button onClick={validaFormulario}>Enviar</button>
 ```
 * Para prevenir el comportamiento por default del elemento DOM se  debe invocar al método `preventDefault`
 ##### Ejemplo:
-```javascript
+```jsx
 function ActionLink(){
   function manejaClick(e){
 	e.preventDefault();
@@ -22,9 +22,9 @@ function ActionLink(){
 ``` 
 * La especificación del objeto e se puede consultar [aquí](https://reactjs.org/docs/events.html)
 * A este objeto se le conoce como *SyntheticEvent*
-* Si se hace uso de una clase ES6,  por convención el método que maneja al evento se define como un método de la clase.
+* Si se hace uso de una clase [ES6](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes),  por convención el método que maneja al evento se define como un método de la clase.
 ##### Ejemplo:
-```javascript
+```jsx
 class Toggle extends React.Component{
   /**
    *Constructor
@@ -42,7 +42,7 @@ class Toggle extends React.Component{
    */
   manejaClick(){
     this.setState( state => ({
-	  isToggleOn: !state.encendido
+      encendido: !state.encendido
 	}));
   }
   
@@ -52,9 +52,9 @@ class Toggle extends React.Component{
    render(){
      return(
        <button onClick={this.manejaClick}>
-         {this.state.prendido ? 'ON': 'OFFF'}
+         {this.state.encendido ? 'ON': 'OFF'}
        </button>
-	 );
+     );
    }
 }
 ReactDOM.render(
@@ -67,9 +67,9 @@ ReactDOM.render(
 * Por esta razón, se debe incluir la línea arriba mostrada en el constructor.
 * Si se omite esta línea, al incluir `this.manejaClick` en la expresión `onClick={this.manejaClick}`  se obtendría `undefined`.
 * Este comportamiento no es particular de ReactJS.  
-* En general, en JavaScript si se hace referencia a un método sin `()` después de su nombree, justo como se hace al usar `onClick`,  se debe realizar  la asociación o `bind`del método hacia la clase.
+* En general, en JavaScript si se hace referencia a un método sin `()` después de su nombre, justo como se hace al usar `onClick`,  se debe realizar  la asociación o `bind`del método hacia la clase.
 * Existe una sintaxis alterna para evitar este proceso de *binding*
-```javascript
+```jsx
 <button onClick={() => this.handleClick()}>
 ``` 
 *  La desventaja es que se crea un  nuevo callback cada vez que se realiza el render del botón. Esto puede generar detalles de desempeño.  Se recomienda  realizar el `binding` mencionado.
@@ -77,7 +77,7 @@ ReactDOM.render(
 ### 4.2  Parámetros en event handlers 
 * Los siguientes ejemplos son equivalentes:
 
-```javascript
+```jsx
 <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
 <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
 ``` 
