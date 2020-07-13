@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login/Logout con ReactJS</title>
+  </head>
+  <body>
+    <h2>Login/Logout con ReactJS - JSX</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+      /**
+       * Componente SaludoUsuario como función
+       */
+      function SaludoUsuario(){
+        return <h1>Bienvenido usuario!</h1>;
+      }
+
+      /**
+       * Componente SaludoInvitado como función
+       */
+      function SaludoInvitado(){
+        return <h1>Bienvenido invitado</h1>;
+      }
+
+      /**
+       * Componente Saludo como función
+       */
+      function Saludo(props){
+        const enSesion = props.enSesion;
+        if(enSesion){
+          return <SaludoUsuario/>;
+        }else{
+          return <SaludoInvitado/>;
+        }
+      }
+
+      /**
+       * Componente LoginButton como función
+       */
+      function LoginButton(props){
+        return <button onClick={props.onClick}>Iniciar sesión</button>; 
+      }
+
+      /**
+       * Componente LogoutButton como función
+       */
+      function LogoutButton(props){
+        return <button onClick={props.onClick}>Cerrar sesión</button>;
+      }
+
+      /**
+       * Componente ControlLogin como clase ES6
+       */
+      class ControlLogin extends React.Component{
+        constructor(props){
+          super(props);
+          this.loginClickHandler= this.loginClickHandler.bind(this);
+          this.logoutClickHandler= this.logoutClickHandler.bind(this);
+          this.state ={enSesion: false};
+        }
+        loginClickHandler(){
+          this.setState({enSesion: true});
+        }
+        logoutClickHandler(){
+          this.setState({enSesion: false});
+        }
+        render(){
+          const enSesion=this.state.enSesion;
+          let boton;
+          if(enSesion){
+            boton= <LogoutButton onClick={this.logoutClickHandler}/>;
+          } else{
+            boton= <LoginButton onClick={this.loginClickHandler}/>;
+          }
+          //muestra el botón y el saludo con base al valor de enSesion
+          return(
+            <div>
+              <Saludo enSesion={enSesion}/>              
+              {boton}
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(
+        <ControlLogin/>,document.getElementById('root')
+      );  
+    </script>    
+  </body>
+</html>

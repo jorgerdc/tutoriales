@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Correo electrónico con ReactJS</title>
+  </head>
+  <body>
+    <h2>Correo electrónico con ReactJS - JSX</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+      function MailBox(props){
+        const numEmailsSinLeer=props.emailsSinLeer.length;
+        return (
+          <div>
+            <h1>Bandeja de entrada</h1>
+            { numEmailsSinLeer >0 &&
+              <h2>Usted tiene {numEmailsSinLeer} emails nuevos.</h2>
+            }
+            { numEmailsSinLeer==0 &&
+              <h2>Felicidades! No tiene correos por leer.</h2>
+            }
+          </div>
+        );
+      }
+      const mensajes = ['m1','m2','m3'];
+      ReactDOM.render(
+        <div>
+          <MailBox emailsSinLeer={mensajes}/>
+          <MailBox emailsSinLeer={[]}/>
+        </div>
+        ,document.getElementById('root')
+      );  
+    </script>    
+  </body>
+</html>
