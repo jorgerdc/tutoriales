@@ -1,8 +1,12 @@
 ﻿# ReactJS
 ## 5. Rendering condicional
+* En general el concepto de Rendering condicional se refiere a la posibilidad de incorporar sentencias de control  javascript, como son  `if`, `else`, operador `?` , `:`, etc.,  dentro de código JSX para mostrar solo determinados componentes al momento de invocar a una operación `render`.
+
 ### 5.1. Render de ciertos componentes.
-* Es posible realizar la definición  de varios componentes que encargados de encapsular cierto comportamiento. 
-* Dependiendo del estado de la aplicación solo ciertos componentes pueden ser mostrados con base al cumplimiento de ciertas condiciones.
+*  A través del uso de una función o de una clase, es posible realizar la definición  de varios componentes. 
+* Dependiendo del estado de la aplicación o de alguna condición en particular solo ciertos componentes deberían ser mostrados. 
+* Con ayuda del estado del componente o con base  a los valores de sus `properties` se puede decidir qué contenido mostrar  (contenido condicionado).
+##### Ejemplo.
 * Considerar los siguientes 2 componentes que  muestran un mensaje de saludo dependiendo el tipo de persona: usuario o invitado.
 ```jsx
 function SaludoUsuario(){
@@ -106,9 +110,10 @@ ReactDOM.render(
   ,document.getElementById('root')
 );
 ```
-* En este ejemplo se crea una expresión booleana  `boolean && expression` la cual en javascript evalúa a `expression`
+* En este ejemplo se crea una expresión booleana  `boolean && expression`.  Al realizar la evaluación de esta expresión en Javascript se obtiene como resultado a la propia expresión representada por `expression` cuando `boolean`sea `true`. 
+* Dicho de otra forma,  `numEmailsSinLeer > 0 && <h2> ...</h2>` obtendrá como resultado al elemento `<h2>...</h2>` cuando `numEmailsSinLeer > 0` genere un valor verdadero. 
 * En la segunda expresión se compara con cero para simular la no existencia de emails por leer.
-* Finalmente observar en el segundo uso de `MailBox` se usa un arreglo vacío lo que provoca el render de una bandeja de entrada sin correos por leer.
+* Finalmente observar en el segundo uso de `MailBox`, se usa un arreglo vacío lo que provoca el render de una bandeja de entrada sin correos por leer.
 * Las siguientes expresiones muestran otras formas para manejar render condicional:
 ```jsx
 render(){
@@ -131,6 +136,5 @@ function WarningMessage(props){
   );
 }
 ```
-
 * Ver la carpeta `ejemplos` para revisar el código fuente.
 ##### Fin de módulo.
