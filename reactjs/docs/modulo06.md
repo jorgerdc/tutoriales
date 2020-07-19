@@ -30,7 +30,7 @@ const componentes = numeros.map(
 );
 ReactDOM.render(
   <ul>{componentes}</ul>,
-  document.getElementById('root');
+  document.getElementById('root')
 );
 ```
 * Notar que el código javascript dentro del código JSX se escribe entre `{}`.
@@ -61,7 +61,7 @@ Warning: Each child in a list should have a unique "key" prop.
 ```
 * Una llave o key hace referencia a un atributo especial que se requiere agregar a los componentes JSX cuando se generan listas. 
 #### 6.2 Keys
-* Keys ayudan a ReactJS  a identificar si alguno de los elementos de dicha lista ha cambiado o si alguno de sus elementos ha sido eliminado. 
+* Las Keys ayudan a ReactJS  a identificar si alguno de los elementos de dicha lista ha cambiado o si alguno de sus elementos ha sido eliminado. 
 * Cada elemento de la lista debe contar con valor *único* asignado como *key*. Típicamente su valor corresponde con algún identificador o id.
 * Los valores deben ser únicos entre elementos de la misma lista, es decir, los valores se pueden repetir pero en listas diferentes.
 * Se emplea el atributo `key` para especificar su valor.
@@ -79,9 +79,9 @@ const items = numeros.map((numero,index)=>
   <Item key = {index} value={index + 1 }/>
 );
 ```
-* Ojo: No emplear índices si el orden de los elementos de la lisa cambia.
+* Ojo: No emplear índices si el orden de los elementos de la lista cambia.
 #### 6.3 Generación de objetos JSX con keys.
-* La asignación de la *key*  a cada elemento de la lista se dene realizar cuando se escribe el elemento JSX en lugar de hacerlo con los elementos  HTML estándar.
+* La asignación de la *key*  a cada elemento de la lista se debe realizar cuando se escribe el elemento JSX en lugar de hacerlo con los elementos  HTML estándar.
 * Por ejemplo, suponer que se tiene un componente `ListItem` que  define a un elemento `<li>valor</li>`, la definición del atributo key  debe asignarse al  usar `<ListItem>` en lugar de hacerlo con el elemento `<li>`
 ##### Ejemplo:
 ```jsx
