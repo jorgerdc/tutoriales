@@ -82,9 +82,11 @@ ReactDOM.render(
 ```
 * Básicamente esta clase ilustra el uso de una variable `boton`y de una constante `enSesion` que se emplean para condicionar a los componentes que serán mostrados en pantalla.
 * Las variables que apunten a elementos o componentes pueden emplearse entre llaves `{}`  haciendo posible el render dinámico de un componente.
-### 5.2. Inline If, operadores lógicos.
-* Es posible insertar cualquier expresión JSX empleando `{}` como delimitadores. 	
-* Es posible escribir expresiones booleanas y operadores lógicos como `&&`, `||`, etc.
+### 5.2. Inline If, operadores lógicos.	
+* Es posible escribir expresiones booleanas cuyo operando izquierdo u operando izquierdo es cualquier expresión booleana Javascript delimitada por `{}`.  El operador lógico es `&&` y el operando derecho es una expresión JSX.  A nivel general:
+```jsx
+{expresionBooleanaEnJS} && <expresionJSX>...</expresionJSX>
+``` 
 ##### Ejemplo:
 ```jsx
 function MailBox(props){
@@ -114,12 +116,21 @@ ReactDOM.render(
 * Dicho de otra forma,  `numEmailsSinLeer > 0 && <h2> ...</h2>` obtendrá como resultado al elemento `<h2>...</h2>` cuando `numEmailsSinLeer > 0` genere un valor verdadero. 
 * En la segunda expresión se compara con cero para simular la no existencia de emails por leer.
 * Finalmente observar en el segundo uso de `MailBox`, se usa un arreglo vacío lo que provoca el render de una bandeja de entrada sin correos por leer.
-* Las siguientes expresiones muestran otras formas para manejar render condicional:
+* Las siguientes expresiones muestran otras formas para manejar render condicional empleando el operador ternario.
 ```jsx
 render(){
+  const enSesion=this.state.enSesion;
+  let boton;
+  //se hace uso del operador ternario 
+  //condición ? expresión1 : expresión2;   
+  boton = enSesion ?
+    <LogoutButton onClick={this.logoutClickHandler}/> :
+    <LoginButton onClick={this.loginClickHandler}/>;
+  //muestra el botón y el saludo con base al valor de enSesion
   return(
     <div>
-      El usuario <b>{enSesion ? 'está' : 'no está'}</b> en sesión. 
+      <Saludo enSesion={enSesion}/>              
+      {boton}
     </div>
   );
 }
