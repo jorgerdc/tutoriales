@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario b&aacute;sico ReactJS</title>
+  </head>
+  <body>
+    <h2>Manejo de m&uacute:ltiple elementos</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+    class MultipleElements extends React.Component {
+      constructor(props){
+        super(props);
+        this.state = {
+          nombre: 'Mi nombre',
+          descripcion: 'Descripción de mi mismo',
+          nivelEntrenamiento: 'basico',
+          enviaNotificaciones: false
+        };
+        //bind
+        this.changeHandler = this.changeHandler.bind(this);
+        this.submitHandler = this.submitHandler.bind(this);
+      }
+      changeHandler(event){    
+        const nombre = event.target.name;
+        let valor;
+        //el valor capturado de todos los elementos se puede sacar del atributo
+        //value excepto del checkbox. Para este elemento, se usa la siguiente
+        //validación
+        if (event.target.name === 'enviaNotificaciones'){
+          valor = event.target.checked;    
+        }else{
+          valor = event.target.value;
+        }
+        //Aquí se emplea el concepto de "computed property names", se
+        //explica más adelante.
+        this.setState(
+          {[nombre]: valor}
+        );
+      }
+      submitHandler(event){
+        alert('El estado de los elementos es: \n'
+          + this.state.nombre + '\n'
+          + this.state.descripcion + '\n'
+          + this.state.nivelEntrenamiento + '\n'
+          + this.state.enviaNotificaciones
+        );
+        event.preventDefault();
+      }
+      render(){
+        return(
+          <form onSubmit={this.submitHandler}>
+            Nombre: <br/>
+            <input type ="text" name="nombre" onChange={this.changeHandler} 
+              value={this.state.nombre}/><br/>
+            Descripci&oacute;n: <br/>
+            <textarea name="descripcion" onChange = {this.changeHandler} 
+              value={this.state.descripcion}></textarea><br/>
+            Nivel entrenamiento: <br/>
+            <select name="nivelEntrenamiento" onChange={this.changeHandler}
+              value ={this.state.nivelEntrenamiento}>
+              <option value="basico">B&aacute;sico</option>
+              <option value="intermedio">Intermedio</option>
+              <option value="avanzado">Avanzado</option>
+            </select><br/>
+            Enviar notificiaciones:<br/>
+            <input name="enviaNotificaciones" type = "checkbox" 
+              onChange={this.changeHandler} 
+              value = {this.state.enviarNotificaciones}/><br/>
+            <input type="submit" value="Enviar" />
+          </form>          
+        );
+      }
+    }
+    ReactDOM.render(<MultipleElements/>, document.getElementById('root'));
+    </script>    
+  </body>
+</html>

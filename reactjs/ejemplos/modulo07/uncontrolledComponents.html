@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario b&aacute;sico ReactJS</title>
+  </head>
+  <body>
+    <h2>Manejo de Uncontrolled elements - Uso de Refs.</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+    class UncontrolledComponents extends React.Component {
+      constructor(props){
+        super(props);
+        this.submitHandler = this.submitHandler.bind(this);
+        this.refNombre = React.createRef();
+        this.refApPat = React.createRef();
+        this.refApMat = React.createRef();
+      }
+      submitHandler(event){
+        event.preventDefault(); 
+         alert('Valores de los elementos: \n '+
+          this.refNombre.current.value + '\n' +
+          this.refApPat.current.value + '\n' +
+          this.refApMat.current.value + '\n'
+        );
+      }
+
+      render(){
+        return(
+          <form onSubmit={this.submitHandler}>
+          <label>
+            Nombre:
+            <input type="text" ref={this.refNombre} />
+          </label><br/>
+          <label>
+            Ap Pat:
+            <input type="text" ref={this.refApPat} />
+          </label><br/>
+          <label>
+            Ap Mat:
+            <input type="text" ref={this.refApMat} />
+          </label><br/>
+        <input type="submit" value="Submit" />
+      </form>
+        );
+      }  
+    }
+    ReactDOM.render(<UncontrolledComponents/>, document.getElementById('root'));
+    </script>    
+  </body>
+</html>
