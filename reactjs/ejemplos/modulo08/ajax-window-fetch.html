@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>AJAX básico con ReactJS</title>
+  </head>
+  <body>
+    <h2>Peticiones AJAX - ReactJS</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+    class AjaxBasico extends React.Component{
+      constructor(props){
+        super(props);
+        this.state = {
+          error: null,
+          isLoaded: false,
+          items: []
+        }
+      }
+
+      componentDidMount(){
+        //realiza la llamada AJAX
+        fetch("https://jsonplaceholder.typicode.com/posts",{
+          credentials: 'omit'})
+          .then(res => res.json())
+          .then (
+            (result) =>{
+              this.setState({
+                isLoaded: true,
+                items: result
+              });
+            }
+            ,
+            //Manejo del error
+            (error)=>{
+              this.setState({
+                isLoaded: true,
+                error
+              });
+            }
+          );
+      }
+
+      render(){
+        const{ error , isLoaded, items} = this.state;
+        if(error){
+          return <div>Error: {error.message}</div>
+        } else if (!isLoaded){
+           return <div>Cargando...</div>; 
+        }else{
+          return ( 
+            <ul>
+              {
+                items.map(item => (
+                  <li key={item.id}>User id: {item.userId}, title: {item.title}</li>
+                ))
+              }
+            </ul>
+          )
+        }
+
+      }
+    }
+    ReactDOM.render(<AjaxBasico/>, document.getElementById('root'));
+    </script>    
+  </body>
+</html>
