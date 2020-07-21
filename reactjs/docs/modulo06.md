@@ -101,7 +101,7 @@ function OrdenCompra(props){
 
 const  productos = ['Laptop','Mouse','Mochila'];
 ReactDOM.render(
-  <OrdenCompra productos {productos}/>,
+  <OrdenCompra productos={productos}/>,
   document.getElementById('root')
 );
 ```
