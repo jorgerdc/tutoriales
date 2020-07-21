@@ -83,14 +83,14 @@ ReactDOM.render(
 * Básicamente esta clase ilustra el uso de una variable `boton`y de una constante `enSesion` que se emplean para condicionar a los componentes que serán mostrados en pantalla.
 * Las variables que apunten a elementos o componentes pueden emplearse entre llaves `{}`  haciendo posible el render dinámico de un componente.
 ### 5.2. Inline If, operadores lógicos.	
-* Es posible escribir expresiones booleanas cuyo operando izquierdo sea cualquier expresión que se evalúe a verdadero o falso.  Para renderizar un componente por medio de un `inline-if` es necesario encerrar la expresión JSX entre `{ }`. A nivel general la sintaxis queda de la siguiente forma:
+* Es posible escribir expresiones booleanas cuyo operando izquierdo sea cualquier expresión que se evalúe a verdadero o falso.  Para renderizar un componente por medio de un `inline-if` es necesario encerrar la expresión JSX entre `{ }`. A nivel general la sintaxis queda de la siguiente forma:	
 ```jsx
-{expresionBooleanaEnJS} && <expresionJSX>...</expresionJSX>
+{expresionBooleanaEnJS && <expresionJSX>...</expresionJSX>}
 ``` 
-##### Ejemplo:
-```jsx
-* Observar que después de la expresión booleana se escribe el operador lógico  `&&`  seguido de la expresión a renderizar cuando la condición se evalua a  `true`.
-##### Ejemplo. 
+* Observar que después de la expresión booleana se escribe el operador lógico  `&&`  seguido de la expresión a renderizar cuando la condición se evalúa a  `true`.
+##### Ejemplo.
+* Simulación de una bandeja de entrada de correos electrónicos.
+```jsx 
 function MailBox(props){
   const numEmailsSinLeer=props.emailsSinLeer.length;
   return (
