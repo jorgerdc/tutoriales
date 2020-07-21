@@ -83,12 +83,14 @@ ReactDOM.render(
 * Básicamente esta clase ilustra el uso de una variable `boton`y de una constante `enSesion` que se emplean para condicionar a los componentes que serán mostrados en pantalla.
 * Las variables que apunten a elementos o componentes pueden emplearse entre llaves `{}`  haciendo posible el render dinámico de un componente.
 ### 5.2. Inline If, operadores lógicos.	
-* Es posible escribir expresiones booleanas cuyo operando izquierdo u operando izquierdo es cualquier expresión booleana Javascript delimitada por `{}`.  El operador lógico es `&&` y el operando derecho es una expresión JSX.  A nivel general:
+* Es posible escribir expresiones booleanas cuyo operando izquierdo sea cualquier expresión que se evalúe a verdadero o falso.  Para renderizar un componente por medio de un `inline-if` es necesario encerrar la expresión JSX entre `{ }`. A nivel general la sintaxis queda de la siguiente forma:
 ```jsx
 {expresionBooleanaEnJS} && <expresionJSX>...</expresionJSX>
 ``` 
 ##### Ejemplo:
 ```jsx
+* Observar que después de la expresión booleana se escribe el operador lógico  `&&`  seguido de la expresión a renderizar cuando la condición se evalua a  `true`.
+##### Ejemplo. 
 function MailBox(props){
   const numEmailsSinLeer=props.emailsSinLeer.length;
   return (
@@ -112,7 +114,7 @@ ReactDOM.render(
   ,document.getElementById('root')
 );
 ```
-* En este ejemplo se crea una expresión booleana  `boolean && expression`.  Al realizar la evaluación de esta expresión en Javascript se obtiene como resultado a la propia expresión representada por `expression` cuando `boolean`sea `true`. 
+* En este ejemplo se crea una expresión booleana  `boolean && expression`.  Al realizar su evaluación se obtiene como resultado a la propia expresión representada por `expression` cuando `boolean`sea `true`. 
 * Dicho de otra forma,  `numEmailsSinLeer > 0 && <h2> ...</h2>` obtendrá como resultado al elemento `<h2>...</h2>` cuando `numEmailsSinLeer > 0` genere un valor verdadero. 
 * En la segunda expresión se compara con cero para simular la no existencia de emails por leer.
 * Finalmente observar en el segundo uso de `MailBox`, se usa un arreglo vacío lo que provoca el render de una bandeja de entrada sin correos por leer.
