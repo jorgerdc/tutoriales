@@ -1,8 +1,8 @@
 ﻿# ReactJS
 ## 7. Formularios
 ### 7.1. Formularios en ReactJS
-* En ReactJS, formularios se comportan ligeramente diferente a otros elementos del DOM, debido principalmente a que cada formulario guarda o define un *estado interno*.
-* El comportamiento por default al hacer click en un botón *submit*  es enviar el formulario y mostrar una página nueva.
+* En ReactJS los formularios se comportan ligeramente diferente a otros elementos del DOM, debido principalmente a que cada formulario guarda o define un *estado interno*.
+* El comportamiento por default al hacer click en un botón *submit*  es enviar el formulario y mostrar una página nueva o simplemente recargar dicha página.
 * Sin embargo, en la mayoría de los casos se desea contar con una *función* javascript que se encargue de controlar el envío del formulario así como acceder a los valores capturados.
 * La forma estándar de realizar lo anterior es a través de un concepto llamado ***controlled components***.
 ### 7.2 Controlled components.
