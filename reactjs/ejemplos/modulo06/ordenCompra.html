@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Orden de compra ReactJS</title>
+  </head>
+  <body>
+    <h2>Lista de productos</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+      function Producto(props){
+      // forma correcta. Aquí no se hace uso de key
+      return <li>{props.numProducto + 1} - {props.nombre}</li>;
+      }
+
+      function OrdenCompra(props){
+        const productos = props.productos;
+        const productosJsx = productos.map((prod,index) =>
+          //forma correcta, aquí se debe asignar a la key
+          <Producto key ={index} nombre ={prod} numProducto ={index} />
+        );
+        return <ul>{productosJsx}</ul>
+      }
+      const productos = ['Laptop','Mouse','Mochila'];
+      ReactDOM.render(
+        <OrdenCompra productos = {productos}/>,document.getElementById('root')
+      ); 
+    </script>    
+  </body>
+</html>
