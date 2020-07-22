@@ -6,7 +6,7 @@
 * Sin embargo, en la mayoría de los casos se desea contar con una *función* javascript que se encargue de controlar el envío del formulario así como acceder a los valores capturados.
 * La forma estándar de realizar lo anterior es a través de un concepto llamado ***controlled components***.
 ### 7.2 Controlled components.
-* En un formulario, elementos como `<input>`, `<textarea>`, etc.,  mantienen un *estado interno*  que depende de los valores capturados por el usuario.
+* En un formulario, elementos como `<input>`, `<textarea>`, etc.,  mantienen un *estado interno*  que depende de los valores capturados por el usuario, es decir, cuando el usuario asigna, selecciona o captura un valor en alguno de los elementos que integran al formulario, cada uno de estos elementos adquiere un *estado*.
 * Por otro lado, en ReactJS, el estado de un componente se  representa a través del property `state`y se modifica empleando `setState()`.
 * En ReactJS estos 2 estados se pueden combinar. 
 * El componente que se encarga de mostrar al formulario también será el responsable de controlar lo que suceda en subsecuentes ediciones o capturas de datos por parte del usuario.
@@ -52,7 +52,7 @@ ReactDOM.render(<NameForm/>, document.getElementById('root'));
   Texto capturado
 </textarea>
 ```
-* A pesar de no contar con este atributo, ReactJS se emplea un atributo `value`para controlar el contenido del elemento:
+* A pesar de no contar con este atributo, en ReactJS se emplea un atributo llamado `value`para controlar el contenido del elemento:
 ```jsx
 render(){
   return(
