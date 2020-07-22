@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de compoentes ReactJS</title>
+  </head>
+  <body>
+    <h2>Lista de compoentes - JSX</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+      function NumberList(props){
+        const numeros = props.numeros;
+        const componentes =numeros.map(
+          (numero) => <li>{numero}</li>
+        );
+        return (
+          <ul>{componentes}</ul>
+        );
+      }
+
+      const numeros=[1,2,3,4,5];
+      ReactDOM.render(
+        <NumberList numeros={numeros} />,
+        document.getElementById('root')
+      );  
+    </script>    
+  </body>
+</html>

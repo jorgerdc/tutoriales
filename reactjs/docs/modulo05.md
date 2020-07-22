@@ -1,12 +1,13 @@
 ﻿# ReactJS
 ## 5. Rendering condicional
-* En general el concepto de Rendering condicional se refiere a la posibilidad de incorporar sentencias de control  javascript, como son  `if`, `else`, operador `?` , `:`, etc.,  dentro de código JSX para mostrar solo determinados componentes al momento de invocar a una operación `render`.
+* En general el concepto de Rendering condicional se refiere a la posibilidad de incorporar sentencias de control  javascript, como son  `if`, `else`, operador `?` , `:` dentro de código JSX para mostrar solo determinados componentes al momento de invocar a una operación `render`.
 
 ### 5.1. Render de ciertos componentes.
-*  A través del uso de una función o de una clase, es posible realizar la definición  de varios componentes. 
-* Dependiendo del estado de la aplicación o de alguna condición en particular solo ciertos componentes deberían ser mostrados. 
-* Con ayuda del estado del componente o con base  a los valores de sus `properties` se puede decidir qué contenido mostrar  (contenido condicionado).
+* A través del uso de una función o de una clase, es posible realizar la definición  de varios componentes. 
+* Dependiendo del estado de la aplicación o de alguna condición en particular, solo ciertos componentes deberían ser mostrados. 
+* Con ayuda del estado del componente o con base  a los valores de sus `properties`, se puede decidir qué contenido mostrar  (contenido condicionado).
 ##### Ejemplo.
+
 * Considerar los siguientes 2 componentes que  muestran un mensaje de saludo dependiendo el tipo de persona: usuario o invitado.
 ```jsx
 function SaludoUsuario(){
