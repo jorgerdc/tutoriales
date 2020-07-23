@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario b&aacute;sico ReactJS</title>
+  </head>
+  <body>
+    <h2>Elemento File - Uso de Refs.</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+    class FileElement extends React.Component{
+      constructor(props){
+        super(props);
+        this.submitHandler = this.submitHandler.bind(this);
+        this.fileRef = React.createRef();    
+      }
+      submitHandler(event){
+        event.preventDefault();
+        alert(`Archivo: ${this.fileRef.current.files[0].name}`);
+      }
+      render(){
+        return(
+          <form onSubmit={this.submitHandler}>
+            Archivo: <br/>
+            <input type="file" ref ={this.fileRef}/>
+            <button type="submit">Enviar</button>
+          </form>
+        );
+      }
+    }
+    ReactDOM.render(<FileElement/>, document.getElementById('root'));
+    </script>    
+  </body>
+</html>

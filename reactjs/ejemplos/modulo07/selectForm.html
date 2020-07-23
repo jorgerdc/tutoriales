@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario b&aacute;sico ReactJS</title>
+  </head>
+  <body>
+    <h2>Capturar Nivel de entrenamiento</h2>
+    <!-- El componente de React será mostrado aquí. Generalmente este
+         tag se queda vacío. -->
+    <div id="root"></div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+   
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+    class SelectForm extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {nivel: 'intermedio'};
+        this.changeHandler = this.changeHandler.bind(this);
+        this.submitHandler = this.submitHandler.bind(this);
+      }
+      changeHandler(event){
+        this.setState({nivel: event.target.value});
+      }
+      submitHandler(event){
+        alert('Nivel de entrenamiento: '+ this.state.nivel);
+        event.preventDefault();
+      }
+      render(){
+        return(
+          <form onSubmit={this.submitHandler}>
+            <select value ={this.state.nivel} onChange={this.changeHandler}>
+              <option value="basico">B&aacute;sico</option>
+              <option value="intermedio">Intermedio</option>
+              <option value="avanzado">Avanzado</option>
+            </select>
+            <input type="submit" value="Enviar" />
+          </form>
+        );
+      }
+    }
+    ReactDOM.render(<SelectForm/>, document.getElementById('root'));
+
+    </script>    
+  </body>
+</html>
