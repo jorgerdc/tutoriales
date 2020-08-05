@@ -9,9 +9,21 @@
 * La herramienta  que se revisará en este tutorial es Create React App.
 #### 9.1.1 Características de Create React App.
 * [Create React App](https://create-react-app.dev/) es una herramienta empleada para crear tanto *single-page ReactJS applications* como *multiple-page ReactJS applications*
-* Las Single page ReactJS applications se basan en la presentación de una sola  página HTML dividida en diversas secciones (header, body,  footer, menus laterales, barras de herramientas, etc.), que a su vez están formadas por componentes React.
-* Cada uno de estos componentes son actualizados y administrados de forma dinámica e independiente.
-* En una *Single page ReactJS application*, la página es administrada completamente por ReactJS.
+##### 9.1.1.1 Single page applications
+* Las Single page applications se basan en la presentación de una sola  página HTML dividida en varias secciones (header, body,  footer, menus laterales, barras de herramientas, etc.).
+* Cada una de estas  secciones contiene componentes que son actualizados y administrados de forma dinámica e independiente por ReactJS incluida la página que contiene a todos estos elementos. 
+* En resumen, en una *Single page ReactJS application*, la página es administrada completamente por ReactJS.
+* Cuando el usuario interactúa con la aplicación. solo se actualiza el componente correspondiente. La página no es recargada. 
+* Este comportamiento hace más atractiva esta solución ya que el sitio genera una sensación de actualización inmediata, similar a una aplicación de escritorio.
+
+![Single page application](single-page.png)
+##### 9.1.1.2  Multiple page applications
+* En este tipo de aplicación la página principal también se divide en componentes o secciones, pero estos componentes son archivos HTML independientes.
+* Algunos de estos componentes son manejados por ReactJS y otros no. 
+* La página puede requerir ser recargada para actualizar algún componente.
+* Por lo anterior, la página principal no es administrada por ReacJS como se aprecia en la siguiente imagen.
+
+![Multiple page application](multiple-page.png)
 #### 9.1.2 Requerimientos necesarios para construir una aplicación ReactJS productiva
 * Debe implementar todo el ciclo de construcción de una aplicación, es decir, debe implementar todo el *build workflow*.
 * Debe generar código optimizado, adecuado para ambientes productivos del menor tamaño posible.
@@ -37,7 +49,7 @@
 * `npm`tiene diversos usos. Para efectos de este manual, esta herramienta se empleará  principalmente para realizar la administración de dependencias o paquetes Javascript.
 * `npx` es otra herramienta que se incluye al instalar NodeJS. Su uso principal es la posibilidad de ejecutar o probar paquetes Javascript sin la necesidad de instalarlos localmente.
 * `yarn` es otra herramienta que pueden emplearse para realizar esta misma tarea.   Para efectos del manual, se hará uso de `npx`.
-* `npm`representa  aun repositorio online de paquetes en el que se pueden publicar 	proyectos Open Source escritos con Node.js. En el mundo Java el equivalente es un *Maven repository*.
+* `npm`representa  un repositorio online de paquetes en el que se pueden publicar 	proyectos Open Source escritos con Node.js. En el mundo Java el equivalente es un *Maven repository*.
 * Como se mencionó anteriormente `npm`se emplea para  instalar paquetes o dependencias  así como para administrar sus versiones.  Existe una infinidad de librerías NodeJS que pueden ser empleadas en diversos proyectos.
 *  Por si solo `npm`no realiza la ejecución de un paquete.  Para permitir que `npm` ejecute un paquete, se debe configurar  el archivo `package.json` y posteriormente ejecutar el comando:
 ```bash
@@ -69,7 +81,7 @@ NODE_HOME=/opt/node-<version>
 export PATH=$NODE_HOME/bin:$PATH
  ```
  El siguiente  paso es opcional, pero puede configurarse si se desea que los archivos que genere `npm`o  `npx` no se almacenen en el directorio `home`del usuario,  en especial si se tiene problemas de espacio. 
-* Crear en caso de no existir el archivo `.npmrc` en el directorio `home`del usuario de desarrollo.  En el siguiente ejemplo e emplea `nano`, usar otro editor en caso de ser necesario.
+* Crear en caso de no existir el archivo `.npmrc` en el directorio `home`del usuario de desarrollo.  En el siguiente ejemplo se emplea `nano`, usar otro editor en caso de ser necesario.
 ```bash
 nano ~/.npmrc
 ```
@@ -105,13 +117,11 @@ $ npx -v
 npx create-react-app  basic-react-app
 ```
 * Una vez que el comando anterior termine la construcción de la aplicación, se generará una carpeta llamada `basic-react-app`con la estructura mostrada en la siguiente imagen.
-  
-<img style="display:block;margin-left: auto; margin-right: auto;"
-  alt="Estructura de una App ReactJs" src="estructura.png"/>
 
+![Estructura de una App ReactJS](estructura.png)
 
 *   `package-lock.json` Archivo que normalmente no se modifica. Contiene la administración de las versiones de las dependencias del proyecto.
-* `package.json` Contiene las dependencias del proyecto.  Por ejemplo, se pude apreciar las dependencias que corresponden a ReactJS:
+* `package.json` Contiene las dependencias del proyecto.  En el siguiente ejemplo se puede apreciar las dependencias que corresponden a ReactJS:`react`, `react-dom`, `react-scripts` .
 ```json
 {
   "name": "basic-react-app",
@@ -124,8 +134,7 @@ npx create-react-app  basic-react-app
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
-  },
-  ...
+  }
   ```
   * `node_modules` contiene todas las descargas que corresponden con las dependencias del proyecto.  En `package.json` solo se definen unas cuantas, pero todas las demás son transitivas.  De forma similar, esta carpeta es generada por `npm`, no requiere ser actualizada y tampoco requiere ser incluida en el sistema de control de versiones ya sea `git` o cualquier otro.  
   * Notar que también el proyecto incluye  al archivo `.gitignore` en el que justamente se configuran los archivos y carpetas que no requieren control de versiones.
@@ -191,8 +200,7 @@ npm start
 * La instrucción anterior generará una instancia de un servidor web de desarollo. La aplicación podrá visualizarse en [http://localhost:3000/](http://localhost:3000/)
 * El contenido por default se muestra en la siguiente imagen:
 
-<img alt="Contenido por default" src ="app-default.png"
-  style="display:block;margin-left: auto; margin-right: auto;"/>
+![contenido por default](app-default.png)
 
 * Una funcionalidad útil que tiene esta herramienta es que al hacer cualquier cambio en los archivos y al guardarlos, estos serán reflejados automáticamente en el browser.  Por ejemplo, modificar el archivo `App.js` con el siguiente contenido, salvar y verificar los cambios en el browser.
 ```jsx
