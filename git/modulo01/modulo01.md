@@ -27,16 +27,36 @@
 * El proceso inicia cuando se inicializa un proyecto Git con el comando `git init` o cuando se realiza una *clonación*  de un proyecto existente con el comando `git clone` . Es este momento se crea una copia local de trabajo (working directory) en la que se puede realizar cualquier operación: agregar, modificar, eliminar, crear branches, etc. 
 * Este directorio de trabajo representa  la primera capa de la arquitectura en Git.  Cada directorio de trabajo cuenta con una carpeta importante llamada `.git`
 #### 1.1.2 Staging area 
-* Una vez que los cambios locales están listos para ser compartidos y hacerlos públicos con el equipo de desarrollo, el proceso continua pasando a la siguente capa:  *staging area* .
-* En inglés se refiere al concepto de: *hacer stage de los cambios* .  La traducción sería: *hacer o publicar los cambios para que estos sean accesibles  o visibles para el equipo de desarrollo*
-* Este proceso se realiza con el comando  `git add`.
-* Una vez que los cambios se han agregado, es posible visualizar todos estos cambios como cambios pendientes para realizar `git commit`
-* La operación  `git commit` permite generar o identificar al conjunto de cambios generados a través del concepto de *snapshot*  Un shapshot se puede visualizar como una versión del proyecto en un instante en el tiempo que identifica de forma única a los cambios realizados en las 3 capas de la arquitectura de Git.
-* El comando `git status`permite visualizar el estado de los cambios y la etapa en la que se encuentran
+* Una vez que los cambios locales están listos para ser compartidos y hacerlos públicos o visibles con el equipo de desarrollo, el proceso continua pasando a la siguiente capa:  *staging area* .
+* En inglés se refiere al concepto de: *hacer stage de los cambios* .  La traducción sería: *hacer o publicar los cambios para que estos sean accesibles  o visibles para el equipo de desarrollo*.
+* Este proceso se realiza con el comando  `git add` seguido de la lista de archivos que se desean agregar, o en su defecto  `git add -A` para agregar todos los archivos que han sido modificados dentro de toda la jerarquía de carpetas del proyecto git.
+##### Ejemplos:
+```bash
+#Por lista de archivos
+git add archivo1.txt  archivo2.txt docs/archivo3.txt
+#Agrega a todos los cambios existentes
+git add -A
+```
+* Para visualizar  la lista de todos los archivos que se encuentran ahora en el *staging area*  se puede emplear el comando `git status`.
+* El siguiente paso es confirmar estos cambios a través de la instrucción `git commit`.
+* El comando  `git commit` permite generar o identificar al conjunto de cambios generados a través del concepto de *snapshot*.  Un shapshot se puede visualizar como una versión del proyecto en un instante en el tiempo que identifica de forma única a los cambios realizados en las 3 capas de la arquitectura de Git.
+*  En general el comando `git status` permite visualizar el estado de los cambios y la etapa en la que se encuentran:  
+	* Cambios que aún no se encuentran en la *staging area*
+	* Cambios que se encuentran en la *staging area* ->  `git add`
+	* Cambios que han sido confirmados  -> `git commit`
+	* Cambios que han sido compartidos en un repositorio remoto -> `git push`
+* Como buena práctica,  siempre se debe indicar una descripción de los cambios que se incluyen en el nuevo commit.
+##### Ejemplo:
+```bash
+git commit -m "Se agrega nueva funcionalidad para registrar tarjetas"
+#Al omitir la opción -m, git abrirá el editor de texto configurado
+#para capturar el mensaje. Más adelante se explica como configurarlo. 
+git commit
+```
 #### 1.1.3  Conceptos clave en Git.
 En resumen, es de vital importancia entender los siguientes conceptos:
 ##### Repositorio
-*  Ubicación o directorio ubicado en una máquina local que contiene una copia completa de la versión actual de un proyecto.
+*  Ubicación o directorio localizado en una máquina local que contiene una copia completa de la versión actual de un proyecto.
 * Cada cambio  por menor que sea dentro de esta carpeta es almacenado y recuperable. 
 * Los logs del repositorio permiten administrar estos cambios a través del tiempo.
 * Es posible moverse  sobre esta historia para visualizar o recuperar cambios realizados a los archivos a lo largo del tiempo.
