@@ -20,7 +20,7 @@ especial para equipos de trabajo. El documento explica la forma en la que se deb
 * Formalizando la idea anterior,  un  fork representa una copia de un repositorio que se crea en la cuenta del usuario que desea contribuir.
 #### 1.3.1 Crear un Fork.
 El primer paso para contribuir al desarrollo de un proyecto es la creación de un fork. Para crear una copia del repositorio realizar los siguientes pasos:
-* Antes de iniciar,  acceder al sitio de [GitHub](https://github.com/), entrar a sesión, o crear una cuenta en caso de no existir.
+* Antes de iniciar,  acceder al sitio de [GitHub](https://github.com/), iniciar sesión, o crear una cuenta en caso de no contar con una.
 * Suponer que se desea hacer un Fork del siguiente repositorio: [https://github.com/octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife)
 * En la página principal del repositorio hacer clic en “Fork” (esquina superior derecha de la pantalla).
 * Al hacer clic, iniciará el proceso de creación del Fork.
@@ -200,13 +200,13 @@ Date:   Fri Feb 8 19:45:39 2019 -0600
 ```
 * Observar en la salida anterior una lista de varios commits. Cada uno de ellos cuenta con un identificador (hash) y entre otras cosas, su mensaje o descripción.
 * La lista de commits puede ser muy grande dependiendo de la historia de cambios del proyecto.
-* De esta historia se deberán identificar los commits que se desean unificar, iniciando en orden cronológico: de arriba hacia abajo. En esta muestra, se ha identificado que los últimos 4 commits pertenecen al branch en el que se está trabando y son los que se desean unificar.
+* De esta historia se deberán identificar los commits que se desean unificar, iniciando en orden cronológico: de arriba hacia abajo. En esta muestra, se ha identificado que los últimos 4 commits pertenecen al branch en el que se está trabajando y son los que se desean unificar.
 * Para identificar fácilmente esta lista, leer el mensaje o descripción del commit. Tip: Para salir del comando `git log` presionar `q`.
 * Una vez determinado el valor de  `X`  ejecutar el comando con el valor correspondiente. Para este ejemplo será el 4.
 ```
 git rebase -i HEAD~4
 ```
-* Al ejecutar el comando anterior, aparecerá un Wizard a nivel consola en el cual se deberán aplicar las configuraciones que se describen a continuación. Nota: el Wizard será mostrado en el editor de texto configurado para GIT. Si se desea modificar o actualizar la configuración hacer clic  [aquí](https://help.github.com/en/articles/associating-text-editors-with-git).
+* Al ejecutar el comando anterior, aparecerá un *wizard* a nivel consola en el cual se deberán aplicar las configuraciones que se describen a continuación. Nota: el *wizard* será mostrado en el editor de texto configurado para GIT. Si se desea modificar o actualizar la configuración hacer clic  [aquí](https://help.github.com/en/articles/associating-text-editors-with-git).
 ##### Ejemplo:
 ```bash
 pick c3f6979 adding bootstrap tuturial - first version
@@ -226,8 +226,8 @@ s 3038146 add docs and examples of module 4
 ```
 * Observar que se ha sustituido el comando  `pick`  por el comando  `s`  (`squash`) a partir del segundo commit.
 * Guardar los cambios y salir del editor. Los comandos/opciones para realizar estas acciones dependerá del editor configurado.
-* En caso de cancelar la ejecución del comando `git rebase` se deberán comentar las 4 líneas que contiene a cada uno de los commits. Con esta acción Git no detectará acción a ejecutar y por lo tanto cancelará la ejecución del comando y no mostraría la segunda parte del wizard.
-* Observar que al salir del editor, automáticamente se presentará un nuevo wizard. En esta ocasión se presenta un wizard para configurar los mensajes o descripción del commit unificado.
+* En caso de cancelar la ejecución del comando `git rebase` se deberán comentar las 4 líneas que contiene a cada uno de los commits. Con esta acción Git no detectará acción a ejecutar y por lo tanto cancelará la ejecución del comando y no mostraría la segunda parte del *wizard*.
+* Observar que al salir del editor, automáticamente se presentará un nuevo *wizard* para configurar los mensajes o descripción del commit unificado.
 ##### Ejemplo :
 ```
 # This is a combination of 4 commits.
@@ -267,10 +267,10 @@ Successfully rebased and updated refs/heads/dev-jorge-bootstrap-start.
 ```
 git push origin <nombre-branch>
 ```
-#### 1.8.2 Creación De Pull Request En Git Hub
+#### 1.8.2 Creación De Pull Request En GitHub
 * Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente : `git push origin <nombre-branch>`.
 * Para crear un pull request se hará uso de GitHub.
-* La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo upstream).
+* La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo fork).
 ![pull.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull.png)
 * Hacer clic en el botón “New Pull Request”.  Se deberá realizar la siguiente configuración en la que se indica que los cambios del branch se integrarán a master del repositorio principal (upstream). En este ejemplo, se va a integrar el branch `dev-jorge-update-readme` al branch `master`.
 * Posteriormente, hacer clic en  "Create pull Request".
