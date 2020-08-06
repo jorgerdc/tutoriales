@@ -8,4 +8,13 @@ Icon
 *~
 Thumbs.db
 Thumbs.db:encryptable
-.class
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
