@@ -159,9 +159,9 @@ git push origin <nombre-branch>
 ![branch2.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/branch2.png)
 * Una vez que la tarea ha sido concluida, y sea momento de integrar los cambios al repositorio original, se deberán realizar las siguientes acciones:
 	* Asegurarse que todos los cambios hayan sido actualizados en el Fork.
-	* Crear un “pull request”.
+	* Crear un *Pull Request* (PR).
 ### 1.8 Pull Request y Merge
-Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecutado de forma exitosa, se deberá solicitar un “pull request” para que los cambios del branch sean integrados al repositorio original posterior a su revisión y aprobación por los integrantes del equipo de desarrollo.
+Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecutado de forma exitosa, se deberá solicitar un *Pull Request* (PR) para que los cambios del branch sean integrados al repositorio original posterior a su revisión y aprobación por los integrantes del equipo de desarrollo.
 #### 1.8.1 Unificar commits antes De generar Pull Request
 * Durante el proceso de desarrollo de una tarea asociada a un branch, es posible realizar varias operaciones  `commit`  e inclusive operaciones  `push`  hacia el Fork.
 * Una vez que la tarea está lista para ser revisada, se deberá solicitar un "Pull Request" como se mencionó anteriormente.
@@ -267,7 +267,7 @@ Successfully rebased and updated refs/heads/dev-jorge-bootstrap-start.
 ```
 git push origin <nombre-branch>
 ```
-#### 1.8.2 Creación De Pull Request En GitHub
+#### 1.8.2 Creación de Pull Requests en GitHub
 * Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente : `git push origin <nombre-branch>`.
 * Para crear un pull request se hará uso de GitHub.
 * La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo fork).
@@ -279,7 +279,10 @@ git push origin <nombre-branch>
 * Notar que del lado derecho se configura la lista de revisores que deberán participar en la revisión. Es muy ***importante*** configurar esta sección.
 *  Al finalizar la captura, hacer clic nuevamente en “Create Pull Request”.
 ![pull3.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull3.png)
-* Posterior a esto, los revisores recibirán un correo para que puedan comenzar a validar los cambios.
+
+#### 1.8.3  Revisión de código en GitHub
+
+* Posterior a la creación del Pull Request, los revisores recibirán un correo para que puedan comenzar a validar los cambios.
 * La siguiente figura muestra la pantalla para revisión de código:
 ![pull4.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull4.png)
 * Al hacer clic sobre el código se pueden agregar comentarios para que el responsable del branch los corrija.
