@@ -128,7 +128,7 @@ origin	https://github.com/jorgerdc/tutoriales.git (push)
 
 Existen muchos más conceptos y comandos en Git. Sin embargo esta pequeña lista muestra los conceptos fundamentales.  A nivel general para mostrar ayuda o documentación del comando adicional a la documentación oficial, se emplea `git help <nombre_comando>`
 ### 1.2 Instalación 
-* Para mayores detalles, revisar la ![documentación oficial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Para mayores detalles, revisar la [documentación oficial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * En resumen, git puede ser instalado empleando las siguientes instrucciones dependiendo la distribución linux.
 ```bash
 #RPM based
