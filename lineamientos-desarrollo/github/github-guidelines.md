@@ -1,8 +1,8 @@
 ﻿# Procedimiento de integración de código en GitHub.
 ## 1. Procedimiento de integración
 ### 1.1 Introducción
-El objetivo del presente documento es documentar un procedimiento sugerido para realizar el control de integración y revisión de código en GitHub, en
-especial para equipos de trabajo. El documento explica la forma en la que se deberán crear forks, branches, edición de cambios, pull requests y merge.
+El objetivo del presente documento es definir un procedimiento sugerido para realizar el control de integración y revisión de código en GitHub, en
+especial para equipos de trabajo. El documento explica la forma en la que se deberán crear forks, branches, edición de cambios, pull requests, operaciones merge, etc.
 ### 1.2 Colaboradores y contribuyentes.
 * En GitHub existen 2 formas en las que un usuario puede contribuir o ayudar al desarrollo de un proyecto:
 #### 1.2.1 Colaboradores.
@@ -18,30 +18,29 @@ especial para equipos de trabajo. El documento explica la forma en la que se deb
 * Este esquema permite establecer un proceso seguro y ágil  en especial para usuarios remotos  que participan en el desarrollo de un proyecto:  *Be social ...*
 ### 1.3 Forks.
 * Formalizando la idea anterior,  un  fork representa una copia de un repositorio que se crea en la cuenta del usuario que desea contribuir.
-* Esta será  la técnica empleada para  contribuir en los proyectos de ese repositorio.
 #### 1.3.1 Crear un Fork.
-El primer paso para contribuir al desarrollo de un proyecto es la creación de un fork. . Para crear una copia del repositorio realizar los siguientes pasos:
-* Antes de iniciar, entrar a GitHub, entrar a sesión.
+El primer paso para contribuir al desarrollo de un proyecto es la creación de un fork. Para crear una copia del repositorio realizar los siguientes pasos:
+* Antes de iniciar,  acceder al sitio de [GitHub](https://github.com/), iniciar sesión, o crear una cuenta en caso de no contar con una.
 * Suponer que se desea hacer un Fork del siguiente repositorio: [https://github.com/octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife)
 * En la página principal del repositorio hacer clic en “Fork” (esquina superior derecha de la pantalla).
 * Al hacer clic, iniciará el proceso de creación del Fork.
 
 ![fork.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/fork.png)
-* Al terminar, se creará una nueva referencia al repositorio “Spoon-Knife” en la cuenta de Github del usuario que desea contribuir (usuario contribuyente).
-* Para comprobar lo anterior, ir a la página principal del usuario contribuyente, hacer clic en *Repositories*. El nuevo repositorio aparecerá en la lista.
+* Al terminar, se creará una nueva referencia al repositorio “Spoon-Knife” en la cuenta de Github del usuario que desea contribuir (usuario contribuyente).
+* Para comprobar lo anterior, ir a la página principal del usuario contribuyente, hacer clic en *Repositories*. El nuevo repositorio aparecerá en la lista.
 ![fork2.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/fork2.png)
 * En la imagen se muestra el repositorio “Spoon-Knife” que representa la copia del original. Hacer clic en el nombre.
-* Se mostrará una imagen similar a la siguiente:
+* Se mostrará una imagen similar a la siguiente:
 ![fork3.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/fork3.png)
 * Observar en la parte superior izquierda, la ruta relativa de la copia del repositorio *jorgerdc/Spoon-Knife*
 * *jorgerdc* corresponde con el usuario contribuyente.
 * Observar también la leyenda  *forked from  octocat/Spoon-Knife* que representa el repo original.
-* El siguiente paso es guardar la copia del repositorio en la máquina del contribuyente. Para ello, hacer clic en el botón “Clone or Download”.
-* Observar que aparece el ícono de “copy” . Hacer clic sobre el para copiar la ruta del repositorio: https://github.com/jorgerdc/Spoon-Knife.git
+* El siguiente paso es guardar la copia del repositorio en la máquina del contribuyente. Para ello, hacer clic en el botón “Clone or Download”.
+* Observar que aparece el ícono de “copy” . Hacer clic sobre el para copiar la ruta del repositorio: https://github.com/jorgerdc/Spoon-Knife.git
 * A partir de este momento se hará uso de Git el cual deberá ser instalado en el equipo de desarrollo.  Para mayores detalles, consultar los siguientes sitios:
 	* [Instalación de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 	* [Configuración con SSL](https://help.github.com/articles/connecting-to-github-with-ssh/).  Este paso es opcional, útil para autenticarse con GitHub sin tener que especificar usuario y password cada vez.
-* Una vez instalado, abrir una terminal en la máquina local, ejecutar:
+* Una vez instalado, abrir una terminal en la máquina local, ejecutar:
 ``` bash
 git clone <repo_url> 
 ```
@@ -49,27 +48,27 @@ Para el ejemplo:
 ```bash
 git clone https://github.com/jorgerdc/Spoon-Knife.git 
 ```
-Al terminar, cambiarse a la carpeta generada. En ella se encontrará la copia del repositorio.
+Al terminar, cambiarse a la carpeta generada. En ella se encontrará la copia del repositorio.
 ### 1.4 Sincronización con el repositorio original.
-Con el paso del tiempo, la copia creada puede requerir sincronizarse con la copia original, en especial si se agregan más cambios. Para configurar la sincronización con el repositorio original, realizar las siguientes acciones:
+Con el paso del tiempo, la copia creada puede requerir sincronizarse con la copia original, en especial si se agregan más cambios. Para configurar la sincronización con el repositorio original, realizar las siguientes acciones:
 ```bash
 git remote -v
 ```
-* Se obtendrá una salida similar a la siguiente:
+* Se obtendrá una salida similar a la siguiente:
 ```bash 
 origin https://github.com/jorgerdc/Spoon-Knife.git (fetch)
 origin https://github.com/jorgerdc/Spoon-Knife.git (push)
 ```
-* Observar la ruta de las 2 líneas anteriores, las cuales apuntan al repositorio remoto del “fork” (copia). Notar que la ruta contiene el nombre del usuario. A este repositorio se le conoce como “origin”.
-• Para poder sincronizar la copia con el repositorio de origen, se requiere ejecutar la siguiente instrucción: 
+* Observar la ruta de las 2 líneas anteriores, las cuales apuntan al repositorio remoto del “fork” (copia). Notar que la ruta contiene el nombre del usuario. A este repositorio se le conoce como “origin”.
+* Para poder sincronizar la copia con el repositorio de origen, se requiere ejecutar la siguiente instrucción: 
 ```bash 
 git remote add upstream <url_repo_original>
 ``` 
-* Para el ejemplo se tendría:
+* Para el ejemplo se tendría:
 ```bash 
 git remote add upstream https://github.com/octocat/Spoon-Knife.git
 ```
-• Al ejecutar nuevamente la instrucción ```git remote -v``` se obtendrá:
+* Al ejecutar nuevamente la instrucción ```git remote -v``` se obtendrá:
 ```bash
 origin https://github.com/jorgerdc/Spoon-Knife.git (fetch) 
 origin https://github.com/jorgerdc/Spoon-Knife.git (push) 
@@ -79,15 +78,15 @@ upstream https://github.com/octocat/Spoon-Knife.git (push)
 * Notar que se agrega el URL del repositorio original llamado ```upstream```.
 ### 1.5 Convenciones para crear un branch
 
-* Para cada tarea asignada se deberá crear un nuevo branch.
-* No se deberá trabajar directamente sobre el branch ```master```. La convención para nombrar a cada branch es:
-```dev-<nombre>-<descripción>```
+* Para cada tarea asignada se deberá crear un nuevo branch.
+* No se deberá trabajar directamente sobre el branch ```master```. La convención para nombrar a cada branch es:
+```dev-<nombre>-<descripción>```
 * ```<nombre>``` corresponde al nombre de la persona que desarrolla o responsable del branch.
-* ```<descripción>``` corresponde a un nombre o pequeña descripción del branch que haga refefencia a la tarea que se está desarrollando.
+* ```<descripción>``` corresponde a un nombre o pequeña descripción del branch que haga referencia a la tarea que se está desarrollando.
 ##### Ejemplo:
-El siguiente branch será desarrollado por el usuario ```jorge``` y se refiere a una tarea asignada en la que se actualizará el archivo ```README``` del proyecto  ```dev-jorge-update-readme```
-* El siguiente paso es crear un nuevo branch y cambiarse a él. 
-* En Git el comando `git branch` sirve para mostrar el branch en el que se está trabajando (marcado con un asterisco). En este caso es el branch “master”.
+El siguiente branch será desarrollado por el usuario ```jorge``` y se refiere a una tarea asignada en la que se actualizará el archivo ```README``` del proyecto  ```dev-jorge-update-readme```
+* El siguiente paso es crear un nuevo branch y cambiarse a él. 
+* En Git el comando `git branch` sirve para mostrar el branch en el que se está trabajando (marcado con un asterisco). En este caso es el branch “master”.
 * Para crear un nuevo branch ejecutar:
 ```bash 
 git branch <nombre_branch>
@@ -122,10 +121,10 @@ git add -A
 #una descripción que sea clara y corresponda con el cambio realizado.
 git commit -m "descripción clara, breve y concisa del cambio".
 ``` 
-#### 1.6.2 Sincronización del repositorio upstream con el branch de trabajo.
-Durante el transcurso del desarrollo de la actividad pudiera requerirse realizar una actualización del repositorio original en el *fork* y *branch* creados anteriormente. Esto puede ocurrir con base al siguiente escenario:
-* Suponer que algún integrante del equipo actualiza el repositorio original (actualiza el branch principal `master`).
-* Suponer que se desea actualizar dichos cambios en el branch creado anteriormente, por ejemplo, en `dev-jorge-update-readme`. Para realizar la actualización, ejecutar las siguientes instrucciones:
+#### 1.6.2 Sincronización del repositorio upstream con el branch de trabajo.
+Durante el transcurso del desarrollo de la actividad pudiera requerirse realizar una actualización del repositorio original en el *fork* y *branch* creados anteriormente. Esto puede ocurrir con base al siguiente escenario:
+* Suponer que algún integrante del equipo actualiza el repositorio original (actualiza el branch principal `master`).
+* Suponer que se desea actualizar dichos cambios en el branch creado anteriormente, por ejemplo, en `dev-jorge-update-readme`. Para realizar la actualización, ejecutar las siguientes instrucciones:
 * Cambiarse al branch master del fork: 
 ```bash
 git checkout master
@@ -140,40 +139,38 @@ git pull upstream master
 ```bash
 git checkout dev-jorge-update-readme
 ```
-* Ejecutar la siguiente instrucción para realizar la actualización en el branch. En Git Existen 2 técnicas: `rebase` y `merge`. Se empleará rebase. 
+* Ejecutar la siguiente instrucción para realizar la actualización en el branch. En Git Existen 2 técnicas: `rebase` y `merge`. Se empleará rebase. 
 ```bash
 git rebase master
 ```
-Esta última instrucción permite actualizar o sincronizar los cambios del repositorio original en el branch de trabajo.
+Esta última instrucción permite actualizar o sincronizar los cambios del repositorio original en el branch de trabajo.
 ### 1.7 Actualización de cambios en el fork
 * Como se comentó anteriormente, durante el proceso de desarrollo de la actividad en el branch creado, es posible realizar `git add`y`git commit`, pero hace falta uno más:  `git push`.
 * Este comando permite subir los cambios del branch hacia el fork. Es decir, subir los cambios a la copia del repositorio del contribuyente en GitHub.  El repositorio  origina (upstream) sigue intacto.
 * En estricto sentido, no es necesario actualizar los cambios en el fork mientras que la tarea esté en proceso. La ventaja de hacerlo frecuentemente es que los cambios se encontrarán respaldados en GitHub. 
-* Para realizar `push` al fork se deberá ejecutar la siguiente instrucción:
+* Para realizar `push` al fork se deberá ejecutar la siguiente instrucción:
 ```bash
 git push origin <nombre-branch>
 ```
-* El comando anterior configurará el nuevo branch en el fork en GitHub.
-* Para comprobar lo anterior, en GitHub aparecerá un mensaje similar al siguiente en la página principal del repositorio (fork):
+* El comando anterior configurará el nuevo branch en el fork en GitHub.
+* Para comprobar lo anterior, en GitHub aparecerá un mensaje similar al siguiente en la página principal del repositorio (fork):
 ![branch.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/branch.png)
-* Notar que en el menú “branches” aparece un número que indica los branches que se han creado. Al hacer clic, se muestra una imagen similar a la siguiente. En ella se puede confirmar la creación del nuevo branch.
+* Notar que en el menú “branches” aparece un número que indica los branches que se han creado. Al hacer clic, se muestra una imagen similar a la siguiente. En ella se puede confirmar la creación del nuevo branch.
 ![branch2.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/branch2.png)
 * Una vez que la tarea ha sido concluida, y sea momento de integrar los cambios al repositorio original, se deberán realizar las siguientes acciones:
 	* Asegurarse que todos los cambios hayan sido actualizados en el Fork.
-	* Crear un “pull request”.
+	* Crear un *Pull Request* (PR).
 ### 1.8 Pull Request y Merge
-Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecutado de forma exitosa, se deberá solicitar un “pull request” para que los cambios del branch sean integrados al repositorio original posterior a su revisión y aprobación por los integrantes del equipo de desarrollo.
+Una vez que la tarea se haya concluido y que las pruebas se hayan creado y ejecutado de forma exitosa, se deberá solicitar un *Pull Request* (PR) para que los cambios del branch sean integrados al repositorio original posterior a su revisión y aprobación por los integrantes del equipo de desarrollo.
 #### 1.8.1 Unificar commits antes De generar Pull Request
 * Durante el proceso de desarrollo de una tarea asociada a un branch, es posible realizar varias operaciones  `commit`  e inclusive operaciones  `push`  hacia el Fork.
 * Una vez que la tarea está lista para ser revisada, se deberá solicitar un "Pull Request" como se mencionó anteriormente.
 * Al existir varias operaciones  `commit`, el Pull Request incluirá la lista de todos los commits realizados por el programador.
 * Los revisores tendrán que revisar cada uno de estos commits lo cual puede ser tedioso o inclusive confuso. Lo ideal sería tener un solo commit ya que se trata de la primera revisión.
 * Git permite realizar una  _unificación_  de esta lista de commits de tal forma que el revisor verá uno solo y por lo tanto facilitará su revisión.
-
 * Lo anterior permite establecer la siguientes reglas:
 	1. Todos los programadores deberán unificar sus commits antes de crear un Pull Request.
 	2. Una vez que se ha creado el PR, ya NO se deberá realizar unificación. Es decir, la unificación de commits solo de debe realizar una vez , justo antes de hacer el primer  `push`  hacia el repo previo a la creación del PR.
-
 El comando para realizar la unificación de commits es:
 ```bash
  git rebase -i HEAD~X
@@ -203,15 +200,14 @@ Date:   Fri Feb 8 19:45:39 2019 -0600
 ```
 * Observar en la salida anterior una lista de varios commits. Cada uno de ellos cuenta con un identificador (hash) y entre otras cosas, su mensaje o descripción.
 * La lista de commits puede ser muy grande dependiendo de la historia de cambios del proyecto.
-* De esta historia se deberán identificar los commits que se desean unificar, iniciando en orden cronológico: de arriba hacia abajo. En esta muestra, se ha identificado que los últimos 4 commits pertenecen al branch en el que se está trabando y son los que se desean unificar.
+* De esta historia se deberán identificar los commits que se desean unificar, iniciando en orden cronológico: de arriba hacia abajo. En esta muestra, se ha identificado que los últimos 4 commits pertenecen al branch en el que se está trabajando y son los que se desean unificar.
 * Para identificar fácilmente esta lista, leer el mensaje o descripción del commit. Tip: Para salir del comando `git log` presionar `q`.
 * Una vez determinado el valor de  `X`  ejecutar el comando con el valor correspondiente. Para este ejemplo será el 4.
 ```
 git rebase -i HEAD~4
 ```
-* Al ejecutar el comando anterior, aparecerá un Wizard a nivel consola en el cual se deberán aplicar las configuraciones que se describen a continuación. Nota: el Wizard será mostrado en el editor de texto configurado para GIT. Si se desea modificar o actualizar la configuración hacer clic  [aquí](https://help.github.com/en/articles/associating-text-editors-with-git).
-
-Ejemplo:
+* Al ejecutar el comando anterior, aparecerá un *wizard* a nivel consola en el cual se deberán aplicar las configuraciones que se describen a continuación. Nota: el *wizard* será mostrado en el editor de texto configurado para GIT. Si se desea modificar o actualizar la configuración hacer clic  [aquí](https://help.github.com/en/articles/associating-text-editors-with-git).
+##### Ejemplo:
 ```bash
 pick c3f6979 adding bootstrap tuturial - first version
 s 48d0831 Adding Navbar examples
@@ -230,10 +226,9 @@ s 3038146 add docs and examples of module 4
 ```
 * Observar que se ha sustituido el comando  `pick`  por el comando  `s`  (`squash`) a partir del segundo commit.
 * Guardar los cambios y salir del editor. Los comandos/opciones para realizar estas acciones dependerá del editor configurado.
-* En caso de cancelar la ejecución del comando `git rebase` se deberán comentar las 4 líneas que contiene a cada uno de los commits. Con esta acción Git no detectará acción a ejecutar y por lo tanto cancelará la ejecución del comando y no mostraría la segunda parte del wizard.
-* Observar que al salir del editor, automáticamente se presentará un nuevo wizard. En esta ocasión se presenta un wizard para configurar los mensajes o descripción del commit unificado.
-
-Ejemplo :
+* En caso de cancelar la ejecución del comando `git rebase` se deberán comentar las 4 líneas que contiene a cada uno de los commits. Con esta acción Git no detectará acción a ejecutar y por lo tanto cancelará la ejecución del comando y no mostraría la segunda parte del *wizard*.
+* Observar que al salir del editor, automáticamente se presentará un nuevo *wizard* para configurar los mensajes o descripción del commit unificado.
+##### Ejemplo :
 ```
 # This is a combination of 4 commits.
 # This is the 1st commit message:
@@ -252,7 +247,6 @@ add docs and examples of module 4
 ```
 * Se recomienda dejar un solo mensaje en lugar de tener un comentario por cada commit.
 * Este mensaje debe ser claro, y debe describir los cambios que se hicieron en los commits que se están unificando.
-
 Ejemplo :
 ```
 # This is a combination of 4 commits.
@@ -273,10 +267,10 @@ Successfully rebased and updated refs/heads/dev-jorge-bootstrap-start.
 ```
 git push origin <nombre-branch>
 ```
-#### 1.8.2 Creación De Pull Request En Git Hub
+#### 1.8.2 Creación de Pull Requests en GitHub
 * Antes de solicitar el pull request, hacer push para subir todos los cambios al branch remoto empleando la instrucción mencionada anteriormente : `git push origin <nombre-branch>`.
 * Para crear un pull request se hará uso de GitHub.
-* La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo upstream).
+* La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo fork).
 ![pull.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull.png)
 * Hacer clic en el botón “New Pull Request”.  Se deberá realizar la siguiente configuración en la que se indica que los cambios del branch se integrarán a master del repositorio principal (upstream). En este ejemplo, se va a integrar el branch `dev-jorge-update-readme` al branch `master`.
 * Posteriormente, hacer clic en  "Create pull Request".
@@ -285,7 +279,10 @@ git push origin <nombre-branch>
 * Notar que del lado derecho se configura la lista de revisores que deberán participar en la revisión. Es muy ***importante*** configurar esta sección.
 *  Al finalizar la captura, hacer clic nuevamente en “Create Pull Request”.
 ![pull3.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull3.png)
-* Posterior a esto, los revisores recibirán un correo para que puedan comenzar a validar los cambios.
+
+#### 1.8.3  Revisión de código en GitHub
+
+* Posterior a la creación del Pull Request, los revisores recibirán un correo para que puedan comenzar a validar los cambios.
 * La siguiente figura muestra la pantalla para revisión de código:
 ![pull4.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull4.png)
 * Al hacer clic sobre el código se pueden agregar comentarios para que el responsable del branch los corrija.
