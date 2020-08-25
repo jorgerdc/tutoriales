@@ -7,52 +7,85 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" 
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
-      crossorigin="anonymous">
+	    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+	    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+	    crossorigin="anonymous">
     <title>form-example-01</title>
   </head>
   <body>
     <!--fixed size -->
   	<div class="container">
       <h4>Capturar usuario</h4>
+      <br/>
       <h6 class="text-secondary">Datos generales</h6>
   	 <form action="">
       <!-- group 1-->
       <div class="form-group">
-        <label for="nombre">Nombre: *</label>
+        <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre" class="form-control" 
           placeholder="Nombre del usuario">
       </div>
       <!-- group 2 -->
-      <div>
-        <label for="password">Contrase&ntilde;a: *</label>
+      <div class="form-group">
+        <label for="password">Contrase&ntilde;a</label>
         <input type="password" name="password" id="password" class="form-control" 
             placeholder="Contrase&ntilde;a">
         <small class="form-text text-muted">Escribir al menos 8 caracteres</small>
       </div>
-      <!-- group 3-->
-      <div class="form-group form-row">
-        <div class="offset-sm-5 col-sm-6">
-          <input class="btn btn-primary" type="reset" value="Limpiar">
-          <button type="submit" class="btn btn-primary">Siguiente</button>  
-        </div>
+      <!--group 3-->
+      <div class="form-group">
+        <label for="carrera">Carrera</label>
+        <select class="form-control" id="carrera" name="carrera">
+          <option>Ing. Computaci&oacute;n</option>
+          <option>Ing. Electr&oacute;nica</option>
+          <option>Otra</option>
+        </select>
       </div>
+      <!--tamaño de elementos-->
+      <br/>
+      <h6 class="text-secondary">Tama&ntilde;o de los elementos (altura)</h6>
+      <!--group 4-->
+      <div class="form-group">
+        <label for="lg">Large (lg)</label>
+        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+      </div>
+      <!--group 5-->
+      <div class="form-group">
+        <label for="lg">Default</label>
+        <input class="form-control" type="text" placeholder="Default">
+      </div>
+      <!--group 6-->
+      <div class="form-group">
+        <label for="lg">Small (sm)</label>
+        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+      </div>
+      <!--group 7-->
+      <div class="form-group">
+        <label for="read_only">Solo de lectura</label>
+        <input class="form-control-plaintext" readonly type="text" placeholder="No editable">
+      </div>
+      <!-- group 8-->
+      <div class="form-group">
+        <label for="file">Subir archivo</label>
+        <input class="form-control-file" type="file" placeholder="Subir archivo">
+      </div>
+      <button type="submit" class="btn btn-primary">Siguiente</button> 
      </form>  
    </div>
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-      crossorigin="anonymous">
-   </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
-      crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
-      crossorigin="anonymous">
-    </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+    crossorigin="anonymous">
+ </script>
   </body>
 </html>
