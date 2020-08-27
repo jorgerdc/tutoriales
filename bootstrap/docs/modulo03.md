@@ -99,7 +99,7 @@
 	* b - bottom
 	* l - left
 	* r - right
-	* x - leff y right
+	* x - left y right
 	* y - top y bottom
 * Valores para `size`
 	* 0 - 0
@@ -127,7 +127,7 @@
    <label for="apellido" class="mr-lg-5 mr-md-3 mr-sm-1">Apellido</label>
    <input type="text" class="form-control mb-2 mr-2">    
  </div>  
- <button type="sumbmit" class="btn btn-primary mb-2">Siguiente</button>
+ <button type="submit" class="btn btn-primary mb-2">Siguiente</button>
 </form>  
 ```
 * Observar los margenes responsivos de los elementos `<label>`.  Para `lg` se establece un valor de 5. Al alcanzar `md` se modifica a 3 y con `sm` se modifica a 1.
@@ -236,7 +236,7 @@
 *  El siguiente ejemplo se muestra otra manera de agrupar los elementos del formularios.  En lugar de agrupar la etiqueta  de cada elemento del formulario,  esta se incluye en una celda separada. Esto provoca que la etiqueta quede del lado izquierdo de la pantalla.
 * El  código completo puede consultarse [aquí.](../ejemplos/modulo03/form-example-05.html)
 * El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo03/form-example-05.html)
-### 3.4 Dialogos modales.
+### 3.4 Diálogos modales.
 * El siguiente ejemplo muestra los estilos necesarios a configurar para crear diálogos modales en Bootstrap.
 ##### Ejemplo:
 ```html

@@ -28,7 +28,7 @@
 ### 2.2  Containers
 * Representan el elemento básico para realizar la construcción de layouts.
 * Necesarios  para hacer uso del *default grid system* de  Bootstrap el cual es muy útil para distribuir y organizar los componentes de una página HTML.
-* Los conteedores pueden anidarse aunque no es muy frecuente su uso.
+* Los contenedores pueden anidarse aunque no es muy frecuente su uso.
 #### 2.2.1 Tipos de Containers
 Bootstrap ofrece 3 tipos de containers:
 * *Responsive:* Emplea el estilo `.container`. Establece un valor para el estilo `.max-width` que corresponde al valor máximo de ancho de pantalla que se ajusta dependiendo el dispositivo típicamente conocido como ***responsive breakpoint***.
@@ -43,7 +43,7 @@ Bootstrap ofrece 3 tipos de containers:
   <!-- Content here -->
 </div>
 ```
-* En la siguiente tabla se muestran las medidas y su uso por cada tipode container.
+* En la siguiente tabla se muestran las medidas y su uso por cada tipo de container.
 
 Estilo | Extra small <576px | Small >=576px | Medium >=768px | Large >=992px | Extra Large >=1200px|
 -- | -- | -- | -- | -- | -- |
@@ -127,7 +127,7 @@ Estilo | Extra small <576px | Small >=576px | Medium >=768px | Large >=992px | E
 * En este ejemplo, se muestra un grid ajustado al contenido a partir del breakpoint sm.  Para pantallas menores, el grid se muestra en forma vertical ocupando el 100% de ancho sin importar el contenido.
 * El  código completo puede consultarse [aquí.](../ejemplos/modulo02/grid-example-03.html)
 * El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo02/grid-example-03.html)  Modificar el estilo del contenedor  de `container-fluid` a `container`  para ver el efecto que produce.
-##### Ejemplo:
+##### Ejemplo - Uso de col-{breakpoint}-#
 * Uso de los estilos `col-#` en combinación con `col-{breakpoint}-#` para controlar el comportamiento del renglón al alcanzar el breakpoint.
 * Hasta este momento, al alcanzar el breakpoint, las columnas se muestran de forma vertical y se expanden al 100%.  Con estas combinaciones se puede modificar el comportamiento. Revisar el siguiente ejemplo:
 
@@ -168,7 +168,7 @@ Estilo | Extra small <576px | Small >=576px | Medium >=768px | Large >=992px | E
 * El orden de los estilos es irrelevante.
 * El  código completo puede consultarse [aquí.](../ejemplos/modulo02/grid-example-04.html)
 * El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo02/grid-example-04.html)
-##### Ejemplo
+##### Ejemplo - Configurar estilos a nivel de renglón.
 * Uso del estilo `row-cols-*` para simplificar la configuración por columna. El estilo se aplica desde el elemento padre (desde el elemento `row` )
 * Se puede especificar el número de columnas a mostrar antes de pasarlas a un siguiente renglón.
 ```html
@@ -197,7 +197,7 @@ Estilo | Extra small <576px | Small >=576px | Medium >=768px | Large >=992px | E
 * El  código completo puede consultarse [aquí.](../ejemplos/modulo02/grid-example-05.html)
 * El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo02/grid-example-05.html)
 
-##### Ejemplo
+##### Ejemplo - Alineación horizontal
 * Alineación  horizontal de  renglones.
 * Se emplean los estilos` justify-content-start, justify-content-center, justify-content-end, justify-content-around, justify-content-between`
 * Estos estilos se especifican en conjunto con el estilo `row`
@@ -231,7 +231,7 @@ Estilo | Extra small <576px | Small >=576px | Medium >=768px | Large >=992px | E
 * El  código completo puede consultarse [aquí.](../ejemplos/modulo02/grid-example-06.html)
 * El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo02/grid-example-06.html)
 
-##### Ejemplo.
+##### Ejemplo - Alineación vertical
 * Alineación vertical de  renglones completos y de celdas individuales.
 * En este caso se emplean los estilos `align-items-start, align-items-center, align-items-end` , de igual forma, estos estilos se especifican en conjunto con el estilo `row`
 * Para realizar alineación por celda individual se emplean los estilos `align-self-start, align-self-center, align-self-end`.
@@ -261,7 +261,7 @@ Estilo | Extra small <576px | Small >=576px | Medium >=768px | Large >=992px | E
 ```
 * El  código completo puede consultarse [aquí.](../ejemplos/modulo02/grid-example-07.html)
 * El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo02/grid-example-07.html)
-##### Ejemplo
+##### Ejemplo - Offsets
 * Uso de offsets para mover o agregar espacios entre celdas.
 * Existen 2 técnicas
 	* Empleando estilos del propio Grid System (offset classes)
@@ -271,23 +271,32 @@ Estilo | Extra small <576px | Small >=576px | Medium >=768px | Large >=992px | E
 ```html
 <div>Row 1</div>
 <div class="row">
-  <div class="col-sm-2 offset-sm-2" style="background-color: lavender;">1</div>
-  <div class="col-sm-2 offset-sm-2" style="background-color: royalblue;">2</div>
-  <div class="col-sm-2 offset-sm-2" style="background-color: lightsalmon;">3</div>
+  <div class="col-sm-2 offset-sm-2" style="background-color: lavender;">3,4</div>
+  <div class="col-sm-2 offset-sm-2" style="background-color: royalblue;">7,8</div>
+  <div class="col-sm-2 offset-sm-2" style="background-color: lightsalmon;">11,12</div>
 </div>
 <div>Row 2</div>
 <div class="row">
-  <div class="col-md-2" style="background-color: lavender;">1</div>
-  <div class="col-md-2 offset-sm-8" style="background-color: royalblue;">2</div>
+  <div class="col-sm-2" style="background-color: lavender;">1,2</div>
+  <div class="col-sm-2 offset-sm-8" style="background-color: royalblue;">11,12</div>
 </div>
 <div>Row 3</div>
 <div class="row">
-  <div class="col-md-2 offset-md-5" style="background-color: lavender;">1</div>
+  <div class="col-sm-2 offset-md-5" style="background-color: lavender;">6,7-1,2</div>
 </div>
-```
+<div>Row 4</div>
+<div class="row">
+  <div class="col-sm-2 col-md-6" style="background-color: lavender;">1-6,1-2</div>
+</div>
+</div>
+``` 
+* En el primer renglón del grid,  se dibujan las columnas 3 y 4 dejando a la columna 1 y 2 libres las cuales se indican con el  valor 2 del offset.  Lo mismo ocurre con las restantes. Columnas 5 y 6 se dejan libres, se dibuja 7 y 8,  se dejan libres 9 y 10, y finalmente, se dibujan 11 y 12.
+* En el segundo renglón la primera columna no tiene offset,  es decir, se dibujan las columnas  1 y 2. La segunda columna tiene un offset de  8  columnas libres que en total suman 10.  Finalmente se dibujan las últimas 2 especificadas con el estilo `col-md-2`
+* En tercer renglón es un poco más complicado de entender.  Con pantalla mayor a `md` se dibujan las columnas 6 y 7 ya que se tiene un offset de 5. Sin embargo, observar el breakpoint del offset: `offset-md-5` el cual es diferente al offset de la columna:  `col-sm-2` . Esto significa que dicho offset desaparecerá cuando la pantalla se reduzca al breakpoint `md` . En ese momento solo se dibujarán las columnas 1 y 2, para finalmente, apilarse al 100% al reducir y alcanzar al breakpoint `sm`.
+* En el cuarto renglón no se tienen offsets. Se tiene una combinación de estilos.  Con pantalla mayor a `md` se pintan  las columnas 1 a 6. Al alcanzar `md` el estilo `col-md-6` desaparece y solo se pintan las columnas 1 y 2 especificadas en estilo `col-sm-2`, para finalmente ampliarse al 100% al reducir a `sm`
 * Observar que se trata de cuidar que la suma de las columnas + los offsets sea 12.
-* El  código completo puede consultarse [aquí.](../ejemplos/modulo02/grid-example-07.html)
-* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo02/grid-example-07.html)
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo02/grid-example-08.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo02/grid-example-08.html)
 
 ### 2.4 Valores por default para manejo de texto
 * `font-size` de 16px

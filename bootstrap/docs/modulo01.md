@@ -53,7 +53,7 @@ La normalización de los estilos es un requerimiento fundamental en la mayoría 
 <!-- código de la página -->
 </html>
 ```
-* Responsive meta-tag.   Bootstrap fue desarrollado al estilo *movile first* . Esto significa que su uso está optimizado para apps móviles y puede ser adaptado para escalar a aplicaciones web haciendo uso del concepto de  ***CSS media quieries***.   El atributo `viewport` permite implementar este comportamiento por lo que no debe omitirse:
+* Responsive meta-tag.   Bootstrap fue desarrollado al estilo *mobile first* . Esto significa que su uso está optimizado para apps móviles y puede ser adaptado para escalar a aplicaciones web haciendo uso del concepto de  ***CSS media queries***.   El atributo `viewport` permite implementar este comportamiento por lo que no debe omitirse:
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 ```
@@ -70,7 +70,7 @@ La normalización de los estilos es un requerimiento fundamental en la mayoría 
 * El  tamaño de un elemento con `context-box` es la suma de sus dimensiones + padding + border. 
 * A la suma anterior se le agrega el valor del margen para calcular el espacio total que ocupará un elemento.
 * Lo anterior implica que el diseñador tiene que considerar estas propiedades para calcular  el tamaño total y el espacio que ocupará un elemento.
-* El tamaño  total de un elemento con `border-box`incluye  los valores de las propiedades padding y border.  El navegador ajusta el tamaño del objeto para evitar sumar los valores de estas 2 propiedades. Por lo tanto, resulta más simple para disenar.
+* El tamaño  total de un elemento con `border-box`incluye  los valores de las propiedades padding y border.  El navegador ajusta el tamaño del objeto para evitar sumar los valores de estas 2 propiedades. Por lo tanto, resulta más simple para diseñar.
 ##### Ejemplo:
 * El siguiente código muestra  un elemento de 300 * 200 empleando ambos modelos `content-box` y `border-box`.
 ```css
@@ -115,7 +115,7 @@ La normalización de los estilos es un requerimiento fundamental en la mayoría 
 * Observar en el segundo caso, el navegador ajusta el tamaño del objeto para que la suma  border + padding + tamaño del elemento generen un total de 300 y 200, es decir, el navegador ajustó el tamaño del objeto a 260.   
 	* TotalAncho = 260 + 2 * (15 + 5) = 300 
 	* TotalAlto =  160 + 2 * (15  + 5) = 200
-* La medida del margen no se considera ya que no forma parte del tamaño del objeto, mas bien,  forma parte del espacio total que ocupará el objeto.
+* La medida del margen no se considera ya que no forma parte del tamaño del objeto, más bien,  forma parte del espacio total que ocupará el objeto.
 ### 1.3 Obtener e Instalar Bootstrap
 Bootstrap se puede descargar (archivo zip)  en 2 formatos:
 *  Forma *compilada*.  ¡En bootstrap los archivos CSS se compilan empleando  *Sass compiler* !
@@ -148,7 +148,7 @@ bootstrap/
     └── bootstrap.min.js.map
 ```
 *  Bootstrap se puede instalar empleando package managers como  `npm`, `yarn` , etc.
-* Notar el uso de rutas relativas. Se asume que en la carpeta donde se encuentra la plantilla se encuentran las carpeta `bootstrap` descargada.
+* Notar el uso de rutas relativas. Se asume que en la carpeta donde se encuentra la plantilla, se encuentra la carpeta `bootstrap` descargada.
 * `bootstrap.bundle.min.js`  incluye [Popper](https://popper.js.org/),  pero no  [jQuery](https://jquery.com/). Esta última librería se tiene que descargar e incorporar manualmente.   
 * Una vez que se tenga la instalación, la plantilla se configura de la siguiente manera:
 ```html
