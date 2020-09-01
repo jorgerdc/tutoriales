@@ -19,30 +19,30 @@
   	 <form action="">
       <!-- row 1-->
       <div class="form-group row">
-        <label for="nombre" class="col-md-2 col-form-label">Nombre: *</label>
+        <label for="nombre" class="col-md-2 col-form-label">Nombre</label>
         <input type="text" name="nombre" id="nombre" class="form-control col-md-7" 
           placeholder="Nombre del curso">
-        <label for="horas" class="col-md-2 col-form-label">Total de horas: *</label>
+        <label for="horas" class="col-md-2 col-form-label">Total de horas</label>
         <input type="text" name="horas" id="horas" class="form-control col-md-1" 
             placeholder="#">
       </div>
       <!-- row 2-->
       <div class="form-group form-row">
-        <label for="descripcion" class="col-md-2 col-form-label">Descripci&oacute;n:*</label>
+        <label for="descripcion" class="col-md-2 col-form-label">Descripci&oacute;n</label>
         <textarea class="form-control col-md-4" name="descripcion" id="descripcion" 
             placeholder="Descripcion del curso" rows="5"></textarea>
         <label for="aprendizaje" class="col-md-2 col-form-label">
-          Aprendizaje adquirido:*
+          Aprendizaje adquirido
         </label>
         <textarea class="form-control col-md-4" name="aprendizaje" id="aprendizaje" 
             placeholder="Aprendizaje adquirido en el curso" rows="5"></textarea>
       </div>
       <!-- row 3-->
       <div class="form-group form-row">
-        <label for="landing" class="col-md-2 col-form-label">Lannding Page:*</label>
+        <label for="landing" class="col-md-2 col-form-label">Lannding Page</label>
         <input type="text" name="landing" id="landing" class="form-control col-md-4" 
           placeholder=" http://www.landing.page.com">
-        <label for="landing" class="col-md-2 col-form-label">Logo:*</label>
+        <label for="landing" class="col-md-2 col-form-label">Logo</label>
         <div class="custom-file col-md-4 col-form-label form-group">
           <label class="custom-file-label " for="logo">Selecconar Archivo</label>
           <input type="file" class="custom-file-input" id="logo" name="logo">
@@ -50,8 +50,8 @@
       </div>
       <!-- row 4-->
       <div class="form-group form-row">
-        <label class="col-form-label col-md-2" for="modalidad-radios">Modalidad:*</label>
-        <div class="col-md-4" id="modalidad-radios">
+        <label class="col-form-label col-md-2" for="modalidad-radios">Modalidad</label>
+        <div class="col-md-4">
           <!-- radio 1-->
           <div class="custom-control custom-radio custom-control-inline" id="modalidad-radios">
             <input type="radio" name="modalidad" id="presencial" class="custom-control-input">
@@ -68,16 +68,14 @@
             <label for="hibrido" class="custom-control-label">H&iacute;brido</label>    
           </div>
         </div>
-        <label class="col-md-2 col-form-label" for="status">Status:* </label>
+        <label class="col-md-2 col-form-label" for="status">Status</label>
         <input type="text" name="landing" id="status" class="form-control col-md-2" 
           value="VIGENTE" readonly="true">
       </div>   
       <!-- row 5-->
-      <div class="form-group form-row">
-        <div class="offset-sm-5 col-sm-6">
-          <input class="btn btn-primary" type="reset" value="Limpiar">
-          <button type="submit" class="btn btn-primary">Siguiente</button>  
-        </div>
+      <div class="row justify-content-center">      
+        <input class="btn btn-primary mr-1" type="reset" value="Limpiar">  
+        <button type="submit" class="btn btn-primary ml-1">Siguiente</button>
       </div>
      </form>  
    </div>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+      crossorigin="anonymous">
+
+    <title>grid-examples</title>
+  </head>
+  <body>
+  	<div class="container-fluid">
+      <h5> Grid example 04</h5>
+      <div>Row 1</div>
+  	  <div class="row">
+      <!--Columnas responsivas, se ajustan al 100% al alcanzar el breakpoint-->
+      <div class="col-sm-4" style="background-color: lavender;">4 - 2</div>
+      <div class="col-sm-4" style="background-color: royalblue;">4 - 2</div>
+      <div class="col-sm-4" style="background-color: orange;">4 - 2</div>
+      </div>
+      <div>Row 2</div>
+      <div class="row">
+        <!--columnas responsivas, pero al alcanzar el breakpoint se quedan al 33.3%,
+            no se expanden al 100% -->
+        <div class="col-4 col-sm-4" style="background-color: lavender;">4 - 4</div>
+        <div class="col-4 col-sm-4" style="background-color: royalblue;">4 - 4</div>
+        <div class="col-4 col-sm-4" style="background-color: orange;">4 - 4</div>
+      </div>
+      <div>Row 3</div>
+      <div class="row">
+        <!--columnas responsivas, pero al alcanzar el breakpoint se distribuyen en proporción
+            de 2, 7 y 3 en lugar de expander al 100% -->
+        <div class="col-2 col-sm-4" style="background-color: lavender;">4 - 2</div>
+        <div class="col-7 col-sm-4" style="background-color: royalblue;">4 - 7</div>
+        <div class="col-3 col-sm-4" style="background-color: orange;">4 - 3</div>
+      </div>
+      <div>Row 4</div>
+      <div class="row">
+        <!--columnas responsivas, pero al alcanzar el breakpoint se distribuyen en proporción
+            de 2, 8 y 8. Al sumar la tercer columna genera un valor de 18 que excede del 
+             valor máximo 12, por lo tanto se baja al siguiente renglón conservando la proporción 
+        -->
+        <div class="col-2 col-sm-4" style="background-color: lavender;">4 - 2</div>
+        <div class="col-8 col-sm-4" style="background-color: royalblue;">4 - 7</div>
+        <div class="col-8 col-sm-4" style="background-color: orange;">4 - 3</div>
+      </div>
+      
+   </div>
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
+      crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	  
+    <title>Content Box Vs Border Box</title>
+    <style>
+      .content_box {
+        width: 300px;
+        height: 200px;
+        margin: 30px;
+        border: 5px solid gray;
+        padding: 15px;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+      }
+      .border_box {
+        width: 300px;
+        height: 200px;
+        margin: 30px;
+        border: 5px solid gray;
+        padding: 15px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }     
+    </style>
+  </head>
+  <body>
+    <h1>Content Box Vs Border Box</h1>
+    <div class="content_box">Content box 300 x 200</div>
+    <div class="border_box">Border box 300 x 200</div>
+  </body>
+</html>
