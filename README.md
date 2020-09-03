@@ -10,6 +10,7 @@ Este repositorio contiene material tipo tutorial de diversos temas:
 * Log4J
 * Bootstrap
 * ReactJS
+* TypeScript (Y TypeScript con React)
 ## Contribuciones
 * Todos los tutoriales están en constante actualización y desarrollo, algunos más completos que otros. 
 * Todos los interesados en contribuir y aprender son bienvenidos a través de sus PRs

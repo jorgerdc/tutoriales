@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"target": "es6",
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"lib": [
+			"es5",
+			"es2015.promise",
+			"dom",
+			"es2015"
+		],
+		"allowSyntheticDefaultImports": true,
+		"declaration": false,
+		"allowJs": true,
+		"strict": true,
+		"noEmitOnError": true,
+		"outDir": "dist",
+		"removeComments": true
+	},
+	"exclude": [
+		"dist",
+		"node_modules",
+		"13-1-namespaces.ts",
+		"13-2-namespaces.ts"
+	]
+}
