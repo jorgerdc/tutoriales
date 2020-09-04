@@ -3,6 +3,7 @@ build/
 target/
 bin/
 .gradle/
+.idea/
 .dropbox
 Icon
 *~
