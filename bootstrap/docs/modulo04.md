@@ -135,4 +135,15 @@
 ```
 * El  código completo puede consultarse [aquí.](../ejemplos/modulo04/navbar-example-07.html)
 * El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo04/navbar-example-07.html)
+### 4.7 Desarrollo de un template básico.
+* Revisar la carpeta `ejemplos/modulo04/template-simple`
+* En ella se encuentran algunos ejemplos con un template muy simple empleando únicamente las funcionalidades vistas hasta el momento completamente de cero.
+* Para visualizar el código usar los siguientes enlaces:
+	* [example-raven-01.html](../ejemplos/modulo04/example-raven-01.html)
+	* [example-raven-02.html](../ejemplos/modulo04/example-raven-02.html)
+* Para visualizar el template abrir los siguientes archivos.
+	* [example-raven-01.html](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo04/template-simple/example-raven-01.html)
+	* [example-raven-02.html](https://jorgerdc.github.io/tutoriales/bootstrap/ejemplos/modulo04/template-simple/example-raven-02.html)
+
+* Otra forma sencilla de incorporar templates ya programados de forma gratuita  es hacer uso de los [templates de bootstrap](https://getbootstrap.com/docs/4.5/examples/).
 ##### Fin de módulo.
