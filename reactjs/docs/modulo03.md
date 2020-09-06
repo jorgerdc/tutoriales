@@ -82,8 +82,8 @@ class Clock extends React.Component {
       </div>
     );
   }
-  ReactDOM.render(</Clock>, document.getElementById('root'));
 }
+ReactDOM.render(<Clock />, document.getElementById('root'));
 ```
 #### 3.1.3 Agregando métodos para controlar el ciclo de vida de un componente.
 * `componentDidMount`: Se invoca cuando se hace el render del componente en el DOM por primera vez. A este proceso se le conoce como *mounting* 
