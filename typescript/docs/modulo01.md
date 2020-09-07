@@ -38,6 +38,8 @@
         1. Unión
         2. Intersección
     12. [Clases](#clases)
+        1. Herencia
+        2. Modificadores de acceso
     13. [Objetos](#objetos)
     14. [Namespaces](#namespaces)
 
@@ -782,7 +784,7 @@ interface ClockInterface {
 }
 ```
 
-Todos estos ejemplos se pueden visualizar en el [código de ejemplo](../ejemplos/modulo01/09-interfaces-tipos.ts).
+Todos estos ejemplos se pueden visualizar en el [código de ejemplo](../ejemplos/modulo01/10-interfaces-tipos.ts).
 
 ## Unión e intersección
 
@@ -866,6 +868,209 @@ const handler = (response: RespuestaDeArticulos) => {
 ```
 
 ## Clases
+
+El JS tradicional utiliza funciones y herencia basada en prototipos para construir componentes reusables, pero siendo desarrolladores que
+estamos acostumbrados a una POO estándar, esto se siente un poco incómodo, dónde no tenemos una herencia con funcionalidad y objetos creados
+con clases. A partir de ES6 podemos trabajar con clases en JS, con algunas restricciones como en los modificadores de acceso. En TS se
+permite utilizar todas las técnicas que conocemos de POO sin problema alguno y se compila para cualquier versión de JS, sin tener que
+esperar a una versión específica de JS que soporte todas nuestras necesidades.
+
+Un ejemplo de clase simple
+
+```typescript
+class Saludador {
+  private readonly saludo: string;
+
+  constructor(message: string) {
+    this.saludo = message;
+  }
+
+  greet() {
+    return `Hello, ${this.saludo}`;
+  }
+}
+
+let saludador = new Saludador('world');
+```
+
+#### Herencia
+
+```typescript
+class Animal {
+  mover(distanciaEnMetros: number) {
+    console.log(`Animal se movió ${distanciaEnMetros}m.`);
+  }
+}
+class Perro extends Animal {
+  ladrar() {
+    console.log('Woof! Woof!');
+  }
+}
+const dog = new Perro();
+dog.ladrar();
+dog.mover(10);
+dog.ladrar();
+```
+
+#### Modificadores de acceso
+
+Aquí se cumplen todas las normas de la POO, se pueden tener niveles públicos `public`, protegidos `protected` y privados `private`, a
+diferencia de los lenguajes como C#, el nivel público no tiene que ser explícito, si no ponemos ningún modificador de acceso en alguna
+propiedad o método, se tomarán como públicos. Además, se toma en cuenta el modificador `readonly`, que funciona similar a `const`,
+únicamente permite la asignación de su valor directo o por constructor. Nunca permite ser modificado en otro lado.\
+Para recordar.
+
+- `public` puede ser accedido en cualquier lugar, en los métodos de la clase, en sus clases heredadas y en la instancia.
+- `protected` puede ser accedido en los métodos de la clase y en sus clases heredadas, no se puede acceder desde la instancia.
+- `private` puede ser accedido únicamente desde la definición de la clase, en sus clases heredadas y en la instancia no se puede.
+- `<public | protected | private> readonly` puede ser accedido en el lugar indicado, pero emitirá error si se intenta re-asignar, únicamente
+puede ser asignado en el constructor o con valor por default.
+
+```typescript
+class Persona {
+  protected _nombre: string;
+  private uid: string;
+  protected constructor(theName: string) {
+    this._nombre = theName;
+    this.uid = (new Date()).getTime().toString();
+  }
+  traeNombre() {
+    return this._nombre;
+  }
+}
+class Empleado extends Persona {
+  private readonly departamento: string;
+
+  constructor(nombre: string, departamento: string) {
+    super(nombre);
+    this.departamento = departamento;
+    // console.log(this._nombre); // Válido
+    // console.log(this.uid); // Error: Property 'uid' is private and only accessible within class 'Persona'.
+  }
+
+  public traePresentacion() {
+    // this.departamento = 'Prueba'; // Error: Attempt to assign to const or readonly variable
+    return `Hola, mi nombre es ${this.traeNombre()} y trabajo en ${this.departamento}.`;
+  }
+}
+let howard = new Empleado('Victor', 'departamento de TI');
+console.log(vic.traePresentacion());
+// let john = new Persona('Victor'); // Constructor of class 'Persona' is protected and only accessible within the class declaration.
+```
+
+#### Getters y setters
+
+TS también admite la posibilidad de usar getters y setters en sus clases, recordemos que un método `get` no puede recibir parámetros y
+retornar un valor no-vacío. Un método `set` siempre debe retornar `void` y tener exactamente un parámetro.
+
+```typescript
+class Persona {
+  protected _name: string;
+  public get name() {
+    return this._name;
+  }
+  public set name(newName: string) {
+    this._name = newName;
+  }
+}
+```
+
+#### Propiedades por parámetro
+
+Podemos asignar una propiedad a nuestra clase que se asignará en el constructor y se pide al momento de instanciarlo, esto es particularmente
+útil para inyección en Angular.
+
+```typescript
+class Pulpo {
+  readonly numberOfLegs: number = 8;
+  constructor(readonly name: string) {}
+}
+let pulpo = new Pulpo('Animal que tiene 8 fuertes tentáculos');
+console.log(pulpo.name);
+```
+
+#### Propiedades, métodos y clases estáticas
+
+Hasta ahora hemos trabajado con clases, sus propiedades y métodos que usamos instanciando con `new Clase()`, sin embargo, podemos hacer uso
+de lo estático, que no requiere ser instanciado y se trabaja con la definición directa de una clase.
+
+```typescript
+class Grid {
+  static origen = { x: 0, y: 0 };
+
+  calculaDistanciaDesdeElOrigen(punto: { x: number; y: number }): number {
+    const xDist = punto.x - Grid.origen.x;
+    const yDist = punto.y - Grid.origen.y;
+    return Math.sqrt(xDist * xDist + yDist * yDist) / this.escala;
+  }
+
+  constructor(public escala: number) {}
+
+  static calculaDistanciaEnUnEje(eje: 'x' | 'y', distancia: number): number {
+    let dist = distancia - Grid.origen.x;
+    if (eje === 'y') {
+      dist = distancia - Grid.origen.y;
+    }
+    return dist;
+  }
+}
+
+let grid1 = new Grid(1.0); // escala 1x
+let grid2 = new Grid(5.0); // escala 5x
+
+console.log(grid1.calculaDistanciaDesdeElOrigen({ x: 10, y: 10 }));
+console.log(grid2.calculaDistanciaDesdeElOrigen({ x: 10, y: 10 }));
+console.log(Grid.calculaDistanciaEnUnEje('x', 100));
+```
+
+#### Clases abstractas
+
+Las clases abstractas son claes "base" en las cuales otras clases se derivan, se caracterizan por no poder ser instanciadas directamente,
+pero, a diferencia de una interfaz, una clase abstracta puede contener implementación de sus métodos.
+
+```typescript
+abstract class Mamifero {
+  abstract makeSound(): void;
+
+  move(): void {
+    console.log('roaming the earth...');
+  }
+}
+class Gato implements Mamifero {
+  makeSound(): void {
+    console.log('Meow');
+  }
+
+  move(): void {
+    console.log('Roaming the earth...');
+  }
+
+}
+const mamifero = new Mamifero(); // Error: Cannot create an instance of an abstract class.
+```
+
+#### Interfaces y clases
+
+Podemos hacer una especie de combinación de uso a las clases e interfaces, es importante mencionar que una clase si existirá en runtime de
+JS, pero una interfaz no. Esto quiere decir que si queremos checar el tipo con `typeof` de un objeto, únicamente podremos hacerlo con
+chequeo de clase, pero no de interfaz.
+
+```typescript
+class Point {
+  x: number = 0;
+  y: number = 0;
+}
+interface Point3d extends Point {
+  z: number;
+}
+class Coordenadas implements Point3d {
+  private origen = { x: 0, y: 0, z: 0 };
+  constructor(public x: number, public y: number, public z: number) {}
+}
+let point3d: Point3d = { x: 1, y: 2, z: 3 };
+let coordenadas: Coordenadas = new Coordenadas(1, 2, 3);
+```
+
 ## Objetos
 ## Namespaces
 

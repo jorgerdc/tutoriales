@@ -28,6 +28,7 @@
 		"no-increment-decrement": false,
     "no-sparse-arrays": true,
     "no-magic-numbers": [true, -1, 0, 1, 2, 3, 4, 5, 6, 10, 100, 1000],
-    "quotemark": [true, "single"]
+    "quotemark": [true, "single"],
+		"max-classes-per-file": false
 	}
 }
