@@ -7,16 +7,14 @@ Contenido del tutorial
 ### 1.03 Sintaxis básico
 ### 1.04 Tipos
 ### 1.05 Variables
-### 1.06 Operadores
-### 1.07 Funciones
-### 1.08 Utilidades (Number, String, Array)
-### 1.09 Enumeraciones
-### 1.10 Tupla vs Array
-### 1.11 Unión e intersección
-### 1.12 Interfaces
-### 1.13 Clases
-### 1.14 Objetos
-### 1.15 Namespaces
+### 1.06 Utilidades (Number, String, Array)
+### 1.07 Enumeraciones
+### 1.08 Tupla vs Array
+### 1.09 Interfaces y tipos
+### 1.10 Unión e intersección
+### 1.11 Clases
+### 1.12 Objetos
+### 1.13 Namespaces
 
 ## 2. [Uso de TypeScript con React](./modulo02.md)
 

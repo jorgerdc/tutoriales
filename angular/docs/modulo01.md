@@ -84,7 +84,7 @@ Uso del componente:
 Como se mencionó anteriormente, trabajaremos con Angular CLI. Previamente necesitamos instalar NodeJS para poder hacer uso de su gestor de
 paquetes npm.
 
-#### Instalación en MacOS y Windows
+#### Instalación de npm en MacOS y Windows
 
 Simplemente ingresamos al [sitio oficial de node](https://nodejs.org/) y bajamos el instalador para nuestro sistema operativo, posterior a
 la instalación, abrimos un cmd/powershell o una terminal y ejecutamos los comandos `node -v` y `npm -v`. Para efectos de este curso, se
@@ -97,7 +97,7 @@ v12.18.3
 6.14.8
 ```
 
-#### Instalación en Linux
+#### Instalación de npm en Linux
 
 Para instalar node desde alguna distro basada en debian hay que agregar el setup para la versión que queremos utilizar.
 
