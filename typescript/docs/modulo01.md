@@ -2,27 +2,48 @@
 
 ## Contenido módulo 1
 
-1. [Introducción a TypeScript](#introduccin-a-typescript)\
-1.1. [¿Qué es TypeScript?](#qu-es-typescript)\
-1.2. [Instalación y preparación de nuestro entorno de desarrollo](#instalacin-y-preparacin-de-nuestro-entorno-de-desarrollo)\
-1.2.1 Instalación de npm en MacOS y Windows\
-1.2.2 Instalación de npm en Linux\
-1.2.3 tslint\
-1.3. [Sintaxis básico](#sintaxis-bsico)\
+1. [Introducción a TypeScript](#introducción-a-typescript)\
+1.1. [¿Qué es TypeScript?](#qué-es-typescript)\
+1.2. [Instalación y preparación de nuestro entorno de desarrollo](#instalación-y-preparación-de-nuestro-entorno-de-desarrollo)\
+1.2.1. Instalación de npm en MacOS y Windows\
+1.2.2. Instalación de npm en Linux\
+1.2.3. tsconfig.json\
+1.2.4. tslint\
+1.3. [Sintaxis básico](#sintaxis-básico)\
 1.4. [Tipos](#tipos)\
-1.5. [Variables](#variables)\
-1.6. [Utilidades (Number, String, Array)](#utilidades-number-string-array)\
-1.7. [Enumeraciones](#enumeraciones)\
-1.8. [Tupla vs Array](#tupla-vs-array)\
-1.9. [Interfaces y tipos](#interfaces-y-tipos)\
-1.10. [Unión e intersección](#unin-e-interseccin)\
-1.11. [Clases](#clases)\
-1.12. [Objetos](#objetos)\
-1.13. [Namespaces](#namespaces)
+1.4.1. Boolean\
+1.4.2. Number\
+1.4.3. String\
+1.4.4. Array\
+1.4.5. Tuple\
+1.4.6. Enum\
+1.4.7. Date\
+1.4.8. Object\
+1.4.9. Any\
+1.4.10. Void\
+1.4.11. Null/Undefined\
+1.4.12. Unknown\
+1.5. [Afirmación (Assertions)](#afirmación-assertions)\
+1.6. [Variables](#variables)\
+1.6.1. Scope\
+1.6.1. Funciones anónimas ES6\
+1.7. [Utilidades (Number, String, Array)](#utilidades-number-string-array)\
+1.7.1. Number
+1.7.2. String
+1.7.3. Array
+1.8. [Enumeraciones](#enumeraciones)\
+1.9. [Tupla vs Array](#tupla-vs-array)\
+1.10. [Interfaces y tipos](#interfaces-y-tipos)\
+1.11. [Unión e intersección](#unión-e-intersección)\
+1.11.1. Unión
+1.11.1. Intersección
+1.12. [Clases](#clases)\
+1.13. [Objetos](#objetos)\
+1.14. [Namespaces](#namespaces)
 
-## Introducción a TypeScript
+# Introducción a TypeScript
 
-### ¿Qué es TypeScript?
+## ¿Qué es TypeScript?
 
 TypeScript es un super-conjunto de JavaScript, esto quiere decir que TS abarca todo el contenido de JS y le añade funcionalidad que JS no
 incluye, principalmente agrega el uso de tipos, aunque el atractivo más grande de TS es la implementación completa de la POO con clases,
@@ -68,7 +89,7 @@ ahora veremos la salida de TypeScript
 
 ![TypeScript](https://www.filepicker.io/api/file/19uUx4kDS7ecP6YDadXg)
 
-### Instalación y preparación de nuestro entorno de desarrollo
+## Instalación y preparación de nuestro entorno de desarrollo
 
 Estaremos trabajando desde consola y un editor, por lo que previamente necesitamos instalar NodeJS para poder hacer uso de su gestor de
 paquetes npm e instalar el compilador de TypeScript (tsc por sus siglas en inglés).
@@ -149,7 +170,7 @@ Al verificar nuestro `package.json`, debe estar la siguiente información:
 
 En el archivo de [ejemplo para el módulo 1](../ejemplos/modulo01/tslint.json) se incluye un ejemplo básico de reglas comúnmente estandarizadas.
 
-### Sintaxis básico
+## Sintaxis básico
 
 Veamos un ejemplo de una suma en JavaScript con un error intencional, sin embargo, JavaScript nunca lo detecta.
 
@@ -213,7 +234,7 @@ llamarla con parámetros número, objeto, string, null y arreglo de números, po
 archivo ".js", si corregimos el código y pasamos valores válidos y volvemos a ejecutar el comando `tsc`, no habrá salida en consola y se
 generará el archivo ".js" en una carpeta de salida, denominada `dist`.
 
-### Tipos
+## Tipos
 
 En esta sección hablaremos un poco acerca de los tipos de las variables en TS, algo importante de mencionar es que hay tipos de variable
 inferidos, es decir, si declaramos una variable con un valor inicial, no es necesario indicar de que tipo se trata, dado que el tipo se toma
@@ -395,7 +416,7 @@ if (typeof maybe === "string") {
 }
 ```
 
-### Afirmación (Assertions)
+## Afirmación (Assertions)
 
 Puede existir alguna situación donde sepamos "más" que el compilador en la ejecución de nuestro proyecto dónde sea necesario "forzar" el
 tipo de una variable o retorno de una función, hagamos un ejemplo.\
@@ -464,7 +485,7 @@ const numero = 5;
 Lo anterior pasaría la compilación pero generaría un error en tiempo de ejecución, si nos vemos en la necesidad de usar assertions, ser en
 extremo cuidadosos.
 
-### Variables
+## Variables
 
 En esta sección no hablaremos del scope que no es algo particular de TS, también de JS, además de la forma de declarar variables en TS.\
 Las siguientes formas de declarar una variable, todas son válidas para TS, aunque no todas para un linter.
@@ -603,7 +624,7 @@ console.log(construyeNombreFormal('Victor', 'Servin')); // Sr. Victor Servin
 console.log(construyeNombreFormal('Victor', 'Servin', 'Ing.')); // Ing. Victor Servin
 ```
 
-### Utilidades (Number, String, Array)
+## Utilidades (Number, String, Array)
 
 Existen algunas utilidades con los objetos globales en TS y JS que nos permiten manejar mejor las situaciones que se nos presentan día a día
 
@@ -666,7 +687,7 @@ Hay una cantidad gigante de métodos para arreglos y probablemente tardemos much
 usarlos en la práctica usando alguna documentación, en mi caso me gusta la documentación de
 [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
-### Enumeraciones
+## Enumeraciones
 
 TS agrega un tipo de dato llamado enumeración o `enum`, es un tipo muy común en lenguajes como C# o Java, en palabras muy simples, permite
 usar valores más comprensibles al programador a valores que solo utilizan números.
@@ -692,7 +713,7 @@ enum Color {
 let c: Color = Color.Green;
 ```
 
-### Tupla vs Array
+## Tupla vs Array
 
 Un arreglo en TS siempre debe ser un arreglo de determinado tipo, ese tipo puede ser simple o complejo (los complejos los veremos en la
 sección de interfaces y tipos), pero una tupla o `tuple` permite expresar un arreglo con un número fijo de casillas (length) pero con
@@ -722,7 +743,7 @@ puntos.forEach((p) => {
 });
 ```
 
-### Interfaces y tipos
+## Interfaces y tipos
 
 Aquí vamos a entrar un poco en conflicto con la POO, en POO las interfaces se definen como clases o métodos abstractos que definen contratos
 de interacción entre objetos y solo le importa el comportamiento de los objetos, no puedes declarar una propiedad en una interfaz (o no
@@ -763,7 +784,7 @@ interface ClockInterface {
 
 Todos estos ejemplos se pueden visualizar en el [código de ejemplo](../ejemplos/modulo01/09-interfaces-tipos.ts).
 
-### Unión e intersección
+## Unión e intersección
 
 Frecuentemente nos encontraremos en la situación donde nuestras funciones, métodos o utilidades pueden recibir diferentes tipos de datos y
 retornar diferentes posibilidades de ellos, la unión e intersección nos ayudan a combinar algún tipo o interfaz existente en vez de realizar
@@ -844,8 +865,8 @@ const handler = (response: RespuestaDeArticulos) => {
 };
 ```
 
-### Clases
-### Objetos
-### Namespaces
+## Clases
+## Objetos
+## Namespaces
 
 ##### Fin de módulo
