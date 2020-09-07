@@ -2,44 +2,44 @@
 
 ## Contenido módulo 1
 
-1. [Introducción a TypeScript](#introducción-a-typescript)\
-1.1. [¿Qué es TypeScript?](#qué-es-typescript)\
-1.2. [Instalación y preparación de nuestro entorno de desarrollo](#instalación-y-preparación-de-nuestro-entorno-de-desarrollo)\
-1.2.1. Instalación de npm en MacOS y Windows\
-1.2.2. Instalación de npm en Linux\
-1.2.3. tsconfig.json\
-1.2.4. tslint\
-1.3. [Sintaxis básico](#sintaxis-básico)\
-1.4. [Tipos](#tipos)\
-1.4.1. Boolean\
-1.4.2. Number\
-1.4.3. String\
-1.4.4. Array\
-1.4.5. Tuple\
-1.4.6. Enum\
-1.4.7. Date\
-1.4.8. Object\
-1.4.9. Any\
-1.4.10. Void\
-1.4.11. Null/Undefined\
-1.4.12. Unknown\
-1.5. [Afirmación (Assertions)](#afirmación-assertions)\
-1.6. [Variables](#variables)\
-1.6.1. Scope\
-1.6.1. Funciones anónimas ES6\
-1.7. [Utilidades (Number, String, Array)](#utilidades-number-string-array)\
-1.7.1. Number
-1.7.2. String
-1.7.3. Array
-1.8. [Enumeraciones](#enumeraciones)\
-1.9. [Tupla vs Array](#tupla-vs-array)\
-1.10. [Interfaces y tipos](#interfaces-y-tipos)\
-1.11. [Unión e intersección](#unión-e-intersección)\
-1.11.1. Unión
-1.11.1. Intersección
-1.12. [Clases](#clases)\
-1.13. [Objetos](#objetos)\
-1.14. [Namespaces](#namespaces)
+1. [Introducción a TypeScript](#introducción-a-typescript)
+    1. [¿Qué es TypeScript?](#qué-es-typescript)
+    2. [Instalación y preparación de nuestro entorno de desarrollo](#instalación-y-preparación-de-nuestro-entorno-de-desarrollo)
+        1. Instalación de npm en MacOS y Windows
+        2. Instalación de npm en Linux
+        3. tsconfig.json
+        4. tslint
+    3. [Sintaxis básico](#sintaxis-básico)
+    4. [Tipos](#tipos)
+        1. Boolean
+        2. Number
+        3. String
+        4. Array
+        5. Tuple
+        6. Enum
+        7. Date
+        8. Object
+        9. Any
+        10. Void
+        11. Null/Undefined
+        12. Unknown
+    5. [Afirmación (Assertions)](#afirmación-assertions)
+    6. [Variables](#variables)
+        1. Scope
+        2. Funciones anónimas ES6
+    7. [Utilidades (Number, String, Array)](#utilidades-number-string-array)
+        1. Number
+        2. String
+        3. Array
+    8. [Enumeraciones](#enumeraciones)
+    9. [Tupla vs Array](#tupla-vs-array)
+    10. [Interfaces y tipos](#interfaces-y-tipos)
+    11. [Unión e intersección](#unión-e-intersección)
+        1. Unión
+        2. Intersección
+    12. [Clases](#clases)
+    13. [Objetos](#objetos)
+    14. [Namespaces](#namespaces)
 
 # Introducción a TypeScript
 
