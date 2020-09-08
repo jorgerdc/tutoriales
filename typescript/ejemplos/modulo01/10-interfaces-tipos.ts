@@ -10,10 +10,10 @@ interface Auto {
   marca: string;
   [propiedad: string]: any;
 }
-interface Animal {
+interface Animal1 {
   nombre: string;
 }
-interface Perro extends Animal {
+interface Perro1 extends Animal1 {
   raza: string;
 }
 interface ClockInterface {
@@ -44,7 +44,7 @@ const modeloS: Auto = {
   }
 };
 
-const caramelo: Perro = {
+const caramelo: Perro1 = {
   nombre: 'caramelo',
   raza: 'Boxer'
 };

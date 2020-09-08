@@ -12,7 +12,7 @@ declare function getSmallPet(): Fish | Bird; // unión
 
 let pet: Fish | Bird = getSmallPet();
 pet.layEggs(); // Disponible en sus 2 posibles tipos
-pet.swim(); // Solo disponible en uno de sus tipos: Property 'swim' does not exist on type 'Bird | Fish'.
+// pet.swim(); // Solo disponible en uno de sus tipos: Property 'swim' does not exist on type 'Bird | Fish'.
 
 type NetworkLoadingState = {
   state: 'loading';

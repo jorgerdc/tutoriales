@@ -4,7 +4,9 @@
   "description": "Paquetes de ejemplo para el tutorial de typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && npm run build:namespace",
+    "build:namespace": "tsc --outFile dist/13-namespaces.js 13-1-namespaces.ts 13-2-namespaces.ts",
+    "run:namespace": "tsc --outFile dist/13-namespaces.js 13-1-namespaces.ts 13-2-namespaces.ts && node dist/13-namespaces.js"
   },
   "author": "vservin",
   "license": "ISC",

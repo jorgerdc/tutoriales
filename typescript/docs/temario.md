@@ -14,8 +14,7 @@ Contenido del tutorial
 ### 1.10 Interfaces y tipos
 ### 1.11 Unión e intersección
 ### 1.12 Clases
-### 1.13 Objetos
-### 1.14 Namespaces
+### 1.13 Namespaces
 
 ## 2. [Uso de TypeScript con React](./modulo02.md)
 

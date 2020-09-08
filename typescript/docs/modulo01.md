@@ -40,8 +40,7 @@
     12. [Clases](#clases)
         1. Herencia
         2. Modificadores de acceso
-    13. [Objetos](#objetos)
-    14. [Namespaces](#namespaces)
+    13. [Namespaces](#namespaces)
 
 # Introducción a TypeScript
 
@@ -1071,7 +1070,142 @@ let point3d: Point3d = { x: 1, y: 2, z: 3 };
 let coordenadas: Coordenadas = new Coordenadas(1, 2, 3);
 ```
 
-## Objetos
 ## Namespaces
+
+Los namespaces nos ayudan a desarrollar cuando estamos utilizando TS para desarrollar en un entorno como el navegador. Cuando trabajamos con
+varios archivos JS, es necesario importar cada uno en el HTML que estemos trabajando, para utilizar alguna función que tenemos declarado en
+otro archivo, bastaba con importarlo en el orden correcto en el HTML, sin embargo el editor y/o IDE no reconocía de forma correcta las
+funciones, no teníamos autocompletado, etc. Con TS esto no es problema, imaginemos que tenemos un archivo con clases validadoras como el
+siguiente:
+
+```typescript
+const lettersRegexp = /^[A-Za-z]+$/;
+const numberRegexp = /^[0-9]+$/;
+
+interface StringValidator {
+  isAcceptable(s: string): boolean;
+}
+
+class LettersOnlyValidator implements StringValidator {
+  isAcceptable(s: string) {
+    return lettersRegexp.test(s);
+  }
+}
+class ZipCodeValidator implements StringValidator {
+  isAcceptable(s: string) {
+    return s.length === 5 && numberRegexp.test(s);
+  }
+}
+```
+
+Sin embargo, queremos hacer uso de `LettersOnlyValidator` y `ZipCodeValidator` en otro archivo. Si estuviéramos trabajando con node
+simplemente podríamos exportar e importar lo que necesitemos, de la siguiente forma:
+
+```typescript
+// Validadores.ts
+const lettersRegexp = /^[A-Za-z]+$/;
+const numberRegexp = /^[0-9]+$/;
+
+export interface StringValidator {
+  isAcceptable(s: string): boolean;
+}
+
+export class LettersOnlyValidator implements StringValidator {
+  isAcceptable(s: string) {
+    return lettersRegexp.test(s);
+  }
+}
+export class ZipCodeValidator implements StringValidator {
+  isAcceptable(s: string) {
+    return s.length === 5 && numberRegexp.test(s);
+  }
+}
+// App.ts
+import { StringValidator, LettersOnlyValidator, ZipCodeValidator } from './Validadores';
+
+let validators: { [s: string]: StringValidator } = {};
+validators['ZIP code'] = new ZipCodeValidator();
+validators['Letters only'] = new LettersOnlyValidator();
+```
+
+Sin embargo, si utilizamos este tipo de nomenclatura, todo está correcto para TS, pero una vez que utilicemos el archivo en nuestro
+navegador, no funcionará correctamente, dado que el JS de node, utiliza module.exports como forma de export/import y los módulos no existen
+en el navegador (a nivel código). Aquí es donde los `namespace` entran.
+
+Todos los archivos que queramos "exportar" serán envueltos por un namespace de la siguiente forma:
+
+```typescript
+namespace Validation {
+  const lettersRegexp = /^[A-Za-z]+$/;
+  const numberRegexp = /^[0-9]+$/;
+  export interface StringValidator {
+    isAcceptable(s: string): boolean;
+  }
+  export class LettersOnlyValidator implements StringValidator {
+    isAcceptable(s: string) {
+      return lettersRegexp.test(s);
+    }
+  }
+  export class ZipCodeValidator implements StringValidator {
+    isAcceptable(s: string) {
+      return s.length === 5 && numberRegexp.test(s);
+    }
+  }
+}
+```
+
+Ahora, está listo para ser importado en otro archivo, supongamos que tenemos un archivo dónde usaremos las validaciones, pero, ¿Cómo podemos
+importarlas y compilarlas? Previo al uso del código debemos hacer una especie de referencia que reconozca TS, esto se hace con una especie de
+etiqueta:
+
+```typescript
+/// <reference path="Validadores.ts" />
+```
+
+Posteriormente, podemos hacer uso sin problema de los "exports" del namespace, para el ejemplo anterior podemos hacer uso de las clases 
+`ZipCodeValidator` y `LettersOnlyValidator`, o de la interfaz `StringValidator`, pero no podremos hacer uso de `lettersRegexp` ni
+`numberRegexp`, por ejemplo:
+
+```typescript
+/// <reference path="Validadores.ts" />
+
+let strings = ['Hello', '98052', '101']; // Cadenas a validar
+
+// Validadores a usar
+let validators: { [s: string]: Validation.StringValidator } = {};
+validators['ZIP code'] = new Validation.ZipCodeValidator();
+validators['Letters only'] = new Validation.LettersOnlyValidator();
+
+// Muestra si cada cadena pasa cada validador.
+for (const s of strings) {
+  for (const name of Object.keys(validators)) {
+    console.log(`"${s}" - ${validators[name].isAcceptable(s) ? 'matches' : 'does not match'} ${name}`);
+  }
+}
+```
+
+Ahora debemos compilar un poco diferente nuestros archivos, dado que la sección de `<reference path="Validadores.ts" />` se toma como un
+comentario más de nuestro archivo, el parámetro `--outFile` y como argumento los archivos que utilizamos (namespaces y usos), combinará
+los archivos un uno solo, resolviendo las dependencias que tienen entre ellos.
+
+```console
+tsc --outFile dist/13-namespaces.js 13-1-namespaces.ts 13-2-namespaces.ts
+```
+
+Esto generará el archivo `13-namespaces.js` dentro de la carpeta `dist`, tomando en cuenta el código de los archivos `13-1-namespaces.ts` y
+`13-2-namespaces.ts`, listo para ser importado en un navegador o probar con node.
+
+Se agregan con este proyecto unos cuantos scripts de npm básicos, para construir todos los archivos, estos scripts se pueden ver en el
+archivo `package.json` en la sección `scripts`.
+
+```json
+{
+  "scripts": {
+    "build": "tsc && npm run build:namespace",
+    "build:namespace": "tsc --outFile dist/13-namespaces.js 13-1-namespaces.ts 13-2-namespaces.ts",
+    "run:namespace": "tsc --outFile dist/13-namespaces.js 13-1-namespaces.ts 13-2-namespaces.ts && node dist/13-namespaces.js"
+  }
+}
+```
 
 ##### Fin de módulo

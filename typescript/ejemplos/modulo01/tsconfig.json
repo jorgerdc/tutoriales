@@ -23,6 +23,8 @@
 	},
 	"exclude": [
 		"dist",
-		"node_modules"
+		"node_modules",
+		"13-1-namespaces.ts",
+		"13-2-namespaces.ts"
 	]
 }
