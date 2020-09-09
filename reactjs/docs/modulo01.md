@@ -161,8 +161,8 @@ ReactDOM.render(
   </head>
   <body>
     <h2>Iniciando con React</h2>
-    <!-- El componente de React será mostrado aquí. Generalmente este
-         tag se queda vacío. -->
+    <!-- El componente de React será mostrado aquí. 
+      Generalmente este tag se queda vacío. -->
     <div id="root"></div>
     <!-- Cargar React. -->
     <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
@@ -174,6 +174,8 @@ ReactDOM.render(
   </body>
 </html>
 ```
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo01/holaMundo.html)
+
 #### 1.3.2 Ejemplo 2 - Hola Mundo con React y JSX
 * Como se mencionó anteriormente,  JSX requiere ser compilado para generar código JS. 
 * Existe un [compilador Babel]([https://babeljs.io/en/repl](https://babeljs.io/en/repl)) en línea que puede ser empleado para transformar JSX en en código JS.
@@ -218,6 +220,7 @@ ReactDOM.render(
   </body>
 </html>
 ```
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo01/holaMundoJSX.html)
 #### 1.3.3 Agregando soporte de JSX a un proyecto.
 * Finalmente, el proceso de compilación e integración de JSX se puede integrar a un proyecto React para realizar el proceso de compilación y construcción de la aplicación. 
 * El proceso es sencillo, similar al uso de un *pre-procesador css* .

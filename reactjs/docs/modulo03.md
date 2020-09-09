@@ -23,8 +23,7 @@ function tick(){
 setInterval(tick,1000);
 ```
 * El código anterior tiene  un detalle:  necesita auxiliarse de la función `setInterval`para poder actualizar la hora cada segundo. 
-* Lo ideal sería que el componente se actualizara por si mismo.
-* Para ello es necesario que el componente `Clock`se actualice por si solo. Para ello el componente deberá contar con su *estado*.
+* Lo ideal sería que el componente `Clock` se actualizara por si mismo, para ello el componente deberá contar con su *estado*.
 * Cada componente administra de forma privada o local  a su propio estado.
 * Para realizar lo anterior, el componente debe ser reescrito o ser convertido en una **clase**.
 #### 3.1.1 Conversión de un function component a una Clase.
@@ -67,7 +66,6 @@ class Clock extends React.Component {
 * El código final quedará así:
 ```jsx
 class Clock extends React.Component {
-
   constructor(props){
     //invocar siempre al constructor nbase
     super(props);
@@ -83,7 +81,7 @@ class Clock extends React.Component {
     );
   }
 }
-ReactDOM.render(<Clock />, document.getElementById('root'));
+ReactDOM.render(<Clock/>, document.getElementById('root'));
 ```
 #### 3.1.3 Agregando métodos para controlar el ciclo de vida de un componente.
 * `componentDidMount`: Se invoca cuando se hace el render del componente en el DOM por primera vez. A este proceso se le conoce como *mounting* 
@@ -176,6 +174,8 @@ ReactDOM.render(<Clock/>, document.getElementById('root'));
 * Se invoca a `render` Al invocarlo React determina lo que se debe actualizar en la UI. React actualiza el DOM con el contenido de este método.
 * Al actualizar el DOM, se invoca a `componentDidMount`. Con base al ejemplo, el componente le solicita al navegador inicializar el timer haciendo uso del método `tick`como callback.
 * Cada segundo el navegador invoca a la función `tick`. Al actualizar la fecha, se produce un cambio en la UI al invocar a `setState`, es decir, se invoca nuevamente a `render`con la fecha actualizada. 
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo03/clock.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo03/clock.html)
 #### 3.1.4 Algunas reglas para administrar el estado de un componente.
 * No modificar el estado de forma directa:
 ```jsx

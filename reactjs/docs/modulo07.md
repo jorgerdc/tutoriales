@@ -44,6 +44,8 @@ class NameForm extends React.Component {
 ReactDOM.render(<NameForm/>, document.getElementById('root'));
 ```
 * Este ejemplo funciona para todos los elementos de un formulario que aceptan a un atributo `value`.
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo07/nameForm.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo07/nameForm.html)
 #### 7.2.1 Elemento `<textarea>`
 * Este elemento no define un atributo `value`	 que permita obtener el texto capturado. 
 * El texto se encuentra en el elemento hijo del tag `<textarea>`
@@ -52,7 +54,7 @@ ReactDOM.render(<NameForm/>, document.getElementById('root'));
   Texto capturado
 </textarea>
 ```
-* A pesar de no contar con este atributo, en ReactJS se emplea un atributo llamado `value`para controlar el contenido del elemento:
+* A pesar de no contar con este atributo, en ReactJS se emplea un atributo llamado `value` para controlar el contenido del elemento:
 ```jsx
 render(){
   return(
@@ -112,9 +114,11 @@ ReactDOM.render(<SelectForm/>, document.getElementById('root'));
 <select multiple={true} value={['A','B','C']}>
 ```
 * Los elementos `<input>`, `<textarea>` y `<select>` se manejan de forma muy similar a través del atributo `value`.
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo07/selectForm.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo07/selectForm.html)
 ### 7.3 Manejando múltiples elementos.
 * En el siguiente ejemplo se muestra la definición de un componente React que realiza el control de Múltiples elementos.
-* En este ejemplo,  al enviar el formulario, se muestra un `alert` con los valores capturados de cada uno de los elementos.
+* Al enviar el formulario, se muestra un `alert` con los valores capturados de cada uno de los elementos.
 ##### Ejemplo:
 ```jsx
 class MultipleElements extends React.Component {
@@ -199,6 +203,8 @@ this.setState(
 }
 ```
 * Para mayores detalles en cuanto al concepto de *Computed property names*  revisar el [siguiente enlace](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names).
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo07/multipleElements.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo07/multipleElements.html)
 ### 7.4 Uncontrolled components. 
 * En un componente controlado, los datos son administrados por ReactJS.
 * En un componente no controlado, los datos son manejados por el propio DOM.
@@ -247,9 +253,11 @@ ReactDOM.render(<UncontrolledComponents/>, document.getElementById('root'));
 * Cada `Ref` corresponde a un atributo de la clase.
 * Estos objetos se asocian a los elementos html a través del atributo `ref`.
 * Observar que esta técnica no requiere el uso de `handlers`.
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo07/uncontrolledComponents.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo07/uncontrolledComponents.html)
 #### 7.4.1 Elemento `<input type="file>"` 
 * El archivo puede ser enviado al servidor a través de Javascript llamada [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
-* En React este elemento siempre es considerado como *uncontrolled component* ya que su valor es establecido por le usuario, nunca de forma programática.
+* En React este elemento siempre es considerado como *uncontrolled component* ya que su valor es establecido por el usuario, nunca de forma programática.
 * Su manejo en un componente React se realiza a través del uso de un `Ref`.
 ##### Ejemplo:
 * Generar un componente que muestre el nombre del archivo que será enviado al servidor.
@@ -276,6 +284,8 @@ class FileElement extends React.Component{
 }
 ReactDOM.render(<FileElement/>, document.getElementById('root'));
 ```
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo07/fileElement.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo07/fileElement.html)
 * Finalmente, una de las soluciones más completas en cuanto al manejo de formularios, validación, manejo de eventos, etc., es [Formik.](https://formik.org/)
 * Esta herramienta está basada en el concepto de *controlled components* y el uso de `setState`. Se revisará más adelante.
 ##### Fin de módulo.
