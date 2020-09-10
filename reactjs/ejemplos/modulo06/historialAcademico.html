@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <title>Historial Acad&eacutemico</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="root"></div>
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: Para producción reemplazar "development.js" por "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- compilador de JSX, no usar en producción --->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      const Asignatura = (props) => {
+        const item = props.item;
+        const index = props.index;
+        const className =
+          item.calificacion < 7 ? "text-danger font-weight-bold" : "";
+        return (
+          <tr className={className}>
+            <th scope="row">{index + 1}</th>
+            <td>{item.asignatura}</td>
+            <td className="text-center">{item.creditos}</td>
+            <td>{item.profesor}</td>
+            <td className="text-center">{item.grupo}</td>
+            <td className="text-center">{item.calificacion}</td>
+          </tr>
+        );
+      };
+      const Calificaciones = (props) => {
+        const calificaciones = props.calificaciones;
+        return (
+          <div>
+            <table className="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Asignatura</th>
+                  <th scope="col" className="text-center">
+                    Créditos
+                  </th>
+                  <th scope="col">Profesor</th>
+                  <th scope="col" className="text-center">
+                    Grupo
+                  </th>
+                  <th scope="col" className="text-center">
+                    Calificación
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {calificaciones.map((item, index) => (
+                  <Asignatura key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      };
+
+      const RegistroAlumno = (props) => {
+        const alumno = props.alumno;
+        return (
+          <div>
+            <h1 className="mt-5">Historial Académico</h1>
+            <p className="mb-0">
+              <span className="font-weight-bold">Nombre:</span> {alumno.nombre}
+            </p>
+            <p>
+              <span className="font-weight-bold">Semestre:</span>{" "}
+              {alumno.semestre}
+            </p>
+            <h4>Detalle de las calificaciones:</h4>
+            <Calificaciones calificaciones={alumno.calificaciones} />
+          </div>
+        );
+      };
+
+      const alumno = {
+        nombre: "Juanito López",
+        semestre: "2020-2",
+        calificaciones: [
+          {
+            asignatura: "Bases de Datos",
+            creditos: 8,
+            profesor: "Jorge A. Rodríguez Campos",
+            grupo: 1,
+            calificacion: 10,
+          },
+          {
+            asignatura: "Diseño Digital",
+            creditos: 8,
+            profesor: "Juan Flores López",
+            grupo: 3,
+            calificacion: 7,
+          },
+          {
+            asignatura: "Economía",
+            creditos: 8,
+            profesor: "Andrés Manuel López Obrador",
+            grupo: 4,
+            calificacion: 6,
+          },
+        ],
+      };
+
+      ReactDOM.render(
+        <RegistroAlumno alumno={alumno} />,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

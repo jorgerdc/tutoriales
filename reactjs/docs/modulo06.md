@@ -1,4 +1,4 @@
-﻿# ReactJS
+# ReactJS
 ## 6. Lists, Keys
 ### 6.1. Transformación de listas en Javascript
 * Una de las funciones comúnmente empleadas para manejar listas de componentes es la  función `map`.
@@ -122,4 +122,112 @@ function OrdenCompra(props){
 ```
 * Tener cuidado ya que esto puede generar código complicado de leer.
 * Ver la carpeta `ejemplos` para revisar el código fuente.
+##### Ejemplo:
+* Crear una página web que simule una consulta al historial académico de un alumno para un semestre en específico, la consulta deberá mostrar el nombre del alumno, el semestre y una tabla con los datos de las asignaturas cursadas (nombre de la asignatura, créditos, nombre del Profesor y grupo inscrito), así como sus correspondientes calificaciones. Cabe destacar que si alguna calificación es menor a siete se debe resaltar en negritas y en color rojo todos los datos de la asignatura con dicha calificación.
+* Emplear Bootstrap para dar estilos a la tabla.
+
+```jsx
+const Asignatura = (props) => {
+  const item = props.item;
+  const index = props.index;
+  const className = item.calificacion < 7 ? "text-danger font-weight-bold" : "";
+  return (
+    <tr className={className}>
+      <th scope="row">{index + 1}</th>
+      <td>{item.asignatura}</td>
+      <td className="text-center">{item.creditos}</td>
+      <td>{item.profesor}</td>
+      <td className="text-center">{item.grupo}</td>
+      <td className="text-center">{item.calificacion}</td>
+    </tr>
+  );
+};
+
+const Calificaciones = (props) => {
+  const calificaciones = props.calificaciones;
+  return (
+    <div>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Asignatura</th>
+            <th scope="col" className="text-center">
+              Créditos
+            </th>
+            <th scope="col">Profesor</th>
+            <th scope="col" className="text-center">
+              Grupo
+            </th>
+            <th scope="col" className="text-center">
+              Calificación
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {calificaciones.map((item, index) => (
+            <Asignatura key={index} item={item} index={index} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+const RegistroAlumno = (props) => {
+  const alumno = props.alumno;
+  return (
+    <div>
+      <h1 className="mt-5">Historial Académico</h1>
+      <p className="mb-0">
+        <span className="font-weight-bold">Nombre:</span> {alumno.nombre}
+      </p>
+      <p>
+        <span className="font-weight-bold">Semestre:</span> {alumno.semestre}
+      </p>
+      <h4>Detalle de las calificaciones:</h4>
+      <Calificaciones calificaciones={alumno.calificaciones} />
+    </div>
+  );
+};
+
+const alumno = {
+  nombre: "Juanito López",
+  semestre: "2020-2",
+  calificaciones: [
+    {
+      asignatura: "Bases de Datos",
+      creditos: 8,
+      profesor: "Jorge A. Rodríguez Campos",
+      grupo: 1,
+      calificacion: 10,
+    },
+    {
+      asignatura: "Diseño Digital",
+      creditos: 8,
+      profesor: "Juan Flores López",
+      grupo: 3,
+      calificacion: 7,
+    },
+    {
+      asignatura: "Economía",
+      creditos: 8,
+      profesor: "Andrés Manuel López Obrador",
+      grupo: 4,
+      calificacion: 6,
+    },
+  ],
+};
+
+ReactDOM.render(
+  <RegistroAlumno alumno={alumno} />,
+  document.getElementById("root")
+);
+```
+* Por simplicidad en el ejercicio, la página se ha dividio en tres componentes: `RegistroAlumno`, `Calificaciones` y `Asignatura`.
+  * `RegistroAlumno:` se encarga de mostrar los datos correspondientes al alumno (nombre, semestre y calificaciones), dentro de él se invoca el componente `Calificaciones`.
+  * `Calificaciones:` se encarga de mostrar el encabezado de tabla e iterar sobre cada asignatura.
+  * `Asignatura:` muestra los datos de una asignatura en particular, dentro de este componente se da formato a cada fila según la calificación correspondiente.
+* El código completo puede consultarse [aquí.](../ejemplos/modulo06/historialAcademico.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo06/historialAcademico.html)
 ##### Fin de módulo.
