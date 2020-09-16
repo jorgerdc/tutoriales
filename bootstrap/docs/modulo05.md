@@ -39,7 +39,7 @@ Estilo | Descripción
 `.table-dark` | Estilo obscuro.
 `.table-borderless` | Sin borde
 `.table-sm` | Los elementos de la tabla se muestran de forma compacta
-`.table-active` `.table-primary` `.table-secondary` `.table-success` `.table-danger` `.table-warning` `.table-info` `.table-light` `.table-dark` | Empleados para personalizar cada renglón o inclusive cada columna.  pueden aplicarse a los elementos `<tr>` o `<td>`
+`.table-active` `.table-primary` `.table-secondary` `.table-success` `.table-danger` `.table-warning` `.table-info` `.table-light` `.table-dark` | Empleados para personalizar cada renglón o inclusive cada columna. Pueden aplicarse a los elementos `<tr>` o `<td>`
 `.bg-primary` `.bg-success` `.bg-warning` `.bg-danger` `.bg-info`  | Se aplican de la misma forma que el grupo anterior
 
 ### 5.3 Estilos básicos para el elemento `<thead>`
@@ -56,7 +56,7 @@ Estilo | Descripción
 * `.table-responsive` la tabla se comporta de manera responsiva en todos los breakpoints.
 * `table-responsive{-sm|-md|-lg|-xl}` La tabla se comporta de forma responsiva hasta alcanzar el breakpoint configurado. Posterior al breakpoint el scroll horizontal desaparece.
 ##### Ejemplo:
-* Notar que los estilos no se emplean en el elemento `<table>`
+* Observar que el estilo `table-responsive`  no se especifica en el elemento `<table>`.  Se emplea un elemento que actua como wrapper, típicamente el elemento `<div>`.
 ```html
 <div  class="table-responsive">
   <table  class="table">
