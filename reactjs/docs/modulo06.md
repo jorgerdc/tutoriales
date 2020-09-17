@@ -60,6 +60,8 @@ ReactDOM.render(
 Warning: Each child in a list should have a unique "key" prop.
 ```
 * Una llave o key hace referencia a un atributo especial que se requiere agregar a los componentes JSX cuando se generan listas. 
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo06/numberList.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo06/numberList.html)
 #### 6.2 Keys
 * Las Keys ayudan a ReactJS  a identificar si alguno de los elementos de dicha lista ha cambiado o si alguno de sus elementos ha sido eliminado. 
 * Cada elemento de la lista debe contar con valor *único* asignado como *key*. Típicamente su valor corresponde con algún identificador o id.
@@ -94,7 +96,7 @@ function OrdenCompra(props){
   const productos = props.productos;
   const productosJsx = productos.map((prod,index) =>
     //forma correcta, aquí se debe asignar a la key
-    <Producto  key ={index}  nombre ={prod}  numProducto ={index} />
+    <Producto key={index} nombre={prod} numProducto={index}/>
   );
   return <ul>{productosJsx}</ul>
 }
@@ -122,4 +124,6 @@ function OrdenCompra(props){
 ```
 * Tener cuidado ya que esto puede generar código complicado de leer.
 * Ver la carpeta `ejemplos` para revisar el código fuente.
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo06/ordenCompra.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo06/ordenCompra.html)
 ##### Fin de módulo.

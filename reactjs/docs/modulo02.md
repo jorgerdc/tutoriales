@@ -98,10 +98,10 @@ ReactDOM.render(
 * Típicamente  una aplicación React define un solo componente llamado `<app/>` al inicio.   Este componente puede hacer referencia a los demás elementos y reutilizarlos.
 * En el ejemplo anterior, el componente `<Welcome>`se reutiliza 3 veces.
 ##### Ejemplo:  componentes.html
-* En el siguiente ejemplo se muestra  un ejemplo muy similar a la explicación anterior en la que se crea un componente llamado `<Saludo>` que  pinta un mensaje simple de saludo.
+* En el siguiente código se muestra  un ejemplo muy similar a la explicación anterior en la que se crea un componente llamado `<Saludo>` que  pinta un mensaje simple de saludo.
 * Este componente es reutilizado varias veces por otro componente llamado `<App>`. 
 * Observar el uso del parámetro `props` empleado para definir atributos del componente. En este caso, solo se define un atributo llamado  `nombre`.
-* Los atributos deben ser ***read only*** , es decir,  las funciones no deberían modificar su valor.  En otras palabras, la función debe ser ***pura***  lo que significa que no altera el valor de sus parámetros  (al estilo funciona).
+* Los atributos deben ser ***read only*** , es decir,  las funciones no deberían modificar su valor.  En otras palabras, la función debe ser ***pura***  lo que significa que no altera el valor de sus parámetros  (al estilo funcional).
 * Finalmente, observar que el primer parámetro  de `ReactDOM.render` es justamente el tag `<App>`  que hace referencia al componente creado a través de la función `App`.
 ```jsx
 <!DOCTYPE html>
@@ -150,4 +150,5 @@ ReactDOM.render(
   </body>
 </html>
 ```
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo02/componentes.html)
 ##### Fin de módulo.

@@ -61,7 +61,6 @@ ReactDOM.render(
   <Toggle/>,document.getElementById('root')
 );
 ```
-
 * Se debe tener cuidado del significado de `this`  en  callbacks de JSX .
 * En Javascript un método por default no se **asocia** a la clase que lo contiene.
 * Por esta razón, se debe incluir la línea arriba mostrada en el constructor.
@@ -73,15 +72,12 @@ ReactDOM.render(
 <button onClick={() => this.handleClick()}>
 ``` 
 *  La desventaja es que se crea un  nuevo callback cada vez que se realiza el render del botón. Esto puede generar detalles de desempeño.  Se recomienda  realizar el `binding` mencionado.
-
+* El  código completo puede consultarse [aquí.](../ejemplos/modulo04/toggle.html)
+* El resultado del ejemplo se puede visualizar [aquí.](https://jorgerdc.github.io/tutoriales/reactjs/ejemplos/modulo04/toggle.html)
 ### 4.2  Parámetros en event handlers 
 * Los siguientes ejemplos son equivalentes:
-
 ```jsx
 <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
 <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
 ``` 
-
-* Ver ejemplo  `toggle.html` 
-
 ##### Fin de módulo
