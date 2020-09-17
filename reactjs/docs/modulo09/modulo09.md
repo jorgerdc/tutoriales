@@ -50,7 +50,7 @@
 * `npx` es otra herramienta que se incluye al instalar NodeJS. Su uso principal es la posibilidad de ejecutar o probar paquetes Javascript sin la necesidad de instalarlos localmente.
 * `yarn` es otra herramienta que pueden emplearse para realizar esta misma tarea.   Para efectos del manual, se hará uso de `npx`.
 * `npm`representa  un repositorio online de paquetes en el que se pueden publicar 	proyectos Open Source escritos con Node.js. En el mundo Java el equivalente es un *Maven repository*.
-* Como se mencionó anteriormente `npm`se emplea para  instalar paquetes o dependencias  así como para administrar sus versiones.  Existe una infinidad de librerías NodeJS que pueden ser empleadas en diversos proyectoEn resumen, los pasos a seguir se describen  a continuación.
+* Como se mencionó anteriormente `npm` se emplea para  instalar paquetes o dependencias  así como para administrar sus versiones.  Existe una infinidad de librerías NodeJS que pueden ser empleadas en diversos proyectos. En resumen, los pasos a seguir se describen  a continuación.
 * Instalar`npm` para realizar la administración de dependencias.
 	*  Por si solo `npm`no realiza la ejecución de un paquete.  Para permitir que `npm` ejecute un paquete, se debe configurar  el archivo `package.json` y posteriormente ejecutar el comando:
 ```bash
@@ -218,7 +218,7 @@ npm start
 El siguiente ejemplo incorpora diferentes conceptos vistos hasta este punto con el objetivo de practicar y reforzar la creación de aplicaciones ReactJS.
 * Crear una aplicación llamada `caracteres-app`.
 * Definir un campo de texto en la que el usuario pueda capturar cualquier texto. 
-* El texto deberá ser mostrado justo abajo del formulario. Emplear el estado del componente `App`para almacenar el texto capturado por el usuario.
+* El texto deberá ser mostrado justo abajo del formulario. Emplear el estado del componente `App` para almacenar el texto capturado por el usuario.
 * Definir un componente llamado `Validador`.  Este componente deberá verificar la longitud del texto capturado.  Si su longitud es menor a 5 caracteres deberá mostrar el mensaje: *El texto de longitud X es demasiado corto.* , de lo contrario, mostrará el mensaje *El texto de longitud X es correcto.*
 #### Solución.
 1. Crear la aplicación react empleando `npx`
@@ -228,7 +228,7 @@ npx create-react-app caracteres-app
 2. Eliminar los estilos en `App.css` configurar  únicamente un margen de  `20px`
 ```css
 .App {
-  margin 16px;
+  margin: 16px;
 }
 ```
 3. Editar `App.js`
@@ -258,7 +258,7 @@ npm start
 ```
 4.   Editar el script `App.js` ,  realizar las siguientes acciones: 
 * Modificar el script para crear una clase `App`en lugar de la función `App` 
-* Inicializar el estado del componente `App` con un un atributo `texto`
+* Inicializar el estado del componente `App` con un atributo `texto`
 * Crear un método encargado de manejar el evento `onChange` el cual será encargado de actualizar el estado del componente con el texto capturado.
 * Incorporar el método `render` para mostrar el contenido.
 * Verificar que la aplicación se siga visualizando correctamente.
