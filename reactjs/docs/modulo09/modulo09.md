@@ -50,8 +50,9 @@
 * `npx` es otra herramienta que se incluye al instalar NodeJS. Su uso principal es la posibilidad de ejecutar o probar paquetes Javascript sin la necesidad de instalarlos localmente.
 * `yarn` es otra herramienta que pueden emplearse para realizar esta misma tarea.   Para efectos del manual, se hará uso de `npx`.
 * `npm`representa  un repositorio online de paquetes en el que se pueden publicar 	proyectos Open Source escritos con Node.js. En el mundo Java el equivalente es un *Maven repository*.
-* Como se mencionó anteriormente `npm`se emplea para  instalar paquetes o dependencias  así como para administrar sus versiones.  Existe una infinidad de librerías NodeJS que pueden ser empleadas en diversos proyectos.
-*  Por si solo `npm`no realiza la ejecución de un paquete.  Para permitir que `npm` ejecute un paquete, se debe configurar  el archivo `package.json` y posteriormente ejecutar el comando:
+* Como se mencionó anteriormente `npm` se emplea para  instalar paquetes o dependencias  así como para administrar sus versiones.  Existe una infinidad de librerías NodeJS que pueden ser empleadas en diversos proyectos. En resumen, los pasos a seguir se describen  a continuación.
+* Instalar`npm` para realizar la administración de dependencias.
+	*  Por si solo `npm`no realiza la ejecución de un paquete.  Para permitir que `npm` ejecute un paquete, se debe configurar  el archivo `package.json` y posteriormente ejecutar el comando:
 ```bash
 npm run your-package
 ```
@@ -213,4 +214,142 @@ npm start
 * Los archivos `index.css`y `App.css`contienen definiciones que aplican de forma global. Su contenido puede ser eliminado o modificado con base a los estilos de la propia aplicación.
 * `serviceWorker.js`  Se emplea para implementar funcionalidades  que le permitan a la aplicación ser etiquetada como una PWA application (Progressive Web App Application). Básicamente permite generar un pre-caché de los archivos de la App para mejorar desempeño.
 * Finalmente, el archivo `setupTests.js` permite configurar pruebas unitarias para los componentes que integren a la aplicación.  Este concepto se revisará más adelante.
+### 9.4 Juego de caracteres.
+El siguiente ejemplo incorpora diferentes conceptos vistos hasta este punto con el objetivo de practicar y reforzar la creación de aplicaciones ReactJS.
+* Crear una aplicación llamada `caracteres-app`.
+* Definir un campo de texto en la que el usuario pueda capturar cualquier texto. 
+* El texto deberá ser mostrado justo abajo del formulario. Emplear el estado del componente `App` para almacenar el texto capturado por el usuario.
+* Definir un componente llamado `Validador`.  Este componente deberá verificar la longitud del texto capturado.  Si su longitud es menor a 5 caracteres deberá mostrar el mensaje: *El texto de longitud X es demasiado corto.* , de lo contrario, mostrará el mensaje *El texto de longitud X es correcto.*
+#### Solución.
+1. Crear la aplicación react empleando `npx`
+```bash
+npx create-react-app caracteres-app
+```
+2. Eliminar los estilos en `App.css` configurar  únicamente un margen de  `20px`
+```css
+.App {
+  margin: 16px;
+}
+```
+3. Editar `App.js`
+* Quitar los elementos de la plantilla,  crear un elemento `<input>` 
+```jsx
+import React from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>App Caracteres</h1>
+      <hr/>
+      <p>Capturar alg&uacute;n texto:<br/></p>
+      <form>
+        <input type="text"/>
+      </form>
+    </div>  
+  );
+}
+export default App;
+```
+* Iniciar y verificar que la aplicación se visualiza correctamente.
+```bash
+cd caracteres-app
+npm start
+```
+4.   Editar el script `App.js` ,  realizar las siguientes acciones: 
+* Modificar el script para crear una clase `App`en lugar de la función `App` 
+* Inicializar el estado del componente `App` con un atributo `texto`
+* Crear un método encargado de manejar el evento `onChange` el cual será encargado de actualizar el estado del componente con el texto capturado.
+* Incorporar el método `render` para mostrar el contenido.
+* Verificar que la aplicación se siga visualizando correctamente.
+```jsx
+class App extends Component {
+  /**
+   * Estado del componente
+   */
+  state ={
+    texto : ''
+  }
+
+  /** 
+   * Método empleado para manejar el evento onChange. Notar que se
+   * hace uso de una variable para hacer referencia a dicho método
+   */
+  textoOnChangeHandler = (event) => {
+    this.setState({texto: event.target.value});
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>App Caracteres</h1>
+        <hr/>
+        <p>Capturar alg&uacute;n texto:<br/></p>
+        <form>
+          <input type="text"/>
+        </form>
+      </div>  
+    );
+  }
+}
+```
+5. Asociar el evento `onChange` y el valor del atributo `value` del  elemento `<input>`  con el método `textoOnChangeHandler` y el valor del atributo `texto` definidos anteriormente.  Justo abajo del elemento `<input>`, agregar un párrafo para mostrar el texto capturado.
+```jsx
+<form>
+  <input 
+    type="text"
+    onChange={this.textoOnChangeHandler}
+    value={this.state.texto}/>
+</form>
+<p>{this.state.texto}</p>  
+```
+6. Crear un nuevo componente llamado `Validador`. Este componente será encargado de verificar la longitud del texto capturado. Para ello:
+* Crear una subcarpeta dentro de `src` con el nombre del componente.  Por lo general los componentes se crean en carpetas con su nombre.
+* En esta ocasión no es necesario crear una clase.  La función `Validador` recibirá un property que llamaremos `longitud`.  Por ahora solo mostrar dicha longitud  en un párrafo. 
+* No olvidar agregar las instrucciones `import`y   `export` correspondientes.
+```jsx
+import React from 'react'
+
+const Validador = (props) => {
+  return (
+    <div>
+      <p>Longitud del texto: {props.longitud}</p>
+    </div>
+  )
+}
+export default Validador
+```
+7.  incorporar este componente en   `App` justo después del  formulario. No olvidar el `import` del componente `Validador`.  Inicializar el valor del property `longitud`con la longitud del texto capturado.
+```jsx
+// .....
+import Validador from './Validador/Validador'; 
+class App extends Component {
+  //....
+  render(){
+  //....
+  <p>{this.state.texto}</p>
+  <Validador  longitud={this.state.texto.length}/>
+  }
+}
+```
+8.  Realizar render condicionado en en Validador. Generar un párrafo con un mensaje que indique además de la longitud, indique:  *El valor de longitud X es muy corto* si la longitud es `<5` o  de lo contrario, deberá aparecer el mensaje *El valor de longitud X es correcto*.
+```jsx
+import React from 'react'
+
+const Validador = (props) => {
+  let mensaje;
+  if (props.longitud < 5){
+    mensaje = <p>El valor de longitud {props.longitud} es muy corto</p>
+  } else {
+    mensaje = <p>El valor de longitud {props.longitud} es correcto</p>
+  }
+  return (
+    <div>
+      {mensaje}
+    </div>
+  )
+}
+export default Validador
+```
 ##### fin de modulo.
+
