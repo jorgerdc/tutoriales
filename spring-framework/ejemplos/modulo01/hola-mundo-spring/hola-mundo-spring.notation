@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_S5KogABIEeulXtr6qUdsjQ" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_j6usEABIEeulXtr6qUdsjQ" type="Interface_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_j6v6MABIEeulXtr6qUdsjQ" type="Interface_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_j6v6MQBIEeulXtr6qUdsjQ" type="Interface_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_j6v6MgBIEeulXtr6qUdsjQ" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_j6whQABIEeulXtr6qUdsjQ" type="Interface_AttributeCompartment">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k1cA0ABIEeulXtr6qUdsjQ" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k1cA0QBIEeulXtr6qUdsjQ" key="collapsed" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:Shape" xmi:id="_oG2HMABIEeulXtr6qUdsjQ" type="Property_InterfaceAttributeLabel">
+        <element xmi:type="uml:Property" href="hola-mundo-spring.uml#_j3OFEABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG2HMQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_j6whQQBIEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_j6whQgBIEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_j6whQwBIEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j6whRABIEeulXtr6qUdsjQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_j6whRQBIEeulXtr6qUdsjQ" type="Interface_OperationCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_oG38YABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j3RIYABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG38YQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG5KgABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j3vpgABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG5KgQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG6YoABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j4FnwABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG6YoQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG6_sABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j4Zw0ABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG6_sQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG8N0ABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j4hsoABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG8N0QBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG804ABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j4vIAABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG804QBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG-DAABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j5J-wABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG-DAQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG-qEABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j5MbAABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG-qEQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oG_4MABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j5q8IABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oG_4MQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oHAfQABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j58B4ABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oHAfQQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oHBGUABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j6Fy4ABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oHBGUQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oHBtYABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j6O80ABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oHBtYQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oHCUcABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j6W4oABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oHCUcQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oHC7gABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j6dmUABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oHC7gQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_oHDikABIEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_j6liIABIEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oHDikQBIEeulXtr6qUdsjQ"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_j6whRgBIEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_j6whRwBIEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_j6whSABIEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j6whSQBIEeulXtr6qUdsjQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_j6whSgBIEeulXtr6qUdsjQ" type="Interface_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_j6whSwBIEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_j6whTABIEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_j6whTQBIEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j6whTgBIEeulXtr6qUdsjQ"/>
+    </children>
+    <element xmi:type="uml:Interface" href="hola-mundo-spring.uml#_j2-NcABIEeulXtr6qUdsjQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j6usEQBIEeulXtr6qUdsjQ" x="40" y="40" width="325" height="198"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_s_j3sABKEeulXtr6qUdsjQ" type="Interface_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_s_lF0ABKEeulXtr6qUdsjQ" type="Interface_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_s_lF0QBKEeulXtr6qUdsjQ" type="Interface_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_s_lF0gBKEeulXtr6qUdsjQ" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_s_ls4ABKEeulXtr6qUdsjQ" type="Interface_AttributeCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_s_ls4QBKEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_s_ls4gBKEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_s_ls4wBKEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s_ls5ABKEeulXtr6qUdsjQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_s_ls5QBKEeulXtr6qUdsjQ" type="Interface_OperationCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_Jmzk8ABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-jLEABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jmzk8QBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm0MAABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-lAQABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm0MAQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm0zEABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-lnUQBKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm0zEQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm1aIABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-ncgABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm1aIQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm2BMABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-rG4ABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm2BMQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm2oQABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-xNgABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm2oQQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm2oQgBLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-1e8ABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm3PUABLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm32YABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s-5wYABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm32YQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm4dcABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s_JoAABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm4dcQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm5EgABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s_N5cABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm5EgQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm5rkABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s_Q8wABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm5rkQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm5rkgBLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_s_UnIABKEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm6SoABLEeulXtr6qUdsjQ"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_s_ls5gBKEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_s_ls5wBKEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_s_ls6ABKEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s_ls6QBKEeulXtr6qUdsjQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_s_ls6gBKEeulXtr6qUdsjQ" type="Interface_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_s_ls6wBKEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_s_ls7ABKEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_s_ls7QBKEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s_ls7gBKEeulXtr6qUdsjQ"/>
+    </children>
+    <element xmi:type="uml:Interface" href="hola-mundo-spring.uml#_s-UhkABKEeulXtr6qUdsjQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s_j3sQBKEeulXtr6qUdsjQ" x="420" y="40" width="325" height="198"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_s_wsAABKEeulXtr6qUdsjQ" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_s_wsAQBKEeulXtr6qUdsjQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_s_wsAwBKEeulXtr6qUdsjQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Interface" href="hola-mundo-spring.uml#_j2-NcABIEeulXtr6qUdsjQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s_wsAgBKEeulXtr6qUdsjQ" x="520" y="40"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_B8MpsABLEeulXtr6qUdsjQ" type="Interface_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_B8NQwABLEeulXtr6qUdsjQ" type="Interface_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_B8NQwQBLEeulXtr6qUdsjQ" type="Interface_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_B8NQwgBLEeulXtr6qUdsjQ" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_B8NQwwBLEeulXtr6qUdsjQ" type="Interface_AttributeCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_B8NQxABLEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_B8NQxQBLEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_B8NQxgBLEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B8NQxwBLEeulXtr6qUdsjQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_B8N30ABLEeulXtr6qUdsjQ" type="Interface_OperationCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_Jm6SoQBLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_B735kQBLEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm6SogBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm65sABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_B74goQBLEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm65sQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm65sgBLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_B75HsQBLEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm65swBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm7gwABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_B75uwQBLEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm7gwQBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm8H0ABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_B76V0QBLEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm8H0QBLEeulXtr6qUdsjQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Jm8u4ABLEeulXtr6qUdsjQ" type="Operation_InterfaceOperationLabel">
+        <element xmi:type="uml:Operation" href="hola-mundo-spring.uml#_B8BDgABLEeulXtr6qUdsjQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Jm8u4QBLEeulXtr6qUdsjQ"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_B8N30QBLEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_B8N30gBLEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_B8N30wBLEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B8N31ABLEeulXtr6qUdsjQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_B8N31QBLEeulXtr6qUdsjQ" type="Interface_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_B8N31gBLEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_B8N31wBLEeulXtr6qUdsjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_B8N32ABLEeulXtr6qUdsjQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B8N32QBLEeulXtr6qUdsjQ"/>
+    </children>
+    <element xmi:type="uml:Interface" href="hola-mundo-spring.uml#_B7OZUABLEeulXtr6qUdsjQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B8MpsQBLEeulXtr6qUdsjQ" x="260" y="280"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_B8UlggBLEeulXtr6qUdsjQ" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_B8UlgwBLEeulXtr6qUdsjQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_B8VMkABLEeulXtr6qUdsjQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Interface" href="hola-mundo-spring.uml#_s-UhkABKEeulXtr6qUdsjQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B8UlhABLEeulXtr6qUdsjQ" x="300" y="240"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_B_JQAwBLEeulXtr6qUdsjQ" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_B_JQBABLEeulXtr6qUdsjQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_B_J3EABLEeulXtr6qUdsjQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Interface" href="hola-mundo-spring.uml#_B7OZUABLEeulXtr6qUdsjQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B_JQBQBLEeulXtr6qUdsjQ" x="376" y="142"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_S5KogQBIEeulXtr6qUdsjQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_S5KoggBIEeulXtr6qUdsjQ"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_S5KogwBIEeulXtr6qUdsjQ" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="hola-mundo-spring.uml#_S1b_EABIEeulXtr6qUdsjQ"/>
+  </styles>
+  <element xmi:type="uml:Model" href="hola-mundo-spring.uml#_S1b_EABIEeulXtr6qUdsjQ"/>
+  <edges xmi:type="notation:Connector" xmi:id="_s_x6IABKEeulXtr6qUdsjQ" type="StereotypeCommentLink" source="_j6usEABIEeulXtr6qUdsjQ" target="_s_wsAABKEeulXtr6qUdsjQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_s_x6IQBKEeulXtr6qUdsjQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_s_x6JQBKEeulXtr6qUdsjQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Interface" href="hola-mundo-spring.uml#_j2-NcABIEeulXtr6qUdsjQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_s_x6IgBKEeulXtr6qUdsjQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s_x6IwBKEeulXtr6qUdsjQ"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s_x6JABKEeulXtr6qUdsjQ"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_B8VMkQBLEeulXtr6qUdsjQ" type="StereotypeCommentLink" source="_s_j3sABKEeulXtr6qUdsjQ" target="_B8UlggBLEeulXtr6qUdsjQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_B8VMkgBLEeulXtr6qUdsjQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_B8VzoABLEeulXtr6qUdsjQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Interface" href="hola-mundo-spring.uml#_s-UhkABKEeulXtr6qUdsjQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B8VMkwBLEeulXtr6qUdsjQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B8VMlABLEeulXtr6qUdsjQ"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B8VMlQBLEeulXtr6qUdsjQ"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_B_J3EQBLEeulXtr6qUdsjQ" type="StereotypeCommentLink" source="_B8MpsABLEeulXtr6qUdsjQ" target="_B_JQAwBLEeulXtr6qUdsjQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_B_J3EgBLEeulXtr6qUdsjQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_B_J3FgBLEeulXtr6qUdsjQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Interface" href="hola-mundo-spring.uml#_B7OZUABLEeulXtr6qUdsjQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B_J3EwBLEeulXtr6qUdsjQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B_J3FABLEeulXtr6qUdsjQ"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B_J3FQBLEeulXtr6qUdsjQ"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_R61QoABLEeulXtr6qUdsjQ" type="Generalization_Edge" source="_B8MpsABLEeulXtr6qUdsjQ" target="_s_j3sABKEeulXtr6qUdsjQ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_R613sABLEeulXtr6qUdsjQ" type="Generalization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_R613sQBLEeulXtr6qUdsjQ" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_R61QoQBLEeulXtr6qUdsjQ"/>
+    <element xmi:type="uml:Generalization" href="hola-mundo-spring.uml#_B7b0sABLEeulXtr6qUdsjQ"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_R61QogBLEeulXtr6qUdsjQ" points="[488, 280, -643984, -643984]$[516, 238, -643984, -643984]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_R66wMABLEeulXtr6qUdsjQ" type="Generalization_Edge" source="_s_j3sABKEeulXtr6qUdsjQ" target="_j6usEABIEeulXtr6qUdsjQ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_R67XQABLEeulXtr6qUdsjQ" type="Generalization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_R67XQQBLEeulXtr6qUdsjQ" y="40"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_R66wMQBLEeulXtr6qUdsjQ"/>
+    <element xmi:type="uml:Generalization" href="hola-mundo-spring.uml#_s-h88ABKEeulXtr6qUdsjQ"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_R66wMgBLEeulXtr6qUdsjQ" points="[420, 139, -643984, -643984]$[365, 139, -643984, -643984]"/>
+  </edges>
+</notation:Diagram>

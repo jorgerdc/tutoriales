@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_S1b_EABIEeulXtr6qUdsjQ" name="hola-mundo-spring">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_S-E9sABIEeulXtr6qUdsjQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_X5Na8ABIEeulXtr6qUdsjQ" name="hola-mundo-spring"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_X-arEABIEeulXtr6qUdsjQ" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_X-cgQABIEeulXtr6qUdsjQ" name="org">
+        <packagedElement xmi:type="uml:Package" xmi:id="_X-dHUABIEeulXtr6qUdsjQ" name="springframework">
+          <packagedElement xmi:type="uml:Package" xmi:id="_X-dHUQBIEeulXtr6qUdsjQ" name="beans">
+            <packagedElement xmi:type="uml:Package" xmi:id="_j28YQABIEeulXtr6qUdsjQ" name="factory">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_j2-NcABIEeulXtr6qUdsjQ" name="BeanFactory" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_j3OFEABIEeulXtr6qUdsjQ" name="FACTORY_BEAN_PREFIX" visibility="private" type="_j3ApsABIEeulXtr6qUdsjQ" isUnique="false">
+                  <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_j3PTMABIEeulXtr6qUdsjQ" name="defaultValue">
+                    <language>JAVA</language>
+                    <body>&quot;&amp;&quot;</body>
+                  </defaultValue>
+                </ownedAttribute>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j3RIYABIEeulXtr6qUdsjQ" name="getBean" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j3fx4ABIEeulXtr6qUdsjQ" type="_j3SWgABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j3hAAABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j3vpgABIEeulXtr6qUdsjQ" name="getBean" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j38d0ABIEeulXtr6qUdsjQ" type="_j3w3oABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j3_hIABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4B9YABIEeulXtr6qUdsjQ" name="requiredType" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j4FnwABIEeulXtr6qUdsjQ" name="getBean" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4Hc8ABIEeulXtr6qUdsjQ" type="_j3SWgABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4JSIABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4LuYABIEeulXtr6qUdsjQ" name="args" type="_j3SWgABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j4Zw0ABIEeulXtr6qUdsjQ" name="getBean" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4bmAABIEeulXtr6qUdsjQ" type="_j3w3oABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4dbMABIEeulXtr6qUdsjQ" name="requiredType" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j4hsoABIEeulXtr6qUdsjQ" name="getBean" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4i6wABIEeulXtr6qUdsjQ" type="_j3w3oABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4jh0ABIEeulXtr6qUdsjQ" name="requiredType" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j4kI4ABIEeulXtr6qUdsjQ" name="args" type="_j3SWgABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j4vIAABIEeulXtr6qUdsjQ" name="getBeanProvider" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j47VQABIEeulXtr6qUdsjQ" type="_j4vvEABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j49xgABIEeulXtr6qUdsjQ" name="requiredType" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j5J-wABIEeulXtr6qUdsjQ" name="getBeanProvider" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j5Kl0ABIEeulXtr6qUdsjQ" type="_j4vvEABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j5Lz8ABIEeulXtr6qUdsjQ" name="requiredType" type="_j5CC8ABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j5MbAABIEeulXtr6qUdsjQ" name="containsBean" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j5nRwABIEeulXtr6qUdsjQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j5puAABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j5q8IABIEeulXtr6qUdsjQ" name="isSingleton" visibility="private" raisedException="_j5yQ4ABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j5sKQABIEeulXtr6qUdsjQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j5v0oABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j58B4ABIEeulXtr6qUdsjQ" name="isPrototype" visibility="private" raisedException="_j5yQ4ABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j593EABIEeulXtr6qUdsjQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6A6YABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j6Fy4ABIEeulXtr6qUdsjQ" name="isTypeMatch" visibility="private" raisedException="_j5yQ4ABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6HoEABIEeulXtr6qUdsjQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6JdQABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6KrYABIEeulXtr6qUdsjQ" name="typeToMatch" type="_j5CC8ABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j6O80ABIEeulXtr6qUdsjQ" name="isTypeMatch" visibility="private" raisedException="_j5yQ4ABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6QK8ABIEeulXtr6qUdsjQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6SAIABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6T1UABIEeulXtr6qUdsjQ" name="typeToMatch" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j6W4oABIEeulXtr6qUdsjQ" name="getType" visibility="private" raisedException="_j5yQ4ABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6YGwABIEeulXtr6qUdsjQ" type="_X-yegABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6ZU4ABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j6dmUABIEeulXtr6qUdsjQ" name="getType" visibility="private" raisedException="_j5yQ4ABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6e0cABIEeulXtr6qUdsjQ" type="_X-yegABIEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6gCkABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6hQsABIEeulXtr6qUdsjQ" name="allowFactoryBeanInit">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_j6liIABIEeulXtr6qUdsjQ" name="getAliases" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6n-YABIEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j6pMgABIEeulXtr6qUdsjQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j6pzkABIEeulXtr6qUdsjQ" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6rowABIEeulXtr6qUdsjQ" name="name" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_j3w3oABIEeulXtr6qUdsjQ" name="T"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_j4vvEABIEeulXtr6qUdsjQ" name="ObjectProvider"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_j5yQ4ABIEeulXtr6qUdsjQ" name="NoSuchBeanDefinitionException"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_s-UhkABKEeulXtr6qUdsjQ" name="ListableBeanFactory" visibility="public">
+                <generalization xmi:type="uml:Generalization" xmi:id="_s-h88ABKEeulXtr6qUdsjQ" general="_j2-NcABIEeulXtr6qUdsjQ"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-jLEABKEeulXtr6qUdsjQ" name="containsBeanDefinition" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-jyIABKEeulXtr6qUdsjQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-kZMABKEeulXtr6qUdsjQ" name="beanName" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-lAQABKEeulXtr6qUdsjQ" name="getBeanDefinitionCount" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-lnUABKEeulXtr6qUdsjQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-lnUQBKEeulXtr6qUdsjQ" name="getBeanDefinitionNames" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-mOYABKEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-m1cABKEeulXtr6qUdsjQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-m1cQBKEeulXtr6qUdsjQ" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-ncgABKEeulXtr6qUdsjQ" name="getBeanNamesForType" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-oDkABKEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-oqoABKEeulXtr6qUdsjQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-pRsABKEeulXtr6qUdsjQ" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-p4wABKEeulXtr6qUdsjQ" name="type" type="_j5CC8ABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-rG4ABKEeulXtr6qUdsjQ" name="getBeanNamesForType" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-sVAABKEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-s8EABKEeulXtr6qUdsjQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-tjIABKEeulXtr6qUdsjQ" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-uKMABKEeulXtr6qUdsjQ" name="type" type="_j5CC8ABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-vYUABKEeulXtr6qUdsjQ" name="includeNonSingletons">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-v_YABKEeulXtr6qUdsjQ" name="allowEagerInit">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-xNgABKEeulXtr6qUdsjQ" name="getBeanNamesForType" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-x0kABKEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-yboABKEeulXtr6qUdsjQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-yboQBKEeulXtr6qUdsjQ" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-0Q0ABKEeulXtr6qUdsjQ" name="type" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-1e8ABKEeulXtr6qUdsjQ" name="getBeanNamesForType" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-2tEABKEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s-2tEQBKEeulXtr6qUdsjQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s-3UIABKEeulXtr6qUdsjQ" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-37MABKEeulXtr6qUdsjQ" name="type" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-4iQABKEeulXtr6qUdsjQ" name="includeNonSingletons">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-4iQQBKEeulXtr6qUdsjQ" name="allowEagerInit">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s-5wYABKEeulXtr6qUdsjQ" name="getBeansOfType" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s-_3AABKEeulXtr6qUdsjQ" type="_s-6XcQBKEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_BFIABKEeulXtr6qUdsjQ" name="type" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s_JoAABKEeulXtr6qUdsjQ" name="getBeansOfType" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_KPEABKEeulXtr6qUdsjQ" type="_s-6XcQBKEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_K2IABKEeulXtr6qUdsjQ" name="type" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_LdMABKEeulXtr6qUdsjQ" name="includeNonSingletons">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_MrUABKEeulXtr6qUdsjQ" name="allowEagerInit">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s_N5cABKEeulXtr6qUdsjQ" name="getBeanNamesForAnnotation" visibility="private">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_OggABKEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s_OggQBKEeulXtr6qUdsjQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s_PHkABKEeulXtr6qUdsjQ" value="*"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_QVsABKEeulXtr6qUdsjQ" name="annotationType" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s_Q8wABKEeulXtr6qUdsjQ" name="getBeansWithAnnotation" visibility="private" raisedException="_j3hnEABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_SK4ABKEeulXtr6qUdsjQ" type="_s-6XcQBKEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_TZAABKEeulXtr6qUdsjQ" name="annotationType" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_s_UnIABKEeulXtr6qUdsjQ" name="findAnnotationOnBean" visibility="private" raisedException="_j5yQ4ABIEeulXtr6qUdsjQ">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_ci8ABKEeulXtr6qUdsjQ" type="_s_VOMABKEeulXtr6qUdsjQ" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_fmQABKEeulXtr6qUdsjQ" name="beanName" type="_j3ApsABIEeulXtr6qUdsjQ"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_hbcABKEeulXtr6qUdsjQ" name="annotationType" type="_X-yegABIEeulXtr6qUdsjQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_s_VOMABKEeulXtr6qUdsjQ" name="A"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_B7b0sQBLEeulXtr6qUdsjQ" name="HierarchicalBeanFactory"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_B8BqkABLEeulXtr6qUdsjQ" name="config">
+                <packagedElement xmi:type="uml:Class" xmi:id="_B8BqkQBLEeulXtr6qUdsjQ" name="AutowireCapableBeanFactory"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_j3hnEABIEeulXtr6qUdsjQ" name="BeansException"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_j5ANwABIEeulXtr6qUdsjQ" name="core">
+            <packagedElement xmi:type="uml:Class" xmi:id="_j5CC8ABIEeulXtr6qUdsjQ" name="ResolvableType"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_B7PAYABLEeulXtr6qUdsjQ" name="env">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_B7PncABLEeulXtr6qUdsjQ" name="EnvironmentCapable"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_B7xy8QBLEeulXtr6qUdsjQ" name="io">
+              <packagedElement xmi:type="uml:Package" xmi:id="_B7yaAABLEeulXtr6qUdsjQ" name="support">
+                <packagedElement xmi:type="uml:Interface" xmi:id="_B7yaAQBLEeulXtr6qUdsjQ" name="ResourcePatternResolver"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_B7NLMABLEeulXtr6qUdsjQ" name="context">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_B7OZUABLEeulXtr6qUdsjQ" name="ApplicationContext" visibility="public">
+              <generalization xmi:type="uml:Generalization" xmi:id="_B7VuEABLEeulXtr6qUdsjQ" general="_B7PncABLEeulXtr6qUdsjQ"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_B7b0sABLEeulXtr6qUdsjQ" general="_s-UhkABKEeulXtr6qUdsjQ"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_B7h7UABLEeulXtr6qUdsjQ" general="_B7b0sQBLEeulXtr6qUdsjQ"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_B7qeMABLEeulXtr6qUdsjQ" general="_B7iiYABLEeulXtr6qUdsjQ"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_B7xy8ABLEeulXtr6qUdsjQ" general="_B7rFQABLEeulXtr6qUdsjQ"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_B735kABLEeulXtr6qUdsjQ" general="_B7yaAQBLEeulXtr6qUdsjQ"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_B735kQBLEeulXtr6qUdsjQ" name="getId" visibility="private">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_B74goABLEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_B74goQBLEeulXtr6qUdsjQ" name="getApplicationName" visibility="private">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_B75HsABLEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_B75HsQBLEeulXtr6qUdsjQ" name="getDisplayName" visibility="private">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_B75uwABLEeulXtr6qUdsjQ" type="_j3ApsABIEeulXtr6qUdsjQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_B75uwQBLEeulXtr6qUdsjQ" name="getStartupDate" visibility="private">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_B76V0ABLEeulXtr6qUdsjQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_B76V0QBLEeulXtr6qUdsjQ" name="getParent" visibility="private">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_B8AccABLEeulXtr6qUdsjQ" type="_B7OZUABLEeulXtr6qUdsjQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_B8BDgABLEeulXtr6qUdsjQ" name="getAutowireCapableBeanFactory" visibility="private" raisedException="_B8HKIABLEeulXtr6qUdsjQ">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_B8GjEABLEeulXtr6qUdsjQ" type="_B8BqkQBLEeulXtr6qUdsjQ" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_B7iiYABLEeulXtr6qUdsjQ" name="MessageSource"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_B7rFQABLEeulXtr6qUdsjQ" name="ApplicationEventPublisher"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_B8HKIABLEeulXtr6qUdsjQ" name="IllegalStateException"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_X-rJwABIEeulXtr6qUdsjQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_X-u0IABIEeulXtr6qUdsjQ" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_X-wpUABIEeulXtr6qUdsjQ" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_X-yegABIEeulXtr6qUdsjQ" name="Class"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_j3ApsABIEeulXtr6qUdsjQ" name="String"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_j3SWgABIEeulXtr6qUdsjQ" name="Object"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_YGm9wABIEeulXtr6qUdsjQ" name="beans">
+          <packagedElement xmi:type="uml:Class" xmi:id="_YGoy8ABIEeulXtr6qUdsjQ" name="BeanInfo"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_YG7t4ABIEeulXtr6qUdsjQ" name="IntrospectionException"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_s-6XcABKEeulXtr6qUdsjQ" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_s-6XcQBKEeulXtr6qUdsjQ" name="Map"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_X8BeYABIEeulXtr6qUdsjQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X8EhsABIEeulXtr6qUdsjQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_X895kABIEeulXtr6qUdsjQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X9AV0ABIEeulXtr6qUdsjQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_X9Z-cABIEeulXtr6qUdsjQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X9do0ABIEeulXtr6qUdsjQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_YGgQEABIEeulXtr6qUdsjQ" name="java.lang.Class" base_Classifier="_X-yegABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_YGvgoABIEeulXtr6qUdsjQ" name="java.beans.BeanInfo" base_Classifier="_YGoy8ABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_YHDpsABIEeulXtr6qUdsjQ" name="java.beans.IntrospectionException" base_Classifier="_YG7t4ABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_j3Lo0ABIEeulXtr6qUdsjQ" name="java.lang.String" base_Classifier="_j3ApsABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_j3d8sABIEeulXtr6qUdsjQ" name="java.lang.Object" base_Classifier="_j3SWgABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_j3qxAABIEeulXtr6qUdsjQ" name="org.springframework.beans.BeansException" base_Classifier="_j3hnEABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_j35agABIEeulXtr6qUdsjQ" name="T" base_Classifier="_j3w3oABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:Variadic xmi:id="_j4URQABIEeulXtr6qUdsjQ" base_Parameter="_j4LuYABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:Variadic xmi:id="_j4sEsABIEeulXtr6qUdsjQ" base_Parameter="_j4kI4ABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_j43q4ABIEeulXtr6qUdsjQ" name="ObjectProvider" base_Classifier="_j4vvEABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_j5IJkABIEeulXtr6qUdsjQ" name="org.springframework.core.ResolvableType" base_Classifier="_j5CC8ABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_j54XgABIEeulXtr6qUdsjQ" name="NoSuchBeanDefinitionException" base_Classifier="_j5yQ4ABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_s-gHwABKEeulXtr6qUdsjQ" name="BeanFactory" base_Classifier="_j2-NcABIEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_s-_P8ABKEeulXtr6qUdsjQ" name="java.util.Map" base_Classifier="_s-6XcQBKEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_s_aGsABKEeulXtr6qUdsjQ" name="A" base_Classifier="_s_VOMABKEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B7Uf8ABLEeulXtr6qUdsjQ" name="org.springframework.core.env.EnvironmentCapable" base_Classifier="_B7PncABLEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B7bNoABLEeulXtr6qUdsjQ" name="org.springframework.beans.factory.ListableBeanFactory" base_Classifier="_s-UhkABKEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B7hUQABLEeulXtr6qUdsjQ" name="org.springframework.beans.factory.HierarchicalBeanFactory" base_Classifier="_B7b0sQBLEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B7p3IABLEeulXtr6qUdsjQ" name="MessageSource" base_Classifier="_B7iiYABLEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B7wk0ABLEeulXtr6qUdsjQ" name="ApplicationEventPublisher" base_Classifier="_B7rFQABLEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B73SgABLEeulXtr6qUdsjQ" name="org.springframework.core.io.support.ResourcePatternResolver" base_Classifier="_B7yaAQBLEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B7_1YABLEeulXtr6qUdsjQ" name="ApplicationContext" base_Classifier="_B7OZUABLEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B8F8AABLEeulXtr6qUdsjQ" name="org.springframework.beans.factory.config.AutowireCapableBeanFactory" base_Classifier="_B8BqkQBLEeulXtr6qUdsjQ"/>
+  <PapyrusJava:External xmi:id="_B8LbkABLEeulXtr6qUdsjQ" name="IllegalStateException" base_Classifier="_B8HKIABLEeulXtr6qUdsjQ"/>
+</xmi:XMI>
