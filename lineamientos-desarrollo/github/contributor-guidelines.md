@@ -24,7 +24,7 @@ especial para equipos de trabajo.El documento explica la forma en la que se debe
 	4.	Subir los cambios realizados a tu branch de tu proyecto de Github.
 	5.	Abrir un pull request en Github.
 	6.	El propietario del proyecto delibera si unir o cerrar el pull request.
-	7.	Sincronizar la rama master actualizada a tu proyecto copiado (fork).
+	7.	Sincronizar la rama master o main actualizada a tu proyecto copiado (fork).
 
 A continuación se explicará a detalle cada paso del flujo de trabajo.
 ### 1.3 Forks.
@@ -65,14 +65,14 @@ Al terminar, cambiarse a la carpeta generada. En ella se encontrará la copia de
 ### 1.4 Convenciones para crear un branch
 
 * Para cada tarea asignada se deberá crear un nuevo branch.
-* No se deberá trabajar directamente sobre el branch ```master```. La convención para nombrar a cada branch es:
+* No se deberá trabajar directamente sobre el branch ```master o main```. La convención para nombrar a cada branch es:
 ```dev-<nombre>-<descripción>```
 * ```<nombre>``` corresponde al nombre de la persona que desarrolla o responsable del branch.
 * ```<descripción>``` corresponde a un nombre o pequeña descripción del branch que haga referencia a la tarea que se está desarrollando.
 ##### Ejemplo:
 El siguiente branch será desarrollado por el usuario ```jorge``` y se refiere a una tarea asignada en la que se actualizará el archivo ```README``` del proyecto  ```dev-jorge-update-readme```
 * El siguiente paso es crear un nuevo branch y cambiarse a él. 
-* En Git el comando `git branch` sirve para mostrar el branch en el que se está trabajando (marcado con un asterisco). En este caso es el branch “master”.
+* En Git el comando `git branch` sirve para mostrar el branch en el que se está trabajando (marcado con un asterisco). En este caso es el branch “master o main”.
 * Para crear un nuevo branch ejecutar:
 ```bash 
 git branch <nombre_branch>
@@ -89,7 +89,7 @@ git checkout -b <nombre_branch>
 ```bash
 git branch
 * dev-jorge-update-readme
-master
+master o main
 ```
 * Observar el asterisco `*` empleado como indicador del branch en el que se está trabajando.
 * Posterior a estos pasos, ya se puede comenzar a trabajar normalmente con la tarea asignada.
@@ -236,7 +236,7 @@ git push origin <nombre-branch>
 * Para crear un pull request se hará uso de GitHub.
 * La siguiente imagen muestra la pantalla para crear un pull request (desde la página principal del repo fork).
 ![pull.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull.png)
-* Hacer clic en el botón “New Pull Request”.  Se deberá realizar la siguiente configuración en la que se indica que los cambios del branch se integrarán a master del repositorio principal (upstream). En este ejemplo, se va a integrar el branch `dev-jorge-update-readme` al branch `master`.
+* Hacer clic en el botón “New Pull Request”.  Se deberá realizar la siguiente configuración en la que se indica que los cambios del branch se integrarán a master o main del repositorio principal (upstream). En este ejemplo, se va a integrar el branch `dev-jorge-update-readme` al branch `master o main`.
 * Posteriormente, hacer clic en  "Create pull Request".
 
 ![pull2.png](https://raw.githubusercontent.com/jorgerdc/tutoriales/master/lineamientos-desarrollo/img/pull2.png)
@@ -300,17 +300,17 @@ upstream https://github.com/octocat/Spoon-Knife.git (push)
 
 #### 1.8.1 Sincronización del repositorio upstream con el branch de trabajo.
 Durante el transcurso del desarrollo de la actividad pudiera requerirse realizar una actualización del repositorio original en el *fork* y *branch* creados anteriormente. Esto puede ocurrir con base al siguiente escenario:
-* Suponer que algún integrante del equipo actualiza el repositorio original (actualiza el branch principal `master`).
+* Suponer que algún integrante del equipo actualiza el repositorio original (actualiza el branch principal `master o main`).
 * Suponer que se desea actualizar dichos cambios en el branch creado anteriormente, por ejemplo, en `dev-jorge-update-readme`. Para realizar la actualización, ejecutar las siguientes instrucciones:
-* Cambiarse al branch master del fork: 
+* Cambiarse al branch master o main del fork: 
 ```bash
-git checkout master
+git checkout <master/main>
 ```
 * Actualizar los cambios del repositorio original (upstream) 
 ```bash 
-git pull upstream master
+git pull upstream <master/main>
 ```
-* Hasta este momento, los cambios se han actualizado en el branch master del fork.
+* Hasta este momento, los cambios se han actualizado en el branch master o main del fork.
 * El siguiente paso es actualizar los cambios al branch de trabajo `dev-jorge-update-readme`
 * Cambiarse nuevamente al branch de trabajo: git checkout `dev-jorge-update-readme`
 ```bash
@@ -318,6 +318,6 @@ git checkout dev-jorge-update-readme
 ```
 * Ejecutar la siguiente instrucción para realizar la actualización en el branch. En Git Existen 2 técnicas: `rebase` y `merge`. Se empleará rebase. 
 ```bash
-git rebase master
+git rebase <master/main>
 ```
 Esta última instrucción permite actualizar o sincronizar los cambios del repositorio original en el branch de trabajo.
