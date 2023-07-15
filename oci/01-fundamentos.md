@@ -34,7 +34,7 @@ OCI ofrece la administración de recursos de formas diversas:
 
 ## 1.2 Conceptos OCI - Arquitectura física
 
-### 1.2.1 Regiones
+### 1.2.1 Regions, Availability domains
 
 La infraestructura OCI esta soportada por un conjunto de regiones y _availability domains_
 Una región es un área geográfica. Un availability domain  esta formado por un conjunto
@@ -68,4 +68,79 @@ algunos realms:
 * Government
 * Dedicated
 
-### 1.2.2 x
+Availability domains están aislados unos de otros, tolerante a fallas.
+Al configurar servicios de Cloud se deben emplear múltiples availability
+domains para asegurar disponibilidad.
+
+### 1.2.2 2 Fault domains
+
+* Conjunto de recursos de hardware e infraestructura dentro de un mismo
+  availability domain
+* Cada availability domain contiene 3 fault domains.
+* Fault domains permiten distribuir las instancias del cliente de tal forma
+  que no compartan hardware dentro del mismo availability domain.
+* La ocurrencia de una falla afectará a un solo fault domain, pero no a los
+  demás.  
+
+## 1.3 Cuentas y accesos
+
+### 1.3.1 Tenancy
+
+* Al momento de crear una suscripción a Oracle OCI se crea un tenancy.
+* Tenancy puede ser visto como una cuenta de usuario.
+* Representa una especie de partición segura y aislada en la cual se pueden
+  administrar recursos OCI.
+* Cuando se crea un tenancy, por default se asigna a la región seleccionada por
+  el cliente. Posteriormente, el tenancy puede suscribirse a otras regiones
+  (multiple tenancies).
+
+### 1.3.2 Compartment
+
+* Un compartment permite administrar el control de acceso a cloud resources.
+  puede ser visto como un contenedor lógico de recursos.
+* Cada compartment esta formado por un conjunto de estos recursos (instancias,
+  virtual cloud networks, block volumes) que serán accedidos únicamente por
+  ciertos grupos con permisos específicos.
+* Al crear un tenancy, se le asocia un **root compartment** el cual asocia
+  a todos los recursos del tenancy.
+* Cuando se crea un recurso se debe especificar el compartment al que pertenece.
+
+### 1.3.3 Identity domains, policies
+
+* Representa un contenedor empleado para administrar usuarios y roles.
+* Un policy representa un documento que especifica quién puede acceder a
+  ciertos recursos y de qué forma. Un usuario puede escribir sus propias policies
+* Policies pueden ser aplicadas a un compartment en específico  o inclusive
+  pueden ser aplicadas al root compartment (tenancy). Al otorgar un permiso
+  a nivel tenancy, dicho permiso será aplicado a todos los compartments definidos
+  dentro del tenancy
+
+## 1.4 Introducción a IAM
+
+* IAM (Identity and Access Management) define una serie de funcionalidades como
+  son:
+  * Autenticación
+  * Single sign on (SSO)
+  * Identity lifecycle management
+* Estas funcionalidades permiten administrar el control de acceso a aplicaciones
+  en cualquier momento, desde cualquier lugar, y desde cualquier dispositivo de
+  forma segura.
+* IAM puede integrarse con fuentes de identidad existente (Identity stores),
+  con proveedores externos, y aplicaciones tanto en la nube como con aplicaciones
+  on-premises.
+* IAM ofrece la plataforma de seguridad para OCI.
+
+### 1.4.1  Escenario de ejemplo
+
+* Una empresa cuenta con 2 equipos que harán uso de 2 proyectos en OCI: proyectos
+  A y B.
+* La compañía hará uso de una VCN (Virtual Cloud Network), se requiere de un
+  usuario administrador para esta red.
+
+  https://confluence.oci.oraclecorp.com/spaces/viewspace.action?key=DEVCENTRAL
+  
+  https://confluence.oci.oraclecorp.com/display/DEVCENTRAL/Training+on+Fundamentals%2C+Networking%2C+Core+Services%2C+and+OCI+Platform
+
+  https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm#About
+
+  https://mylearn.oracle.com/ou/component/-/108432/165494
