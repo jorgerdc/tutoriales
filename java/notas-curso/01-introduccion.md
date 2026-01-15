@@ -102,7 +102,6 @@
   * literales
 * Todas se representan en minúsculas
 * No pueden ser empleadas como identificadores. Ejemplos
-
 * palabras reservadas para flujo de control
   * `if`, `else`, `continue`, etc.
 * Estructura del código
