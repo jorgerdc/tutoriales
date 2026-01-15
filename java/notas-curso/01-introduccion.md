@@ -9,7 +9,7 @@
   en diversos dispositivos electrónicos con distintas compatibilidades, es decir,
   resolver el problema de portabilidad entre dispositivos (hardware, software, etc.).
 
-<p align="center"><img src="img/01/01.png"> </p>
+<p align="center"><img src="img/01/01.png" style="width: 80%; height: auto;"> </p>
 
 ### ¿Cómo se produce  y ejecuta un programa en Java ?
 
@@ -26,7 +26,7 @@
        binarias diferentes. Ambas técnicas de transformación tienen sus áreas de
   oportunidad, cada una tiene ventajas y desventajas.
 
-<p align="center"><img src="img/01/02.png"> </p>
+<p align="center"><img src="img/01/02.png" style="width: 80%; height: auto;"> </p>
 
 ## 1.3 Plataforma Java
 
@@ -47,7 +47,7 @@
   * **Un programa en Java requiere ser compilado una sola vez y debe funcionar en
     cualquier plataforma**
 
-<p align="center"><img src="img/01/03.png"> </p>
+<p align="center"><img src="img/01/03.png" style="width: 80%; height: auto;"> </p>
 
 ### 1.3.1  Programas en Java
 
@@ -93,7 +93,7 @@
   compilación de forma explicita. La JVM en este caso realiza el proceso de compilación
   implicitamente, resultando en un código con un menor grado de optimización.
 
-<p align="center"><img src="img/01/04.png"> </p>
+<p align="center"><img src="img/01/04.png" style="width: 80%; height: auto;"> </p>
 
 ## 1.4 Vocabulario básico en Java
 
@@ -126,7 +126,7 @@
 * Clases contienen métodos y atributos
 * El método principal es `main`, punto de entrada de la aplicación
 
-<p align="center"><img src="img/01/05.png"> </p>
+<p align="center"><img src="img/01/05.png" style="width: 80%; height: auto;"> </p>
 
 ### 1.4.2 Creando aplicaciones Java
 
