@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "f530ea58df69ce9d",
+    "type": "split",
+    "children": [
+      {
+        "id": "4833a74baf7dc969",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8f448980625db9f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "media/Pasted image 20260115211332.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260115211332"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0c3bfa3d136d6624",
+    "type": "split",
+    "children": [
+      {
+        "id": "25bd94798781fe8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fca903a89ca79b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "8228241649928e12",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "4ddf3fcdfe4a18cc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 208.5
+  },
+  "right": {
+    "id": "f2519c65f11ae6ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "26c4b4e97a40cc75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b7c5365e82d604d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ejercicios-md-1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de ejercicios-md-1"
+            }
+          },
+          {
+            "id": "3c0db1eaaf9465ef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ejercicios-md-1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de ejercicios-md-1"
+            }
+          },
+          {
+            "id": "c9c52611b1d1c775",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "1f34a9c11263ac56",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "a6347d6b081e1ef4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ejercicios-md-1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de ejercicios-md-1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "b8f448980625db9f",
+  "lastOpenFiles": [
+    "media/Pasted image 20260115213013.png",
+    "Bienvenido.md",
+    "ejercicios-md-1.md",
+    "media/Pasted image 20260117211015.png",
+    "media/Pasted image 20260117205051.png",
+    "media/Pasted image 20260115220315.png",
+    "media/Pasted image 20260115215816.png",
+    "media/Pasted image 20260115215657.png",
+    "media/Pasted image 20260115213755.png",
+    "media/Pasted image 20260115211332.png",
+    "media"
+  ]
+}
