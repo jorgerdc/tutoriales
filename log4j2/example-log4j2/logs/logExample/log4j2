@@ -1,0 +1,12 @@
+[INFO ] 2019-06-01 18:20:18.365 [main] HelloWorldLog4j2 - Info Message Logged !!!
+[ERROR] 2019-06-01 18:20:18.366 [main] HelloWorldLog4j2 - Error Message Logged !!!
+java.lang.NullPointerException: NullError
+	at log4j2.HelloWorldLog4j2.main(HelloWorldLog4j2.java:39) [main/:?]
+[INFO ] 2019-06-01 18:20:31.724 [main] HelloWorldLog4j2 - Info Message Logged !!!
+[ERROR] 2019-06-01 18:20:31.726 [main] HelloWorldLog4j2 - Error Message Logged !!!
+java.lang.NullPointerException: NullError
+	at log4j2.HelloWorldLog4j2.main(HelloWorldLog4j2.java:39) [main/:?]
+[INFO ] 2019-06-01 18:20:39.146 [main] HelloWorldLog4j2 - Info Message Logged !!!
+[ERROR] 2019-06-01 18:20:39.148 [main] HelloWorldLog4j2 - Error Message Logged !!!
+java.lang.NullPointerException: NullError
+	at log4j2.HelloWorldLog4j2.main(HelloWorldLog4j2.java:39) [main/:?]
