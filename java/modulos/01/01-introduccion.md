@@ -9,7 +9,7 @@
   en diversos dispositivos electrónicos con distintas compatibilidades, es decir,
   resolver el problema de portabilidad entre dispositivos (hardware, software, etc.).
 
-<p align="center"><img src="img/01/01.png" style="width: 70%; height: auto;"/> </p>
+<p align="center"><img src="img.png" style="width: 70%; height: auto;"/> </p>
 
 ### 1.1.1 Historia de versiones en Java
 
@@ -58,7 +58,7 @@ tecnología completa que abarca varios grupos de productos:
 A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete independiente,
   sino que está incluido dentro del JDK.
 
-<p align="center"><img src="img/01/06.png"/> </p>
+<p align="center"><img src="img/06.png"/> </p>
 
 ## 1.3 Plataforma Java
 
@@ -79,7 +79,7 @@ A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete indep
   * **Un programa en Java requiere ser compilado una sola vez y debe funcionar en
     cualquier plataforma**
 
-<p align="center"><img src="img/01/03.png" style="width: 70%; height: auto;"/> </p>
+<p align="center"><img src="img/03.png" style="width: 70%; height: auto;"/> </p>
 
 ## 1.4 ¿Cómo se produce  y ejecuta un programa en Java ?
 
@@ -96,7 +96,7 @@ A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete indep
        binarias diferentes. Ambas técnicas de transformación tienen sus áreas de
   oportunidad, cada una tiene ventajas y desventajas.
 
-<p align="center"><img src="img/01/02.png" style="width: 70%; height: auto;"/> </p>
+<p align="center"><img src="img/02.png" style="width: 70%; height: auto;"/> </p>
 
 ### 1.4.1  Código fuente de un programa en Java
 
@@ -142,7 +142,7 @@ A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete indep
   compilación de forma explicita. La JVM en este caso realiza el proceso de compilación
   implicitamente, resultando en un código con un menor grado de optimización.
 
-<p align="center"><img src="img/01/04.png" style="width: 70%; height: auto;"/> </p>
+<p align="center"><img src="img/04.png" style="width: 70%; height: auto;"/> </p>
 
 ### 1.4.2 Java code conventions
 
@@ -188,7 +188,7 @@ A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete indep
 * Clases contienen métodos y atributos
 * El método principal es `main`, punto de entrada de la aplicación
 
-<p align="center"><img src="img/01/05.png" style="width: 70%; height: auto;"/></p>
+<p align="center"><img src="img/05.png" style="width: 70%; height: auto;"/></p>
 
 ### 1.6 Creando aplicaciones Java
 
