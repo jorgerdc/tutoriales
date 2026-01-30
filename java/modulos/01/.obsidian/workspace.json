@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "6eda9ae0610a1763",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf0c11aa1b98ba1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee7e12e6666f287a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-introduccion.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-introduccion"
+            }
+          }
+        ]
+      },
+      {
+        "id": "db7a7bd388406df0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58a5ca04dc67c2c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-introduccion-practica.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-introduccion-practica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6902cc5a4782bfc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c3ab08b7829f0269",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8a6aacee451f826",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "2eabe62e6f5f7074",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "27a6b7d72fea61b6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 217.51103591918945
+  },
+  "right": {
+    "id": "e0919d0689fee93c",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b231c5527668016",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f85144dd6a1a31f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01-introduccion.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de 01-introduccion"
+            }
+          },
+          {
+            "id": "b25e04bc092710a1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01-introduccion.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de 01-introduccion"
+            }
+          },
+          {
+            "id": "c05d003d9f725ab2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "2b49938ed719afdb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "1d460a9ecd983a19",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01-introduccion.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de 01-introduccion"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "58a5ca04dc67c2c0",
+  "lastOpenFiles": [
+    "img/Pasted image 20260124211644.png",
+    "img/eje-01-15.png",
+    "01-introduccion-practica.md",
+    "01-introduccion.md",
+    "img/eje-01-14.png",
+    "img/eje-01-13.png",
+    "img/eje-01-12.png",
+    "img/eje-01-11.png",
+    "img/eje-01-10.png",
+    "img/Pasted image 20260123202811.png",
+    "Sin título.md",
+    "Create.md",
+    "img/eje-01-09.png",
+    "img/eje-01-08.png",
+    "CRITERIOS EDITORIALES.md"
+  ]
+}
