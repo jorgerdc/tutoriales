@@ -1,0 +1,11 @@
+{
+  "livePreview": true,
+  "readableLineLength": true,
+  "showLineNumber": true,
+  "tabSize": 2,
+  "useMarkdownLinks": true,
+  "promptDelete": false,
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "img",
+  "alwaysUpdateLinks": true
+}
