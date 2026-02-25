@@ -4,7 +4,8 @@
 
 * Java es un lenguaje orientado a objetos de la misma familia de lenguajes como C, C++, C#
 * Originalmente diseñado para ser empleado en aparatos electrónicos.
-* Actualmente empleado en una gran cantidad de dispositivos, micro y hasta en grandes sistemas.
+* Actualmente empleado en una gran cantidad de dispositivos, desde micro sistemas o
+  sistemas embebidos, hasta grandes servidores distribuidos.
 * El problema a resolver inicial fue, escribir el código una sola vez, y ejecutarlo
   en diversos dispositivos electrónicos con distintas compatibilidades, es decir,
   resolver el problema de portabilidad entre dispositivos (hardware, software, etc.).
@@ -40,9 +41,9 @@ tecnología completa que abarca varios grupos de productos:
 
 * Como se mencionó anteriormente, las liberaciones o versiones de Java se identifican  por
   el  JDK (Java Development Kit).
-* El JDK incluye o está formado por los siguientes elementos principales:
+* El JDK se compone o integra de los siguientes elementos principales:
   * JRE (Java Runtime Environment)
-  * Compilador de Java (javac)
+  * Compilador de Java (`javac`)
   * Herramienta interactiva para probar de forma rápida código Java sin tener que crear
     clases completas, representada por el comando `jshell`
 * El JDK se puede descargar desde el [sitio oficial de
@@ -68,7 +69,7 @@ A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete indep
   hardware y software (sistemas operativos).
 * La plataforma Java esta basada únicamente en **software** y se ejecuta en diversas
   arquitecturas de Hardware. Esta formada por los siguientes elementos:
-  * Un programa en Java necesita ser compilado una sola vez.
+  * Un programa que requiere ser compilado una sola vez.
   * El compilador de Java produce byte-codes para ser interpretados por la JVM (Java
     Virtual Machine).
   * la JVM es un software o aplicación creada para una plataforma en particular.
@@ -162,7 +163,7 @@ A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete indep
 
 * Formado por los siguientes elementos:
   * Java keywords o palabras reservadas
-  * literales
+  * Literales
 * Todas se representan en minúsculas
 * No pueden ser empleadas como identificadores. Ejemplos
 * palabras reservadas para flujo de control
@@ -180,7 +181,7 @@ A partir de la versión JDK 11, el JRE ya no se distribuye como un paquete indep
 
 ### 1.5.1 Sintaxis básica
 
-* Java es un lenguaje sensible a mayúsculas y minúsculas
+* Java es un lenguaje sensible a mayúsculas y minúsculas (case sensitive)
 * Cada instrucción termina con un punto y coma `;`
 * Los bloques de código se definen con llaves `{ }`
 * Los comentarios pueden ser de una sola línea `// comentario` o múltiples líneas
@@ -337,7 +338,7 @@ relacionadas. Algunos paquetes comunes en el API de Java incluyen:
 * El nombre del paquete debe coincidir con la estructura de directorios donde se
   encuentra el archivo `.java`. Por ejemplo, si la clase `MiClase` está en el paquete
   `edu.unam.cursos.java.intro`, el archivo debe estar ubicado en la ruta
-  `edu/unam/cursos/java/intro/MiClase.java`.
+  `edu/unam/cursos/java/intro`.
 
   ```bash
   src/
@@ -359,6 +360,8 @@ relacionadas. Algunos paquetes comunes en el API de Java incluyen:
     dificultar la organización del código.
 * Para facilitar la creación, compilación y ejecución de programas Java con paquetes, es
   recomendable utilizar un IDE o herramientas de construcción como Maven o Gradle.
+* Existen otros conceptos relacionados con los paquetes, los cuales serán revisados en
+  módulos posteriores.
 
 ### 1..3 Variable de entorno CLASSPATH
 
